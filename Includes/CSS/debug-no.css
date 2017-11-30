@@ -1,0 +1,50 @@
+/* Nathan's Debugging Stuff */
+
+      /* debugging outlines */
+
+      .debug-p p           {border:dotted 1px black; margin:1px;}
+
+      .debug-table table       {border:solid 2px green;  margin:2px;}
+      .debug-table td          {border:dashed 1px green; padding:2px;}
+
+      .debug-list ul, .debug ol {border: solid 2px brown; margin:2px;}
+      .debug-list li          {border: dashed 1px brown; padding: 2px;}
+
+      .debug-span span        {border:dotted 2px pink;  margin:2px;}
+      .debug-span span > span {border:dotted 1px pink; padding:2px;}
+
+      .debug-div div         {border:solid 2px blue;  margin:2px;}
+      .debug-div div > div   {border:dashed 1px blue; padding:2px;}
+
+      .debug-iframe iframe      {border:solid 1px red;  margin:2px;}
+
+      .debug .br-div     {border: solid 1px red; margin: 2px; width: 10px; height: 10px; display: inline-block; background-color: red;}
+      .br-div            {border: solid 1px blue; margin: 1px; padding: 1px; width: 10px; height: 10px; display: inline-block; background-color: red;}
+      .debug font        {border: solid 1px red; margin: 2px;}
+
+      .debug #tt {border:0;}
+      .debug #ttcontainer {border:0;}
+      .debug #tttop {border:0;}
+      .debug #ttbottom {border:0;}
+
+      .debug .debugOption {border:0; margin: 0; padding:0;}
+      .debug #JavaScriptTest {position: fixed; bottom: 0px; right: 0px;}
+      #JavaScriptTest {position: fixed; bottom: 0px; right: 0px; background-color: #666; color: #fff; opacity: .95;}
+
+      #tt p {border:0;}
+      #tt table {border:0;}
+      #tt td {border:0;}
+
+
+
+
+.debug-divs div         {border:solid 2px blue;  margin:2px;}
+.debug-divs div > div   {border:dashed 1px blue; padding:2px;}
+
+
+     /*** Tooltips ***/
+
+    #tt     {position: absolute; display: block; background: url(images/tt_left.gif) top left no-repeat;}
+    #ttcontainer {display: block; padding: 2px 12px 3px 7px; margin-left: 5px; background: #666; color: #fff;}
+    #tttop  {display: block; height: 5px; margin-left: 5px; background: url(images/tt_top.gif) top right no-repeat;    /*overflow: hidden;*/}
+    #ttbottom  {display: block; height: 5px; margin-left: 5px; background: url(images/tt_bottom.gif) top right no-repeat; /*overflow: hidden*/;}

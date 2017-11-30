@@ -1,0 +1,85 @@
+/* Workaround for IE's lack of support for rendering web pages */
+
+@charset "utf-8";
+
+
+
+#menu a:hover 
+        {
+        text-decoration: none;
+        color: #000000;
+        background: #FFFFFF;
+
+        behavior: url(/includes/border-radius.htc);
+        border-radius: 5px;
+        }
+
+#menu .active a 
+        {
+        background: #EC0000;
+
+        behavior: url(/includes/border-radius.htc);
+        border-radius: 5px;
+        }
+
+.supplemental
+        {
+	margin: auto;
+        border: solid 5px red;
+	background-color: #EEEEEE;
+	color: #000000;
+        text-align: justify;
+
+        behavior: url(/includes/border-radius.htc);
+        border-radius: 15px;
+        }
+
+.side-menu
+        {
+        margin: auto;
+        border: solid 5px red;
+	background-color: #EEEEEE;
+	color: #000000;
+        padding: 5px;
+
+        behavior: url(/includes/border-radius.htc);
+        border-radius: 15px;
+        }
+
+.rounded-corners-10
+        {
+        behavior: url(/includes/border-radius.htc);
+        border-radius: 10px;
+        }
+
+.rounded-corners-15
+        {       
+        behavior: url(/includes/border-radius.htc);
+        border-radius: 15px;
+        }
+
+.services-menu li
+        {
+        border: solid 1px transparent;
+
+        behavior: url(/includes/border-radius.htc);        
+        border-radius: 15px;
+        }
+
+.services-menu li:hover
+        {
+        border: solid 1px blue;
+
+        behavior: url(/includes/border-radius.htc);        
+        border-radius: 15px;
+        }
+
+.footerlinkscolumn1 {
+	width: 150px;
+	height: 100%;
+	margin-right: 10px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	white-space: normal;
+}

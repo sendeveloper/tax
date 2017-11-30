@@ -1,0 +1,47 @@
+/* CSS sheet for the PinPoint video pop up window */
+
+.video_content {
+	width: 800px;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.video_pinpoint_img {
+	width: 105px;
+	display: inline-block;
+}
+
+.video_pinpoint_txt {
+	width: 670px;
+	display: inline-block;
+}
+
+.video_fb {
+	width: 125px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.video_twitter {
+	width: 230px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.video_gplus {
+	width: 90px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.video_youtube {
+	width: 140px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}

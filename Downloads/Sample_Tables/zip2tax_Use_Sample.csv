@@ -1,0 +1,53 @@
+z2t_ID,ZipCode,UseTaxRate,RateState,ReportingCodeState,RateCounty,ReportingCodeCounty,RateCity,ReportingCodeCity,RateSpecialDistrict,ReportingCodeSpecialDistrict,City,PostOffice,State,County,ShippingTaxable,PrimaryRecord
+55593,64089,5.725,4.225,,0,,1.5,68420,0,,Paradise,Smithville,MO,Clay,0,0
+55594,64089,5.725,4.225,,0,,1.5,68420,0,,Smithville,Smithville,MO,Clay,0,1
+55595,64090,4.225,4.225,,0,,0,,0,,Strasburg,Strasburg,MO,Cass,0,1
+55583,64092,4.225,4.225,,0,,0,,0,,Waldron,Waldron,MO,Platte,0,1
+55596,64093,6.1,4.225,,0,,1.875,77092,0,,Warrensburg,Warrensburg,MO,Johnson,0,1
+55597,64096,4.225,4.225,,0,,0,,0,,Waverly,Waverly,MO,Lafayette,0,1
+55598,64097,4.225,4.225,,0,,0,,0,,Wellington,Wellington,MO,Lafayette,0,1
+55599,64098,6.1,4.225,,0,,1.875,78856,0,,Weston,Weston,MO,Platte,0,1
+55600,64101,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55604,64102,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55605,64105,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55606,64106,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55607,64108,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55608,64109,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55609,64110,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55610,64111,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55611,64112,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55612,64113,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55613,64114,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55617,64116,6.725,4.225,,0,,2.5,27190,0,,Gladstone,Kansas City,MO,Clay,0,0
+54827,64116,4.225,4.225,,0,,0,,0,,North Kansas City,Kansas City,MO,Clay,0,0
+54821,64116,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Clay,0,1
+54829,64117,4.225,4.225,,0,,0,,0,,Avondale,Kansas City,MO,Clay,0,0
+55638,64117,6.6,4.225,,0,,2.375,38000,0,,Kansas City North,Kansas City,MO,Clay,0,0
+55640,64117,4.225,4.225,,0,,0,,0,,Randolph,Kansas City,MO,Clay,0,0
+55621,64117,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Clay,0,1
+55643,64118,6.725,4.225,,0,,2.5,27190,0,,Gladstone,Kansas City,MO,Clay,0,0
+55641,64118,6.225,4.225,,0,,2,53858,0,,Oakview,Kansas City,MO,Clay,0,0
+55642,64118,6.6,4.225,,0,,2.375,38000,0,,Village Of Oakview,Kansas City,MO,Clay,0,0
+55644,64118,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Clay,0,1
+55647,64119,6.725,4.225,,0,,2.5,27190,0,,Gladstone,Kansas City,MO,Clay,0,0
+55646,64119,4.225,4.225,,0,,0,,0,,Claycomo,Kansas City,MO,Clay,0,0
+55648,64119,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Clay,0,1
+55649,64120,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55656,64121,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55657,64123,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55658,64124,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55659,64125,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55660,64126,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55661,64127,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55662,64128,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55664,64129,4.225,4.225,,0,,0,,0,,Raytown,Kansas City,MO,Jackson,0,0
+55663,64129,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55665,64130,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55666,64131,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55667,64132,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55669,64133,4.225,4.225,,0,,0,,0,,Raytown,Kansas City,MO,Jackson,0,0
+55668,64133,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55674,64134,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55675,64136,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55676,64137,6.6,4.225,,0,,2.375,38000,0,,Kansas City,Kansas City,MO,Jackson,0,1
+55678,64138,4.225,4.225,,0,,0,,0,,Raytown,Kansas City,MO,Jackson,0,0

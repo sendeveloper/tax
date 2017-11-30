@@ -1,0 +1,186 @@
+z2t_ID,ZipCode,SalesTaxRate,RateState,ReportingCodeState,RateCounty,ReportingCodeCounty,RateCity,ReportingCodeCity,RateSpecialDistrict,ReportingCodeSpecialDistrict,City,PostOffice,State,County,ShippingTaxable,PrimaryRecord
+51507,60001,7,6.25,,0.75,056-5000-6,,,0,,Alden,Alden,IL,McHenry,0,1
+84138,60002,7,6.25,,0.75,049-5000-6,,,0,,Old Mill Creek,Antioch,IL,Lake,0,0
+51508,60002,7,6.25,,0.75,049-5000-6,,,0,,Antioch,Antioch,IL,Lake,0,1
+84139,60002,7,6.25,,0.75,049-5000-6,,,0,,Wadsworth,Antioch,IL,Lake,0,0
+51509,60004,9.5,6.25,,2.25,016-5000-1,1,016-0003-6,0,,Arlington Heights,Arlington Heights,IL,Cook,0,1
+51511,60005,9.5,6.25,,2.25,016-5000-1,1,016-0003-6,0,,Arlington Heights,Arlington Heights,IL,Cook,0,1
+51513,60006,9.5,6.25,,2.25,016-5000-1,1,016-0003-6,0,,Arlington Heights,Arlington Heights,IL,Cook,0,1
+51515,60007,9.5,6.25,,2.25,016-5000-1,1,016-0140-7,0,,Elk Grove Village,Elk Grove Village,IL,Cook,0,1
+51518,60008,9.5,6.25,,2.25,016-5000-1,1,016-0137-7,0,,Rolling Meadows,Rolling Meadows,IL,Cook,0,1
+51521,60009,9.5,6.25,,2.25,016-5000-1,1,016-0140-7,0,,Elk Grove Village,Elk Grove Village,IL,Cook,0,1
+51529,60010,7,6.25,,0.75,049-5000-6,,,0,,Hoffman Estates,Barrington,IL,Lake,0,0
+51525,60010,7,6.25,,0.75,049-5000-6,,,0,,Barrington Hills,Barrington,IL,Lake,0,0
+51526,60010,7,6.25,,0.75,049-5000-6,,,0,,Deer Park,Barrington,IL,Lake,0,0
+51544,60010,7,6.25,,0.75,049-5000-6,,,0,,Fox River Valley Gardens,Barrington,IL,Lake,0,0
+51530,60010,7,6.25,,0.75,049-5000-6,,,0,,Inverness,Barrington,IL,Lake,0,0
+51531,60010,7,6.25,,0.75,049-5000-6,,,0,,Kildeer,Barrington,IL,Lake,0,0
+51535,60010,7,6.25,,0.75,049-5000-6,,,0,,Lake Barrington,Barrington,IL,Lake,0,0
+51536,60010,7,6.25,,0.75,049-5000-6,,,0,,Lake Barrington Shores,Barrington,IL,Lake,0,0
+51539,60010,7,6.25,,0.75,049-5000-6,,,0,,North Barrington,Barrington,IL,Lake,0,0
+51527,60010,7,6.25,,0.75,049-5000-6,,,0,,Port Barrington,Barrington,IL,Lake,0,0
+51541,60010,7,6.25,,0.75,049-5000-6,,,0,,South Barrington,Barrington,IL,Lake,0,0
+51542,60010,7,6.25,,0.75,049-5000-6,,,0,,Timber Lake,Barrington,IL,Lake,0,0
+51543,60010,7,6.25,,0.75,049-5000-6,,,0,,Tower Lakes,Barrington,IL,Lake,0,0
+51524,60010,7,6.25,,0.75,049-5000-6,,,0,,Barrington,Barrington,IL,Lake,0,1
+51548,60011,7,6.25,,0.75,049-5000-6,,,0,,Barrington,Barrington,IL,Lake,0,1
+51549,60012,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Bull Valley,Crystal Lake,IL,McHenry,0,0
+51551,60012,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Prairie Grove,Crystal Lake,IL,McHenry,0,0
+51552,60012,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Ridgefield,Crystal Lake,IL,McHenry,0,0
+51550,60012,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Crystal Lake,Crystal Lake,IL,McHenry,0,1
+51555,60013,7,6.25,,0.75,056-5000-6,,,0,,Oakwood Hills,Cary,IL,McHenry,0,0
+51553,60013,7,6.25,,0.75,056-5000-6,,,0,,Trout Valley,Cary,IL,McHenry,0,0
+51554,60013,7,6.25,,0.75,056-5000-6,,,0,,Cary,Cary,IL,McHenry,0,1
+51559,60014,8,6.25,,0.75,056-5000-6,1,056-0031-6,0,,Lakewood,Crystal Lake,IL,McHenry,0,0
+51556,60014,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Village Of Lakewood,Crystal Lake,IL,McHenry,0,0
+51558,60014,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Crystal Lake,Crystal Lake,IL,McHenry,0,1
+51563,60015,7.5,6.25,,0.75,049-5000-6,0.5,049-0042-1,0,,Bannockburn,Deerfield,IL,Lake,0,0
+51565,60015,7.5,6.25,,0.75,049-5000-6,0.5,049-0076-6,0,,Riverwoods,Deerfield,IL,Lake,0,0
+51564,60015,8,6.25,,0.75,049-5000-6,1,049-0004-9,0,,Deerfield,Deerfield,IL,Lake,0,1
+51566,60016,9.5,6.25,,2.25,016-5000-1,1,016-0015-1,0,,Des Plaines,Des Plaines,IL,Cook,0,1
+51567,60017,9.5,6.25,,2.25,016-5000-1,1,016-0015-1,0,,Des Plaines,Des Plaines,IL,Cook,0,1
+51569,60018,9.75,6.25,,2.25,016-5000-1,1.25,016-0147-4,0,,Rosemont,Des Plaines,IL,Cook,0,0
+51568,60018,9.5,6.25,,2.25,016-5000-1,1,016-0015-1,0,,Des Plaines,Des Plaines,IL,Cook,0,1
+51572,60019,9.5,6.25,,2.25,016-5000-1,1,016-0015-1,0,,Rosemont,Des Plaines,IL,Cook,0,0
+51571,60019,9.5,6.25,,2.25,016-5000-1,1,016-0015-1,0,,Despl/Rsmt Bus Rply,Des Plaines,IL,Cook,0,0
+51570,60019,9.5,6.25,,2.25,016-5000-1,1,016-0015-1,0,,Des Plaines,Des Plaines,IL,Cook,0,1
+51574,60020,8,6.25,,0.75,049-5000-6,1,049-0036-7,0,,Volo,Fox Lake,IL,Lake,0,0
+51573,60020,7,6.25,,0.75,049-5000-6,,,0,,Fox Lake,Fox Lake,IL,Lake,0,1
+51578,60021,7,6.25,,0.75,056-5000-6,,,0,,Barrington Hills,Fox River Grove,IL,McHenry,0,0
+51579,60021,7,6.25,,0.75,056-5000-6,,,0,,Fox River Grove,Fox River Grove,IL,McHenry,0,1
+51581,60022,8.5,6.25,,2.25,016-5000-1,,,0,,Glencoe,Glencoe,IL,Cook,0,1
+51582,60025,9.25,6.25,,2.25,016-5000-1,0.75,016-0024-9,0,,Glenview,Glenview,IL,Cook,0,1
+51583,60026,9.25,6.25,,2.25,016-5000-1,0.75,016-0024-9,0,,Glenview,Glenview,IL,Cook,0,1
+51584,60029,8.5,6.25,,2.25,016-5000-1,,,0,,Golf,Golf,IL,Cook,0,1
+51585,60030,7,6.25,,0.75,049-5000-6,,,0,,Gages Lake,Grayslake,IL,Lake,0,0
+51587,60030,7,6.25,,0.75,049-5000-6,,,0,,Hainesville,Grayslake,IL,Lake,0,0
+51588,60030,7,6.25,,0.75,049-5000-6,,,0,,Third Lake,Grayslake,IL,Lake,0,0
+51589,60030,8,6.25,,0.75,049-5000-6,1,049-0036-7,0,,Volo,Grayslake,IL,Lake,0,0
+51593,60030,7,6.25,,0.75,049-5000-6,,,0,,Wildwood,Grayslake,IL,Lake,0,0
+51586,60030,7,6.25,,0.75,049-5000-6,,,0,,Grayslake,Grayslake,IL,Lake,0,1
+51594,60031,7.5,6.25,,0.75,049-5000-6,0.5,049-0010-3,0,,Gurnee,Gurnee,IL,Lake,0,1
+51596,60033,7,6.25,,0.75,056-5000-6,,,0,,Alden,Harvard,IL,McHenry,0,0
+51595,60033,7,6.25,,0.75,056-5000-6,,,0,,Chemung,Harvard,IL,McHenry,0,0
+51597,60033,7,6.25,,0.75,056-5000-6,,,0,,Harvard,Harvard,IL,McHenry,0,1
+51598,60034,7,6.25,,0.75,056-5000-6,,,0,,Hebron,Hebron,IL,McHenry,0,1
+51599,60035,8,6.25,,0.75,049-5000-6,1,049-0011-1,0,,Highland Park,Highland Park,IL,Lake,0,1
+51600,60037,7,6.25,,0.75,049-5000-6,,,0,,Fort Sheridan,Fort Sheridan,IL,Lake,0,1
+51601,60037,8,6.25,,0.75,049-5000-6,1,049-0011-1,0,,Highland Park,Fort Sheridan,IL,Lake,0,0
+51603,60038,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Ww Grainger Inc,Palatine,IL,Cook,0,0
+51602,60038,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51604,60039,7.75,6.25,,0.75,056-5000-6,0.75,056-0007-3,0,,Crystal Lake,Crystal Lake,IL,McHenry,0,1
+51608,60040,8.5,6.25,,0.75,049-5000-6,1.5,049-0012-1,0,,Highwood,Highwood,IL,Lake,0,1
+51611,60041,7,6.25,,0.75,049-5000-6,,,0,,Long Lake,Ingleside,IL,Lake,0,0
+51609,60041,7,6.25,,0.75,049-5000-6,,,0,,Stanton Point,Ingleside,IL,Lake,0,0
+51612,60041,8,6.25,,0.75,049-5000-6,1,049-0036-7,0,,Volo,Ingleside,IL,Lake,0,0
+51610,60041,7,6.25,,0.75,049-5000-6,,,0,,Ingleside,Ingleside,IL,Lake,0,1
+51613,60042,7,6.25,,0.75,049-5000-6,,,0,,Island Lake,Island Lake,IL,Lake,0,1
+51614,60043,8.5,6.25,,2.25,016-5000-1,,,0,,Kenilworth,Kenilworth,IL,Cook,0,1
+51615,60044,8,6.25,,0.75,049-5000-6,1,049-0014-6,0,,Green Oaks,Lake Bluff,IL,Lake,0,0
+51616,60044,8,6.25,,0.75,049-5000-6,1,049-0014-6,0,,Knollwood,Lake Bluff,IL,Lake,0,0
+51617,60044,8,6.25,,0.75,049-5000-6,1,049-0014-6,0,,Lake Bluff,Lake Bluff,IL,Lake,0,1
+51618,60045,7.5,6.25,,0.75,049-5000-6,0.5,049-0015-4,0,,Green Oaks,Lake Forest,IL,Lake,0,0
+47736,60045,7.5,6.25,,0.75,049-5000-6,0.5,049-0015-4,0,,Lincolnshire Woods,Lake Forest,IL,Lake,0,0
+47737,60045,7.5,6.25,,0.75,049-5000-6,0.5,049-0015-4,0,,Mettawa,Lake Forest,IL,Lake,0,0
+51619,60045,7.5,6.25,,0.75,049-5000-6,0.5,049-0015-4,0,,Lake Forest,Lake Forest,IL,Lake,0,1
+47741,60046,7,6.25,,0.75,049-5000-6,,,0,,Lindenhurst,Lake Villa,IL,Lake,0,0
+47738,60046,7,6.25,,0.75,049-5000-6,,,0,,Chesney Shores,Lake Villa,IL,Lake,0,0
+47739,60046,7,6.25,,0.75,049-5000-6,,,0,,Fox Lake Hills,Lake Villa,IL,Lake,0,0
+47742,60046,7,6.25,,0.75,049-5000-6,,,0,,Venetian Village,Lake Villa,IL,Lake,0,0
+47743,60046,7,6.25,,0.75,049-5000-6,,,0,,West Miltmore,Lake Villa,IL,Lake,0,0
+47740,60046,7,6.25,,0.75,049-5000-6,,,0,,Lake Villa,Lake Villa,IL,Lake,0,1
+51647,60047,8,6.25,,0.75,049-5000-6,1,049-0035-9,0,,Long Grove,Lake Zurich,IL,Lake,0,0
+47744,60047,7,6.25,,0.75,049-5000-6,,,0,,Echo Lake,Lake Zurich,IL,Lake,0,0
+47746,60047,7,6.25,,0.75,049-5000-6,,,0,,Forest Lake,Lake Zurich,IL,Lake,0,0
+51623,60047,7,6.25,,0.75,049-5000-6,,,0,,Hawthorn Woods,Lake Zurich,IL,Lake,0,0
+51645,60047,7,6.25,,0.75,049-5000-6,,,0,,Kildeer,Lake Zurich,IL,Lake,0,0
+51646,60047,7,6.25,,0.75,049-5000-6,,,0,,Lake Zurich,Lake Zurich,IL,Lake,0,1
+51648,60048,7,6.25,,0.75,049-5000-6,,,0,,Green Oaks,Libertyville,IL,Lake,0,0
+51650,60048,7,6.25,,0.75,049-5000-6,,,0,,Mettawa,Libertyville,IL,Lake,0,0
+51649,60048,7,6.25,,0.75,049-5000-6,,,0,,Libertyville,Libertyville,IL,Lake,0,1
+51653,60049,8,6.25,,0.75,049-5000-6,1,049-0035-9,0,,Long Grove,Long Grove,IL,Lake,0,1
+51651,60049,8,6.25,,0.75,049-5000-6,1,049-0035-9,0,,Kemper Ins Co,Long Grove,IL,Lake,0,0
+51652,60049,8,6.25,,0.75,049-5000-6,1,049-0035-9,0,,Lake Zurich,Long Grove,IL,Lake,0,0
+51655,60050,7,6.25,,0.75,056-5000-6,,,0,,Bull Valley,McHenry,IL,McHenry,0,0
+51654,60050,7,6.25,,0.75,056-5000-6,,,0,,Holiday Hills,McHenry,IL,McHenry,0,0
+51656,60050,7,6.25,,0.75,056-5000-6,,,0,,Johnsburg,McHenry,IL,McHenry,0,0
+51660,60050,7,6.25,,0.75,056-5000-6,,,0,,Lakemoor,McHenry,IL,McHenry,0,0
+51662,60050,7,6.25,,0.75,056-5000-6,,,0,,McCullom Lake,McHenry,IL,McHenry,0,0
+51663,60050,7,6.25,,0.75,056-5000-6,,,0,,Prairie Grove,McHenry,IL,McHenry,0,0
+51664,60050,7,6.25,,0.75,056-5000-6,,,0,,Sunnyside,McHenry,IL,McHenry,0,0
+51661,60050,7,6.25,,0.75,056-5000-6,,,0,,McHenry,McHenry,IL,McHenry,0,1
+51665,60051,7,6.25,,0.75,056-5000-6,,,0,,Holiday Hills,McHenry,IL,McHenry,0,0
+51666,60051,7,6.25,,0.75,056-5000-6,,,0,,Johnsburg,McHenry,IL,McHenry,0,0
+51667,60051,7,6.25,,0.75,056-5000-6,,,0,,Lakemoor,McHenry,IL,McHenry,0,0
+51669,60051,7,6.25,,0.75,056-5000-6,,,0,,Volo,McHenry,IL,McHenry,0,0
+51668,60051,7,6.25,,0.75,056-5000-6,,,0,,McHenry,McHenry,IL,McHenry,0,1
+51670,60053,9.5,6.25,,2.25,016-5000-1,1,016-0043-5,0,,Morton Grove,Morton Grove,IL,Cook,0,1
+51671,60055,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Mellon Financial Services,Palatine,IL,Cook,0,0
+51675,60055,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51676,60056,9.5,6.25,,2.25,016-5000-1,1,016-0044-3,0,,Mount Prospect,Mount Prospect,IL,Cook,0,1
+51678,60060,8,6.25,,0.75,049-5000-6,1,049-0035-9,0,,Long Grove,Mundelein,IL,Lake,0,0
+51679,60060,8,6.25,,0.75,049-5000-6,1,049-0019-7,0,,Mundelein,Mundelein,IL,Lake,0,1
+51681,60061,7,6.25,,0.75,049-5000-6,,,0,,Vernon Hills,Vernon Hills,IL,Lake,0,1
+51680,60061,7,6.25,,0.75,049-5000-6,,,0,,Indian Creek,Vernon Hills,IL,Lake,0,0
+51682,60062,9.25,6.25,,2.25,016-5000-1,0.75,016-0046-1,0,,Northbrook,Northbrook,IL,Cook,0,1
+51683,60064,7,6.25,,0.75,049-5000-6,,,0,,Abbott Park,North Chicago,IL,Lake,0,0
+51684,60064,7,6.25,,0.75,049-5000-6,,,0,,Downey,North Chicago,IL,Lake,0,0
+51685,60064,7,6.25,,0.75,049-5000-6,,,0,,North Chicago,North Chicago,IL,Lake,0,1
+51686,60065,9.25,6.25,,2.25,016-5000-1,0.75,016-0046-1,0,,Northbrook,Northbrook,IL,Cook,0,1
+51691,60067,9.5,6.25,,2.25,016-5000-1,1,016-0152-0,0,,Hoffman Estates,Palatine,IL,Cook,0,0
+51692,60067,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Inverness,Palatine,IL,Cook,0,0
+51693,60067,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51694,60068,9.5,6.25,,2.25,016-5000-1,1,016-0056-7,0,,Park Ridge,Park Ridge,IL,Cook,0,1
+51696,60069,7,6.25,,0.75,049-5000-6,,,0,,Half Day,Lincolnshire,IL,Lake,0,0
+51695,60069,7,6.25,,0.75,049-5000-6,,,0,,Prairieview,Lincolnshire,IL,Lake,0,0
+51697,60069,7,6.25,,0.75,049-5000-6,,,0,,Lincolnshire,Lincolnshire,IL,Lake,0,1
+51699,60070,9,6.25,,2.25,016-5000-1,0.5,016-0084-2,0,,Prospect Heights,Prospect Heights,IL,Cook,0,1
+51705,60071,7,6.25,,0.75,056-5000-6,,,0,,Solon Mills,Richmond,IL,McHenry,0,0
+51701,60071,7,6.25,,0.75,056-5000-6,,,0,,Richmond,Richmond,IL,McHenry,0,1
+51706,60072,7,6.25,,0.75,056-5000-6,,,0,,Ringwood,Ringwood,IL,McHenry,0,1
+51708,60073,7,6.25,,0.75,049-5000-6,,,0,,Hainesville,Round Lake,IL,Lake,0,0
+51710,60073,7.5,6.25,,0.75,049-5000-6,0.5,049-0059-6,0,,Round Lake Beach,Round Lake,IL,Lake,0,0
+51711,60073,7,6.25,,0.75,049-5000-6,,,0,,Round Lake Heights,Round Lake,IL,Lake,0,0
+51712,60073,7,6.25,,0.75,049-5000-6,,,0,,Round Lake Park,Round Lake,IL,Lake,0,0
+51715,60073,8,6.25,,0.75,049-5000-6,1,049-0036-7,0,,Volo,Round Lake,IL,Lake,0,0
+51709,60073,7,6.25,,0.75,049-5000-6,,,0,,Round Lake,Round Lake,IL,Lake,0,1
+51716,60074,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Kildeer,Palatine,IL,Cook,0,0
+51720,60074,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51721,60075,7,6.25,,0.75,049-5000-6,,,0,,Russell,Russell,IL,Lake,0,1
+51722,60076,9.5,6.25,,2.25,016-5000-1,1,016-0045-1,0,,Skokie,Skokie,IL,Cook,0,1
+51723,60077,9.5,6.25,,2.25,016-5000-1,1,016-0045-1,0,,Skokie,Skokie,IL,Cook,0,1
+51724,60078,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51725,60079,8,6.25,,0.75,049-5000-6,1,049-0001-4,0,,Waukegan,Waukegan,IL,Lake,0,1
+51726,60081,7,6.25,,0.75,056-5000-6,,,0,,Spring Grove,Spring Grove,IL,McHenry,0,1
+51727,60082,8.5,6.25,,2.25,016-5000-1,,,0,,Techny,Techny,IL,Cook,0,1
+51728,60083,7,6.25,,0.75,049-5000-6,,,0,,Beach Park,Wadsworth,IL,Lake,0,0
+51730,60083,7,6.25,,0.75,049-5000-6,,,0,,Old Mill Creek,Wadsworth,IL,Lake,0,0
+51731,60083,7,6.25,,0.75,049-5000-6,,,0,,Wadsworth,Wadsworth,IL,Lake,0,1
+51736,60084,7,6.25,,0.75,049-5000-6,,,0,,Lake Barrington,Wauconda,IL,Lake,0,0
+51738,60084,7,6.25,,0.75,049-5000-6,,,0,,Wauconda,Wauconda,IL,Lake,0,1
+51739,60085,8,6.25,,0.75,049-5000-6,1,049-0071-5,0,,Park City,Waukegan,IL,Lake,0,0
+51740,60085,8,6.25,,0.75,049-5000-6,1,049-0001-4,0,,Waukegan,Waukegan,IL,Lake,0,1
+51742,60086,7,6.25,,0.75,049-5000-6,,,0,,Selective Service,North Chicago,IL,Lake,0,0
+51741,60086,7,6.25,,0.75,049-5000-6,,,0,,North Chicago,North Chicago,IL,Lake,0,1
+51743,60087,8,6.25,,0.75,049-5000-6,1,049-0001-4,0,,Beach Park,Waukegan,IL,Lake,0,0
+51744,60087,8,6.25,,0.75,049-5000-6,1,049-0001-4,0,,Waukegan,Waukegan,IL,Lake,0,1
+51745,60088,7,6.25,,0.75,049-5000-6,,,0,,Great Lakes,Great Lakes,IL,Lake,0,1
+51746,60088,7,6.25,,0.75,049-5000-6,,,0,,North Chicago,Great Lakes,IL,Lake,0,0
+51747,60089,8,6.25,,0.75,049-5000-6,1,049-0043-1,0,,Buffalo Grove,Buffalo Grove,IL,Lake,0,1
+51751,60090,9.5,6.25,,2.25,016-5000-1,1,016-0070-2,0,,Wheeling,Wheeling,IL,Cook,0,1
+51752,60091,8.75,6.25,,2.25,016-5000-1,0.25,016-0072-9,0,,Wilmette,Wilmette,IL,Cook,0,1
+51753,60092,7,6.25,,0.75,049-5000-6,,,0,,Libertyville,Libertyville,IL,Lake,0,1
+51755,60093,8.5,6.25,,2.25,016-5000-1,,,0,,Northfield,Winnetka,IL,Cook,0,0
+51754,60093,8.5,6.25,,2.25,016-5000-1,,,0,,Hubbard Woods,Winnetka,IL,Cook,0,0
+51756,60093,8.5,6.25,,2.25,016-5000-1,,,0,,Winnetka,Winnetka,IL,Cook,0,1
+51757,60094,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51758,60095,9.5,6.25,,2.25,016-5000-1,1,016-0054-0,0,,Palatine,Palatine,IL,Cook,0,1
+51759,60096,7,6.25,,0.75,049-5000-6,,,0,,Winthrop Harbor,Winthrop Harbor,IL,Lake,0,1
+51761,60097,7,6.25,,0.75,056-5000-6,,,0,,Bull Valley,Wonder Lake,IL,McHenry,0,0
+51762,60097,7,6.25,,0.75,056-5000-6,,,0,,Wonder Lake,Wonder Lake,IL,McHenry,0,1
+51767,60098,7,6.25,,0.75,056-5000-6,,,0,,Bull Valley,Woodstock,IL,McHenry,0,0
+51769,60098,7,6.25,,0.75,056-5000-6,,,0,,Greenwood,Woodstock,IL,McHenry,0,0
+51768,60098,7,6.25,,0.75,056-5000-6,,,0,,Woodstock,Woodstock,IL,McHenry,0,1
+51770,60099,7,6.25,,0.75,049-5000-6,,,0,,Beach Park,Zion,IL,Lake,0,0
+51771,60099,7,6.25,,0.75,049-5000-6,,,0,,Zion,Zion,IL,Lake,0,1
+51772,60101,8,6.25,,1,022-5000-7,0.75,022-0002-3,0,,Addison,Addison,IL,Dupage,0,1

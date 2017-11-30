@@ -1,0 +1,101 @@
+z2t_ID,ZipCode,SalesTaxRate,Jurisdiction,SalesTaxReportingCode,City,PostOffice,State,County,ShippingTaxable
+1353,51578,7,County of Shelby,83,Westphalia,Westphalia,IA,Shelby,0
+1355,51579,7,County of Harrison,43,Woodbine,Woodbine,IA,Harrison,0
+1356,51591,6,County of Montgomery,69,Red Oak,Red Oak,IA,Montgomery,0
+1357,51593,7,County of Shelby,83,Harlan,Harlan,IA,Shelby,0
+1358,51601,6,State of Iowa,0,Shenandoah,Shenandoah,IA,Page,0
+1360,51602,6,State of Iowa,0,Shenandoah,Shenandoah,IA,Page,0
+1362,51603,6,State of Iowa,0,Shenandoah,Shenandoah,IA,Page,0
+1363,51630,6,State of Iowa,0,Blanchard,Blanchard,IA,Page,0
+1338,51631,6,State of Iowa,0,Braddyville,Braddyville,IA,Page,0
+1339,51632,6,State of Iowa,0,Clarinda,Clarinda,IA,Page,0
+1340,51636,6,State of Iowa,0,Coin,Coin,IA,Page,0
+1341,51637,6,State of Iowa,0,College Springs,College Springs,IA,Page,0
+1365,51638,6,State of Iowa,0,Essex,Essex,IA,Page,0
+1366,51639,6,State of Iowa,0,Farragut,Farragut,IA,Fremont,0
+1367,51640,6,State of Iowa,0,Hamburg,Hamburg,IA,Fremont,0
+1368,51645,6,State of Iowa,0,Imogene,Imogene,IA,Fremont,0
+1369,51646,7,County of Taylor,87,New Market,New Market,IA,Taylor,0
+1370,51647,6,State of Iowa,0,Northboro,Northboro,IA,Page,0
+1371,51648,6,State of Iowa,0,Percival,Percival,IA,Fremont,0
+1372,51649,6,State of Iowa,0,Randolph,Randolph,IA,Fremont,0
+1373,51650,6,State of Iowa,0,Riverton,Riverton,IA,Fremont,0
+1374,51651,6,State of Iowa,0,Shambaugh,Shambaugh,IA,Page,0
+1375,51652,6,State of Iowa,0,Sidney,Sidney,IA,Fremont,0
+1376,51653,6,State of Iowa,0,Tabor,Tabor,IA,Fremont,0
+1378,51654,6,State of Iowa,0,Thurman,Thurman,IA,Fremont,0
+1379,51656,6,State of Iowa,0,Yorktown,Yorktown,IA,Page,0
+1381,52001,7,County of Dubuque,31,Dubuque,Dubuque,IA,Dubuque,0
+1384,52002,7,County of Dubuque,31,Dubuque,Dubuque,IA,Dubuque,0
+1385,52003,7,County of Dubuque,31,Dubuque,Dubuque,IA,Dubuque,0
+1392,52004,7,County of Dubuque,31,Dubuque,Dubuque,IA,Dubuque,0
+1393,52030,7,County of Jackson,49,Andrew,Andrew,IA,Jackson,0
+1394,52031,7,County of Jackson,49,Bellevue,Bellevue,IA,Jackson,0
+1395,52032,7,County of Dubuque,31,Bernard,Bernard,IA,Dubuque,0
+1396,52033,7,County of Dubuque,31,Cascade,Cascade,IA,Dubuque,0
+1398,52035,7,County of Delaware,28,Colesburg,Colesburg,IA,Delaware,0
+1400,52036,7,County of Delaware,28,Delaware,Delaware,IA,Delaware,0
+1401,52037,7,County of Clinton,23,Delmar,Delmar,IA,Clinton,0
+1403,52038,7,County of Delaware,28,Dundee,Dundee,IA,Delaware,0
+1404,52039,6,City of Durango,31,Durango,Durango,IA,Dubuque,0
+1405,52040,7,County of Dubuque,31,Dyersville,Dyersville,IA,Dubuque,0
+1407,52041,7,County of Delaware,28,Earlville,Earlville,IA,Delaware,0
+1408,52042,7,County of Clayton,22,Edgewood,Edgewood,IA,Clayton,0
+1413,52043,7,County of Clayton,22,Elkader,Elkader,IA,Clayton,0
+1417,52044,7,County of Clayton,22,Elkport,Elkport,IA,Clayton,0
+1419,52045,7,County of Dubuque,31,Epworth,Epworth,IA,Dubuque,0
+1420,52046,7,County of Dubuque,31,Farley,Farley,IA,Dubuque,0
+1421,52047,7,County of Clayton,22,Farmersburg,Farmersburg,IA,Clayton,0
+1424,52048,7,County of Clayton,22,Garber,Garber,IA,Clayton,0
+1426,52049,7,County of Clayton,22,Garnavillo,Garnavillo,IA,Clayton,0
+1427,52050,7,County of Delaware,28,Greeley,Greeley,IA,Delaware,0
+1428,52052,7,County of Clayton,22,Guttenberg,Guttenberg,IA,Clayton,0
+1083,52053,7,County of Dubuque,31,Holy Cross,Holy Cross,IA,Dubuque,0
+1084,52054,7,County of Jackson,49,La Motte,La Motte,IA,Jackson,0
+1085,52056,7,County of Dubuque,31,Luxemburg,Luxemburg,IA,Dubuque,0
+1087,52057,7,County of Delaware,28,Manchester,Manchester,IA,Delaware,0
+1094,52060,7,County of Jackson,49,Maquoketa,Maquoketa,IA,Jackson,0
+1097,52064,7,County of Jackson,49,Miles,Miles,IA,Jackson,0
+1098,52065,7,County of Dubuque,31,New Vienna,New Vienna,IA,Dubuque,0
+1101,52066,7,County of Clayton,22,North Buena Vista,North Buena Vista,IA,Clayton,0
+1103,52068,7,County of Dubuque,31,Peosta,Peosta,IA,Dubuque,0
+1104,52069,7,County of Jackson,49,Preston,Preston,IA,Jackson,0
+1105,52070,7,County of Jackson,49,Sabula,Sabula,IA,Jackson,0
+1106,52071,7,County of Jackson,49,Saint Donatus,Saint Donatus,IA,Jackson,0
+1107,52072,7,County of Clayton,22,Saint Olaf,Saint Olaf,IA,Clayton,0
+1108,52073,7,County of Dubuque,31,Sherrill,Sherrill,IA,Dubuque,0
+1109,52074,7,County of Jackson,49,Spragueville,Spragueville,IA,Jackson,0
+1110,52075,7,County of Jackson,49,Springbrook,Springbrook,IA,Jackson,0
+1111,52076,7,County of Clayton,22,Strawberry Point,Strawberry Point,IA,Clayton,0
+1113,52077,7,County of Clayton,22,Volga,Volga,IA,Clayton,0
+1114,52078,7,County of Dubuque,31,Worthington,Worthington,IA,Dubuque,0
+1116,52079,7,County of Dubuque,31,Zwingle,Zwingle,IA,Dubuque,0
+1118,52099,7,County of Dubuque,31,Dubuque,Dubuque,IA,Dubuque,0
+1121,52101,7,County of Winneshiek,96,Decorah,Decorah,IA,Winneshiek,0
+1128,52132,7,County of Winneshiek,96,Calmar,Calmar,IA,Winneshiek,0
+1130,52133,7,County of Winneshiek,96,Castalia,Castalia,IA,Winneshiek,0
+1131,52134,7,County of Howard,45,Chester,Chester,IA,Howard,0
+1132,52135,7,County of Fayette,33,Clermont,Clermont,IA,Fayette,0
+1133,52136,7,County of Howard,45,Cresco,Cresco,IA,Howard,0
+1138,52140,7,County of Allamakee,3,Dorchester,Dorchester,IA,Allamakee,0
+1140,52141,7,County of Fayette,33,Elgin,Elgin,IA,Fayette,0
+1143,52142,7,County of Fayette,33,Fayette,Fayette,IA,Fayette,0
+1146,52144,7,County of Winneshiek,96,Fort Atkinson,Fort Atkinson,IA,Winneshiek,0
+1148,52146,7,County of Allamakee,3,Harpers Ferry,Harpers Ferry,IA,Allamakee,0
+1150,52147,7,County of Fayette,33,Hawkeye,Hawkeye,IA,Fayette,0
+1151,52149,7,County of Winneshiek,96,Highlandville,Highlandville,IA,Winneshiek,0
+1153,52151,7,County of Allamakee,3,Lansing,Lansing,IA,Allamakee,0
+1155,52154,7,County of Chickasaw,19,Lawler,Lawler,IA,Chickasaw,0
+1159,52155,7,County of Howard,45,Lime Springs,Lime Springs,IA,Howard,0
+1162,52156,7,County of Clayton,22,Luana,Luana,IA,Clayton,0
+1164,52157,7,County of Clayton,22,Mc Gregor,Mc Gregor,IA,Clayton,0
+1165,52158,7,County of Clayton,22,Marquette,Marquette,IA,Clayton,0
+1166,52159,7,County of Clayton,22,Monona,Monona,IA,Clayton,0
+1170,52160,7,County of Allamakee,3,New Albin,New Albin,IA,Allamakee,0
+1171,52161,7,County of Winneshiek,96,Ossian,Ossian,IA,Winneshiek,0
+1174,52162,7,County of Allamakee,3,Postville,Postville,IA,Allamakee,0
+1175,52163,7,County of Howard,45,Protivin,Protivin,IA,Howard,0
+1176,52164,7,County of Fayette,33,Randalia,Randalia,IA,Fayette,0
+1177,52165,7,County of Winneshiek,96,Ridgeway,Ridgeway,IA,Winneshiek,0
+1178,52166,7,County of Fayette,33,Saint Lucas,Saint Lucas,IA,Fayette,0
+1180,52168,7,County of Winneshiek,96,Spillville,Spillville,IA,Winneshiek,0

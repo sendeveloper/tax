@@ -1,0 +1,966 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<!-- %
+    Session("activePage") = "Home"
+    Session("currentPage") = "developers/z2t_developers_"
+    Session("currentPage") = "index.asp"
+% -->
+
+
+
+<html>
+  <head>
+    <title>United States sales tax rates</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="keywords" content="sales tax by county,sales tax for,sales tax calculator,state sales tax rate,
+                state sales tax rates,sales tax rate,what is the sales tax for,what is the sales tax in,tax for zip code,
+                county sales tax,sales tax table,sales tax rates by,sales tax amount,sales tax rates for,sales tax zip code,
+                local tax rates,local sales tax rates,sales tax charts,sale tax rate by zip code,how much is the sales tax,
+                sales tax lookup,sales tax by city,sales tax rates by,sales tax rates by zip code">
+    <meta name="description" content="Zip2Tax specializes in sales tax and use tax for every state in the U.S. Try it for 
+                free today and the tax rate information you need will be at your fingertips instantly!">
+    <meta name="robots" content="index,follow">
+    <meta name="verify-v1" content="q0BWCUmQlxYKPjY3G4LpF0lihwZNVwzrEDOWMV4BjpQ=">
+    <script language="javascript" src="/includes/z2t_functions.js" type="text/javascript"></script>
+    <link href="/includes/z2t_screen.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="/includes/z2t_print.css" rel="stylesheet" type="text/css" media="print">
+<!--[if lt IE 8]>
+    <link href="/includes/z2t_screen_ie_lt8.css" rel="stylesheet" type="text/css" media="screen">
+<![endif]-->
+<!--[if IE]>
+    <link href="/includes/z2t_screen_ie.css" rel="stylesheet" type="text/css" media="screen">
+<![endif]-->
+    <link href="http://chatserver.comm100.com/css/comm100_livechatbutton.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/includes/lib.js"></script>
+    <script language="javascript" type="text/javascript">
+      function formLoad() {
+        document.getElementById('JavaScriptTest').innerHTML = 'Pass';
+        //document.getElementById('inputZip').focus()
+
+        // state map zoom-in
+        function position(object) {
+          var position = xy(object);
+          var left = position[0];
+          var top = position[1];
+          var right = left -  parseFloat(css(object).width);
+          var bottom = top - parseFloat(css(object).height);
+          return [right, bottom];}
+
+        listen(get("#state-pull-down"), "change", function(event){window.location = "/State/" + this.value.replace(" ", "-") + "-State-Rates/index.html"});
+        var floatRate = node("div", ["style", "border 1px solid black; color: black; background-color: white; font-size: 2em; visibility: hidden; position: absolute; top: 5em; left: 5em; width: auto; height: auto;"], text("State Rate"));
+        get("area").forEach(function(e){
+          listen(e, "mouseover", function(event){floatRate.innerHTML = this.className.replace("-", " "); floatRate.style.top = px(xy(event).y - floatRate.clientHeight - 10); floatRate.style.left = px(xy(event).x - (floatRate.clientWidth / 2)); floatRate.style.visibility = "visible";});
+          listen(e, "mouseout", function(event){floatRate.style.visibility = "hidden"});});
+        get("body")[0].appendChild(floatRate);
+        return;}
+
+      window.onload = formLoad;
+
+      function xy(event) {
+        var x = 0;
+        var y = 0;
+        if (!event) var event = window.event;
+        if (event.pageX || event.pageY) {
+          x = event.pageX;
+          y = event.pageY;}
+        else if (event.clientX || event.clientY) {
+          x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;}
+        return {x: x, y: y};}
+
+    </script>
+
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8941943-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+    <style>
+      h1 {text-align: left; margin-top: 1em; margin-bottom: 1em;}
+      h2 {margin-bottom: .5em;}
+      ul.disc {list-style: disc outside none !important;}
+
+      .box h1 {margin-bottom: 0em; margin-top: 0em;}
+      .box h2 {margin-bottom: 0em;}
+      .post > h1.title {
+        margin: 45px 0 20px 0;
+        padding-left: 33px;
+        background: url(../../images/star.gif) no-repeat left top !important;}
+
+      .post h2.title {
+        margin: 45px 0 20px 0;
+        padding-left: 33px;
+                          margin-left: -33px;
+        background: url(../../images/star.gif) no-repeat left top !important;}
+
+      /* h2.title {margin-left: -5em;} */
+    </style>
+  </head>
+
+  <body>
+    <div id="divMain">
+      
+      <div id="divPageTop">
+        <!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  // google
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();
+</script>
+
+
+
+
+
+<div id="divPageHeading" class="NoPrint">
+  
+  <div style="width: 1200px; height: 147px; overflow: hidden; margin: 0 auto">
+    <div style="width: 300px; float: left; padding-top: 2em;">
+      &nbsp;
+      <!--Comm100 Live Chat - REMOVE THE WORDS virtual= to disable the chat-->
+      <!-- Lucinda edit -11_30_2012  BEGIN Comm100 Live Chat Button Code --><a href="http://livechat.comm100.com/" target="_blank" onclick="comm100_49685.openChatWindow(event,731,-1);return false;"><img style="border:0px" id="comm100_ButtonImage" src="http://chatserver.comm100.com/BBS.aspx?siteId=49685&amp;planId=731&amp;partnerId=-1" alt="Live Chat"/></a><script src="http://chatserver.comm100.com/js/LiveChat.js?siteId=49685&amp;planId=731&amp;partnerId=-1" type="text/javascript"></script><!-- End Comm100 Live Chat Button Code -->
+
+    </div>
+    <div style="width: 500px; float: left;
+                padding: 15px 0 0 0;">
+      <img src="http://www.Zip2Tax.com/Images/logo_header.png" alt="Zip2Tax Logo"
+           Title="Zip2Tax, LLC Tax Data Providers">
+    </div>
+    <div style="width: 350px; float: left; color: #FFFFFF;
+                padding: 20px 0 0 0px;
+                font-size: 18px;">
+      <div>Sales & Use Tax Rates</div>
+      <div>for State, County, City</div>
+      <div>and Special Districts</div>
+    </div>
+    <div style="display: inline-block; margin-top: 1em; margin-right: .5em; white-space: nowrap;font-weight: bold;font-size: 20px;color: #FFFFFF;">
+      1-866-492-8494
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="NoScreen">
+  <div style="text-align: center;">
+    <img src="http://www.Zip2Tax.com/Images/logo_header.png" alt="Zip2Tax Logo"><br>
+  </div>
+  
+  <hr>
+  
+  <div style="text-align: center;
+              font-weight: bold; 
+              font-size: 24px;">
+    Zip Code Lookup of Sales Tax Jurisdictions
+  </div>
+  
+  <hr>
+
+</div>
+<div class="NoPrint">
+  
+  <div id="menu">
+    <div class="menu">
+      <div id="moonmenu" class="halfmoon">
+        <ul>
+          <li ><a href="http://www.Zip2Tax.com" rel="dropmenuHome">Home <img src="/images/button/open_menu.png" alt="open home menu"></a></li>
+          <li ><a href="/z2t_tax_rates.asp" rel="dropmenuLookup">Tax Rates <img src="/images/button/open_menu.png" alt="open tax rates menu"></a></li>
+          <li ><a href="/z2t_services.asp" rel="dropmenuServices">Products <img src="/images/button/open_menu.png" alt="open product menu" /></a></li>
+          <li ><a href="/z2t_Contact.asp" rel="dropmenuSupport">Support <img src="/images/button/open_menu.png" alt="open support menu" /></a></li>
+          <li style="display: none;"><a href="javascript:openPopUpSize('/includes/BodyParts/LoginPopup.asp', 400, 300);void(0);" title="Information About Your Account" rel="dropmenuAccount">Login<img src="/images/button/open_menu.png" alt="open menu"></a></li>
+        </ul>
+
+        <form class="search" action="http://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_blank" style="float: right; margin-right: 14em">
+          <input type="hidden" name="si" value="13834268" />
+          <input type="hidden" name="pid" value="r" />
+          <input type="hidden" name="n" value="0" />
+          <input type="hidden" name="_charset_" value="" />
+          <input type="hidden" name="bcd" value="&#247;" />
+          <input type="text" name="query" size="15" />
+          <input type="submit" value=" search " class="redButton w80" />
+        </form>
+
+        <!-- 0th drop-down menu -->
+        <div id="dropmenuHome" class="dropmenudiv_e" style="width:200px">
+          <a href="/z2t_aboutus.asp">About Us</a>
+          <a href="/z2t_Customer_Commitment.asp">Quality Pledge</a>
+          <a href="/z2t_customers.asp">Customers</a>
+          <a href="/z2t_testimonials.asp">Testimonials</a>
+          <a href="/z2t_sitemap.asp">Site Map</a>
+        </div>
+
+        <!-- 1st drop-down menu -->
+        <div id="dropmenuLookup" class="dropmenudiv_e" style="width:200px">
+          <a href="/z2t_lookup.asp">ZIP Code Lookup</a>
+          <a href="/Online-Lookups/z2t_lookup.asp">PinPoint Lookup</a>
+          <a href="/services/z2t_widget.asp">Desktop Widget</a>
+          <a href="/state/United-States-Sales-Tax/index.html">Taxes By State</a>
+          <a href="http://blog.zip2tax.com/">News Blog</a>
+        </div>
+
+        <!-- 2nd drop-down menu -->
+        <div id="dropmenuServices" class="dropmenudiv_e" style="width:200px">
+          <a href="/z2t_comparison_chart.asp">Compare Services</a>
+          <a href="/shopping/z2t_services.asp#PageSection1">Online Lookup</a>
+          <a href="/shopping/z2t_services.asp#PageSection2">Database Interface</a>
+          <a href="/shopping/z2t_services.asp#PageSection3">.CSV Tax Tables</a>
+        </div>
+
+        <!-- 3th drop-down menu -->
+        <div id="dropmenuSupport" class="dropmenudiv_e" style="width:200px">
+          <a href="/z2t_faq.asp">FAQs</a>
+          <a href="/developers/z2t_developers.asp">Developers</a>
+          <a href="/z2t_sample_tables.asp">Sample Tables</a>
+          <a href="/resources/z2t_resources.asp">Resources</a>
+        </div>
+
+        <script type="text/javascript" src="/Includes/BodyParts/content_menu.js"></script>
+        <script type="text/javascript">
+          tabdropdown.init("moonmenu", 1)
+        </script>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+      </div><!-- divPageTop -->
+      
+
+      <div id="divPageMiddle">
+        <div id="divPageLeft">
+          <div class="supplemental services-menu">
+
+  <div class="centering alt-title">
+	<img src="/images/can_do.png" alt="Zip2Tax Sales Tax Services and Prices">
+  </div>
+
+  <br>
+    
+    <a href='http://www.zip2tax.com/downloads/PrintablePriceList.pdf' target='_blank'>
+    Printable Subscription Price List</a><br><br>
+    <a href="http://www.zip2tax.com/z2t_customer_commitment.asp">Our Commitment To You</a><br><br>
+    <a href="http://www.zip2tax.com/z2t_customers.asp">Who Uses Zip2Tax?</a><br><br>
+    <a href="http://www.zip2tax.com/free/CartAdOns/z2t_table_formats.asp">Table Formats</a><br><br>
+    <a href="http://www.zip2tax.com/z2t_privacypolicy.asp">Privacy Policy</a><br><br>
+    <a href="http://www.zip2tax.com/z2t_eula.asp">License Agreement </a><br><br>
+</div>
+
+        <p>&nbsp; </p>
+        <div class="supplemental services-menu">
+
+  <div class="centering alt-title"><img src="/images/services.png" alt="Services"></div>
+  <a href='/downloads/PrintablePriceList.pdf' target='_blank'>Click for Printable Price List</a>
+  <ol>   
+    <li onClick="clickLink(1);"
+        style="background-image: url('/images/ServicesBox/servicesbox_1.png');">
+      <h2 class="title">Online Lookup</h2>
+      <p>Up to five users can log in to this web site to access the ZIP Code to Sales and Use Tax Calculator</p></li>
+
+    <li onClick="clickLink(2);"
+        style="background-image: url(/images/ServicesBox/servicesbox_2.png);">
+      <h2 class="title">Database Interface</h2>
+      <p>Access real-time sales tax data instantly when you link to our SQL or MySQL servers</p></li>
+
+    <li onClick="clickLink(3);"
+        style="background-image: url(/images/ServicesBox/servicesbox_3.png);">
+      <h2 class="title">Tax Tables</h2>
+    <p>Sales and Use tax data is right at your fingertips with .CSV format tables</p></li></ol>
+
+</div>
+
+        </div><!-- divPageLeft -->
+
+        <div id="divPageCenter">
+          <div id="content">
+  <div  class="post">
+    <h1 class="title">Everything you need to know about <span style="white-space: nowrap;">sales and use tax in the United States</span></h1>
+    <div class="entry">
+      <h2>What are sales taxes?</h2>
+      
+        <p><span class="firstword">Sales taxes are a state-imposed fee</span> that is collected on most retail purchases. 
+        Individual states  determine what percentage of a retail sale is to be collected, and what types of sales can be exempted. While the buyer is  responsible for paying the tax, it is the seller who is normally tasked with collecting the tax from the buyer and remitting it to the state in a timely fashion. 
+        <p><span class="firstword">Tax rates and tax codes</span> vary
+          considerably from state to state across the United States,
+          the District of Columbia and the various possessions. Most
+          states don't levy a state-wide flat tax rate, but rather,
+          allow each county, city, and special district to add on an
+          additional tax of their own. To see detailed information
+          about the general sales tax rates and laws for any given
+          state, click on the map below or use this pull down menu.
+	  <select id="state-pull-down">
+	    <option value="Alabama">Alabama</option>
+	    <option value="Alaska">Alaska</option>
+	    <!-- option value="American Samoa">American Samoa</option -->
+	    <!-- option value="APO/FPO">APO/FPO</option -->
+	    <!-- option value="APO/FPO">APO/FPO</option -->
+	    <!-- option value="APO/FPO">APO/FPO</option -->
+	    <option value="Arizona">Arizona</option>
+	    <option value="Arkansas">Arkansas</option>
+	    <option value="California">California</option>
+	    <option value="Colorado">Colorado</option>
+	    <!-- option value="District-of-Columbia">Columbia, District of</option -->
+	    <option value="Connecticut">Connecticut</option>
+	    <option value="Delaware">Delaware</option>
+	    <option value="Florida">Florida</option>
+	    <option value="Georgia">Georgia</option>
+	    <!-- option value="Guam">Guam</option -->
+	    <option value="Hawaii">Hawaii</option>
+	    <option value="Idaho">Idaho</option>
+	    <option value="Illinois">Illinois</option>
+	    <option value="Indiana">Indiana</option>
+	    <option value="Iowa">Iowa</option>
+	    <option value="Kansas">Kansas</option>
+	    <option value="Kentucky">Kentucky</option>
+	    <option value="Louisiana">Louisiana</option>
+	    <option value="Maine">Maine</option>
+	    <!-- option value="Mariana Islands">Mariana Islands</option -->
+	    <!-- option value="Marshall Islands">Marshall Islands</option -->
+	    <option value="Maryland">Maryland</option>
+	    <option value="Massachusetts">Massachusetts</option>
+	    <option value="Michigan">Michigan</option>
+	    <!-- option value="Micronesia">Micronesia</option -->
+	    <option value="Minnesota">Minnesota</option>
+	    <option value="Mississippi">Mississippi</option>
+	    <option value="Missouri">Missouri</option>
+	    <option value="Montana">Montana</option>
+	    <option value="Nebraska">Nebraska</option>
+	    <option value="Nevada">Nevada</option>
+	    <option value="New Hampshire">New Hampshire</option>
+	    <option value="New Jersey">New Jersey</option>
+	    <option value="New Mexico">New Mexico</option>
+	    <option value="New York">New York</option>
+	    <option value="North Carolina">North Carolina</option>
+	    <option value="North Dakota">North Dakota</option>
+	    <option value="Ohio">Ohio</option>
+	    <option value="Oklahoma">Oklahoma</option>
+	    <option value="Oregon">Oregon</option>
+	    <!-- option value="Palau">Palau</option -->
+	    <option value="Pennsylvania">Pennsylvania</option>
+	    <!-- option value="Puerto Rico">Puerto Rico</option -->
+	    <option value="Rhode Island">Rhode Island</option>
+	    <option value="South Carolina">South Carolina</option>
+	    <option value="South Dakota">South Dakota</option>
+	    <option value="Tennessee">Tennessee</option>
+	    <option value="Texas">Texas</option>
+	    <option value="Utah">Utah</option>
+	    <option value="Vermont">Vermont</option>
+	    <!-- option value="Virgin Islands">Virgin Islands</option -->
+	    <option value="Virginia">Virginia</option>
+	    <option value="Washington">Washington</option>
+	    <option value="West Virginia">West Virginia</option>
+	    <option value="Wisconsin">Wisconsin</option>
+	    <option value="Wyoming">Wyoming</option>
+	</select></p>
+
+      <img src="/Images/States/US-sales-tax-map.png" alt="clickable US Map" name="US-sales-tax-map" width="600" height="400" border="0" usemap="#m_US-sales-tax-map">
+      <p><map name="m_US-sales-tax-map">
+	  <area class="Missouri" shape="poly" coords="311,160,353,159,362,183,372,194,378,212,359,213,320,218,320,169" href="/State/Missouri-State-Rates/index.html" alt="">
+	  <area class="Louisiana" shape="poly" coords="329,263,363,264,358,290,382,291,391,315,369,318,333,310,329,263" href="/State/Louisiana-State-Rates/index.html" alt="">
+	  <area class="New York" shape="poly" coords="479,107,515,72,530,66,540,128,474,123,479,107" href="/state/New-York-State-Rates/index.html" alt="New York sales tax information">
+	  <area class="Vermont" shape="poly" coords="531,70,539,100,548,97,548,66,531,70" href="/State/Vermont-State-Rates/index.html" alt="">
+	  <area class="New Hampshire" shape="poly" coords="552,59,548,66,547,98,562,91,552,59" href="/State/New-Hampshire-State-Rates/index.html" alt="">
+	  <area class="Maine" shape="poly" coords="552,59,562,88,591,56,572,25,561,26,552,59" href="/State/Maine-State-Rates/index.html" alt="">
+	  <area class="Massachusetts" shape="poly" coords="540,100,539,111,560,105,566,110,576,107,562,94,540,100" href="/State/Massachusetts-State-Rates/index.html" alt="">
+	  <area class="Connecticut" shape="poly" coords="539,112,541,123,556,117,558,107,540,111,539,112" href="/State/Connecticut-State-Rates/index.html" alt="">
+	  <area class="Rhode Island" shape="poly" coords="582,115,582,126,595,129,594,119,582,115" href="/State/Rhode-Island-State-Rates/index.html" alt="">
+	  <area class="Rhode Island" shape="poly" coords="557,106,558,116,563,112,565,112,560,107,557,106" href="/State/Rhode-Island-State-Rates/index.html" alt="">
+	  <area class="New Jersey" shape="poly" coords="528,123,525,147,535,154,540,127,528,123" href="/State/New-Jersey-State-Rates/index.html" alt="">
+	  <area class="Maryland" shape="poly" coords="546,204,545,215,560,219,561,211,560,207,546,204" href="/State/Maryland-State-Rates/index.html" alt="">
+	  <area class="Columbia" shape="poly" coords="555,190,553,199,567,202,569,194,555,190" href="/State/District-of-Columbia-State-Rates/index.html" alt="">
+	  <area class="Delaware" shape="poly" coords="563,174,559,184,571,188,575,182,575,178,563,174" href="/State/Delaware-State-Rates/index.html" alt="">
+	  <area class="Delaware" shape="poly" coords="522,147,531,165,534,162,522,147" href="/State/Delaware-State-Rates/index.html" alt="">
+	  <area class="Maryland" shape="poly" coords="502,153,517,173,532,165,521,155,521,149,502,153" href="/State/Maryland-State-Rates/index.html" alt="">
+	  <area class="West Virginia" shape="poly" coords="471,152,453,179,465,195,483,186,489,174,496,160,469,155,471,152" href="/State/West-Virginia-State-Rates/index.html" alt="">
+	  <area class="Pennsylvania" shape="poly" coords="467,127,472,158,524,148,532,139,527,124,519,116,474,123,467,127" href="/State/Pennsylvania-State-Rates/index.html" alt="">
+	  <area class="Ohio" shape="poly" coords="424,137,428,172,454,177,471,148,466,128,449,136,424,137" href="/State/Ohio-State-Rates/index.html" alt="">
+	  <area class="Michigan" shape="poly" coords="419,79,405,95,406,121,400,138,438,133,445,118,432,87,419,79" href="/State/Michigan-State-Rates/index.html" alt="">
+	  <area class="Wisconsin" shape="poly" coords="343,73,357,70,390,90,390,127,362,130,338,99,343,73" href="/State/Wisconsin-State-Rates/index.html" alt="">
+	  <area class="Iowa" shape="poly" coords="300,117,354,117,366,138,355,157,309,157,300,119,300,117" href="/State/Iowa-State-Rates/index.html" alt="">
+	  <area class="Minnesota" shape="poly" coords="299,35,368,52,343,73,338,101,355,116,300,116,294,41" href="/State/Minnesota-State-Rates/index.html" alt="">
+	  <area class="Illinois" shape="poly" coords="382,207,394,195,395,142,390,129,362,131,366,140,358,147,354,169,382,207" href="/State/Illinois-State-Rates/index.html" alt="">
+	  <area class="Indiana" shape="poly" coords="396,140,394,194,426,177,423,137,396,140" href="/State/Indiana-State-Rates/index.html" alt="">
+	  <area class="Kentucky" shape="poly" coords="383,210,431,173,449,176,459,190,447,205,383,210" href="/State/Kentucky-State-Rates/index.html" alt="">
+	  <area class="Virginia" shape="poly" coords="449,206,531,194,511,165,500,161,479,189,467,195,461,193,449,206" href="/State/Virginia-State-Rates/index.html" alt="">
+	  <area class="Tennessee" shape="poly" coords="377,215,375,234,441,230,468,205,380,214,377,215" href="/State/Tennessee-State-Rates/index.html" alt="">
+	  <area class="North Carolina" shape="poly" coords="467,205,439,228,477,223,508,236,530,195,467,205" href="/State/North-Carolina-State-Rates/index.html" alt="">
+	  <area class="South Carolina" shape="poly" coords="454,231,478,222,492,227,510,238,485,265,454,231" href="/State/South-Carolina-State-Rates/index.html" alt="">
+	  <area class="Georgia" shape="poly" coords="425,233,439,288,483,286,484,260,453,230,425,233" href="/State/Georgia-State-Rates/index.html" alt="">
+	  <area class="Florida" shape="poly" coords="406,290,410,298,452,299,500,374,510,338,483,287,406,290" href="/State/Florida-State-Rates/index.html" alt="">
+	  <area class="Alabama" shape="poly" coords="400,301,411,302,406,292,437,289,425,235,396,236,400,301" href="/State/Alabama-State-Rates/index.html" alt="">
+	  <area class="Mississippi" shape="poly" coords="373,233,357,292,381,294,385,305,399,300,397,238,374,237" href="/State/Mississippi-State-Rates/index.html" alt="">
+	  <area class="Arkansas" shape="poly" coords="322,218,373,215,362,262,331,264,322,218" href="/State/Arkansas-State-Rates/index.html" alt="">
+	  <area class="Oklahoma" shape="poly" coords="228,209,228,214,260,217,261,242,324,255,319,210,228,209" href="/State/Oklahoma-State-Rates/index.html" alt="">
+	  <area class="Texas" shape="poly" coords="183,278,215,319,241,311,278,368,334,308,328,258,262,244,260,217,228,214,221,275,180,277,179,276,183,278" href="/State/Texas-State-Rates/index.html" alt="">
+	  <area class="Hawaii" shape="poly" coords="160,308,155,322,244,392,268,369,223,329,160,308" href="/State/Hawaii-State-Rates/index.html" alt="">
+	  <area class="Alaska" shape="poly" coords="94,279,117,276,151,293,142,336,179,361,175,376,145,347,63,362,91,286" href="/State/Alaska-State-Rates/index.html" alt="">
+	  <area class="New Mexico" shape="poly" coords="161,200,227,207,221,275,152,279,161,200" href="/State/New-Mexico-State-Rates/index.html" alt="">
+	  <area class="Arizona" shape="poly" coords="100,187,85,248,148,277,159,199,105,190" href="/State/Arizona-State-Rates/index.html" alt="">
+	  <area class="California " shape="poly" coords="15,94,58,107,46,141,96,228,87,247,56,244,25,209,17,156,6,116,15,94" href="/State/California-State-Rates/index.html" alt="">
+	  <area class="Kansas" shape="poly" coords="241,166,319,168,321,209,241,207,241,166" href="/State/Kansas-State-Rates/index.html" alt="">
+	  <area class="Colorado" shape="poly" coords="166,144,160,196,239,206,241,150,166,144" href="/State/Colorado-State-Rates/index.html" alt="">
+	  <area class="Nebraska" shape="poly" coords="222,120,220,149,240,152,243,165,313,167,299,129,222,120" href="/State/Nebraska-State-Rates/index.html" alt="">
+	  <area class="Utah" shape="poly" coords="117,122,101,190,159,199,167,147,146,142,148,128,117,122" href="/State/Utah-State-Rates/index.html" alt="">
+	  <area class="Nevada" shape="poly" coords="58,108,46,146,92,216,117,121,58,108" href="/State/Nevada-State-Rates/index.html" alt="">
+	  <area class="Wyoming" shape="poly" coords="157,86,149,139,220,148,224,92,157,86" href="/State/Wyoming-State-Rates/index.html" alt="">
+	  <area class="South Dakota" shape="poly" coords="226,80,224,120,299,129,301,86,226,80" href="/State/South-Dakota-State-Rates/index.html" alt="">
+	  <area class="North Dakota" shape="poly" coords="232,33,227,79,298,83,295,34,230,37" href="/State/North-Dakota-State-Rates/index.html" alt="">
+	  <area class="Montana" shape="poly" coords="231,31,226,95,153,93,136,90,121,13,230,32" href="/State/Montana-State-Rates/index.html" alt="">
+	  <area class="Idaho" shape="poly" coords="112,13,87,111,147,126,155,90,137,89,123,14,108,20" href="/State/Idaho-State-Rates/index.html" alt="">
+	  <area class="Oregon" shape="poly" coords="36,39,14,94,87,113,101,58,36,39" href="/State/Oregon-State-Rates/index.html" alt="">
+	  <area class="Washington" shape="poly" coords="36,6,36,36,46,50,100,57,109,11,70,0,36,6" href="/State/Washington-State-Rates/index.html" alt="">
+      </map></p>
+
+      <p><span class="firstword">To see a full breakout</span> of
+                                 sales tax rates for the entire country by state, county, city and
+                                 special district, use our easy United States
+                                 <a href="http://www.zip2tax.com/z2t_lookup.asp">sales tax calculator</a>. 
+                                 After putting in any ZIP code, you can enter a retail price to
+                                 calculate sales tax totals.</p>
+
+      <p><span class="firstword">Taxes in the U.S.</span> are either 
+                                 destination-based, meaning the sales tax rate is based, or determined
+                                 from, the destination an item is shipped to, or origin-based, meaning the rate is                                 determined by the location the sale took place.
+                                 It is critical for a retailer to know if the states they are selling product in and/or too are 
+                                 destination or origin based. This makes it complicated for retailers who need to have the exact and
+            up-to-date sales tax rate for a "moving target".</p>
+      
+      <h2 class="title">What is use tax?</h2>
+      <p><span class="firstword">In most states,</span>
+                                 use tax is due on every retail purchase that was not charged sales tax, 
+                                 excluding tax-exempt sales. Many, but not all, states charge use tax at the same percentage 
+                                 as sales tax. In some states, use tax rates differ from sales 
+            tax rates at the state, county, city and/or special district levels.</p>
+      
+      <p><span class="firstword">Many U.S. tax payers</span> do not realize that use tax is due to the state you reside in on ALL transactions where
+            sales tax has not been paid, even out-of-state internet sales.</p>
+      
+      
+      <h2 class="title">How do you know who has to pay whom?</h2>
+      <p><span class="firstword">In general</span>, a business must
+                                 collect and remit all applicable sales taxes if that business
+                                 has nexus, a physical presence such as a brick-and-mortar
+                                 location, within a given state. The presence of an employee or
+                                 salesperson, delivery by the seller's vehicle, and storage of
+            materials usually establishes nexus.</p>
+      
+      <p><span class="firstword">Nexus definitions vary</span> from state to state. Many states say that an
+                                 out-of-state seller is required to collect tax if they can be
+                                 defined as "doing substantial business" in a given state. "Substantial business"
+                                 can sometimes include: out-of-state businesses using in-state affiliates, advertisers
+            or vendors, or businesses that make internet sales or mail catalogs.</p>
+      
+      <p><span class="firstword">If you are not sure</span> if you
+                                 have established nexus in a given state, you can usually
+                                 get free help by contacting the state's <a href="http://www.zip2tax.com/z2t_faq.asp#states">
+                                 Department of Revenue.</a> You could also
+                                 contact a qualified <a href="http://www.zip2tax.com/resources/z2t_Resources.asp">certified public accountant
+                                 or lawyer who specializes in sales tax.</a> 
+
+      <h2 class="title">Special rules applying to <br>
+                        sales and use taxes in the United States</h2>
+      <ul style="list-style-type: disc !important; list-style-position: outside !important;">
+        <li>Shipping is frequently not taxable if stated separately on the invoice.</li>
+        <li>Finance charges are often exempt from sales tax, when stated separately.</li>
+        <li>Often, non-discretionary items, such as food and clothing, are taxed at a rate which is not the same as the general sales tax.</li>
+        <li>Frequently, some items are exempted from sales tax for short periods of time, usually called sales tax holidays.</li>
+        </ul>
+      <p><span class="firstword">Sales taxes are but one of a
+	mixture</span> of different types of taxes that are used to
+	maintain government, infrastructure, and state-run programs.
+	Other types of taxes include income, corporate, payroll,
+	excise, and more. </p>
+      <p><span class="firstword">Since state legislators</span> can
+        vote to change sales and use tax rates at any time, it is very
+        difficult for individuals to keep track of the changes. The
+        population of most states is also rapidly changing, which can
+        cause frequent updates to the ZIP codes as well as local
+        municipality names, which complicates the job of keeping track
+        of sales tax jurisdictions.</p>
+    </div><!-- entry -->
+  </div><!-- post -->
+</div><!-- content -->
+
+        </div><!-- divPageCenter -->
+
+        <div id="divPageRight">
+          
+      <div class="NoPrint">
+
+        <div id="lookupbox" class="box">
+          <h2 class="title">Look Up The Tax</h2>
+          <div class="content">
+            <Form Method="post" Action="z2t_lookup.asp" Name="formLookup">
+              <table border="0" cellspacing="2" cellpadding="0">
+
+                <tr>
+                  <td width="50%" align="right">
+                    Zip Code: 
+                  </td>
+                  <td width="50%" align="left">
+                    <div id='inputDiv'>
+                      <INPUT TYPE="text" size="10" NAME="inputZip" ID="inputZip" 
+                        onKeyPress="return keyPressNumbersOnly(this, event);">
+                    </div>
+                  </td>		 
+                </tr>
+
+                <tr>
+                  <td>&nbsp;</td>
+                  <td align="left">
+                    <a href="javascript:clickLookup();" class="button">Lookup</a>
+                  </td>
+		</tr>
+
+
+
+
+                <tr>
+                  <td align="left" colspan="2" style="font-size: 11px;">
+                    <br>
+                    <span style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold;">
+                      Try it for FREE.
+                    </span>
+                    Enter a ZIP code to get the sales tax rate.  
+                    50 Free Lookups (Max. 10 per day)
+                  </td>
+		</tr>
+
+
+
+
+              </table>
+
+            </Form>
+          </div>
+        </div>
+
+      </div>
+<div class="NoPrint">
+	<div id="services" class="box">
+		<div class="NoPrint">
+            <div id="services0" class="box" 
+                onclick="openPopUp('http://zip2tax.com/Inbound/z2t_signup.asp');" 
+                style="cursor: pointer;">
+                <h2 class="title">
+                    Need Answers?</h2>
+                <div class="background-click" 
+                    style="border: 1px solid transparent; background: rgb(204, 204, 204) url('/images/marketing/whitepaperdownload.png') no-repeat scroll; background-size: contain; width: 215px; height: 228px;">
+                    <div style="margin-top: 20%; margin-left: 1em; margin-right: 35%; padding: 0em;">
+                    </div>
+                    <!-- margins -->
+                </div>
+                <!-- background image -->
+            </div>
+            <!-- box -->
+        </div>
+        <!-- NoPrint -->
+<!--link href="/Includes/z2t_screen.css" rel="stylesheet" type="text/css" /-->
+        <div class="box">
+            <h2 class="title">
+                Stay Updated</h2>
+            <div class="centering content">
+                <strong>
+                <a href="javascript:openPopUp('http://www.zip2tax.com/Inbound/z2t_newsletter.asp');void(0);">
+                Sign up for our newsletters!<br />
+                </a></strong>
+            </div>
+        </div>
+        <strong>
+        <a href="javascript:openPopUp('http://www.zip2tax.com/Inbound/z2t_newsletter.asp');void(0);">
+        <br></a></strong>
+	</div>
+    <!-- content-->
+</div>
+            <!-- box -->
+<!--
+.NoPrint .box .content tr td font marquee i {
+	text-align: right;
+}
+-->
+<style type="text/css">
+    .slideshow
+    {
+        position: relative;
+        height: 600px;
+        overflow-y: auto;
+    }
+
+    .slide
+    {
+        display: none;
+        position: absolute;
+        padding-right: .5em;
+    }
+
+    .slide.current
+    {
+        display: block;
+    }
+
+    div.slide a
+    {
+        text-decoration: none;
+        color: #292929;
+    }
+</style>
+<script type="text/javascript" src="/Includes/external/yui/build/yui/yui-min.js"></script>
+<script type="text/javascript">
+    YUI({
+        modules: {
+            'gallery-slideshow-base': {
+                fullpath: '/Includes/external/yui/build/gallery-slideshow-base/gallery-slideshow-base-debug.js',
+                requires: ['node', 'event', 'widget']
+            },
+            'gallery-slideshow-animated': {
+                fullpath: '/Includes/external/yui/build/gallery-slideshow-animated/gallery-slideshow-animated-debug.js',
+                requires: ['anim', 'gallery-slideshow-base']
+            }
+        }
+    }).use("gallery-slideshow-animated", function (Y) {
+        Y.SlideshowAnimated.auto();
+    });
+</script>
+<div class="NoPrint">
+    <div class="box">
+        <h2 class="title">Testimonials</h2>
+        <div id="TestimonialContent" class="content" style="position: relative; width: 95%;">
+            <div class="slideshow" style="margin-right: 1em">
+                <div class="slide current">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T1">As I am just starting my business, I was worried about the cost. I looked into doing the work myself but very quickly realized that Zip2Tax was doing a great deal more than I could ever do on my own. I figured that for the cost of the service, it was roughly 5 of my billing hours per month. There was no way I could do the same thing in a cost effective manner.</a></p>
+                    <br>
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T1">By subscribing to download their full database of tax data, I freed up a lot of time  to develop better ways to use the data. I also can tell my customers with confidence that I have  every state in the country covered, and am keeping up with tax changes and ZIP Code changes.  That is a huge benefit, and the database has filing information as well which saves a lot of time  having to look up codes when paying the taxes... (Read More)</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Robert, R&amp;L Software<br>
+                        West Chester, OH<br>
+                        Tax Table Subscriber<br>
+                        Since May 2011</em></span>
+                </div>
+                <div class="slide">
+                    <p>
+                        <a href="http://www.zip2tax.com/z2t_testimonials.asp#T2">Thank you, thank you, thank you for providing this marvelous service! During my recent project, I relied heavily on the information that you so carefully collected ...</a>
+                    </p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Susan<br>
+                        Chicago, IL<br>
+                        Online Lookup Subscriber<br>
+                        Since April 2011</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T3">Cost was a real issue for our company, but this subscription has a great price point!  We are impressed with the uptime and the implementation ease.  After we bought a subscription to Zip2Tax, we received great service. The service is virtually worry free.</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Zach, Fleapay.com<br>
+                        Chicago, IL<br>
+                        Database Interface Subscriber<br>
+                        Since October 2010</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T4">We are a small online retailer and we only need sales tax for one state. It doesn&#39;t make sense for us to spend a lot on sales and use tax services. We use Volusion as our store vendor and they don&#39;t have support for all the  county and city tax, so we needed to do that manually. Without your service,  this would be very difficult. The way your tables break out all the specific  taxes is the feature I find the most useful. And, your support has been superb!</a></p>
+
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Doug, Focused Sales, Inc.<br>
+                        Tax Table Subscriber<br>
+                        Since October 2011</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T5">Awesome.&nbsp; Thanks so  much!&nbsp; Lots better.&nbsp; Good to know that our requests are heard and  acknowledged.&nbsp; Thanks for making the program easy to use. We love it!!!</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Keli<br>
+                        Live Oak, FL<br>
+                        Online Lookup Subscriber<br>
+                        Since April 2009</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T6">Thank you very much for the detailed info! Everyone has issues, how honestly  they deal with them is the difference between the rookies and world class organizations.  Your willingness to share this info gives us great confidence in our choice to work with Zip2Tax!</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Steve<br>
+                        Santa Monica, CA<br>
+                        Database Interface Subscriber<br>
+                        Since August 2010</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T7">Everyone is always so helpful. Your staff has always been fabulous! Thank you all so much!</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Michelle<br>
+                        Stillwater, OK<br>
+                        Online Lookup Subscriber<br>
+                        Since March 2008</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T8">We are extremely satisfied with your product.</a></p>
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T8">We use it quite frequently when setting up our new customers who wish us to charge them sales tax. Even when they provide this information to us prior to set up, we go out on the website and double check.</a></p>
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T8">Your product is so easy to use and quick. We were surfing the internet which took lots of time and did not always provide the detail we needed and get from your product.</a></p>
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T8">I would definitely recommend this product to anyone who is fumbling on the internet for answers. We also benefit from the emails with new tax information and issues arising in that arena.</a></p>
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T8">We are completely happy and wish we would have been using years ago.</a></p>
+
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Kimberlee,<br>
+                        WIKA Instrument Corporation<br>
+                        Online Lookup Subscriber<br>
+                        Since August 2010</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T9">We are a reseller, so our taxable sales are a small percentage of our business.  Your subscription saves lots of time calculating the CORRECT amount of tax to charge,  and breakdown by state, local, etc., plus the tax on shipping charges has been very useful to us. Zip2Tax is a GREAT DEAL FOR THE PRICE especially when you factor what you would pay in penalties under a state tax audit!</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Sandy<br>
+                        Rice Lake, WI<br>
+                        Online Lookup Subscriber<br>
+                        Since January 2008</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T10">The biggest obstacle for our company, prior to buying  the sales and use Tax Tables, was that we needed to replace another system that we were using. We had integrated address verification and sales tax calculation with our Intech ERP system.</a></p>
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T10">After purchasing from Zip2Tax, we found you had a quality product and we liked  that we could enter just the ZIP Code without city and state. We find benefit in  the user-friendly screens, the rapid response time, and the accurate results.  I recommend Zip2Tax for all of the features just mentioned plus less data entry for the users.</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Jeanne, Duralee Fabrics, Inc.<br>
+                        Tax Table Subscriber<br>
+                        Since May 2011</em></span>
+                </div>
+                <div class="slide">
+                    <p><a href="http://www.zip2tax.com/z2t_testimonials.asp#T11">We were worried about the cost and complication of buying sales tax data services, but Zip2Tax&#39;s Online Lookup took care of that for us. We use it standalone for invoicing and tax returns and we really like that it only takes 10 seconds to do a lookup.</a></p>
+                    <span style="text-align: right; display: block; margin-top: 1em"><em>&#45; Graham, Evandtec Inc.
+              <br>
+                        Toranto, Ontario, Canada<br>
+                        Online Lookup Subscriber<br>
+                        Since July 2009</em></span>
+                </div>
+                <div class="slide">
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+    </div>
+    <!-- box -->
+</div>
+<!-- NoPrint -->
+
+<div class="box">
+  <h2 class="title2">Find Sales Tax Rates On The Fly With Zip2Tax <br>For Mobile Devices</h2>
+  
+  <div class="content2"> 
+    <span class="centering"> Download our iPhone App for free from iTunes 
+      and look up sales tax rates by ZIP code while you're on the go. </span> 
+    <img src="/images/iphone_app_sm.jpg" alt='Sales Tax Rates For Mobile' width="175" height="170" style="vertical-align:middle" class="imgCenter"><a href="http://itunes.apple.com/us/app/zip2tax/id396325486?mt=8" target="_blank"></a>
+    <a href="http://www.zip2tax.com//z2t_services.asp#PageSection1">Subscribe</a> for unlimited access.
+  </div><!-- content2 -->
+</div><!-- box -->
+
+
+        </div><!-- divPageRight -->
+      </div><!-- divPageMiddle -->
+
+
+      <div id="divPageBottom">
+            <script type="text/javascript">
+function SetScreen(w, h)
+    {
+    window.resizeTo(w, h);
+    CenterScreen(w, h);
+    }
+
+function CenterScreen(w, h)
+    {
+    var leftprop, topprop;
+
+    var leftvar = (window.screen.availWidth - w) / 2;
+    var rightvar = (window.screen.availHeight - h) / 2;
+
+    if(navigator.appName == "Microsoft Internet Explorer")
+        {
+        leftprop = leftvar;
+        topprop = rightvar;
+        }
+    else 
+        {
+        leftprop = (leftvar - pageXOffset);
+        topprop = (rightvar - pageYOffset);
+        }
+
+    window.moveTo(leftprop,topprop);
+    }
+
+function openPopUp(URL)
+    {
+    window.open(URL,'',
+        'scrollbars=yes,fullscreen=no,resizable=yes,height=10,width=10,left=10,top=10');
+    }
+
+function openPopUpSize(URL, w, h)
+    {
+    window.open(URL,'',
+        'scrollbars=yes,fullscreen=no,resizable=yes,height=' + h + ',width=' + w + ',left=10,top=10');
+    }
+    </script>
+
+<div id="footer">
+  <div align="center" class="NoScreen">
+
+    <hr>
+    <span class="footer-large">
+      Zip2Tax, LLC
+      <span class="footer-small">1740H Dell Range Blvd #449 -- Cheyenne, WY 82009</span>
+      Toll Free 1-866-492-8494
+    </span>
+		<hr>
+
+  </div>
+  <div class="NoPrint">
+    <div class="footerwrap">
+      
+
+  <div class="footerlinkscolumn1">
+    <p class="footerlinks">
+    <a href="http://www.Zip2Tax.com" title="Zip2Tax.com Home Page" class="footerlinks"><b>Home</b></a><br><br>
+    <a href="http://www.Zip2Tax.com/z2t_aboutus.asp" title="Learn more about Zip2Tax" class="footerlinks">About Us</a><br>    
+    <a href="http://www.Zip2Tax.com/z2t_customer_commitment.asp" title="Quality, reliable data" class="footerlinks">Quality pledge</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_customers.asp" title="Learn who uses Zip2Tax services" class="footerlinks">Customers</a><br>  
+    <a href="http://www.Zip2Tax.com/z2t_testimonials.asp" class="footerlinks">Testimonials</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_sitemap.asp" title="Index of the Zip2Tax Web Site" class="footerlinks">Site Map</a><br> 
+    </p>
+  </div>
+  
+  <div class="footerlinkscolumn1">
+    <p class="footerlinks">
+    <a href="/z2t_tax_rates.asp" class="footerlinks"><b>Tax Rates</b></a><br><br>
+    <a href="http://www.Zip2Tax.com/z2t_lookup.asp" title="Use our lookup service" class="footerlinks">ZIP Code Lookup</a><br>
+    <a href="http://www.Zip2Tax.com/Online-Lookups/z2t_lookup.asp"  class="footerlinks">PinPoint Lookup</a><br />
+    <a href="http://www.Zip2Tax.com/services/z2t_widget.asp" class="footerlinks">Desktop Widget</a><br>
+    <a href="http://www.Zip2Tax.com/state/United-States-Sales-Tax/index.html" class="footerlinks">Taxes By State</a><br />
+    <a href="http://blog.zip2tax.com/" class="footerlinks">News Blog</a> 
+    </p>
+  </div>
+  
+  <div class="footerlinkscolumn1">
+    <p class="footerlinks">
+    <a href="http://www.Zip2Tax.com/z2t_services.asp" class="footerlinks"><b>Products</b></a><br><br>
+    <a href="http://www.Zip2Tax.com/z2t_comparison_chart.asp" class="footerlinks">Compare Services</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_services.asp#PageSection1" title="Zip2Tax online lookup service" class="footerlinks">Online Lookup</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_services.asp#PageSection2" title="Zip2Tax database interface" class="footerlinks">Database Interface</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_services.asp#PageSection3" title="Zip2Tax sales and use tax tables" class="footerlinks">.CSV Tax Tables</a><br>
+    </p>
+  </div>
+ 
+<!--  <div class="footerlinkscolumn1">
+    <p class="footerlinks">
+    <a><b>Information</b></a><br><br>
+    <a href="http://www.Zip2Tax.com/shopping/z2t_redistribution.asp" class="footerlinks">Redistribution</a><br>
+    <a href="http://www.Zip2Tax.com/state/United-States-Sales-Tax/index.html" class="footerlinks">State-Specific Info.</a><br>
+    <a href="http://blog.zip2tax.com/" class="footerlinks">News Blog</a><br>
+    <a href="http://www.Zip2Tax.com/Inbound/z2t_newsletter.asp" class="footerlinks">Newsletter Sign-Up</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_privacypolicy.asp" title="Learn about our privacy policy"class="footerlinks">Privacy Policy</a><br>
+    <a href="http://www.Zip2Tax.com/z2t_eula.asp" title="Learn about our license agreement" class="footerlinks">License Agreement</a><br>  
+    </p>
+  </div>-->
+  
+  <div class="footerlinkscolumn1">
+    <p class="footerlinks">
+    <a href="http://www.Zip2Tax.com/z2t_contact.asp" title="Learn how to contact us" class="footerlinks"><b>Support</b></a><br><br>
+    <!--My Account<br>-->
+    <a href="http://www.Zip2Tax.com/z2t_faq.asp" class="footerlinks">FAQs</a><br>
+    <a href="http://www.Zip2Tax.com/developers/z2t_developers.asp" title="Learn how to connect to our database" class="footerlinks">Developers</a><br> 
+    <a href="http://www.Zip2Tax.com/z2t_sample_tables.asp" class="footerlinks">Sample Tables</a><br>
+    <a href="http://www.Zip2Tax.com/resources/z2t_resources.asp" title="Value-added business resources" class="footerlinks">Resources</a><br>
+    <!--<a href="http://www.Zip2Tax.com/Inbound/z2t_signup.asp" class="footerlinks">Tax Guide Download</a><br>  -->   
+    </p>
+  </div>
+
+    <hr>
+
+    <p>
+      <strong>Privacy Policy: </strong>At Zip2Tax,  your security and confidentiality are our highest priority. We will 
+      never share  your e-mail address or any other personally identifiable information (PII) with  any other 
+      person or company. Please review our full 
+      <a href="http://www.zip2tax.com/z2t_privacypolicy.asp" target="_blank">privacy policy</a>.
+      <strong>License:</strong> Please refer to our 
+      <a href="http://www.zip2tax.com/z2t_eula.asp" target="_blank">End User License Agreement</a>.
+    </p>
+    <hr>
+    <center>Copyright &copy; 2006-2012 Zip2Tax, LLC. All rights reserved.</center>
+    
+  </div>
+
+  <div align="center" class="NoScreen"></div>
+  
+  <div id="NoPrint">
+    <table width="100%" border="0" cellspacing="10" cellpadding="10" style="height: 70px; vertical-align: middle;">
+      <tr>
+        <td width="42%" align="left">
+
+		  <!-- W3C Validator -->
+          <a href="http://validator.w3.org/check?uri=referer"><img
+            src="http://www.w3.org/Icons/valid-html401"
+            alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+        
+          <!-- Start Quantcast tag -->
+          <script type="text/javascript">
+            var _qoptions={
+            qacct:"p-2df0ATjdz9mQk"
+            };
+            var _qevents; /* suppress javascript warning from buggy quantcast code */
+          </script>
+          <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+          <noscript>
+            <img src="http://pixel.quantserve.com/pixel/p-2df0ATjdz9mQk.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast">
+          </noscript>
+          <!-- End Quantcast tag -->
+
+          
+
+            
+           <!-- Place this tag where you want the +1 button to render -->
+           <!-- g:plusone size="tall" annotation="none"></g:plusone -->
+           <div class="g-plusone"></div>                                                                                  
+
+
+           <!-- Place this render call where appropriate -->
+           <script type="text/javascript">
+             (function() {
+               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+               po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+             })();
+          </script>
+        </td>
+        
+        <td>
+          <img src="http://www.zip2tax.com/images/credit_cards.png" alt="cards" width="210" height="33" align="right">
+        </td>
+
+        <td width="42%" align="right">
+          TrackingID: 
+          <script type="text/javascript" language="javascript">
+            document.write('<a href="javascript:openPopUp(\'http://www.Zip2Tax.com/includes/EnterCode.asp\');">0<\/a>')
+          </script>
+          <noscript>
+            <a href="http://www.Zip2Tax.com/includes/EnterCode.asp">0</a><br>            
+          </noscript><br>
+          Cookie ID:
+          <script type="text/javascript" language="javascript">
+            document.write('<a href="javascript:openPopUp(\'http://www.Zip2Tax.com/includes/EnterCode.asp\');">3976525<\/a>')
+          </script>
+          <noscript>
+            <a href="http://www.Zip2Tax.com/includes/EnterCode.asp">3976525</a><br>            
+          </noscript><br>
+          IP Address: 68.178.202.54<br>
+          JavaScript: <span id='JavaScriptTest'>Fail</span><br>
+
+
+        </td>
+      </tr>
+    </table>
+  </div>  
+</div>
+
+
+      </div><!-- divPageBottom -->
+      
+    </div><!-- main -->
+  </body>
+</html>

@@ -1,0 +1,1 @@
+function z2t_UserTracking(a,b,c,d){uTrack.open("GET","http://www.Zip2Tax.com/UserTracking/z2t_UserTrackingPost.asp?Op="+a+"&Page="+b+"&Data1="+c+"&Data2="+d+"&Now="+escape(Date()),!0),uTrack.send(null)}function getHTTPObject(){var a;if(!a&&"undefined"!=typeof XMLHttpRequest)try{a=new XMLHttpRequest}catch(b){a=!1}return a}var uTrack=getHTTPObject();

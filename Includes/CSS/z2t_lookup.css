@@ -1,0 +1,67 @@
+
+      .PinPoint-banner {
+        border: 5px solid red; 
+        width: 550px; 
+        margin-left: 60px; 
+        display: block; 
+        white-space: nowrap !important;
+        display: block;}       
+		
+	  .PinPoint-image {
+		width: 24%;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: .5em;
+		margin-bottom: .5em;
+	  }
+	  
+	  .PinPoint-intro {
+	    width:52%; 
+		display: inline-block; 
+		vertical-align: top; 
+		margin-top: .8em; 
+		line-height: normal;
+	  }
+	  
+	  .PinPoint-interested {
+	    max-width: 22%; 
+		width: auto; 
+		display: inline-block; 
+		align: center; 
+		font-weight: bold; 
+		color: black; 
+		vertical-align: middle; auto; 
+		margin-bottom: 0em; 
+		line-height: normal;
+	  }
+		
+	  .PinPoint-Text1 {
+	    font-size: 150%; 
+		font-style: italic; 
+		text-align: center; 
+		font-weight: bold; 
+		color: black; 
+		margin-bottom: 0em; 
+		line-height: normal;
+	  }
+	  
+	  .PinPoint-Text2 {
+	    text-align: center; 
+		font-weight: bold; 
+		color: black; 
+		vertical-align: top; 
+		margin-bottom: 0em; 
+		line-height: normal;
+	  }
+	  
+	  .PinPoint-Text3 {
+	    width: 100%; 
+		white-space: normal; 
+		text-align: center; 
+		font-weight: bold; 
+		color: black; 
+		vertical-align: top; 
+		margin-top: .5em; 
+		margin-bottom: 0em; 
+		line-height: normal;
+	  }

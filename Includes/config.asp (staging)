@@ -1,0 +1,72 @@
+<%
+  ' ----- config.asp specifically for staging on Philly05 -----
+  ' In this file are settings that are specific to the location of this website.
+  ' All other files throughout the Zip2Tax website are identical except for this one.
+  
+  ' ----- Path strings -----
+  Dim pathBase:       pathBase       = "http://staging.Zip2Tax.com/"
+  Dim pathWebsite:    pathWebsite    = "http://staging.Zip2Tax.com/Website/"
+  Dim pathImages:     pathImages     = "http://staging.Zip2Tax.com/Website/Images/"
+  Dim pathIncludes:   pathIncludes   = "http://staging.Zip2Tax.com/Website/Includes/"
+  Dim pathBodyParts:  pathBodyParts  = "http://staging.Zip2Tax.com/Website/Includes/BodyParts/"
+  Dim pathBodyPages:  pathBodyPages  = "http://staging.Zip2Tax.com/Website/Includes/BodyPages/"
+  Dim pathJavaScript: pathJavaScript = "http://staging.Zip2Tax.com/Website/Includes/JavaScript/"
+  Dim pathLookupAPI:  pathLookupAPI  = "http://staging.api.Zip2Tax.com/"
+  
+  ' ----- Robot Instructions -----
+  ' Only follow on Philly03 production, no other sites regardless if production or not
+  'RobotInstruction = "<meta name='robots' content='index,follow'>"
+  ' All others do not follow
+  RobotInstruction = "<meta name='robots' content='noindex,nofollow'>"
+
+  ' ----- Connection strings -----
+  Dim connStrPublic
+  Dim connStrHAProd
+  Dim connStrBackoffice
+  Dim connStrRequestVariables
+  
+  ' ----- Identify Environment -----
+  strWebService = "Philly05"
+  strDatabase = "Philly05"
+
+  
+  ' Dev
+  'connStrPublic = "Provider=SQLOLEDB;Data Source=66.119.55.117,7943;Initial Catalog=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;Application Name=Z2T_V2.5;" 'Casper09
+
+  ' Staging
+  connStrPublic = "Provider=SQLOLEDB;Data Source=127.0.0.1;Initial Catalog=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;Application Name=Z2T_V2.5;" 'Philly05
+
+  ' West
+  'connStrPublic = "Provider=SQLOLEDB;Data Source=127.0.0.1;Initial Catalog=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;Application Name=Z2T_V2.5;" 'Casper06
+
+  ' Production
+  'connStrPublic = "Provider=SQLOLEDB;Data Source=10.88.49.20;Initial Catalog=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;Application Name=Z2T_V2.5;" 'Philly03
+
+  ' local
+  'connStrPublic = "Provider=SQLOLEDB;Data Source=127.0.0.1;Initial Catalog=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;Application Name=Z2T_V2.5;" 'localhost
+  
+  ' At the moment, Harvest Accounts are in the same database as everything else so these equal
+  connStrHAProd = connStrPublic
+   
+
+  'Dev & West
+  'connStrBackoffice = "driver=SQL Server;server=208.88.49.18,8543;uid=davewj2o;pwd=get2it;database=z2t_BackOffice" ' philly05
+
+  'Staging
+  connStrBackoffice = "driver=SQL Server;server=127.0.0.1;uid=davewj2o;pwd=get2it;database=z2t_BackOffice" ' philly05
+
+  'Production
+  'connStrBackoffice = "driver=SQL Server;server=10.88.49.18,8543;uid=davewj2o;pwd=get2it;database=z2t_BackOffice" ' philly05
+
+
+   'Dev   
+  'connStrRequestVariables = "driver=SQL Server;server=casper09.harvestamerican.net,7943;uid=davewj2o;pwd=get2it;database=z2t_WebPublic" ' Casper09
+   
+  'Staging   
+  connStrRequestVariables = "driver=SQL Server;server=localhost;uid=davewj2o;pwd=get2it;database=z2t_WebPublic" ' Philly05
+
+  'Production & West
+  'connStrRequestVariables = "driver=SQL Server;server=127.0.0.1,8343;uid=davewj2o;pwd=get2it;database=z2t_WebPublic" ' Philly03
+
+%>
+
