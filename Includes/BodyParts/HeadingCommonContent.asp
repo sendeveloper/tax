@@ -221,6 +221,14 @@
 						}
 						else alert("Zip Code Must Contain 5 Characters");
 					}
+					$('.login_menu').on('click', function(e) {
+						$('.modal-backdrop').remove();
+    					$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #FFF;"></div>').appendTo(document.body);
+						$( "#dialog-form2" ).dialog( "close" );
+      					$( "#dialog-form" ).dialog( "open" );
+      					$('#dialog-form').parent().css('z-index', 1100);
+
+					})
 				});
 			</script>
 			<link href="/css/bootstrap.min.css" rel="stylesheet">			

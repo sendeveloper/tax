@@ -1,6 +1,10 @@
-<div class="box">
-  <h2 class="title">Verified Secure</h2>
-  <div class="content" style="text-align: center;">
-    <img src="/Website/Images/verified.png" alt='Cybersource_verified' width="195" height="73" style="vertical-align:middle" class="imgCenter">
-  </div><!-- content -->
-</div><!-- box -->
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>Verified Secure
+		</h3>
+	</div>
+	<div class="panel-body text-center">
+		<img src="/Website/Images/verified.png" alt='Cybersource_verified'>
+	</div>
+</div>
