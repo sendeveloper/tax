@@ -1,12 +1,11 @@
-<div id="content" style="text-align: left !important">
-  <div class="post">
-    <h1 class="title" style="text-align:left">Testimonials</h1>
-
-    <a name="PageSection1"></a>
-
-
-    <div class="entry">
-      <div id="T1">
+<div class="col-md-9 content">
+	<h1>
+	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
+	Testimonials
+	</h1>
+		<div class="clearfix"></div>
+		<p>
+ <div id="T1">
                 As I am just starting my business, I was worried about the cost. I looked into doing the 
         work myself but very quickly realized that Zip2Tax was doing a great deal more than I could 
         ever do on my own. I figured that for the cost of the service, it was roughly 5 of my 
@@ -163,10 +162,6 @@
         <span class="firstword" style="float: right !important">
           <b>-&nbsp;Graham | Evandtec Inc. | Toronto, Ontario | Online Lookup subscriber since July 2009</b>
         </span><br><br>
-      </div>
-    </div>
-    <!-- entry -->
-  </div>
-  <!-- post -->
+      </div>	
+	</p>
 </div>
-<!-- content -->

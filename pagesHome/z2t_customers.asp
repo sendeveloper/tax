@@ -20,8 +20,8 @@
       <div class="mainBody">
         <div class="clearfix"></div>
         <div class="container"> 
-          <!-- #include virtual="/Website/pagesHome/Customers/page_Customers_content_new.asp" -->
-          <!-- #include virtual="/Website/pagesHome/Customers/page_Customers_right_sidebar_new.asp" -->
+          <!-- #include virtual="/Website/pagesHome/Customers/page_Customers_content.asp" -->
+          <!-- #include virtual="/Website/pagesHome/Customers/page_Customers_right_sidebar.asp" -->
         </div>
       </div>
       <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
