@@ -16,8 +16,8 @@
     <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
 
 
-		<!-- #include virtual="/Website/pagesHome/testimonials/page_testimonials_content_new.asp" -->
-        <!-- #include virtual="/Website/pagesHome/testimonials/page_testimonials_right_sidebar_new.asp" -->
+		<!-- #include virtual="/Website/pagesHome/testimonials/page_testimonials_content.asp" -->
+        <!-- #include virtual="/Website/pagesHome/testimonials/page_testimonials_right_sidebar.asp" -->
     </div>
 	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
   

@@ -1,9 +1,11 @@
-<!-- START CUSTOMER COMMITMENT BOX -->
-<div class="NoPrint">
-  <div class="box">
-    <h2 class="title">Customer Commitment</h2>
-    <div class="content">    
-      <p>Zip2Tax, LLC has been in the business of providing accurate and timely sales 
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Customer Commitment
+		</h3>
+	</div>
+	<div class="panel-body">
+    <p>Zip2Tax, LLC has been in the business of providing accurate and timely sales 
 	  tax data since  2007. Our customer base has grown quickly since then and we are 
 	  pleased to have obtained the trust of many Fortune 500 companies as well as 
 	  thousands of small organizations. 
@@ -30,8 +32,5 @@
 	  information against accidental or unauthorized access or disclosure. Our secure 
 	  servers and databases are fully protected against attacks. Please read our full 
 	  <a href="/Website/pagesExtra/z2t_privacypolicy.asp" title="privacy policy" target="_blank">privacy policy</a>.</p>
-      
-    </div> <!-- content -->
-  </div> <!-- box --> 
-</div> <!-- NoPrint -->
-<!-- END CUSTOMER COMMITMENT BOX -->
+	</div>
+</div>
