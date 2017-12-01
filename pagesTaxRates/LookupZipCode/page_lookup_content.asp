@@ -24,10 +24,7 @@ end if
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
 
 <div class="col-md-9 content">
-	<h1>
-	<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	ZIP Code Lookup with Sales Tax Calculator
-	</h1>
+	<%=HeadingH1("ZIP Code Lookup with Sales Tax Calculator")%>
 <div class="clearfix"></div>
 <table class="table table-bordered">
 	  <tr valign="top"> 

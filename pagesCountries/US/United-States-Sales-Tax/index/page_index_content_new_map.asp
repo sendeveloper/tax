@@ -76,10 +76,7 @@ smallStates = "TN, KY, VA, NC, PA"
     </style>
 
 	<div class="col-md-9 content">
-	<h1>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Sales and Use Tax Rates By State <span style="white-space: nowrap;">And The Details You Need To Know</span>
-	</h1>
+	<%=HeadingH1("Sales and Use Tax Rates By State And The Details You Need To Know")%>
 	<h3>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 		What are sales taxes?

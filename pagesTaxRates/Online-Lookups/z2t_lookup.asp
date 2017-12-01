@@ -25,12 +25,13 @@
       <div class="mainBody">
         <div class="clearfix"></div>
         <div class="container">   
-		      <!-- #include virtual="/Website/pagesTaxRates/Online-Lookups/page_lookup_content_new.asp" -->
-          <!-- #include virtual="/Website/pagesTaxRates/Online-Lookups/page_lookup_right_sidebar_new.asp" -->
+		      <!-- #include virtual="/Website/pagesTaxRates/Online-Lookups/page_lookup_content.asp" -->
+          <!-- #include virtual="/Website/pagesTaxRates/Online-Lookups/page_lookup_right_sidebar.asp" -->
         </div>
       </div>
     </div>
-    <!-- #include virtual="/Website/Includes/footer_new.asp"-->   
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"--> 
   </body>
 </html>
 
