@@ -1,8 +1,5 @@
 <div class="col-md-9 content">
-	<h1>
-	<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Who uses Zip2Tax's services?
-	</h1>
+      <%=HeadingH1("Who uses Zip2Tax's services?")%>
 		<div class="clearfix"></div>
 	<p>From start-up LLCs to Fortune 500 companies, thousands of
         clients have entrusted Zip2Tax for their sales and use tax

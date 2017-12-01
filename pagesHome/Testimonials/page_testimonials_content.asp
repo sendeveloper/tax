@@ -1,8 +1,5 @@
 <div class="col-md-9 content">
-	<h1>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Testimonials
-	</h1>
+  <%=HeadingH1("Testimonials")%>
 		<div class="clearfix"></div>
 		<p>
  <div id="T1">

@@ -1,8 +1,5 @@
 <div class="col-md-9 content">
-	<h1>
-	<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Our commitment to our customers
-	</h1>
+    <%=HeadingH1("Our commitment to our customers")%>
 		<div class="clearfix"></div>
 	<p>Zip2Tax, LLC has been in the business of providing
         accurate and timely sales tax data since  2007. Our customer

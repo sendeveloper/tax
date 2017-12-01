@@ -42,10 +42,7 @@
 	</style>
 
 	<div class="col-lg-8 col-md-10 content post">
-	<h1>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Sitemap
-	</h1>
+	<%=HeadingH1("Sitemap")%>
 <div class="clearfix"></div>
       <table class="table">
         <tr valign="top">

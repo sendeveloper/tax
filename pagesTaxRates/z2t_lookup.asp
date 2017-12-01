@@ -16,14 +16,13 @@
 <!--#include virtual="/Website/pagesTaxRates/LookupZipCode/classes.asp"-->
 
   <head>
-    <!--#include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <script language="javascript" type="text/javascript">
-	$(function(){
-	<%if len(request.servervariables("query_string"))>0 then%>
-	initialize()
-	<%end if%>
-		});
+    $(function(){
+    <%if len(request.servervariables("query_string"))>0 then%>
+    initialize()
+    <%end if%>
+        });
         var pathBase = '<%=pathBase%>';
         var currentPage = '<%=Session("currentPage")%>';
         var errorMessage = '<%=Session("LoginErrorUrgent")%>';
@@ -32,7 +31,7 @@
 
         function altOn(obj, t, b, e)
         {
-		/*
+        /*
             if ( (totalrate != '') && (parseInt(totalrate) > 0) )
             {
                 var altScreen = document.getElementById('mouseoverDiv');
@@ -58,7 +57,7 @@
 
                 altScreen.style.visibility = 'visible';
             }
-			*/
+            */
         }
 
         function altOff()
@@ -84,35 +83,35 @@
 
 
         function clickGetRate() {
-			
-			 <%
-			   If Session("z2t_loggedin") <> "True"  Then
-			 %>
-			 		 div_show(1);
-			 <%
-			 Else 
-			 %>
+            
+             <%
+               If Session("z2t_loggedin") <> "True"  Then
+             %>
+                     div_show(1);
+             <%
+             Else 
+             %>
             var zLen = document.getElementById('inputZip').value.length
             if (zLen == 5) {
                 var URL = '<%=pathBase%>' + currentPage + '?inputZip=' + document.getElementById('inputZip').value;
                 window.document.location = URL;}
             else if (zLen != 0) {
                 alert('ZIP Code must have 5 numerals');}
-				
-				<%End If%>
-				}
+                
+                <%End If%>
+                }
 
 
         function clickGetTax(f) {
-			
-			
-			 <%
-			   If Session("z2t_loggedin") <> "True"  Then
-			 %>
-			 		 div_show(1);
-			 <%
-			 Else 
-			 %>
+            
+            
+             <%
+               If Session("z2t_loggedin") <> "True"  Then
+             %>
+                     div_show(1);
+             <%
+             Else 
+             %>
             //   if ((f == 'amt') || (f == 'useTax')) {
             if (f == 'calc') {
                 if ((document.getElementById('inputAmt').value.length > 0) && (document.getElementById('inputAmt').value !== 'Enter Dollar Amount')) {
@@ -121,8 +120,8 @@
                     else {
                         getTax(f);
                         document.getElementById('inputAmt').value = 'Enter Dollar Amount';}}}
-			<%End If%>
-			}
+            <%End If%>
+            }
 
         function focusField(f)
         {
@@ -253,14 +252,14 @@
 
             // Enter key hit
             if (key == 13) {
-				
-				<%
-			   If Session("z2t_loggedin") <> "True"  Then
-			 %>
-			 		 div_show(1);
-			 <%
-			 Else 
-			 %>
+                
+                <%
+               If Session("z2t_loggedin") <> "True"  Then
+             %>
+                     div_show(1);
+             <%
+             Else 
+             %>
                 foc = myfield.id.toString();
                 //document.getElementById('inputAmt').focus();
                 if (foc == 'inputAmt')
@@ -286,7 +285,7 @@
                         alert('Zip Code must have 5 numerals');
                     }
                 } 
-			<% End IF %>
+            <% End IF %>
             }
 
             // control keys
@@ -336,7 +335,7 @@
     <script type="text/javascript" src="/Website/pagesTaxRates/LookupZipCode/switchicon.js"></script>
     <script type="text/javascript" src="/Website/pagesTaxRates/LookupZipCode/map.js"></script>
     <style type="text/css">
-	.container-fluid {padding:0 !important}
+    .container-fluid {padding:0 !important}
         /*Default style for SPAN icons. Edit if desired: */
 
         .iconspan{
@@ -364,7 +363,7 @@
         }
         
         table#salestax_breakout, table#usetaxbreakout {border: none !important; width: 100% !important;}
-		#map_canvas2 { height: 100% }
+        #map_canvas2 { height: 100% }
     </style>
     <script type="text/javascript"
         src="http://maps.googleapis.com/maps/api/js?key=AIzaSyACJstxRGIbX8Mv_I2-a8tOLN0d620APjo&amp;sensor=false">
@@ -424,13 +423,24 @@
     
             }
     </script>
-	<link href="/Website/Includes/css/z2t_lookup.css" rel="stylesheet" type="text/css">
-		<!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_content_new.asp" -->
-        <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_right_sidebar_new.asp" -->
-    </div>
-	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
+    <link href="/Website/Includes/css/z2t_lookup.css" rel="stylesheet" type="text/css">
+</head>
   
-         
+  <body>    
+    <div class="container-fluid" style="padding: 0px;">
+      <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+      
+      <div class="mainBody">
+        <div class="clearfix"></div>
+        <div class="container">     
+          <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_content.asp" -->
+            <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_right_sidebar.asp" -->
+        </div>
+      </div>
+    </div>
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"-->  
   </body>
 </html>
 

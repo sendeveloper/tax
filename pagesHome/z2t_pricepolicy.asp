@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
@@ -11,14 +10,9 @@
 
 <html>
   <head>
-    <title>Low Price Policy - Zip2Tax</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Learn more about Zip2Tax's low price policy.">
-    <!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
+    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <script language="javascript" src="/Website/Includes/Javascript/z2t_functions.js" type="text/javascript"></script>
     <script language="javascript" src="/Website/Includes/Javascript/z2t_UserTrackingPost.js" type="text/javascript"></script>
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
-
     <script language="javascript" type="text/javascript">
       var userName = '<%=Session("UserName")%>';
       var ProductID = 0;
@@ -29,27 +23,30 @@
   </head>
 
   <body>
-    <div id="divMain">
+    <div class="container-fluid" style="padding: 0px;">
+      <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+      <div class="mainBody">
+        <div class="clearfix"></div>
+        <div class="container"> 
+          <div id="divMain">
+            <div id="divPageLeft">
+              <!-- #include virtual="/Website/pagesHome/PricePolicy/page_price_policy_left_sidebar.asp"-->
+            </div><!-- divPageLeft -->
+        
+            <div id="divPageCenter">
+              <!--#include virtual="/Website/pagesHome/PricePolicy/page_price_policy_content.asp"-->
+            </div><!-- divPageCenter -->
+        
+            <div id="divPageRight">
+              <!--#include virtual="/Website/pagesHome/PricePolicy/page_price_policy_right_sidebar.asp"-->
+            </div><!-- divPageRight -->
 
-
-      <div id="divPageMiddle">
-        <div id="divPageLeft">
-          <!-- #include virtual="/Website/pagesHome/PricePolicy/page_price_policy_left_sidebar.asp"-->
-        </div><!-- divPageLeft -->
-		
-        <div id="divPageCenter">
-          <!--#include virtual="/Website/pagesHome/PricePolicy/page_price_policy_content.asp"-->
-        </div><!-- divPageCenter -->
-		
-        <div id="divPageRight">
-          <!--#include virtual="/Website/pagesHome/PricePolicy/page_price_policy_right_sidebar.asp"-->
-        </div><!-- divPageRight -->
-      </div><!-- divPageMiddle -->
-
-      <div id="divPageBottom">
-        <!-- #include virtual="/Website/Includes/bodyParts/footer.asp"-->
-      </div><!-- divPageBottom -->
-
-    </div><!-- main -->
+          </div><!-- main -->
+        </div>
+       </div>
+    </div>
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"--> 
   </body>
 </html>
