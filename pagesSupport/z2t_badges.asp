@@ -9,19 +9,27 @@
 %>
 
 
-<html>
-  <head>
-    <title>Account Badges - Zip2Tax</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Post a Zip2Tax badge on your web site to assure customers they are getting accurate tax rates.">
-	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
+<html lang="en">
+    <head>
+    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->	
 	<script language="javascript" src="/Website/pagesSupport/Badges/page_badges.js" type="text/javascript"></script>
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
-	
-		<!-- #include virtual="/Website/pagesSupport/Badges/page_badges_content_new.asp" -->
-        <!-- #include virtual="/Website/pagesSupport/Badges/page_badges_right_sidebar_new.asp" -->
-    </div>
-	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
+    </head>
   
+  <body>    
+    <div class="container-fluid" style="padding: 0px;">
+      <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+      
+      <div class="mainBody">
+        <div class="clearfix"></div>
+        <div class="container">     
+		<!-- #include virtual="/Website/pagesSupport/Badges/page_badges_content.asp" -->
+        <!-- #include virtual="/Website/pagesSupport/Badges/page_badges_right_sidebar.asp" -->
+        </div>
+        </div>
+    </div>
+    
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"-->   
   </body>
 </html>

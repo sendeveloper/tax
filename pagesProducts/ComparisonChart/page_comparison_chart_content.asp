@@ -23,10 +23,7 @@
 </style>
 
 <div class="col-md-8 content specialContent">
-	<h1>
-	<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	How would you like the data served?
-	</h1>
+	<%=HeadingH1("How would you like the data served?")%>
 	<div class="clearfix"></div>
 
 	<div style="overflow-x:auto;">

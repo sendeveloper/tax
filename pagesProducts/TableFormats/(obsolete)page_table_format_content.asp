@@ -1,6 +1,8 @@
-<div class="col-md-9 content">
-      <%=HeadingH1("Which table format is right for you?")%>
-      <div class="clearfix"></div>
+<div id="content">
+  <div class="post">
+    <h1 class="title">Which table format is right for you?</h1>
+    
+    <div class="entry2">
       <p><span class="firstword">Download</span> a sample <a href='/Website/Downloads/Sample_Tables/zip2tax_Sample.csv'>
       Full Breakout Sales Tax Table</a> and learn more about the column headings in <a href='/Website/Downloads/Sample_Tables/Zip2TaxTableLayoutInformation.pdf' target='_blank'>Layout Information</a>.
       <p>Do you need a separate table for use tax? See which <a href="/Website/Downloads/Sample_Tables/use_tax_by_state.pdf" target="_blank">states</a> 
@@ -21,12 +23,14 @@
       <a href="/Website/pagesProducts/z2t_specialty_tables.asp#volusion">Volusion</a>, and 
       <a href="/Website/pagesProducts/z2t_specialty_tables.asp#sedona">Sedona Office</a>.</p>
       <p><a href="/free-sales-tax-calculator">Return to shopping</a></p>
-		<div class="clearfix"></div>
-
+    </div><!-- entry2 -->
+    
+    <div class="entry2" style="padding-top: 25px;">
       <p>
         If you don&#39;t see what you need here, <a href="mailto:info@zip2tax.com">E-mail</a> 
 		a sample of the format you require and we&#39;ll work with you to see 
         if we can accommodate your needs.
       </p>
-
-</div>
+    </div><!-- entry2 -->
+  </div><!-- post -->
+</div><!-- content -->

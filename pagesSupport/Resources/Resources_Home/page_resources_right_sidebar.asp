@@ -1,5 +1,8 @@
-          <!-- #include virtual="/Website/Includes/BodyParts/Boxes/LoginBox.asp" -->
-          <!-- #include virtual="/Website/Includes/BodyParts/Boxes/LookupBox.asp" -->
-		  <!-- #include virtual="/Website/Includes/bodyParts/Boxes/box_trustguard.asp" -->
-          <!-- #include virtual="/Website/Includes/BodyParts/Boxes/WhitepaperBox.asp"-->
-          <!-- #include virtual="/Website/Includes/bodyParts/Boxes/Testimonials.asp" -->
+<div class="col-lg-3 col-md-3 NoPrint">
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/box_trustguard.asp" -->
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/SocialBox.asp"-->
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/WhitepaperBox.asp" -->
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/NewsletterBox.asp" -->
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/Testimonials.asp" -->
+	
+</div>

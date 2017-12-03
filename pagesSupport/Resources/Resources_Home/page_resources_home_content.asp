@@ -1,80 +1,31 @@
-<div id="content"> 
-  <div  class="post">
-  <h1 class="title">
+<div class="col-md-9 content">
+	<h2>
+	<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
+	Recommended Business Resources
+	</h2>
+		<div class="clearfix"></div>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".accordion").accordion({
+      collapsible: true,
+	  heightStyle: "content",
+	  active: false	  
+    });
+});
+</script>		
+<!-- #include virtual="/Website/pagesSupport/Resources/Resources_Home/page_resources_inner_content.asp" -->
 
-    <h1 class="title" align="left">Recommended Business Resources</h1>
-    <a name="top"></a>
-    
-   <div class="entry">
-  <p>The following is a listing of companies that can help you achieve your business goals. Many of these service providers 
-  offer special discounts to Zip2Tax's customers, so make sure to mention where you heard about them.</p>
-  
-    <!-- START SECTION: SALES TAX SPECIALISTS -->
-    <h2>Sales Tax Specialists</h2>
-    <br>
-    
-    <div id="Accordion1" class="Accordion" style="clear: both;">
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/CPA_Fusion.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/StateSalesTax.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/TaxConnex.asp"-->  
-    </div><!-- Accordion1 -->
-    
-	<!-- END SECTION: SALES TAX SPECIALISTS -->
-	
-    <h5 class="left"><a href="#top">Back to top</a></h5>
-<br><br>
-	
-	
-	<!-- START SECTION: SHOPPING CARTS AND ECOMMERCE -->
-    <h2>Shopping Carts and eCommerce Integrations</strong></h2>
-    <br>
-    
-    <div id="Accordion2" class="Accordion">
-	
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Fleapay.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Kamp_Data.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Sellers_Toolbox.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Smith_Cart.asp"-->  
-    	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Tradepoint.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Trust_Guard.asp"--> 
-    	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Upshot.asp"-->   
-    
-    </div><!-- Accordion2 -->
-    <h5><a href="#top" class="left">Back to top</a></h5>  
-    	<!-- END SECTION: SHOPPING CARTS AND ECOMMERCE -->
-<br><br>
-	
-	    	<!-- START SECTION: WEBSITES AND HOSTIMG -->
+<h2>
+	<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
+	Disclaimer
+</h2>
+		<div class="clearfix"></div>
+		<p>
+Zip2Tax.com offers this data to the public free of charge. Zip2Tax has no control of the content of the listed web sites. It is the users responsibility to verify the accuracy of all data and claims.
+The documents posted on this site contain hypertext links or pointers to information created and maintained by other public and private organizations. These links and pointers are provided for the user's convenience. Zip2Tax.com does not control or guarantee the accuracy, relevance, timeliness, or completeness of this outside information. Further, the inclusion of links or pointers to particular items in hypertext is not intended to reflect their importance; nor is it intended to endorse any views expressed or products/services offered on these outside sites or the organizations sponsoring the sites.
+This information is not intended to constitute legal advice or substitute for obtaining legal advice.
+		</p>
 
-    <h2>Web Site Design and Hosting</h2>
-    <br>
-    <div id="Accordion3" class="Accordion">
-	
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Net_Media.asp"-->  
-	   <!--#include virtual="/Website/pagesSupport/Resources/Resources_Includes/Pixel.asp"-->  
-	  <!--"/Website/pagesSupport/Resources/Resources_Includes/SN_Web.asp"--> 
-
-    </div><!-- Accordion3 -->
-    
-	    	<!-- END SECTION: WEBSITES AND HOSTIMG -->
-	
-    <h5><a href="#top" class="left">Back to top</a></h5>
-    <h5>&nbsp;</h5>
-	
-
-  </div>
-  <div class="post">
-    <div class="NoScreen">
-    </div><!-- NoScreen -->
-  </div><!-- post -->
-  </div>
-</div><!-- content -->
-
-<script language="javascript" type="text/javascript">
-<!--
-var Accordion1 = new Spry.Widget.Accordion("Accordion1", { enableAnimation: false, useFixedPanelHeights: false, defaultPanel: -1 });
-var Accordion2 = new Spry.Widget.Accordion("Accordion2", { enableAnimation: false, useFixedPanelHeights: false, defaultPanel: -1 });
-var Accordion3 = new Spry.Widget.Accordion("Accordion3", { enableAnimation: false, useFixedPanelHeights: false, defaultPanel: -1 });
-
-//-->
-</script>
+</div>

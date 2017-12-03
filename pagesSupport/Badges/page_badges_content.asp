@@ -1,473 +1,283 @@
+<script text="text/javascript">
+$(function(){
+	$("button[id^=link_]").click(function(){
+		theButton2=$(this);
+		$(this).text(function(i, text){
+			return text === "Show the Code" ? "Hide the Code" : "Show the Code";
+		})
+		var theButton = $(this).attr("id");
+		var theLayer = theButton.replace("link","content");
+		var thehtml = theButton.replace("link","thehtml");
+		var theimage = theButton.replace("link","theimage");
+		
+		$("#"+theLayer).toggle(function(){
+			if ($(theButton2).text() === "Show the Code") {;
+				$("#" + thehtml).hide();
+				$("#" + theimage).hide();
+			}
+		});
+	});
+	
+	$(".showCodesnippet").click(function(event){
+		event.preventDefault();
+		var theText = $(this).text();
+		var theWidth = theText.split(" x ")[0];
+		var theHeight = theText.split(" x ")[1];
+		var theImg = $(this).parents("div.row").attr("id").replace("content","img");
+		var theImg2 = $(this).parents("div.row").attr("id").replace("content_","");
+		var theExt = $(this).parents("div").attr("title");
+		var theAlt = $("#" + theImg).attr("alt");
+		var theCode="<a href='https://www.zip2tax.com/sales-tax-calculator'><img src='https://badge.zip2tax.com/" + theImg2 + "." + theExt + "' width='" + theWidth + "' height='" + theHeight + "' alt='" + theAlt + "' title='" +theAlt + "' class='img-responsive' /></a>";
+		var theLayer2 = $(this).parents("div.row").attr("id").replace("content","thehtml");
+		$("#"+theLayer2).show();
+		$("#theCode"+theImg2).val(theCode);
+		$("#thehtml_"+theImg2).show();
+		
+	});
+	$(".showImagesnippet").click(function(event){
+		event.preventDefault();
+		var theWidth = $(this).prev().text().split(" x ")[0];
+		var theHeight = $(this).prev().text().split(" x ")[1];
+		var theImg = $(this).parents("div.row").attr("id").replace("content_","");
+		var theExt = $(this).parents("div").attr("title");
+		var theCode="<img src='https://badge.zip2tax.com/" + theImg + "." + theExt + "' width='" + theWidth + "' height='" + theHeight + "' class='img-responsive' />";
+		
+		$("#theimg_"+theImg).empty().append(theCode);
+		$("#theimage_"+theImg).show();
+	});
 
-
-<form id="frmZ2TBadges">
-  <div id="content">
-    <div class="post">
-        <h1 class="title">Zip2tax downloadable badges</h1>
-        <div class="entry2">
-            <p>Download any of these badges and announce to the world that you are taking your sales tax compliance seriously. These valuable badges not only help to assure your customers that they are being charged the correct sales tax rate, they also show state auditors that your data is accurate and up to date.</p>
-            <p>Just copy the code for the badge you prefer and place it on your
-              web site, shopping cart or blog.</p>
-            <div>
-                <div style="clear: both"></div>
-                <div style="clear: both; height: 15em">
-                    <div class="topbox">
-                        <div style="width: 40%; float: left; margin-top: auto; margin-bottom: auto">
-                            <br />
-                            <img src="/Website/Images/badges/Zip2Tax-logo-250.jpg" style="width: 250px; height: 64px" alt="Zip2Tax logo badge" title="Zip2Tax logo badge">
-                        </div>
-                        <a id="z2t150a" style="font-weight: bold; text-decoration: none;" href="javascript:;" onclick="javascript:showOptions('z2tl','z2t150','z2t150a');">Show the Code</a>
-                        <br />
-                    <textarea readonly id="z2t150" onfocus="var obj = document.getElementById('z2t150response');
-                              if(window.fCopyToClipboard && window.fCopyToClipboard(this)){
-                                obj.innerHTML = 'Code has been copied to the clipboard.'
-                              }
-                              else{
-                                obj.innerHTML = 'The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.'
-                              }"
-                            onblur="
-                              var obj = document.getElementById('z2t150response');
-                              obj.innerHTML = '&nbsp;';"
-                            class="codebox" style="display: none"></textarea>
-                            <button type="button" id="z2t150close" onclick="javascript:z2tCloseButton('z2t150close','z2t150')" style="left: 554px;bottom: 91px; position: relative;"  class="yui3-button yui3-button-close">Close</button>
-                           
-                        <br />
-                        <div id="z2t150response" style="color: red; font-weight: bold; float: right">&nbsp;</div>
-                    </div>
-                    <div id="z2tl" class="lowerbox" style="display: none">
-                        <ul style="float: left; text-decoration: none">
-                            <li>White Background (.JPG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code1').value,'z2t150','z2t150close')" href="javascript:;">350 x 90</a>&nbsp;
-								<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-350.jpg">(preview)</a>
-                                
-								
-								<input type="hidden" id="z2t150Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-350.jpg' width='350' height='90' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;">
-                                
-								
-								<!-- input type="hidden" id="z2t150Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-350.jpg' width='350' height='90' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" -->
-								
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code2').value,'z2t150','z2t150close')" href="javascript:;">250 x 64</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-250.jpg">(preview)</a>
-                                <input type="hidden" id="z2t150Code2" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-250.jpg' width='250' height='64' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code3').value,'z2t150','z2t150close')" href="javascript:;">150 x 38</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-150.jpg">(preview)</a>
-                                <input type="hidden" id="z2t150Code3" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-150.jpg' width='150' height='38' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code7').value,'z2t150','z2t150close')" href="javascript:;">75 x 19</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-75.jpg">(preview)</a>
-                                <input type="hidden" id="z2t150Code7" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-75.jpg' width='75' height='19' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                        <ul style="float: right; text-decoration: none">
-                            <li>Transparent Background (.PNG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code4').value,'z2t150','z2t150close')" href="javascript:;">350 x 90</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-350.png">(preview)</a>
-                                <input type="hidden" id="z2t150Code4" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-350.png' width='350' height='90' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code5').value,'z2t150','z2t150close')" href="javascript:;">250 x 64</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-250.png">(preview)</a>
-                                <input type="hidden" id="z2t150Code5" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-250.png' width='250' height='64' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code6').value,'z2t150','z2t150close')" href="javascript:;">150 x 38</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-150.png">(preview)</a>
-                                <input type="hidden" id="z2t150Code6" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-150.png' width='150' height='38' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2t150Code8').value,'z2t150','z2t150close')" href="javascript:;">75 x 19</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2Tax-logo-75.png">(preview)</a>
-                                <input type="hidden" id="z2t150Code8" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2Tax-logo-75.png' width='75' height='19' alt='Zip2Tax logo badge' title='Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="clear: both; height: 15em">
-                    <div class="topbox">
-                        <div style="width: 40%; float: left; margin-top: auto; margin-bottom: auto">
-                            <br />
-                            <img src="/Website/Images/badges/Powered-by-Zip2Tax-250.jpg" style="width: 250px; height: 83px" alt="Powered by Zip2Tax logo badge" title="Powered by Zip2Tax logo badge">
-                        </div>
-                        <a id="z2tpower150a" style="font-weight: bold; text-decoration: none;" href="javascript:;" onclick="javascript:showOptions('z2tp','z2tpower150','z2tpower150a');">Show the Code</a>
-                        <br />
-                        <textarea readonly id="z2tpower150" onfocus="var obj = document.getElementById('z2tpower150response');
-                              if(window.fCopyToClipboard && window.fCopyToClipboard(this)){
-                                obj.innerHTML = 'Code has been copied to the clipboard.'
-                              }
-                              else{
-                                obj.innerHTML = 'The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.'
-                              }"
-                            onblur="
-                              var obj = document.getElementById('z2tpower150response');
-                              obj.innerHTML = '&nbsp;';"
-                            class="codebox" style="display: none"></textarea>
-                            <button type="button" id="z2tpower150close" onclick="javascript:z2tCloseButton('z2tpower150close','z2tpower150')" style="left: 554px;bottom: 110px; position: relative;"  class="yui3-button yui3-button-close">Close</button>
-                        <br />
-                        <div id="z2tpower150response" style="color: red; font-weight: bold; float: right">&nbsp;</div>
-                    </div>
-                    <div id="z2tp" class="lowerbox" style="display: none">
-                        <ul style="float: left; text-decoration: none">
-                            <li>White Background (.JPG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tpower150Code1').value,'z2tpower150','z2tpower150close')" href="javascript:;">250 x 83</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Powered-by-Zip2Tax-250.jpg">(preview)</a>
-                                <input type="hidden" id="z2tpower150Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Powered-by-Zip2Tax-250.jpg' width='250' height='83' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tpower150Code2').value,'z2tpower150','z2tpower150close')" href="javascript:;">150 x 50</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Powered-by-Zip2Tax-150.jpg">(preview)</a>
-                                <input type="hidden" id="z2tpower150Code2" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Powered-by-Zip2Tax-150.jpg' width='150' height='50' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tpower150Code3').value,'z2tpower150','z2tpower150close')" href="javascript:;">75 x 25</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Powered-by-Zip2Tax-75.jpg">(preview)</a>
-                                <input type="hidden" id="z2tpower150Code3" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Powered-by-Zip2Tax-75.jpg' width='75' height='25' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                        <ul style="float: right; text-decoration: none">
-                            <li>Transparent Background (.PNG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tpower150Code4').value,'z2tpower150','z2tpower150close')" href="javascript:;">250 x 83</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Powered-by-Zip2Tax-250.png">(preview)</a>
-                                <input type="hidden" id="z2tpower150Code4" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Powered-by-Zip2Tax-250.png' width='250' height='83' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tpower150Code5').value,'z2tpower150','z2tpower150close')" href="javascript:;">150 x 50</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Powered-by-Zip2Tax-150.png">(preview)</a>
-                                <input type="hidden" id="z2tpower150Code5" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Powered-by-Zip2Tax-150.png' width='150' height='50' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tpower150Code6').value,'z2tpower150','z2tpower150close')" href="javascript:;">75 x 25</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Powered-by-Zip2Tax-75.png">(preview)</a>
-                                <input type="hidden" id="z2tpower150Code6" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Powered-by-Zip2Tax-75.png' width='75' height='25' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="clear: both; height: 15em">
-                    <div class="topbox">
-                        <div style="width: 40%; float: left; margin-top: auto; margin-bottom: auto">
-                            <br />
-                            <img src="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-250.jpg" style="width: 250px; height: 78px" alt="Sales and use tax rates certified by Zip2Tax.com" title="Sales and use tax rates certified by Zip2Tax.com" />
-                        </div>
-                        <a  id="z2tcert150a" style="font-weight: bold; text-decoration: none;" href="javascript:;" onclick="javascript:showOptions('z2tstrc','z2tcert150','z2tcert150a');">Show the Code</a>
-                        <br />
-                        <textarea readonly id="z2tcert150" onfocus="var obj = document.getElementById('z2tcert150response');
-                              if(window.fCopyToClipboard && window.fCopyToClipboard(this)){
-                                obj.innerHTML = 'Code has been copied to the clipboard.'
-                              }
-                              else{
-                                obj.innerHTML = 'The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.'
-                              }"
-                            onblur="
-                              var obj = document.getElementById('z2tcert150response');
-                              obj.innerHTML = '&nbsp;';"
-                            class="codebox" style="display: none"></textarea>
-                            <button type="button" id="z2tcert150close" onclick="javascript:z2tCloseButton('z2tcert150close','z2tcert150')" style="left: 554px;bottom: 106px; position: relative;"  class="yui3-button yui3-button-close">Close</button>
-                        <br />
-                        <div id="z2tcert150response" style="color: red; font-weight: bold; float: right">&nbsp;</div>
-                    </div>
-                    <div id="z2tstrc" class="lowerbox" style="display: none">
-                        <ul style="float: left; text-decoration: none">
-                            <li>White Background (.JPG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code1').value,'z2tcert150','z2tcert150close')" href="javascript:;">350 x 109</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-350.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-350.jpg' width='350' height='109' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code7').value,'z2tcert150','z2tcert150close')" href="javascript:;">300 x 93</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-300.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code7" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-300.jpg' width='300' height='93' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code2').value,'z2tcert150','z2tcert150close')" href="javascript:;">250 x 78</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-250.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code2" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-250.jpg' width='250' height='78' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code3').value,'z2tcert150','z2tcert150close')" href="javascript:;">150 x 47</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-150.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code3" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-150.jpg' width='150' height='47' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                        <ul style="float: right; text-decoration: none">
-                            <li>Transparent Background (.PNG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code4').value,'z2tcert150','z2tcert150close')" href="javascript:;">350 x 109</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-350.png">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code4" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-350.png' width='350' height='109' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code8').value,'z2tcert150','z2tcert150close')" href="javascript:;">300 x 93</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-300.png">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code8" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-300.png' width='300' height='93' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code5').value,'z2tcert150','z2tcert150close')" href="javascript:;">250 x 78</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-250.png">(preview)</a>
-
-                                <input type="hidden" id="z2tcert150Code5" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-250.png' width='250' height='78' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert150Code6').value,'z2tcert150','z2tcert150close')" href="javascript:;">150 x 47</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-certified-by-Zip2Tax-150.png">(preview)</a>
-                                <input type="hidden" id="z2tcert150Code6" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-certified-by-Zip2Tax-150.png' width='150' height='47' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="clear: both; height: 15em">
-                    <div class="topbox">
-                        <div style="width: 40%; float: left; margin-top: auto; margin-bottom: auto">
-                            <br />
-                            <img src="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-250.jpg" style="width: 250px; height: 78px" alt="Powered by Zip2Tax logo badge" title="Powered by Zip2Tax logo badge">
-                        </div>
-                        <a id="z2tsalespower150a" style="font-weight: bold; text-decoration: none;" href="javascript:;" onclick="javascript:showOptions('z2tstrp','z2tsalespower150','z2tsalespower150a');">Show the Code</a>
-                        <br />
-                        <textarea readonly id="z2tsalespower150" onfocus="var obj = document.getElementById('z2tsalespower150response');
-                              if(window.fCopyToClipboard && window.fCopyToClipboard(this)){
-                                obj.innerHTML = 'Code has been copied to the clipboard.'
-                              }
-                              else{
-                                obj.innerHTML = 'The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.'
-                              }"
-                            onblur="
-                              var obj = document.getElementById('z2tsalespower150response');
-                              obj.innerHTML = '&nbsp;';"
-                            class="codebox" style="display: none"></textarea>
-                            <button type="button" id="z2tsalespower150close" onclick="javascript:z2tCloseButton('z2tsalespower150close','z2tsalespower150')" style="left: 554px;bottom: 107px; position: relative;"  class="yui3-button yui3-button-close">Close</button>
-                        <br />
-                        <div id="z2tsalespower150response" style="color: red; font-weight: bold; float: right">&nbsp;</div>
-                    </div>
-                    <div id="z2tstrp" class="lowerbox" style="display: none">
-                        <ul style="float: left; text-decoration: none">
-                            <li>White Background (.JPG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tsalespower150Code1').value,'z2tsalespower150','z2tsalespower150close')" href="javascript:;">350 x 109</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-350.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tsalespower150Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-powered-by-Zip2Tax-350.jpg' width='350' height='109' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tsalespower150Code2').value,'z2tsalespower150','z2tsalespower150close')" href="javascript:;">250 x 78</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-250.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tsalespower150Code2" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-powered-by-Zip2Tax-250.jpg' width='250' height='78' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tsalespower150Code3').value,'z2tsalespower150','z2tsalespower150close')" href="javascript:;">150 x 47</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-150.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tsalespower150Code3" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-powered-by-Zip2Tax-150.jpg' width='150' height='47' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                        <ul style="float: right; text-decoration: none">
-                            <li>Transparent Background (.PNG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tsalespower150Code4').value,'z2tsalespower150','z2tsalespower150close')" href="javascript:;">350 x 109</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-350.png">(preview)</a>
-
-                                <input type="hidden" id="z2tsalespower150Code4" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-powered-by-Zip2Tax-350.png' width='350' height='109' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tsalespower150Code5').value,'z2tsalespower150','z2tsalespower150close')" href="javascript:;">250 x 78</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-250.png">(preview)</a>
-
-                                <input type="hidden" id="z2tsalespower150Code5" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-powered-by-Zip2Tax-250.png' width='250' height='78' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tsalespower150Code6').value,'z2tsalespower150','z2tsalespower150close')" href="javascript:;">150 x 47</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-rates-powered-by-Zip2Tax-150.png">(preview)</a>
-                                <input type="hidden" id="z2tsalespower150Code6" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-rates-powered-by-Zip2Tax-150.png' width='150' height='47' alt='Powered by Zip2Tax logo badge' title='Powered by Zip2Tax logo badge'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="clear: both; height: 15em">
-                    <div class="topbox">
-                        <div style="width: 40%; float: left; margin-top: auto; margin-bottom: auto">
-                            <br />
-                            <img src="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-75.jpg" style="width: 75px; height: 107px" alt="Zip2Tax logo badge" title="Zip2Tax logo badge" />
-                        </div>
-                        <a id="z2tcert50a" style="font-weight: bold; text-decoration: none;" href="javascript:;" onclick="javascript:showOptions('z2tstc','z2tcert50','z2tcert50a');">Show the Code</a>
-                        <br />
-                        <textarea readonly id="z2tcert50" onfocus="var obj = document.getElementById('z2tcert50response');
-                              if(window.fCopyToClipboard && window.fCopyToClipboard(this)){
-                                obj.innerHTML = 'Code has been copied to the clipboard.'
-                              }
-                              else{
-                                obj.innerHTML = 'The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.'
-                              }"
-                            onblur="
-                              var obj = document.getElementById('z2tcert50response');
-                              obj.innerHTML = '&nbsp;';"
-                            class="codebox" style="display: none"></textarea>
-                            <button type="button" id="z2tcert50close" onclick="javascript:z2tCloseButton('z2tcert50close','z2tcert50')" style="left: 310px;
-    bottom: 134px; position: relative;"  class="yui3-button yui3-button-close">Close</button>
-                        <br />
-                        <div id="z2tcert50response" style="color: red; font-weight: bold; float: right">&nbsp;</div>
-                    </div>
-                    <div id="z2tstc" class="lowerbox" style="display: none">
-                        <ul style="float: left; text-decoration: none">
-                            <li>White Background (.JPG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert50Code2').value,'z2tcert50','z2tcert50close')" href="javascript:;">125 x 179</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-125.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert50Code2" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-certified-by-Zip2Tax-125.jpg' width='125' height='179' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert50Code5').value,'z2tcert50','z2tcert50close')" href="javascript:;">75 x 107</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-75.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert50Code5" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-certified-by-Zip2Tax-75.jpg' width='75' height='107' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert50Code1').value,'z2tcert50','z2tcert50close')" href="javascript:;">50 x 72</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-50.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tcert50Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-certified-by-Zip2Tax-50.jpg' width='50' height='72' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                        <ul style="float: right; text-decoration: none">
-                            <li>Transparent Background (.PNG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert50Code4').value,'z2tcert50','z2tcert50close')" href="javascript:;">152 x 179</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-125.png">(preview)</a>
-                                <input type="hidden" id="z2tcert50Code4" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-certified-by-Zip2Tax-125.png' width='125' height='179' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert50Code6').value,'z2tcert50','z2tcert50close')" href="javascript:;">75 x 107</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-75.png">(preview)</a>
-
-                                <input type="hidden" id="z2tcert50Code6" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-certified-by-Zip2Tax-75.png' width='75' height='107' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tcert50Code3').value,'z2tcert50','z2tcert50close')" href="javascript:;">50 x 72</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/sales-tax-certified-by-Zip2Tax-50.png">(preview)</a>
-
-                                <input type="hidden" id="z2tcert50Code3" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/sales-tax-certified-by-Zip2Tax-50.png' width='50' height='72' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                                                            
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="clear: both; height: 15em; margin-left: 3em">
-                    <div class="topbox">
-                        <div style="width: 40%; float: left; width: 150px; height: 35px">
-                            <br />
-                            <img src="/Website/Images/badges/Zip2tax_icon_badge_62.jpg" style="width: 62px; height: 62px" alt="Powered by Zip2Tax logo badge" title="Powered by Zip2Tax logo badge" />
-                        </div>
-                        <a id="z2tbadge50a" style="font-weight: bold; text-decoration: none; margin-left: 4em" href="javascript:;" onclick="javascript:showOptions('z2tb','z2tbadge50','z2tbadge50');">Show the Code</a>
-                        <br />
-                        <textarea readonly id="z2tbadge50" onfocus="var obj = document.getElementById('z2tbadge50response');
-                              if(window.fCopyToClipboard && window.fCopyToClipboard(this)){
-                                obj.innerHTML = 'Code has been copied to the clipboard.'
-                              }
-                              else{
-                                obj.innerHTML = 'The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.'
-                              }"
-                            onblur="
-                              var obj = document.getElementById('z2tbadge50response');
-                              obj.innerHTML = '&nbsp;';"
-                            class="codebox" style="display: none"></textarea>
-                            <button type="button" id="z2tbadge50close" onclick="javascript:z2tCloseButton('z2tbadge50close','z2tbadge50')" style="left: 366px;
-    bottom: 26px; position: relative;"  class="yui3-button yui3-button-close">Close</button>
-
-                        <br />
-                        <div id="z2tbadge50response" style="color: red; font-weight: bold; float: right">&nbsp;</div>
-                    </div>
-                    <div id="z2tb" class="lowerbox" style="display: none">
-                        <ul style="float: left; text-decoration: none">
-                            <li>White Background (.JPG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code1').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">125 x 122</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_125.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tbadge50Code1" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-125.jpg' width='125' height='122' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code1').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">62 x 62</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_62.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tbadge50Code2" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-62.jpg' width='62' height='62' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code3').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">50 x 49</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_50.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tbadge50Code3" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-50.jpg' width='50' height='49' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code4').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">25 x 24</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_25.jpg">(preview)</a>
-
-                                <input type="hidden" id="z2tbadge50Code4" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-25.jpg' width='25' height='24' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                        <ul style="float: right; text-decoration: none">
-                            <li>Transparent Background (.PNG)</li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code5').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">125 x 122</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_125.png">(preview)</a>
-                                <input type="hidden" id="z2tbadge50Code5" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-125.png' width='125' height='122' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code6').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">62 x 61</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_62.png">(preview)</a>
-
-                                <input type="hidden" id="z2tbadge50Code6" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-62.png' width='62' height='61' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code7').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">50 x 49</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_50.png">(preview)</a>
-                                <input type="hidden" id="z2tbadge50Code7" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-50.png' width='50' height='49' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                            <li>
-                                <a onclick="javascript:ShowCode(document.getElementById('z2tbadge50Code8').value,'z2tbadge50','z2tbadge50close')" href="javascript:;">25 x 24</a>&nbsp;<a href="javascript:;" class="display-preview" rel="/Website/Images/badges/Zip2tax_icon_badge_25.png">(preview)</a>
-                                <input type="hidden" id="z2tbadge50Code8" style="display: none" value="&lt;a href='http://www.zip2tax.com'&gt;&lt;img src='http://badge.zip2tax.com/Zip2tax-icon-badge-25.png' width='25' height='24' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com'&nbsp;/&gt;&lt;/a&gt;" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="/Website/Includes/yui/build/yui/yui-min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    YUI({ skin: 'night' }).use('node', 'nodebase', 'event', 'panel', function (Y) {
-        function imgPrev(event) {
-            var img = event.currentTarget.getAttribute('rel');
-
-            var filename = img.substring(img.length - 7, img.length);
-            filename = filename.substr(0, 3);
-            var imgwidth;
-
-            if (filename === '350') {
-                imgwidth = 400;
-            }
-            else if (filename === '300') {
-                imgwidth = 350;
-            }
-            else if (filename === '250') {
-                imgwidth = 300;
-            }
-            else if (filename === '150') {
-                imgwidth = 200;
-            }
-            else if (filename === '125') {
-                imgwidth = 175;
-            }
-            else if (filename === '100') {
-                imgwidth = 150;
-            }
-            else if (filename.match('75*')) {
-                imgwidth = 125;
-            }
-            else if (filename.match('62*')) {
-                imgwidth = 100;
-            }
-            else if (filename.match('50*')) {
-                imgwidth = 100;
-            }
-            else if (filename.match('25*')) {
-                imgwidth = 50;
-            }
-
-            var panel = new Y.Panel({
-                width: imgwidth,
-                zIndex: 10,
-                centered: true,
-                modal: true,
-                bodyContent: "<img src='" + img + "' alt='Sales and use tax rates certified by Zip2Tax.com' title='Sales and use tax rates certified by Zip2Tax.com' />"
-            }).render();
-
-        }
-
-        Y.one('#z2tl').delegate('click', imgPrev, 'a.display-preview');
-        Y.one('#z2tp').delegate('click', imgPrev, 'a.display-preview');
-        Y.one('#z2tstrc').delegate('click', imgPrev, 'a.display-preview');
-        Y.one('#z2tstrp').delegate('click', imgPrev, 'a.display-preview');
-        Y.one('#z2tstc').delegate('click', imgPrev, 'a.display-preview');
-        Y.one('#z2tb').delegate('click', imgPrev, 'a.display-preview');
-
-    });
-
+});
 </script>
-</form>
-<!-- content -->
+
+<div class="col-md-9 content">
+	<%=HeadingH1("Zip2tax downloadable badges")%>
+		<div class="clearfix"></div>
+
+		<p>Download any of these badges and announce to the world that you are taking your sales tax compliance seriously. These valuable badges not only help to assure your customers that they are being charged the correct sales tax rate, they also show state auditors that your data is accurate and up to date.</p>
+		<p>Just copy the code for the badge you prefer and place it on your web site, shopping cart or blog.</p>
+		<%imageStr="Zip2Tax-logo-350"%>
+		<div class="row" style="min-height:150px">
+			<div class="col-lg-6">
+				<img src="/Website/Images/badges/<%=imageStr%>.jpg" alt="Zip2Tax logo badge" id="img_<%=imageStr%>" class="center-block img-responsive">
+			</div>
+			<div class="col-lg-6">
+				<div class="clearfix"></div>
+			<button class="btn btn-danger center-block" id="link_<%=imageStr%>">Show the Code</button>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="thehtml_<%=imageStr%>">
+			<div class="col-lg-12 text-center">
+			<textarea id="theCode<%=imageStr%>" style="width:60%; height:80px;"></textarea>
+			<br>
+			<small style="color:#f00;">The clipboard object isn't supported by your browser. Press CTRL-C to copy to the clipboard.</small>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="theimage_<%=imageStr%>">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+			<div id="theimg_<%=imageStr%>" style="border:1px solid #f00; background:#eee; padding:5px"></div>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="content_<%=imageStr%>">
+			<div class="clearfix"></div>
+			
+			<div class="col-lg-5 col-lg-offset-1" title="jpg">
+				<p>
+				White Background (.JPG)<br>
+				<a href="#" class="showCodesnippet">350 x 90</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">250 x 64</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">150 x 38</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">75 x 19</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+			<div class="col-lg-5 col-lg-offset-1" title="png">
+				<p>Transparent Background (.PNG)<br>
+				<a href="#" class="showCodesnippet">350 x 90</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">250 x 64</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">150 x 38</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">75 x 19</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<%imageStr="Powered-by-Zip2Tax-250"%>
+		<div class="row" style="min-height:150px">
+			<div class="col-lg-6">
+				<img src="/Website/Images/badges/<%=imageStr%>.jpg" alt="Powered by Zip2Tax logo badge" id="img_<%=imageStr%>" class="center-block">
+			</div>
+			<div class="col-lg-6">
+				<div class="clearfix"></div>
+			<button class="btn btn-danger center-block" id="link_<%=imageStr%>">Show the Code</button>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="thehtml_<%=imageStr%>">
+			<div class="col-lg-12 text-center">
+			<textarea id="theCode<%=imageStr%>" style="width:60%; height:80px;"></textarea>
+			<br>
+			<small style="color:#f00;">The clipboard object isn't supported by your browser. Press CTRL-C to copy to the clipboard.</small>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="theimage_<%=imageStr%>">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+			<div id="theimg_<%=imageStr%>" style="border:1px solid #f00; background:#eee; padding:5px"></div>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="content_<%=imageStr%>">
+			<div class="clearfix"></div>
+			
+			<div class="col-lg-5 col-lg-offset-1" title="jpg">
+				<p>
+				White Background (.JPG)<br>
+				<a href="#" class="showCodesnippet">250 x 83</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">150 x 50</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">75 x 25</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				</p>
+			</div>
+			<div class="col-lg-5 col-lg-offset-1" title="png">
+				<p>Transparent Background (.PNG)<br>
+				<a href="#" class="showCodesnippet">250 x 83</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">150 x 50</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">75 x 25</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				</p>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<%imageStr="sales-tax-rates-certified-by-Zip2Tax-350"%>
+		<div class="row" style="min-height:150px">
+			<div class="col-lg-6">
+				<img src="/Website/Images/badges/<%=imageStr%>.jpg" alt="Sales and use tax rates certified by Zip2Tax.com" id="img_<%=imageStr%>" class="center-block img-responsive">
+			</div>
+			<div class="col-lg-6">
+				<div class="clearfix"></div>
+			<button class="btn btn-danger center-block" id="link_<%=imageStr%>">Show the Code</button>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="thehtml_<%=imageStr%>">
+			<div class="col-lg-12 text-center">
+			<textarea id="theCode<%=imageStr%>" style="width:60%; height:80px;"></textarea>
+			<br>
+			<small style="color:#f00;">The clipboard object isn\'t supported by your browser. Press CTRL-C to copy to the clipboard.</small>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="theimage_<%=imageStr%>">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+			<div id="theimg_<%=imageStr%>" style="border:1px solid #f00; background:#eee; padding:5px"></div>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="content_<%=imageStr%>">
+			<div class="clearfix"></div>
+			
+			<div class="col-lg-5 col-lg-offset-1" title="jpg">
+				<p>
+				White Background (.JPG)<br>
+				<a href="#" class="showCodesnippet">350 x 109</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">300 x 93</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">250 x 78</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">150 x 47</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+			<div class="col-lg-5 col-lg-offset-1" title="png">
+				<p>Transparent Background (.PNG)<br>
+				<a href="#" class="showCodesnippet">350 x 109</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">300 x 93</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">250 x 78</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">150 x 47</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+		
+		<%imageStr="sales-tax-certified-by-Zip2Tax-125"%>
+		<div class="row" style="min-height:150px">
+			<div class="col-lg-6">
+				<img src="/Website/Images/badges/<%=imageStr%>.jpg" alt="Sales and use tax rates certified by Zip2Tax.com" id="img_<%=imageStr%>" class="center-block">
+			</div>
+			<div class="col-lg-6">
+				<div class="clearfix"></div>
+			<button class="btn btn-danger center-block" id="link_<%=imageStr%>">Show the Code</button>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="thehtml_<%=imageStr%>">
+			<div class="col-lg-12 text-center">
+			<textarea id="theCode<%=imageStr%>" style="width:60%; height:80px;"></textarea>
+			<br>
+			<small style="color:#f00;">The clipboard object isn't supported by your browser. Press CTRL-C to copy to the clipboard.</small>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="theimage_<%=imageStr%>">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+			<div id="theimg_<%=imageStr%>" style="border:1px solid #f00; background:#eee; padding:5px"></div>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="content_<%=imageStr%>">
+			<div class="clearfix"></div>
+			
+			<div class="col-lg-5 col-lg-offset-1" title="jpg">
+				<p>
+				White Background (.JPG)<br>
+				<a href="#" class="showCodesnippet">125 x 179</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">75 x 107</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">50 x 72</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+			<div class="col-lg-5 col-lg-offset-1" title="png">
+				<p>Transparent Background (.PNG)<br>
+				<a href="#" class="showCodesnippet">125 x 179</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">75 x 107</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">50 x 72</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+		<%imageStr="Zip2tax_icon_badge_125"%>
+		<div class="row" style="min-height:150px">
+			<div class="col-lg-6">
+				<img src="/Website/Images/badges/<%=imageStr%>.jpg" alt="Sales and use tax rates certified by Zip2Tax.com" id="img_<%=imageStr%>" class="center-block">
+			</div>
+			<div class="col-lg-6">
+				<div class="clearfix"></div>
+			<button class="btn btn-danger center-block" id="link_<%=imageStr%>">Show the Code</button>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="thehtml_<%=imageStr%>">
+			<div class="col-lg-12 text-center">
+			<textarea id="theCode<%=imageStr%>" style="width:60%; height:80px;"></textarea>
+			<br>
+			<small style="color:#f00;">The clipboard object isn't supported by your browser. Press CTRL-C to copy to the clipboard.</small>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="theimage_<%=imageStr%>">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+			<div id="theimg_<%=imageStr%>" style="border:1px solid #f00; background:#eee; padding:5px"></div>
+			</div>
+		</div>
+		<div class="row hiddenContent" id="content_<%=imageStr%>">
+			<div class="clearfix"></div>
+			
+			<div class="col-lg-5 col-lg-offset-1" title="jpg">
+				<p>
+				White Background (.JPG)<br>
+				<a href="#" class="showCodesnippet">125 x 122</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">62 x 62</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">50 x 49</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">25 x 24</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+			<div class="col-lg-5 col-lg-offset-1" title="png">
+				<p>Transparent Background (.PNG)<br>
+				<a href="#" class="showCodesnippet">125 x 122</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">62 x 62</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">50 x 49</a> <a href="#" class="showImagesnippet">(preview)</a><br>
+				<a href="#" class="showCodesnippet">25 x 24</a> <a href="#" class="showImagesnippet">(preview)</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+		
+</div>
