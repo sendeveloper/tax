@@ -1,6 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE html>
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
 
@@ -10,20 +8,31 @@
     Session("devPage") = "SpotOn API"
 %>
 
-<html>
-  <head>
-    <title>Developer Information | Spot-On API - Zip2Tax</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->
+<html lang="en">
+    <head>
+      <title>Developer Information | Spot-On API - Zip2Tax</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <meta name="description" content="Use our Spot-On API to retrieve tax rate information for your applications with door-step accuracy.">
-	<!-- <script language="javascript" src="/Website/Includes/Javascript/page_developers_SpotOn.js" type="text/javascript"></script> -->
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
-
-	    <!-- #include virtual="/Website/pagesSupport/Developers/Dev/page_developers_left_sidebar_new.asp" -->
-		<!-- #include virtual="/Website/pagesSupport/Developers/Dev_SpotOn/page_developers_SpotOn_content_new.asp" -->
-        <!-- #include virtual="/Website/pagesSupport/Developers/Dev/page_developers_right_sidebar_new.asp" -->
-    </div>
-	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
+    <script language="javascript" src="/Website/Includes/Javascript/page_developers_SpotOn.js" type="text/javascript"></script>
+    </head>
   
+  <body>    
+    <div class="container-fluid" style="padding: 0px;">
+      <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+      
+      <div class="mainBody">
+        <div class="clearfix"></div>
+        <div class="container">     
+	    <!-- #include virtual="/Website/pagesSupport/Developers/Dev/page_developers_left_sidebar.asp" -->
+		<!-- #include virtual="/Website/pagesSupport/Developers/Dev_SpotOn/page_developers_SpotOn_content.asp" -->
+        <!-- #include virtual="/Website/pagesSupport/Developers/Dev/page_developers_right_sidebar.asp" -->
+        </div>
+        </div>
+    </div>
+    
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"-->   
   </body>
 </html>
