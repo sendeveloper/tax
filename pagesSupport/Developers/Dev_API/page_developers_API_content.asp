@@ -53,28 +53,27 @@
       handling: &lt;errorCode&gt; and &lt;errorMessage&gt;.  Below is a
       list of possible results &hellip;</p>
 		    <table border="0" cellspacing="3" cellpadding="2" style="border-style: none; margin-left:60px;" align="center">
-			
-		   <% Set cn = Server.CreateObject("ADODB.Connection")
-		cn.Open  connStrPublic'"Driver={SQL Server};Server=127.0.0.1"+strPort+";DATABASE=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;"
-	  
-		Set rs = cn.Execute("z2t_ApiErroCodes")
-		
-		rs.MoveFirst
-	Do While Not rs.EOF
-		' -- output the contents
-		Response.Write "<tr>"
-		For i = 0 to rs.Fields.Count - 1
-			Response.Write "<td style=""border-style: none;"">" & rs.Fields(i) & "</td>"
-		Next
-		Response.write "</tr>"
-		' -- move to the next record
-		rs.MoveNext
-	Loop
-		
-		cn.close
-		%>
-		
-		</table>	
+      
+       <% Set cn = Server.CreateObject("ADODB.Connection")
+    cn.Open "Driver={SQL Server};Server=127.0.0.1," + strPort + ";DATABASE=z2t_WebPublic;UID=z2t_WebUser;PWD=WebUser_z2t;"
+    
+    Set rs = cn.Execute("EXEC z2t_Types_list 'ErrorCode'")
+    
+    rs.MoveFirst
+  Do While Not rs.EOF
+    ' -- output the contents
+    Response.Write "<tr>"
+    For i = 0 to rs.Fields.Count - 1
+      Response.Write "<td style=""border-style: none;"">" & rs.Fields(i) & "</td>"
+    Next
+    Response.write "</tr>"
+    ' -- move to the next record
+    rs.MoveNext
+  Loop
+    
+    cn.close
+    %>
+    </table>	
 	
 
 </div>
