@@ -1,15 +1,21 @@
-<div class="col-lg-6 col-md-9 content">
-	<%=HeadingH1("Return Data Using XML")%>
-	<p>
-	<span class="firstword">Rather</span> Than returning the informationin a plain string, you may prefer to have data passed back using the XML Format
-	</p>	
-
-
-	<h3>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Quick XML Link
-	</h3>	
-	<p>The simpliest way to view XML is to click on the link below (use the browser's 
+<div id="content">
+  
+  <div class="post">
+    <h1 class="title">Return Data Using XML</h1>
+    <div class="NoScreen">
+      <p>&nbsp;</p>
+    </div>
+    <div class="entry">
+      <p><span class="firstword">Rather</span> Than returning the information
+        in a plain string, you may prefer to have data passed back using the
+        XML Format</p>
+    </div>
+  </div>
+  
+  <div class="post">
+    <h2 class="title">Quick XML Link</h2>
+    <div class="entry">
+      <p>The simpliest way to view XML is to click on the link below (use the browser's 
         back button to return to here).<br><br>
         
         <a href="/Link/Lookup_XML.asp?zip=90210&amp;usr=sample&amp;pwd=password">
@@ -27,18 +33,17 @@
         By clicking the link below you can view this.<br><br>
         
         <a href="/Link/Lookup_XML_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password">
-          <span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup_XML_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a>
-	</p>
-	
-	
-	<h3>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Error Handling
-	</h3>	
-
-	<p>Two fields have been added for error handling, error_code and error_message.  Below is a list of possible results . . .</p>
+          <span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup_XML_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a></p>
       
-      <table border=1 cellspacing="2" cellpadding="2" style="border-style: none;">
+    </div>
+    
+    <h2 class="title">Error Handling</h2>
+    <div class="entry">
+      
+      <p>Two fields have been added for error handling, error_code and error_message.  Below is a list of possible results . . .</p>
+      
+      <table border=1 cellspacing="2" cellpadding="2"
+             style="border-style: none;">
         <tr><td align="center" width="100" style="border-style: none;">0</td><td width="250" style="border-style: none;">"No Errors"</td></tr>
         <tr><td align="center" style="border-style: none;">1</td><td style="border-style: none;">"Missing Zip Code"</td></tr>
         <tr><td align="center" style="border-style: none;">2</td><td style="border-style: none;">"Missing Password"</td></tr>
@@ -51,4 +56,8 @@
         <tr><td align="center" style="border-style: none;">99</td><td style="border-style: none;">"Error Unknown"</td></tr>
       </table>
       
+    </div>
+  </div>
+  
+  
 </div>

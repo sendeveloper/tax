@@ -1,37 +1,38 @@
-<div class="col-lg-6 col-md-9 content">
-	<%=HeadingH1("Passing Request Variables")%>
-	<h3>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Quick Link
-	</h3>	
-	<p><span class="firstword">The</span> simpliest form of this method is to click on the link below (use the browser's back button to return to here).<br><br>
-
-	<a href="/Link/Lookup.asp?zip=90210&amp;usr=sample&amp;pwd=password"><span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a>
-	
-	</p>
-		  
-	<p>Or you can paste this line of code into any browser's URL box.</p>
-
-	<p>You will see that you looked up the data using the request variables.  You may wish to
-	try other zip codes to see the results.  Keep in mind that when experimenting with the sample username and password 
-	combination you are only allowed zip codes between 90001 and 92999.  When you become a subscriber to our service
-	you can use the exact same code only having to replace the username and password with your own.</p>
-
-	<p>This example shows our basic version of tax information giving you the total rate.  You may require our full breakout 
-	information which returns all the components (State, County, City and Special District) of the total.
-	By clicking the link below you can view this.<br><br>
-
-	<a href="/Link/Lookup_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password">
-	  <span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a>
-	</p>
-	
-	
-	<h3>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Return the Results to your custom page
-	</h3>	
-
-	<p><span class="firstword">Now</span> we want to have the
+<div id="content">
+  
+  <div class="post">
+    <h1 class="title">Passing Request Variables</h1>
+    <div class="entry"></div>
+  </div>
+  
+  
+  <div class="post">
+    <h2 class="title">Quick Link</h2>
+    <div class="entry">
+      <p><span class="firstword">The</span> simpliest form of this method is to click on the link below 
+        (use the browser's back button to return to here).<br><br>
+        
+        <a href="/Link/Lookup.asp?zip=90210&amp;usr=sample&amp;pwd=password">
+          <span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a></p>
+      
+      <p>Or you can paste this line of code into any browser's URL box.</p>
+      
+      <p>You will see that you looked up the data using the request variables.  You may wish to
+        try other zip codes to see the results.  Keep in mind that when experimenting with the sample username and password 
+        combination you are only allowed zip codes between 90001 and 92999.  When you become a subscriber to our service
+        you can use the exact same code only having to replace the username and password with your own.</p>
+      
+      <p>This example shows our basic version of tax information giving you the total rate.  You may require our full breakout 
+        information which returns all the components (State, County, City and Special District) of the total.
+        By clicking the link below you can view this.<br><br>
+        
+        <a href="/Link/Lookup_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password">
+          <span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup_Extended.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a></p>
+    </div>
+    
+    <h2 class="title">Return the Results to your custom page</h2>
+    <div class="entry">
+      <p><span class="firstword">Now</span> we want to have the
         results passed back to us in a page we custom designed. At the end of the URL we are going to add a 
         request variable named ret as shown.<br><br>
         
@@ -44,7 +45,12 @@
         to a page of your choosing which is displaying the data.  This new page
         should reside on your server and can be written in any language.
         Below are samples using ASP and PHP.</p>
-		
+      
+    </div>            
+  </div>
+  
+  <div class="post">
+    <div class="entry">
       <span class="firstword">Display Request Variable Results Using ASP</span>
       <div class="samplesBox">
         
@@ -58,7 +64,13 @@
         Shipping_Taxable: &lt;%=Request("Shipping_Taxable")%&gt;&lt;br&gt;<br>
         
       </div>
-	<div class="clearfix"></div>
+    </div>
+  </div>
+  
+  <br><br>
+  
+  <div class="post">
+    <div class="entry">
       <span class="firstword">Display Request Variable Results Using PHP</span>
       <div class="samplesBox">
         &lt;?php<br><br>
@@ -86,5 +98,10 @@
         ?&gt;<br>
         
       </div>
-	
+    </div>
+  </div>
+  
+  
+  
 </div>
+
