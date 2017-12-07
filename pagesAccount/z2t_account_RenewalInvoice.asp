@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
@@ -65,14 +64,13 @@
    Next
 %>
 
-<html>
+<html lang="en">
   <head>
     <title>Subscription Renewal Invoice - Zip2Tax</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="Log in to your account and pay for your subscription here through our secure online renewal system.">
-	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
+	<!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <script language="javascript" src="/Website/Includes/Javascript/z2t_popup_functions.js" type="text/javascript"></script>
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
 
   <style>
     #usage-statistics * {margin: 0em;
@@ -87,14 +85,25 @@
     ul.resultset li.column-1 {margin-left: 15em;}
     ul.resultset li.column-2 {margin-left: 30em;}
   </style>
-
-        <!-- #include virtual="/Website/pagesAccount/RenewalInvoice/page_account_RenewalOnline_left_sidebar_new.asp" -->
+  </head>
+  
+  <body>  
+    <div class="container-fluid" style="padding: 0px;">
+      <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+    
+      <div class="mainBody">
+        <div class="clearfix"></div>
+        <div class="container">
+        <!-- #include virtual="/Website/pagesAccount/RenewalInvoice/page_account_RenewalOnline_left_sidebar.asp" -->
 		<!-- #include virtual="/Website/pagesAccount/RenewalInvoice/page_account_RenewalOnline_content_new.asp" -->
         <!-- #include virtual="/Website/pagesAccount/RenewalInvoice/page_account_RenewalOnline_right_sidebar_new.asp" -->
+        </div>
+       </div>
     </div>
-	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
   
-         
+  <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"--> 
   </body>
 </html>
 

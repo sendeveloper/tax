@@ -1,33 +1,19 @@
-<!-- START MY ACCOUNT BOX -->
-<div class="side-menu">
-  <div class="centering alt-title"><img src="/Website/images/my_account.png" alt="My Account"></div>
-  
+<div class="well text-center side-menu">
+	<img src="/Website/images/my_account.png" alt="My Account" class="centered">
 <%
-  Dim menu: menu = Array( _
-	  Array("Account Information", "/Website/pagesAccount/z2t_account.asp"), _
-	  Array( _
-	    Array("Online Lookup Usage", "/Website/pagesAccount/z2t_account_LookupUsage.asp"), _
-        Array("Tax Table Downloads", "/Website/pagesAccount/z2t_account_TableDownloads.asp"), _
-     Array("Renew Online", "/Website/pagesAccount/z2t_account_RenewalInvoice.asp"), _
-     Array("Downloadable Badges", "/Website/pagesAccount/z2t_badges.asp")))
-      
-      
-
-
-	  'Array("Renew my subscription", ""), _
-	  'Array("Change password", ""), _
-	  'Array("Settings", "")
-
+Dim menu: menu = Array( _
+Array("Account Information", "/my-account"), _
+Array( _
+Array("Online Lookup Usage", "/account-usage"), _
+Array("Tax Table Downloads", "/account-table-download"), _
+Array("Renew Online", "/account-renew"), _
+Array("Downloadable Badges", "/badges")))
 %>
-
-<ul>
-<%
-  recurseList "listify", menu
-%>
-</ul>
+	<ul>
+	<%recurseList "listify", menu%>
+	</ul>
 
 <%
-
 Sub listify(string, link)
   Response.Write("<li" & iif(Session("acctPage") = string, " class=""mSelected""", "") & "><a class=""firstword" & """ href=""" & link & """>" & string & "</a></li>")
 End Sub
@@ -53,7 +39,5 @@ Function iif(condition, consequent, alternative)
 End Function
 
 
-%>
-
-</div><!-- side-menu -->
-<!-- END MY ACCOUNT BOX -->
+%>	
+</div>

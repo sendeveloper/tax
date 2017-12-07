@@ -28,7 +28,7 @@
         <div class="clearfix"></div>
         <div class="container">
         <!-- #include virtual="/Website/pagesSupport/Developers/Dev/page_developers_left_sidebar.asp" -->
-		<!-- #include virtual="/Website/pagesSupport/Developers/Dev_TableDownload_HTTP/page_developers_TableDownload_HTTP_content_new.asp" -->
+		<!-- #include virtual="/Website/pagesSupport/Developers/Dev_TableDownload_HTTP/page_developers_TableDownload_HTTP_content.asp" -->
         <!-- #include virtual="/Website/pagesSupport/Developers/Dev/page_developers_right_sidebar.asp" -->
         </div>
         </div>

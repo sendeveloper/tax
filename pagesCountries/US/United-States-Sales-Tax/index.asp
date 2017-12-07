@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
@@ -8,7 +8,7 @@
     Session("currentPage") = "index.asp"
 %>
 
-<html>
+<html lang="en">
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
 	<script language="javascript" src="/Website/pagesCountries/US/United-States-Sales-Tax/index/page_index.js" type="text/javascript"></script>
