@@ -1,6 +1,5 @@
 <div class="col-md-9 content">
-
-	<h1><span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>Smith Cart</h1>
+	<%=HeadingH1("Smith Cart")%>
 
 		<div class="row">
 			<div>

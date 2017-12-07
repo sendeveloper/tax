@@ -1,13 +1,18 @@
-<div class="col-lg-6 col-md-9 content">
-	<%=HeadingH1("Table Download | HTTP Request")%>
- <p><span class="firstword">Automatic</span> table downloads can
+<div id="content">
+  <div class="post">
+    <h1 class="title">Table Download | HTTP Request</h1>
+    <div class="NoScreen">
+      <p>&nbsp;</p>
+    </div>
+    <div class="entry">
+      <p><span class="firstword">Automatic</span> table downloads can
         be easily developed using our HTTP table download feature
-        through <a href="https://tables.Zip2Tax.com/index.asp?usr=sample&amp;pwd=password&amp;id=0">https://tables.Zip2Tax.com</a>.
+        through <a href="http://tables.Zip2Tax.com/index.asp?usr=sample&amp;pwd=password&amp;id=0">http://tables.Zip2Tax.com</a>.
         Pass in your username and password as request variables in
         the query string.</p>
 
       <p>For a quick demonstration, point your browser to
-        <br><samp style="font-size: 90%; margin-left: 10px;">https://tables.zip2tax.com?usr=<span class="firstword">&lt;USERNAME&gt;</span>&#38;pwd=<span class="firstword">&lt;PASSWORD&gt;</span>&#38;id=<span class="firstword">&lt;ID&gt;</span></samp><br>
+        <br><samp style="font-size: 90%; margin-left: 10px;">http://tables.zip2tax.com?usr=<span class="firstword">&lt;USERNAME&gt;</span>&#38;pwd=<span class="firstword">&lt;PASSWORD&gt;</span>&#38;id=<span class="firstword">&lt;ID&gt;</span></samp><br>
         Instead of a web page, you will receive a file to save or
         open.</p>
 
@@ -32,32 +37,35 @@
         than the "Open" when downloading the tables.</p>
 
 		<h3>Examples:</h3>
-        <ul style="margin-left: 45px; margin-top: 15px; ">
+        <ul style="margin-left: 10px; margin-top: 15px; display: block-inline;">
         <li>List my tables:<br>
-          <a href="https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=0" style="margin-left: 10px;"><samp style="font-size: 90%;">https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=0</samp></a><br>
+          <a href="http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=0" style="margin-left: 10px;"><samp style="font-size: 90%;">http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=0</samp></a><br>
           Substitute your login for "sample" and your password for "password".</li>
         <li>Download a table:<br>
-          <a href="https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=1" style="margin-left: 10px; margin-top: 15px;"><samp style="font-size: 90%;">https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=1</samp></a><br>
+          <a href="http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=1" style="margin-left: 10px; margin-top: 15px;"><samp style="font-size: 90%;">http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=1</samp></a><br>
           To download the listed table, substitute the desired table's ID for "1".</li>
 
         <li>Download a previous month's table:<br>
           For example, to download your July, 2011 table:<br>
-          <a href="https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2013-07&amp;id=1" style="margin-left: 10px; margin-top: 15px;"><samp style="font-size: 90%;">https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2011-07&amp;id=1</samp></a></li>
+          <a href="http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2013-07&amp;id=1" style="margin-left: 10px; margin-top: 15px;"><samp style="font-size: 90%;">http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2011-07&amp;id=1</samp></a></li>
 
         <li>Similarly, to list the tables available from July, 2011:<br>
-          <a href="https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2013-07&amp;id=0" style="margin-left: 10px; margin-top: 15px;"><samp style="font-size: 90%;">https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2011-07&amp;id=0</samp></a></li>
+          <a href="http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2013-07&amp;id=0" style="margin-left: 10px; margin-top: 15px;"><samp style="font-size: 90%;">http://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;date=2011-07&amp;id=0</samp></a></li>
       </ul>
-
+      
       <p>This interface is intended for developers to automate the
         download process.  An interactive version is available under
         the "My Account" section of the Zip2Tax website (available
         after you log in).<br>
-		<% If Session("z2t_loggedin") > "" Then %>
-				<a href="https://www.zip2tax.com/Website/pagesAccount/z2t_account_TableDownloads.asp">
-		<% End If %>
-				  "My Accounts/TaxTable Downloads" feature.
-		<% If Session("z2t_loggedin") > "" Then %>
-				</a>
-		<% End If %>
+<% If Session("z2t_loggedin") > "" Then %>
+        <a href="http://www.zip2tax.com/Website/pagesAccount/z2t_account_TableDownloads.asp">
+<% End If %>
+          "My Accounts/TaxTable Downloads" feature.
+<% If Session("z2t_loggedin") > "" Then %>
+        </a>
+<% End If %>
       </p>
+
+    </div>
+  </div>
 </div>

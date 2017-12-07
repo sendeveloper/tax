@@ -1,7 +1,6 @@
 <div class="col-md-9 content">
 
-	<h1><span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>Fleapay</h1>
-
+	<%=HeadingH1("Fleapay")%>
 		<div class="row">
 			<div>
 				<p class="subtitle1"><img class="center img-responsive" src="/Website/Images/partner-logos/fleapay_logo.jpg"  alt="Fleapay shopping cart solutions"></p>
