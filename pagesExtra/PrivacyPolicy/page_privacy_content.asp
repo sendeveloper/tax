@@ -1,9 +1,5 @@
 <div class="col-md-9 content">
-	<h1>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Privacy Policy
-	</h1>
-
+  <%=HeadingH1("Privacy Policy")%>
       
       <p class="firstword">Zip2Tax, LLC</p>
       

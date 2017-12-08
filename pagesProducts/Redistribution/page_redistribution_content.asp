@@ -1,7 +1,6 @@
 <div class="col-md-9 content">
   <div  class="post">
-    <h1 class="title">Value-added reseller (VAR) licensing</h1>
-    
+    <%=HeadingH1("Value-added reseller (VAR) licensing")%>
     <p>Whether you are building your own shopping cart, an enterprise solution,
       or any software application, you can make your product even more indispensible
       when you incorporate current sales and use tax rates for every imaginable
