@@ -1,9 +1,6 @@
 <!-- START EULA CONTENT -->
 <div class="col-md-9 content">
-	<h1>
-	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	End User License Agreement
-	</h1>
+    <%=HeadingH1("End User License Agreement")%>
 	
       <div class="EULA">
         <h2 class="title">Zip2Tax, LLC End User License Agreement</h2>
