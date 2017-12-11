@@ -1,5 +1,9 @@
 <!-- Start of FooterCommonContent -->	
 	
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css">
+<link type="text/css" href="/Website/Includes/CSS/z2t_additional.css" rel="stylesheet" media="screen">
+
+	
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/respond.min.js"></script>
 	<script src="/js/scripts.js"></script>
@@ -40,11 +44,6 @@ $(document).ready(function(){
 	
 });
 
-</script>
-			
-<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css">
-<link type="text/css" href="/Website/Includes/CSS/z2t_additional.css" rel="stylesheet" media="screen">
-<script>
   $( function() {
     $( "#dialog-form, #dialog-form2" ).dialog({
       	autoOpen: false
@@ -104,9 +103,13 @@ $(document).ready(function(){
     	$('.modal-backdrop').remove();
     })
   } );
-  </script>  
+  
+  //Javascript Test At Bottom of Page Code
+  document.getElementById('JavaScriptTest').innerHTML = 'Pass';
+</script>  
+  
 <div id="dialog-form" title="Please log in to your account">
-     <fieldset>
+    <fieldset>
       <label for="ftUsername">Username</label>
       <input type="text" name="ftUsername" id="ftUsername" class="text ui-widget-content ui-corner-all">
       <label for="ftPassword">Password</label>
@@ -126,7 +129,7 @@ $(document).ready(function(){
 <div id="dialog-form2" title="Sign Up">
 	<div  class="text-center"><small>If you do not have an account, please provide the information below.</small></div>
     <hr style="margin:auto; width: 90%; text-align: center; color: #B0161E;"> 
-	 <fieldset>
+	<fieldset>
       <label for="FirstName">First Name</label>
       <input type="text" name="FirstName" id="FirstName" class="text ui-widget-content ui-corner-all">
       <label for="Email">Email</label>
@@ -293,6 +296,17 @@ $(document).ready(function(){
                  <% End If %> 
 		}
                 
-	</script>    	
+	</script> 
+
+<%
+Function HeadingH1(text)
+	
+	HeadingH1 = "<h1>" & vbCrLf & _
+		"        <span class='glyphicon glyphicon-star redFont' aria-hidden='true'></span>" & vbCrLf & _
+		"        " & text & vbCrLf & _
+		"    </h1>"
+
+End Function
+%>   	
 <!-- End of FooterCommonContent -->
 	

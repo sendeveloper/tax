@@ -20,7 +20,7 @@
     <script type="text/javascript" src="/Website/Includes/Javascript/lib.js"></script>
 	<script language="javascript" type="text/javascript">
 	      function formLoad() {
-        document.getElementById('JavaScriptTest').innerHTML = 'Pass';
+        // document.getElementById('JavaScriptTest').innerHTML = 'Pass';
         //document.getElementById('inputZip').focus()
 
         // state map zoom-in

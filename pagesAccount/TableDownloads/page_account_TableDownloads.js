@@ -1,9 +1,4 @@
-      function formLoad()
-        {
-        //document.getElementById('JavaScriptTest').innerHTML = 'Pass';
-        }
 
-      window.onload=formLoad;
 
     function clickDownload(type, state, clothed, a)
         {

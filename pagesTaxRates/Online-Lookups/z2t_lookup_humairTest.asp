@@ -70,13 +70,7 @@
         var maxSubscriptionServiceLevel = "<%=iif(maxSubscriptionServiceLevel <> "", maxSubscriptionServiceLevel, 0)%>";
         var z2tUserName = "<%=Session("z2t_UserName")%>";
 
-      function formLoad()
-        {
-        document.getElementById('JavaScriptTest').innerHTML = 'Pass';
-        }
 
-	
-      window.onload = formLoad;
     </script>
   </head>
 

@@ -1,6 +1,5 @@
 <div class="col-md-9 content">
-
-	<h1><span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>New York State Clothing</h1>
+	<%=HeadingH1("New York State Clothing")%>
 
 		<div class="row">
 			<div class="col-lg-2 hidden-xs">

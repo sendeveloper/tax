@@ -1,1 +1,1 @@
-function formLoad(){document.getElementById("JavaScriptTest").innerHTML="Pass"}function clickDownload(a,b,c,d){}window.onload=formLoad;
+function clickDownload(a,b,c,d){}

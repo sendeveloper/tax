@@ -1,6 +1,6 @@
     function formLoad()
         {
-        document.getElementById('JavaScriptTest').innerHTML = 'Pass';
+        // document.getElementById('JavaScriptTest').innerHTML = 'Pass';
         if (errorMessage > '')
             {
             alert(errorMessage);

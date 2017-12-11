@@ -1,1 +1,1 @@
-function formLoad(){document.getElementById("JavaScriptTest").innerHTML="Pass"}function ShowHide(a){"screen-shown"!=document.getElementById(a).className?document.getElementById(a).className="screen-shown":document.getElementById(a).className="screen-hidden"}window.onload=formLoad;
+function ShowHide(a){"screen-shown"!=document.getElementById(a).className?document.getElementById(a).className="screen-shown":document.getElementById(a).className="screen-hidden"}

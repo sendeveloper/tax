@@ -91,10 +91,7 @@
   </body>
 </html>
   <script language="javascript" type="text/javascript">
-    function formLoad() {
-      document.getElementById('JavaScriptTest').innerHTML = 'Pass';}
-
-      window.onload=formLoad;
+    
 
     function clickDownload(type, state, clothed, a) {
       var URL = "http://tables.zip2tax.com/download.asp" +
