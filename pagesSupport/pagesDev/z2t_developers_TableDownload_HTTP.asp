@@ -16,7 +16,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="description" content=".CSV sales and use tax tables.  Download your tax tables using HTTP protocol.">
     <meta name="robots" content="index,follow">
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_TableDownload_HTTP.js" type="text/javascript"></script>
     </head>
   
   <body>    

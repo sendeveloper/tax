@@ -17,7 +17,6 @@
     <meta name="description" content="Explaination of subscription levels to help you match the right service to your needs - ZIP, ZIP+4, or Spot-On.">
 	<!--#include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
      <meta name="robots" content="noindex,follow">
-	<script language="javascript" src="/Website/pagesProducts/Offers/Free/DatabaseInfo/page_database_info.js" type="text/javascript"></script>
 	
 	<style>
 	

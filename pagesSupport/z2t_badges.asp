@@ -12,7 +12,6 @@
 <html lang="en">
     <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->	
-	<script language="javascript" src="/Website/pagesSupport/Badges/page_badges.js" type="text/javascript"></script>
     </head>
   
   <body>    

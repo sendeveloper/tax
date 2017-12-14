@@ -16,7 +16,6 @@
     <meta name="keywords" content="Sales Tax, Zip Code, Tax Rates, Sales Tax Database">
     <meta name="description" content="Use our ZIP Code API to retrieve tax rate information for your applications with rooftop accuracy.">
 	<!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_ZIPcode.js" type="text/javascript"></script>
     </head>
   
   <body>    

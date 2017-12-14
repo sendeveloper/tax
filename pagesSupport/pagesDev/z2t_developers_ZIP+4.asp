@@ -13,7 +13,6 @@
 <!-- <%=(Session("devPage") = "ZIP+4 API")%> -->
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_ZIP+4.js" type="text/javascript"></script>
     </head>
   
   <body>    

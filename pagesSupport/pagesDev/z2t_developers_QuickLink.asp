@@ -16,7 +16,6 @@
     <meta name="description" content="The Passing Request Variables Quicklink returns Database Interface sales tax rates instantly.">
 	<!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <meta name="robots" content="index,follow">	
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_QuickLink.js" type="text/javascript"></script>
     </head>
   
   <body>    

@@ -15,7 +15,6 @@
     <meta name="description" content="Learn more about zip2tax's refund policy and how we protect your information.">
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <script language="javascript" src="/Website/Includes/Javascript/z2t_functions.js" type="text/javascript"></script>
-	<script language="javascript" src="/Website/pagesExtra/RefundPolicy/page_refund_policy.js" type="text/javascript"></script>
 
     <script language="javascript" type="text/javascript">
       var userName = '<%=Session("UserName")%>'

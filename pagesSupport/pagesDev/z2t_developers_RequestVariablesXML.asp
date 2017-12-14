@@ -16,7 +16,6 @@
     <meta name="description" content="Zip2Tax allows your data to return to you in XML format instead of in a plain string.">
 	 <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
      <meta name="robots" content="index,follow">
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_RequestVariablesXML.js" type="text/javascript"></script>
   </head>
   
   <body>  
