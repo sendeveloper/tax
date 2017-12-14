@@ -11,7 +11,6 @@
 <html>
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-    <script language="javascript" src="/Website/Includes/Javascript/page_customers.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container-fluid" style="padding: 0px;">

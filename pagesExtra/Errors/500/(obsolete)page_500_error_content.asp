@@ -1,6 +1,6 @@
-<div class="col-lg-6 col-md-9 content">
+<div id="content">
  <div  class="post">
-    <%=HeadingH1("We have a server error.")%>
+  <h1 class="title" align="left">We have a server error.</h1>
   <a name="PageSection1"></a>
   <div class="YesPrint">
    
@@ -50,9 +50,8 @@
         
         </p>
       </div>
-	  
-	  <div class="clearfix"></div>
-      <div class="hidden-sm hidden-xs">
+
+      <div class="error-500-img">
         <img src="/Website/Images/Errors/Server_error.jpg" alt="500 Error Image">
       </div>
     </div>

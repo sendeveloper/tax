@@ -19,7 +19,6 @@
 <html>
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	 <script language="javascript" src="Website/Includes/Javascript/page_desktop_widget.js" type="text/javascript"> </script>
   </head>
   
   <body>  

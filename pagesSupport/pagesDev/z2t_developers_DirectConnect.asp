@@ -17,7 +17,6 @@
     <meta name="description" content="Zip2Tax's direct connect allows you to connect to our databases and gives you the quickest response time.">
 	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->
     <meta name="robots" content="index,follow">	
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_DirectConnect.js" type="text/javascript"></script>
     <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
 
   </head>

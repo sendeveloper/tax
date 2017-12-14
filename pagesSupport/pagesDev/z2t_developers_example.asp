@@ -15,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->
     <meta name="robots" content="index,follow">	
-	<script language="javascript" src="/Website/Includes/Javascript/page_developers_example.js" type="text/javascript"></script>
+
     <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
 
   </head>

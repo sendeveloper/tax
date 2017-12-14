@@ -11,7 +11,6 @@
 <html lang="en">
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-    	<script language="javascript" src="/Website/Includes/Javascript/page_contact.js" type="text/javascript"></script>
     <style type="text/css">
       #comm100 { display:none; }
       .noscriptmsg { margin-top: 3em; }
