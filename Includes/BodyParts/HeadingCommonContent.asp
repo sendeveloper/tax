@@ -87,19 +87,13 @@
 
             <!-- Place this render call where appropriate -->
 			<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css">	
-            <script>
-            	window.onload = function() {
-            		var loadDeferredStyles = function() {
-	                    var addStylesNode = document.getElementById("deferred-styles");
-	                    var replacement = document.createElement("div");
-	                    replacement.innerHTML = addStylesNode.textContent;
-	                    document.body.appendChild(replacement)
-	                    addStylesNode.parentElement.removeChild(addStylesNode);
-	                };
-	                var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	                  webkitRequestAnimationFrame || msRequestAnimationFrame;
-	                if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-	                else window.addEventListener('load', loadDeferredStyles);
+            <script type="text/javascript">
+            	function onloadFunc(){
+            		var addStylesNode = document.getElementById("deferred-styles");
+                    var replacement = document.createElement("div");
+                    replacement.innerHTML = addStylesNode.textContent;
+                    document.body.appendChild(replacement)
+                    addStylesNode.parentElement.removeChild(addStylesNode);
 	                // google
 	                (function() {
 	                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -107,6 +101,7 @@
 	                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 	                })();
             	}
+            	window.onload = onloadFunc;
             </script>
 			
 		    <script src='/js/jquery.min.js'></script>
