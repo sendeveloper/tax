@@ -5,7 +5,9 @@
 	If PageTitle <> "" Then
 		Response.write "<title>" & PageTitle & "</title>" & vbCrLf
 	End If
-	
+%>
+    <meta charset="utf-8"/>
+<%
 	If PageKeyword <> "" Then
 		Response.write "	<meta name='keywords' content='" & PageKeyword & "'>" & vbCrLf
 	End If
@@ -16,6 +18,11 @@
 %>
 	
     <%=RobotInstruction%>
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Zip2Tax">
+	
     <meta name="alexaVerifyID" content="ZrGRzT40DhWTOZrbyPZtTdBQQSI">
 	<meta name="msvalidate.01" content="D4BCC3EE4D64AA629BDA7B988DEC9BD7" />
 	<meta name="google-site-verification" content="HAu4zuX5WCR_KP-XjBoc7hPWToTXnljC1H9qfIOM6u8" />
@@ -35,19 +42,16 @@
 	If Request.ServerVariables("URL") <> "/Website/pagesExtra/z2t_404_error.asp" Then
 		Session("currentPagePath") = Request.ServerVariables("URL")
 	End If
-	
-	
 %>
-
-            <script type="text/javascript">
-                var pathBase = '<%=pathBase%>';
-                var currentPage = '<%=Session("currentPage")%>';
-                var currentPagePath = pathBase.replace(/\/$/,'') + '<%=Session("currentPagePath")%>';
-                var errorMessage = '<%=Session("LoginErrorUrgent")%>';  
-                var NewUser = '<%=Session("NewUser")%>';
-    	        var PageKeyWords = '<%=PageKeyWords%>';
-                var userName = '<%=Session("UserName")%>';
-            </script>
+    <script>
+        var pathBase = '<%=pathBase%>';
+        var currentPage = '<%=Session("currentPage")%>';
+        var currentPagePath = pathBase.replace(/\/$/,'') + '<%=Session("currentPagePath")%>';
+        var errorMessage = '<%=Session("LoginErrorUrgent")%>';  
+        var NewUser = '<%=Session("NewUser")%>';
+        var PageKeyWords = '<%=PageKeyWords%>';
+        var userName = '<%=Session("UserName")%>';
+    </script>
 
             <!--CSS-->
                 <noscript id="deferred-styles">
@@ -69,7 +73,7 @@
             <![endif]-->
 
             <!--Google Analytics-->
-            <script type="text/javascript">
+            <script>
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -82,29 +86,31 @@
             </script>
 
             <!-- Place this render call where appropriate -->
-            <script type="text/javascript">
-                var loadDeferredStyles = function() {
-                    var addStylesNode = document.getElementById("deferred-styles");
-                    var replacement = document.createElement("div");
-                    replacement.innerHTML = addStylesNode.textContent;
-                    document.body.appendChild(replacement)
-                    addStylesNode.parentElement.removeChild(addStylesNode);
-                };
-                var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                  webkitRequestAnimationFrame || msRequestAnimationFrame;
-                if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-                else window.addEventListener('load', loadDeferredStyles);
-                // google
-                (function() {
-                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                    po.src = '/js/plusone.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();
+			<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css">	
+            <script>
+            	window.onload = function() {
+            		var loadDeferredStyles = function() {
+	                    var addStylesNode = document.getElementById("deferred-styles");
+	                    var replacement = document.createElement("div");
+	                    replacement.innerHTML = addStylesNode.textContent;
+	                    document.body.appendChild(replacement)
+	                    addStylesNode.parentElement.removeChild(addStylesNode);
+	                };
+	                var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	                  webkitRequestAnimationFrame || msRequestAnimationFrame;
+	                if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+	                else window.addEventListener('load', loadDeferredStyles);
+	                // google
+	                (function() {
+	                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	                    po.src = '/js/plusone.js';
+	                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	                })();
+            	}
             </script>
-            <script src='/js/jquery.min.js'></script>
 			
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height">
-    <meta name="author" content="Zip2Tax">
+		    <script src='/js/jquery.min.js'></script>
+
 			<script>
 				$(document).ready(function() {
 					var checkTimer = setInterval(function() {checkChatDiv()}, 500);
@@ -231,7 +237,6 @@
 					})
 				});
 			</script>
-			<link href="/css/bootstrap.min.css" rel="stylesheet">			
-			
+			<link href="/css/bootstrap.min.css" rel="stylesheet">		
 <!-- End of HeadingCommonContent -->
 	
