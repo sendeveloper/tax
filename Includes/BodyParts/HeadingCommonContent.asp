@@ -230,6 +230,16 @@
       					$('#dialog-form').parent().css('z-index', 1100);
 
 					})
+					$('#ftUsername').keydown(function(e) {
+						if (e.keyCode == 13) {
+						    $('#ftPassword').focus();
+						}
+					})
+					$('#ftPassword').keydown(function(e) {
+						if (e.keyCode == 13){
+							$('#dialog-form button').click();
+						}
+					})
 				});
 			</script>
 			<link href="/css/bootstrap.min.css" rel="stylesheet">		
