@@ -81,20 +81,20 @@ $(document).ready(function(){
 	}
     $("#lookupOpener,#lookupOpener2").on( "click", function() {
     	$('.modal-backdrop').remove();
-    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #FFF;"></div>').appendTo(document.body);
+    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #555;"></div>').appendTo(document.body);
       $( "#dialog-form" ).dialog( "open" );
       $('#dialog-form').parent().css('z-index', 1100);
     });
     $( "#showSignUp" ).on( "click", function() {
     	$('.modal-backdrop').remove();
-    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #FFF;"></div>').appendTo(document.body);
+    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #555;"></div>').appendTo(document.body);
       $( "#dialog-form" ).dialog( "close" );
       $( "#dialog-form2" ).dialog( "open" );
       $('#dialog-form2').parent().css('z-index', 1100);
     });
     $( "#showLogin" ).on( "click", function() {
     	$('.modal-backdrop').remove();
-    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #FFF;"></div>').appendTo(document.body);
+    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #555;"></div>').appendTo(document.body);
       $( "#dialog-form2" ).dialog( "close" );
       $( "#dialog-form" ).dialog( "open" );
       $('#dialog-form').parent().css('z-index', 1100);
@@ -107,7 +107,10 @@ $(document).ready(function(){
   //Javascript Test At Bottom of Page Code
   document.getElementById('JavaScriptTest').innerHTML = 'Pass';
 </script>  
-  
+<div id="dialog-waiting">
+	<div id="loader_ani"></div>
+	Please wait...
+</div>
 <div id="dialog-form" title="Please log in to your account">
     <fieldset>
       <label for="ftUsername">Username</label>
@@ -134,7 +137,7 @@ $(document).ready(function(){
       <input type="text" name="FirstName" id="FirstName" class="text ui-widget-content ui-corner-all">
       <label for="Email">Email</label>
       <input type="text" name="Email" id="Email" class="text ui-widget-content ui-corner-all">
-	  <div class="text-center"><button type="button" class="btn btn-danger" onclick="SubmitFreeTrialInitialSingup();">submit</button></div>
+	  <div class="text-center"><button type="button" class="btn btn-danger" onclick="SubmitFreeTrialInitialSignup();">submit</button></div>
     </fieldset>
 	<div class="clearfix"></div>
 	<hr style="margin:auto; width: 90%; text-align: center; color: #B0161E;"> 

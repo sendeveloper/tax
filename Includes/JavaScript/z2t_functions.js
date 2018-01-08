@@ -107,7 +107,7 @@ function FreeTrialLogin() {
     div_hide(2), div_show(1)
 }
 
-function SubmitFreeTrialInitialSingup() {
+function SubmitFreeTrialInitialSignup() {
     return FirstName = document.getElementById("FirstName").value, Email = document.getElementById("Email").value, !!ValidateEmail(document.getElementById("Email")) && (ValidateName(document.getElementById("FirstName")) ? FirstName.length < 1 || Email.length < 1 ? (alert("Invalid Firstname or Email"), document.getElementById("FirstName").focus(), !1) : (PostStr = "fName=" + FirstName + "&Email=" + Email + "&ftsignup=1", url = pathBase + "website/Includes/login/FreeTrialSignUp/initial_signup.asp", doAJAXCall(url, "GET", PostStr, ResponseSaved), void 0) : (alert("Invalid first name, space and special characters are not accepted."), document.getElementById("FirstName").focus(), !1))
 }
 
@@ -129,11 +129,15 @@ function ResponseSaved(a) {
     "success" == b ? window.location.href = pathBase + "Website/pagesTaxRates/z2t_lookup.asp?inputZip=" + inputZip : "failed" == b ? alert("Invalid Username or Password") : "InitSignupDone" == b ? (div_hide(2), div_show(3)) : "Interim" == b ? (div_hide(1), div_show(4)) : "InterimSignupDone" == b ? window.location.href = pathBase + "website/pagesTaxRates/z2t_lookup.asp" : "Online" == b ? window.location.href = pathBase + "website/pagesTaxRates/z2t_lookup.asp" : "passrecovered" == b ? (div_hide(5), alert("An email has been sent containing password.")) : "IncorrectEmail" == b ? alert("Incorrect email address.") : "InitSignupDuplicateEmail" == b && (div_hide(2), alert("Email already exists, please use forgot password to recover your account."), div_show(5))
 }
 function ftLoginNew() {
+    document.getElementById('dialog-waiting').style.display = "block";
     if (ftusernameval = document.getElementById("ftUsername").value, ftpasswordval = document.getElementById("ftPassword").value, ftusernameval.length < 1 || ftpasswordval.length < 1) return alert("Invalid username or password"), document.getElementById("ftUsername").focus(), !1;
     PostStr = "lName=" + ftusernameval + "&pass=" + ftpasswordval + "";
     url = pathBase + "website/Includes/login/freeTrialLogin.asp?";
     $.get(url+PostStr, function(data, status){
-        ResponseSavedNew(data);
+        document.getElementById('dialog-waiting').style.display = "none";
+        setTimeout(function(){
+            ResponseSavedNew(data);    
+        }, 50);
     });
 }
 function ResponseSavedNew(a) {
