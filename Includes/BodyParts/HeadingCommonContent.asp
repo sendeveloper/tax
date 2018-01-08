@@ -228,7 +228,7 @@
 						$( "#dialog-form2" ).dialog( "close" );
       					$( "#dialog-form" ).dialog( "open" );
       					$('#dialog-form').parent().css('z-index', 1100);
-
+      					$('#dialog-form').parent().css('border', '4px solid #555');
 					})
 					$('#ftUsername').keydown(function(e) {
 						if (e.keyCode == 13) {

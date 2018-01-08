@@ -91,6 +91,7 @@ $(document).ready(function(){
       $( "#dialog-form" ).dialog( "close" );
       $( "#dialog-form2" ).dialog( "open" );
       $('#dialog-form2').parent().css('z-index', 1100);
+      $('#dialog-form2').parent().css('border', '4px solid #555');
     });
     $( "#showLogin" ).on( "click", function() {
     	$('.modal-backdrop').remove();
@@ -98,6 +99,7 @@ $(document).ready(function(){
       $( "#dialog-form2" ).dialog( "close" );
       $( "#dialog-form" ).dialog( "open" );
       $('#dialog-form').parent().css('z-index', 1100);
+      $('#dialog-form').parent().css('border', '4px solid #555');
     });
     $('.ui-dialog-titlebar-close').click(function(e) {
     	$('.modal-backdrop').remove();
@@ -109,7 +111,6 @@ $(document).ready(function(){
 </script>  
 <div id="dialog-waiting">
 	<div id="loader_ani"></div>
-	Please wait...
 </div>
 <div id="dialog-form" title="Please log in to your account">
     <fieldset>
