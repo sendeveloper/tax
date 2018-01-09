@@ -87,28 +87,11 @@
 
             <!-- Place this render call where appropriate -->
 			<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.min.css">	
-            <script type="text/javascript">
-            	function onloadFunc(){
-            		var addStylesNode = document.getElementById("deferred-styles");
-                    var replacement = document.createElement("div");
-                    replacement.innerHTML = addStylesNode.textContent;
-                    document.body.appendChild(replacement)
-                    addStylesNode.parentElement.removeChild(addStylesNode);
-	                // google
-	                (function() {
-	                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	                    po.src = '/js/plusone.js';
-	                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	                })();
-            	}
-            	window.onload = onloadFunc;
-            </script>
-			
 		    <script src='/js/jquery.min.js'></script>
-
 			<script>
 				$(document).ready(function() {
 					var checkTimer = setInterval(function() {checkChatDiv()}, 500);
+					onloadFunc();
 					function checkChatDiv() {
 						var atag = $('.topChatImg').find('a');
 						if (atag != undefined && atag.length)
@@ -117,6 +100,19 @@
 							clearInterval(checkTimer);
 						}
 					}
+					function onloadFunc(){
+	            		var addStylesNode = document.getElementById("deferred-styles");
+	                    var replacement = document.createElement("div");
+	                    replacement.innerHTML = addStylesNode.textContent;
+	                    document.body.appendChild(replacement)
+	                    addStylesNode.parentElement.removeChild(addStylesNode);
+		                // google
+		                (function() {
+		                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		                    po.src = '/js/plusone.js';
+		                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		                })();
+	            	}
 					function checkMobile()
 					{
 						var isMobile = false; //initiate as false
