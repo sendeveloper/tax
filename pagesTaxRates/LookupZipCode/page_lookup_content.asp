@@ -20,7 +20,7 @@ end if
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACJstxRGIbX8Mv_I2-a8tOLN0d620APjo&v=3.exp&callback=initialize"></script>
 
 <div class="col-md-9 content">
 	<%=HeadingH1("ZIP Code Lookup with Sales Tax Calculator")%>
