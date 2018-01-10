@@ -1,8 +1,7 @@
 <%
 If Session("z2t_loggedin") = "True"  Then
-whereTo1="<a href=""javascript:clickGetRate();"" class=""btn btn-danger btn-sm"" id=""getratebutton"">Get Rate</a>"
-whereTo2="<a href=""javascript:clickGetTax('calc');"" class=""btn btn-danger btn-sm"" id=""getSaleUseTaxbutton"">Calculate</a>"
-	
+	whereTo1="<a href=""javascript:clickGetRate();"" class=""btn btn-danger btn-sm"" id=""getratebutton"">Get Rate</a>"
+	whereTo2="<a href=""javascript:clickGetTax('calc');"" class=""btn btn-danger btn-sm"" id=""getSaleUseTaxbutton"">Calculate</a>"
 else
 	whereTo1="<button type=""button"" class=""btn btn-danger btn-sm"" id=""lookupOpener"">Get Rate</button>"
 	whereTo2="<button type=""button"" class=""btn btn-danger btn-sm"" id=""lookupOpener2"">Calculate</button>"
@@ -25,19 +24,20 @@ end if
 
 <div class="col-md-9 content">
 	<%=HeadingH1("ZIP Code Lookup with Sales Tax Calculator")%>
-<div class="clearfix"></div>
-<table class="table table-bordered">
-	  <tr valign="top"> 
-		<td align="center">
+	<table class="table table-bordered" style="margin: 40px; width: 95%;">
+	  <tr style="vertical-align:top;"> 
+		<td>
 		  <form id="frmLookupSalesTax" method="Post" name="frmLookupSalesTax">
 		  <div class="row">
-			<div class="col-md-12 center">
-				<a href="http://en.wikipedia.org/wiki/Sales_taxes_in_the_United_States" target="_blank" style="text-decoration:none!important;color:#4A5157!important;">Use</a> this handy sales tax calculator to determine the general
+			<div class="col-md-12 left">
+				<a href="https://en.wikipedia.org/wiki/Sales_taxes_in_the_United_States" 
+					target="_blank" style="text-decoration:none!important;color:#4A5157!important;">Use</a> 
+				this handy sales tax calculator to determine the general
 				sales tax rate used for a particular ZIP code. Click on [Show] to see details about the sales tax rate at the state,
 				county, city, and special district levels.			
 			</div>
 		  </div>
-<div class="clearfix"></div>
+          <div class="clearfix"></div>
 		  <div class="row">
 			<div class="col-md-3" style="padding-bottom:5px">
 				<INPUT class="form-control input-sm" TYPE="Text" NAME="inputZip" ID="inputZip" placeholder="Enter ZIP Code"  MaxLength="5" onKeyPress="return numbersonly(this, event);" tabindex="1">
@@ -58,28 +58,28 @@ end if
 		</td>
 	  </tr>
 
-	  <tr valign="top"> 
-		<td align="center">
-		  <table width="100%" border="0" cellspacing="3" cellpadding="3">
+	  <tr style="vertical-align:top;"> 
+		<td style="text-align:center;">
+		  <table style="width: 100%; padding: 3px;">
 
-			<tr valign="top">
-			  <td width="60%">
-				<table width="100%" border="0" cellspacing="3" cellpadding="3">
+			<tr style="vertical-align:top;">
+			  <td style="width: 55%;">
+				<table style="width: 100%; padding: 3px;">
 
 				  <tr>
-					<td width="33%" align="right">
+					<td class="lookupLabel" style="width: 33%;">
 					  ZIP Code:
 					</td>
-					<td width="67%" align="left" class="lookupResult">
+					<td class="lookupResult" style="width: 67%; text-align: left;">
 					  <%=LookupResults.zipInput%>&nbsp;
 					</td>
 				  </tr>
 
 				  <tr>
-					<td align="right">
+					<td class="lookupLabel">
 					  Sales Tax Rate:
 					</td>
-					<td align="left" class="lookupResult">
+					<td class="lookupResult" style="text-align: left;">
 					  <span 
 						onMouseOver='altOn(this, "Sales Tax Breakout For <%=LookupResults.DisplayCity%>",
 						"<%=LookupResults.BreakoutHTML%>", event);'
@@ -93,10 +93,10 @@ end if
 				  </tr>
 
 				  <tr>
-					<td align="right">
+					<td class="lookupLabel">
 					  Use Tax Rate:
 					</td>
-					<td align="left" class="lookupResult">
+					<td class="lookupResult" style="text-align: left;">
 					<% If SubscriptionData.HasSubscriptionAddon(cWebLookup, cLookupUseTax) Then%>
 					  <span 
 						onMouseOver='altOn(this, "Use Tax Breakout For <%=LookupResults.DisplayCity%>",
@@ -116,10 +116,10 @@ end if
 				  </tr>
 
 				  <tr>
-					<td align="right">
+					<td class="lookupLabel">
 					  City:
 					</td>
-					<td align="left" class="lookupResult">
+					<td class="lookupResult" style="text-align: left;">
 					<%
 						'If (Len(LookupResults.Spm_Path) <> 0) Then
 						 '   Response.Write("<a href=""" & LookupResults.Spm_Path & ".html"" target=""_blank"">" & LookupResults.City & "</a>&nbsp;")
@@ -136,42 +136,40 @@ end if
 				  </tr>
 
 				  <tr>
-					<td align="right">
+					<td class="lookupLabel">
 					  County:
 					</td>
-					<td align="left" class="lookupResult">
+					<td class="lookupResult" style="text-align: left;">
 					  <%=LookupResults.County%>&nbsp;
 					</td>
 				  </tr>
 
 				  <tr>
-					<td align="right">
+					<td class="lookupLabel">
 					  State:
 					</td>
-					<td align="left" class="lookupResult">
+					<td class="lookupResult" style="text-align: left;">
 					  <span ID="result_state"><%=LookupResults.State%></span>&nbsp;
 					</td>
 				  </tr>
 				</table>
 			  </td>
 
-			  <td width="40%">
-				<table width="100%" border="0" cellspacing="3" cellpadding="3">
+			  <td style="width: 45%;">
+				<table style="width: 45%; padding: 3px;">
 
-				  <tr valign="top">
-					<td width="40%" align="right">
+				  <tr style="vertical-align:top;">
+					<td class="lookupLabel" style="width: 40%;">
 					  Dollar&nbsp;Amount:
 					</td>
-					<td width="35%" class="lookupResultTax">
+					<td class="lookupResultTax" style="width: 60%;">
 					  <span id="result_amt">&nbsp;</span>&nbsp;
 					</td>
 				  </tr>
 
 				  <tr>
-					<td align="right">
-					  <font color="red">
-						Sales Tax:
-					  </font>
+					<td class="lookupLabel" style="color: red;">
+					  Sales Tax:
 					</td>
 					<td class="lookupResultTax" style="border-bottom: 1px solid gray;">
 					  <span id="result_tax">&nbsp;</span>&nbsp;
@@ -179,7 +177,7 @@ end if
 				  </tr>
 
 				  <tr>
-					<td align="right">
+					<td class="lookupLabel">
 					  Total&nbsp;Sale:
 					</td>
 					<td class="lookupResultTax">
@@ -196,19 +194,17 @@ end if
 				  </tr>
 
 				  <tr>
-					  <td width="40%" align="right">
+					  <td class="lookupLabel" style="width: 40%;">
 							Dollar Amount:
 					  </td>
-					  <td width="35%" class="lookupResultTax">
+					  <td class="lookupResultTax" style="width: 35%;">
 							<span id="use_result_amt">&nbsp;</span>
 					  </td>
 				  </tr>
 
 				   <tr>
-					  <td align="right">
-						 <font color="red">
-							   Use Tax:
-						</font>
+					  <td class="lookupLabel" style="color: red;">
+					    Use Tax:
 					  </td>
 					  <td class="lookupResultTax" style="border-bottom: 1px solid gray;">
 						   <span id="use_result_tax">&nbsp;</span>
@@ -216,7 +212,7 @@ end if
 				  </tr>
 
 				   <tr>
-					  <td align="right">
+					<td class="lookupLabel">
 							Total Sale:
 					  </td>
 					  <td class="lookupResultTax">
@@ -238,12 +234,12 @@ end if
 
 	   <tr>
 		<td>
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 		   <font size="2">
 			<tr>
 			  <td class="eg-bar" style="color: red;" colspan="2">
 				<span id="faqtable1-title" class="iconspan">Show</span>
-				 <center>Sales Tax Breakout For <% Response.Write(LookupResults.City & "&nbsp;") %></center>
+				<div style="text-align: center;">Sales Tax Breakout For <% Response.Write(LookupResults.City & "&nbsp;") %></div>
 			  </td>
 			</tr>
 			<tr>
@@ -271,12 +267,12 @@ end if
 
 	  <tr>
 		<td>
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 		  <font size="2">
 		  <tr>
 			  <td class="eg-bar" style="color: red;" colspan="2">
 				<span id="faqtable2-title" class="iconspan">Show</span>
-				<center>Use Tax Breakout For <% Response.Write(LookupResults.City & "&nbsp;") %></center>
+				<div style="text-align: center;">Use Tax Breakout For <% Response.Write(LookupResults.City & "&nbsp;") %></div>
 			  </td>
 			</tr>
 			<tr>
@@ -314,10 +310,10 @@ If (LookupResults.Count > 1) Then
 
 	  <tr>
 		<td>
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 			<tr>
 			  <td style="color: red;" colspan="4">
-				<center>Other Communities Using <%=LookupResults.zipInput%></center>
+				<div style="text-align: center;">Other Communities Using <%=LookupResults.zipInput%></div>
 			  </td>
 			</tr>
 <%
@@ -352,12 +348,10 @@ While (LookupResults.NextTaxRecord)
 				<td colspan="4">
 				   <font size="1">
 					  <div id="<%=LookupResults.DisplayCity%>" class="icongroup2">
-					  <table width="100%">
+					  <table style="width: 100%;">
 						<tr>
-							<td>
-								<font style="color: red;">
-									<center>Sales Tax Breakout For <%=LookupResults.DisplayCity%></center>
-								</font>
+							<td style="color: red; text-align: center;">
+							  Sales Tax Breakout For <%=LookupResults.DisplayCity%>
 							</td>
 						</tr>
 						<tr>
@@ -402,15 +396,15 @@ If (LookupResults.NotesCount > 0) Then
 
 	  <tr>
 		<td>
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 <%
 	Do
 		Jurisdiction = "Special Rules For The " & LookupResults.Jurisdiction
 		If Jurisdiction <> PreviousJurisdiction Then
 %>
 			<tr>
-			  <td style="color: red;" colspan="2">
-				<center><%=Jurisdiction%></center>
+			  <td style="color: red; text-align: center;" colspan="2">
+				<%=Jurisdiction%>
 			  </td>
 			</tr>
 
@@ -419,7 +413,7 @@ If (LookupResults.NotesCount > 0) Then
 		End If
 %>
 
-			<tr valign="top">
+			<tr style="vertical-align:top;">
 			  <td width="25%">
 				&nbsp;&nbsp;&nbsp;&nbsp;<%=LookupResults.Category%>:
 			  </td>
@@ -456,16 +450,14 @@ TaxMapPath = "javascript:openPopUp('" & pathBase & "Website/pagesTaxRates/Maps/T
 
 	  <tr>
 		<td colspan="2">
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 			<tr>
-			  <td align="left" style="color: red;">
-				<center>
-				  <%=TaxMapText%>
-				</center>
+			  <td style="color: red; text-align: center;">
+				<%=TaxMapText%>
 			  </td>
 			</tr>
 			<tr>
-			  <td align="center">
+			  <td style="text-align: center;">
 				<a href="<%=TaxMapPath%>">
 				  <%=TaxMapImage%></a>
 			  </td>
@@ -483,7 +475,7 @@ If (LookupResults.HasSalesTax = False) And (LookupResults.Count > 0) Then
 
 	  <tr>
 		<td>
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 			<tr>
 			  <td style="color: red;">
 				<%=LookupResults.Jurisdiction%>
@@ -502,7 +494,7 @@ If (LookupResults.ErrorMessage <> cBlankData) Then
 
 	  <tr>
 		<td>
-		  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+		  <table style="width: 100%; padding: 2px;">
 			<tr>
 			  <td style="color: red; text-align: center;">
 				<%=LookupResults.ErrorMessage%>
@@ -512,18 +504,17 @@ If (LookupResults.ErrorMessage <> cBlankData) Then
 		</td>
 	  </tr>
 <%
-End If
+	End If
 %>
 	</table>
 
-<div class="clearfix"></div>
 <% 
     If LookupResults.zipInput <> "" Then 
       Set rs = Sql(sqlText)
       If not rs.eof Then
           Set rs = Sql(sqlText)
           %>
-            <div style="border: 1px solid black; width: 100%; height: 20em;">
+            <div style="border: 1px solid black; width: 95%; height: 20em; margin-left: 40px;">
               <div id="map_canvas2"></div>
             </div>
 <%
@@ -539,21 +530,27 @@ End If
 <% 
     End If 
 %>
-
-<div class="fb-like" data-href="https://www.facebook.com/Zip2Tax/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-
-	<h2>
-		<span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-		How to Use Our Sales Tax Calculator
-	</h2>
+	<div class="clearfix"></div>
 	
-	<p>
+	<div class="fb-like" data-href="https://www.facebook.com/Zip2Tax/" 
+		data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true" style="margin-left: 40px;">
+	</div>
+	
+	<div class="clearfix"></div>
+
+	<%=HeadingH2("How to Use Our Sales Tax Calculator")%>
+	
+	<p style="margin-left: 40px;">
 		Our sales tax calculator is easy to use. We offer two easy ways to estimate sales tax costs with our sales tax calculator.<br><br>
 		
 		One way is to simply punch in the applicable ZIP code for your transaction, click "Get Rate" and you'll be provided with the applicable sales tax rate. 
 		We also allow you to enter a dollar amount, click "Calculate," and we'll provide you with the total sales tax cost and total sale cost, based off of 
 		your provided information.<br>
 	</p>
-<div class="clearfix"></div>
-<!--#include virtual="/Website/pagesTaxRates/LookupZipCode/SpotOnBanner.asp" -->
+	
+	<div class="clearfix"></div>
+	
+	<div style="padding-left: 60px; width: 97%;">
+		<!--#include virtual="/Website/pagesTaxRates/LookupZipCode/SpotOnBanner.asp" -->
+	</div>
 </div>

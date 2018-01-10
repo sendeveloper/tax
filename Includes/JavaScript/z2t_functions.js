@@ -181,4 +181,8 @@ function moveCaretToStart(a) {
 }
 var foc = "",
     isIE = 1;
-"Netscape" == navigator.appName && (isIE = 0), $(window).load(function() {});
+if ("Netscape" == navigator.appName && (isIE = 0)){
+  $(window).load(function() {
+    
+  })
+}

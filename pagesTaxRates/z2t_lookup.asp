@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
@@ -17,12 +17,12 @@
 
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-    <script language="javascript" type="text/javascript">
-    $(function(){
-    <%if len(request.servervariables("query_string"))>0 then%>
-    initialize()
-    <%end if%>
-        });
+    <script>
+	$( document ).ready(function(){
+	<%if len(request.servervariables("query_string"))>0 then%>
+	initialize()
+	<%end if%>
+		});
         var pathBase = '<%=pathBase%>';
         var currentPage = '<%=Session("currentPage")%>';
         var errorMessage = '<%=Session("LoginErrorUrgent")%>';
@@ -31,7 +31,7 @@
 
         function altOn(obj, t, b, e)
         {
-        /*
+		/*
             if ( (totalrate != '') && (parseInt(totalrate) > 0) )
             {
                 var altScreen = document.getElementById('mouseoverDiv');
@@ -57,7 +57,7 @@
 
                 altScreen.style.visibility = 'visible';
             }
-            */
+			*/
         }
 
         function altOff()
@@ -83,35 +83,35 @@
 
 
         function clickGetRate() {
-            
-             <%
-               If Session("z2t_loggedin") <> "True"  Then
-             %>
-                     div_show(1);
-             <%
-             Else 
-             %>
+			
+			 <%
+			   If Session("z2t_loggedin") <> "True"  Then
+			 %>
+			 		 div_show(1);
+			 <%
+			 Else 
+			 %>
             var zLen = document.getElementById('inputZip').value.length
             if (zLen == 5) {
                 var URL = '<%=pathBase%>' + currentPage + '?inputZip=' + document.getElementById('inputZip').value;
                 window.document.location = URL;}
             else if (zLen != 0) {
                 alert('ZIP Code must have 5 numerals');}
-                
-                <%End If%>
-                }
+				
+				<%End If%>
+				}
 
 
         function clickGetTax(f) {
-            
-            
-             <%
-               If Session("z2t_loggedin") <> "True"  Then
-             %>
-                     div_show(1);
-             <%
-             Else 
-             %>
+			
+			
+			 <%
+			   If Session("z2t_loggedin") <> "True"  Then
+			 %>
+			 		 div_show(1);
+			 <%
+			 Else 
+			 %>
             //   if ((f == 'amt') || (f == 'useTax')) {
             if (f == 'calc') {
                 if ((document.getElementById('inputAmt').value.length > 0) && (document.getElementById('inputAmt').value !== 'Enter Dollar Amount')) {
@@ -120,8 +120,8 @@
                     else {
                         getTax(f);
                         document.getElementById('inputAmt').value = 'Enter Dollar Amount';}}}
-            <%End If%>
-            }
+			<%End If%>
+			}
 
         function focusField(f)
         {
@@ -252,14 +252,14 @@
 
             // Enter key hit
             if (key == 13) {
-                
-                <%
-               If Session("z2t_loggedin") <> "True"  Then
-             %>
-                     div_show(1);
-             <%
-             Else 
-             %>
+				
+				<%
+			   If Session("z2t_loggedin") <> "True"  Then
+			 %>
+			 		 div_show(1);
+			 <%
+			 Else 
+			 %>
                 foc = myfield.id.toString();
                 //document.getElementById('inputAmt').focus();
                 if (foc == 'inputAmt')
@@ -285,7 +285,7 @@
                         alert('Zip Code must have 5 numerals');
                     }
                 } 
-            <% End IF %>
+			<% End IF %>
             }
 
             // control keys
@@ -331,17 +331,22 @@
 
         window.onload=formLoad;
     </script>
-    <script type="text/javascript" src="/Website/pagesTaxRates/LookupZipCode/switchcontent.js" ></script>
-    <script type="text/javascript" src="/Website/pagesTaxRates/LookupZipCode/switchicon.js"></script>
-    <script type="text/javascript" src="/Website/pagesTaxRates/LookupZipCode/map.js"></script>
-    <style type="text/css">
-    .container-fluid {padding:0 !important}
+    <script src="/Website/pagesTaxRates/LookupZipCode/switchcontent.js" ></script>
+    <script src="/Website/pagesTaxRates/LookupZipCode/switchicon.js"></script>
+    <script src="/Website/pagesTaxRates/LookupZipCode/map.js"></script>
+    <style>
+		td.lookupLabel
+			{
+			text-align:	right;
+			padding-right: 6px;
+			}
+			
+	.container-fluid {padding:0 !important}
         /*Default style for SPAN icons. Edit if desired: */
 
         .iconspan{
         float: right;
         margin: 3px;
-        cursor:hand;
         cursor:pointer;
         font-weight: bold;
         }
@@ -363,12 +368,10 @@
         }
         
         table#salestax_breakout, table#usetaxbreakout {border: none !important; width: 100% !important;}
-        #map_canvas2 { height: 100% }
+		#map_canvas2 { height: 100% }
     </style>
-    <script type="text/javascript"
-        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyACJstxRGIbX8Mv_I2-a8tOLN0d620APjo&amp;sensor=false">
-    </script>
-    <script type="text/javascript">
+
+    <script>
         function initialize() 
         {
             formLoad();
@@ -381,15 +384,16 @@
             Set rs = Sql(sqlText)
                 
             If not rs.eof then %>
-            
-            var map = new google.maps.Map(document.getElementById("map_canvas2"));
-            var wkt = "<%=rs("WKT")%>";
+            setTimeout(function() {
+                var map = new google.maps.Map(document.getElementById("map_canvas2"));
+                var wkt = "<%=rs("WKT")%>";
 
-            var wktZoomLevel = parseInt("<%=rs("ZoomLevel")%>");
-            var centerLongitude = parseFloat("<%=rs("CenterLongitude")%>");
-            var centerLatitude = parseFloat("<%=rs("centerLatitude")%>");
-            RenderBoundaries("<%=LookupResults.zipInput%>", map, wkt,wktZoomLevel,centerLongitude , centerLatitude );      
-            
+                var wktZoomLevel = parseInt("<%=rs("ZoomLevel")%>");
+                var centerLongitude = parseFloat("<%=rs("CenterLongitude")%>");
+                var centerLatitude = parseFloat("<%=rs("centerLatitude")%>");
+                RenderBoundaries("<%=LookupResults.zipInput%>", map, wkt,wktZoomLevel,centerLongitude , centerLatitude );   
+            }, 50);
+               
             <% End If %>           
            
 
@@ -403,6 +407,7 @@
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             
+            /*
             var map = new google.maps.Map(document.getElementById("map_canvas2"),
             myOptions);
 
@@ -417,13 +422,13 @@
                 fillOpacity: 0.35
             });
 
-            zip_polygon.setMap(map);
+            zip_polygon.setMap(map); */
 
             <% End If %>
     
             }
     </script>
-    <link href="/Website/Includes/css/z2t_lookup.css" rel="stylesheet" type="text/css">
+	<link href="/Website/Includes/css/z2t_lookup.css" rel="stylesheet" type="text/css">
 </head>
   
   <body>    
@@ -434,8 +439,8 @@
       <div class="mainBody">
         <div class="clearfix"></div>
         <div class="container">     
-          <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_content.asp" -->
-            <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_right_sidebar.asp" -->
+		  <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_content.asp" -->
+          <!-- #include virtual="/Website/pagesTaxRates/LookupZipCode/page_lookup_right_sidebar.asp" -->
         </div>
       </div>
     </div>
