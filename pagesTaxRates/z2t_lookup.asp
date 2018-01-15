@@ -4,8 +4,8 @@
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
 
-<!--#include virtual="/Website/pagesTaxRates/LookupZipCode/z2t_userSubscriptions.asp"-->
-<!--#include virtual="/Website/pagesTaxRates/LookupZipCode/sql-dev.asp"-->
+<!--#include virtual="/Website/Includes/z2t_userSubscriptions.asp"-->
+<!--#include virtual="/Website/Includes/sql-dev.asp"-->
 
 <%
     Response.buffer = True
@@ -341,7 +341,7 @@
 			padding-right: 6px;
 			}
 			
-	.container-fluid {padding:0 !important}
+	/*.container-fluid {padding:0 !important}*/
         /*Default style for SPAN icons. Edit if desired: */
 
         .iconspan{

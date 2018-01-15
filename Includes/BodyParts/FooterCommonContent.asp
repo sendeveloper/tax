@@ -286,7 +286,8 @@ $(document).ready(function(){
 						</div>
 					<!-- Popup Div Ends Here -->
 				</div>	
-<script type="text/javascript">
+				
+	<script>
 
 		function LookupORLoginBox(){
                                  			
@@ -310,6 +311,20 @@ Function HeadingH1(text)
 		"        " & text & vbCrLf & _
 		"    </h1>"
 
+End Function		
+		
+Function HeadingH2(text)
+
+	HeadingH2 = "<h2 style='font-size: 160%;'>" & vbCrLf & _
+		"        <span class='glyph glyphicon glyphicon-star redFont' aria-hidden='true'></span>" & vbCrLf & _
+		"        " & text & vbCrLf & _
+		"    </h2>"
+End Function
+
+Function Ellipsis(text)
+
+	Ellipsis = "&nbsp;.&nbsp;.&nbsp;.&nbsp;" & text & "&nbsp;.&nbsp;.&nbsp;.&nbsp;"
+	
 End Function
 %>   	
 <!-- End of FooterCommonContent -->

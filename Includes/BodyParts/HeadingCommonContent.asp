@@ -56,7 +56,6 @@
             <!--CSS-->
                 <noscript id="deferred-styles">
                     <link rel="stylesheet" type="text/css" href="/Website/Includes/CSS/z2t_screen.css"/>
-                    <link href="/css/style.css" rel="stylesheet">
                 </noscript>
                 <link type="text/css" href="/Website/Includes/CSS/z2t_print.css" rel="stylesheet" media="print">
 
@@ -238,6 +237,7 @@
 					})
 				});
 			</script>
-			<link href="/css/bootstrap.min.css" rel="stylesheet">		
+			<link href="/css/bootstrap.min.css" rel="stylesheet">
+			<link href="/css/style.css" rel="stylesheet">	
 <!-- End of HeadingCommonContent -->
 	
