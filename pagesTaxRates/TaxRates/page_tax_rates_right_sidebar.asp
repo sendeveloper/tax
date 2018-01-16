@@ -1,6 +1,4 @@
-          <!-- #include virtual="/Website/Includes/bodyParts/Boxes/LoginBox.asp"-->
-          <!-- #include virtual="/Website/Includes/bodyParts/Boxes/LookUpBox.asp"-->
-		  <!-- #include virtual="/Website/Includes/bodyParts/Boxes/box_trustguard.asp" -->
-          <!-- #include virtual="/Website/Includes/bodyParts/Boxes/SocialBox.asp"-->
-          <!-- #include virtual="/Website/Includes/bodyParts/Boxes/WhitepaperBox.asp" -->
-          <!-- #include virtual="/Website/Includes/bodyParts/Boxes/NewsletterBox.asp" -->
+<div class="col-md-3 col-md-push-2 NoPrint">
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/FreeTrial.asp" -->
+	<!-- #include virtual="/Website/Includes/bodyParts/Boxes/NewsletterBox.asp" -->
+</div>

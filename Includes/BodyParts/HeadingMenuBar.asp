@@ -1,5 +1,5 @@
 <!-- Start of HeadingMenuBar -->
-	  <div class="row" id="topNavBar">
+	  <div class="row" id="topNavBar" style="margin: 0 -15px;">
 		<input type="hidden" id="loggedin" value="<%=Session("z2t_loggedin")%>" />
 		<div class="container">
 		<div class="col-lg-12">
@@ -64,24 +64,6 @@
 						<li><a href="https://blog.zip2tax.com/category/z2t-company-news/">Zip2Tax Company News</a></li>
 					  </ul>
 					</li>
-	<%
-Function DisplayCompanyName()
-
-    Dim loginBox_haAccountInfo
-
-    DisplayCompanyName = "nbsp;"
-    
-	If Session("z2t_DisplayName") > "" Then
-		DisplayCompanyName = Session("z2t_DisplayName")
-	Else
-		If Session("ha_AccountID") <> 0 Then
-			Set loginBox_haAccountInfo = GetHAAccountInfo(Session("ha_AccountID"))
-			DisplayCompanyName = loginBox_haAccountInfo.Organization
-		End If
-	End If
-		
-End Function
-%>
 <%
   If Session("z2t_loggedin") = "True" Then
 %>
@@ -105,15 +87,6 @@ else
 end if
 %>
 					</ul>
-<%
-  If Session("z2t_loggedin") = "True" Then
-%>
-					<div class="hidden-sm" style="float: left; margin-left: 5px;">
-						<label style="padding-top: 7px; color: #FFF">Welcome<br/><% Response.Write DisplayCompanyName() %></label>
-					</div>
-<%
-end if
-%>
 					<div class="hidden-sm" style="float: right; width: 310px; height: 50px; padding-top: 9px;">
 						<div class="form-group">
 						  	<label for="menuInputZip" class="col-md-7 control-label" style="padding: 4px 0 0; color: #EEE; font-weight: 700; font-size: 18px; text-align: right;">

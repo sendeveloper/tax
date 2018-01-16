@@ -141,6 +141,7 @@
 					    	$('#topNavBar').css('position', 'fixed');
 					    	$('#topNavBar').css('width', '100%');
 					    	$('#topNavBar').css('z-index', '100');
+					    	$('.userNameDiv').hide();
 					    	$('.scrollHide').hide();
 					    	$('.scrollShow').show();
 					    	$('.phoneDiv').attr('class','col-sm-3 fontWhite18Bold phoneDiv');
@@ -168,6 +169,7 @@
 					    	$('#topNavBar').css('top', '0px');
 					    	$('#topNavBar').css('width', 'auto');
 					    	$('#topNavBar').css('z-index', 'inherit');
+					    	$('.userNameDiv').show();
 					    	$('.scrollHide').show();
 					    	$('.scrollShow').hide();
 					    	$('.phoneDiv').attr('class','col-lg-3 col-md-3 col-sm-3 fontWhite18Bold phoneDiv');
@@ -176,7 +178,7 @@
 					    	$('#topArea').css('padding-bottom', '0px');
 					    	$('#topArea').css('min-height', '140px');
 					    	$('.topAreaBack').css('background-image','transparent');
-					    	$('.chatDiv').attr('class','col-lg-2 hidden-md hidden-sm hidden-xs chatDiv chatDiv');
+					    	$('.chatDiv').attr('class','col-lg-2 col-md-2 hidden-sm hidden-xs chatDiv chatDiv');
 					    	$('.chatDiv .topChatImg').css('margin-top','20px');
 					    	$('#topArea .container').css('padding','0 30px');
 					    	$('.phoneDiv').css('margin', 'auto');

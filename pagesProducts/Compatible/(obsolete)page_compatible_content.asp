@@ -1,12 +1,18 @@
-<div class="col-md-9 content">
-	<%=HeadingH1("Compatible Systems")%>
-		<div class="clearfix"></div>
-		<p>Zip2Tax's tables are compatible with a variety of shopping carts, ERPs, bookkeeping software, and other eCommerce 
+<div id="content">
+  <div  class="post">
+    <h1 class="title">Compatible Systems</h1>
+    
+    <a name="PageSection1"></a>          
+    
+    <div class="NoPrint">
+      <div class="entry2">
+        <p>Zip2Tax's tables are compatible with a variety of shopping carts, ERPs, bookkeeping software, and other eCommerce 
 		applications. Check with your software provider to see if their system is compatible with one of our standard tables. 
 		If not, check out our <a href="/Website/pagesProducts/z2t_specialty_tables.asp">specialty tables</a>.</p>
-		<div class="clearfix"></div>
-
-        <table class="table">
+      </div>
+      
+      <div class="entry2" style="margin-top: 25px;">
+        <table width="600" border="0" cellspacing="2" cellpadding="2" align="center">
           <tr>
             <td width="110px" align="center" valign="top" style="padding-top:5px; padding-right: 10px">
               <a name="upshot_commerce" id="upshot_commerce"></a>
@@ -25,11 +31,10 @@
             </td>
           </tr>
         </table>
-
-		<div class="clearfix"></div>
+      </div><!-- entry2 -->
       
-
-		<table class="table">
+      <div class="entry2" style="margin-top: 25px;">
+        <table width="600" border="0" cellspacing="2" cellpadding="2" align="center">
           <tr>
             <td width="110px" align="center" valign="top" style="padding-top:5px; padding-right: 10px">
               <a name="smith_cart" id="smith_cart"></a><a href="http://www.smithcart.com" target="blank">
@@ -52,11 +57,10 @@
             </td>
           </tr>
         </table>
-
-		<div class="clearfix"></div>
+      </div><!-- entry2 -->
 	  
-
-		<table class="table">
+      <div class="entry3" style="margin-top: 25px;">
+        <table width="600" border="0" cellspacing="2" cellpadding="2" align="center">
           <tr>
             <td width="110px" align="center" valign="top" style="padding-top:5px; padding-right: 10px">
               <a name="tradepoint" id="A1"></a><a href="http://www.smithcart.com" target="blank">
@@ -77,4 +81,12 @@
             </td>
           </tr>
         </table>
-</div>
+      </div><!-- entry3 -->
+      
+    </div> <!-- NoPrint -->
+  </div> <!-- post -->
+</div> <!-- content -->
+
+
+
+

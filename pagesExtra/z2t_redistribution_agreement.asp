@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
@@ -9,19 +8,29 @@
     Session("currentPage") = "z2t_redistribution_agreement.asp"
 %>
 
-<html>
+<html lang="en">
   <head>
     
-    <!--#include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
-
-		<!-- #include virtual="/Website/pagesExtra/Redistribution_Agreement/page_redistribution_agreement_content.asp" -->
-		<!-- #include virtual="/Website/pagesExtra/Redistribution_Agreement/page_redistribution_agreement_right_sidebar.asp" -->		
-		
-    </div>
-	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
+    </head>
   
-         
+  <body>    
+    <div class="container-fluid" style="padding: 0px;">
+    <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+      
+      <div class="mainBody">
+        <div class="clearfix"></div>
+        <div class="container">
+      		<!-- #include virtual="/Website/pagesExtra/Redistribution_Agreement/page_redistribution_agreement_content.asp" -->
+      		<!-- #include virtual="/Website/pagesExtra/Redistribution_Agreement/page_redistribution_agreement_right_sidebar.asp" -->		
+		
+      </div>
+      </div>
+    </div>
+    
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"-->   
   </body>
 </html>
 
