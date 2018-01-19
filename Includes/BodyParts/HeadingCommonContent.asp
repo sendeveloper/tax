@@ -96,6 +96,7 @@
 						if (atag != undefined && atag.length)
 						{
 							$('.phoneDiv').show();
+							$('.userNameDiv').show();
 							clearInterval(checkTimer);
 						}
 					}

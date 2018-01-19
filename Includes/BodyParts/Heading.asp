@@ -28,7 +28,7 @@ End Function
 <%
   If Session("z2t_loggedin") = "True" Then
 %>
-					<div class="hidden-sm userNameDiv" style="float: left; margin-left: 5px;    margin-top: 30px;font-size: 16px;">
+					<div class="hidden-sm userNameDiv" style="float: left; margin-left: 5px;    margin-top: 30px;font-size: 16px; display: none;">
 						<label style="padding-top: 7px; color: #FFF">Welcome<br/><% Response.Write DisplayCompanyName() %></label>
 					</div>
 <%
