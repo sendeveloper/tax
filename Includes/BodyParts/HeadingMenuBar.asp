@@ -1,7 +1,7 @@
 <!-- Start of HeadingMenuBar -->
-	  <div class="row" id="topNavBar" style="margin: 0 -15px;">
+	<div class="row" id="topNavBar" style="margin: 0;">
 		<input type="hidden" id="loggedin" value="<%=Session("z2t_loggedin")%>" />
-		<div class="container">
+	  <div class="container">
 		<div class="col-lg-12">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
@@ -31,7 +31,7 @@
 						<li><a href="/sales-tax-calculator">Sales Tax Calculator</a></li>
 						<li><a href="/sales-tax-by-zipcode">ZIP+4 Lookup</a></li>
 						<li><a href="/sales-tax-by-zipcode">Spot-On Lookup</a></li>
-						<li><a href="/calculate-sales-tax-rates">Desktop Widget</a></li>
+						<li><a href="/desktop-application">Desktop Widget</a></li>
 						<li><a href="/sales-tax-by-state">Taxes by State</a></li>
 						<li><a href="http://blog.zip2tax.com/category/tax-rate-changes/">Tax Rate Changes</a></li>
 					  </ul>
@@ -40,9 +40,9 @@
 					  <a href="/free-sales-tax-calculator" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
 					  <ul class="dropdown-menu" role="menu">
 						<li><a href="/comparison-chart">Compare Services</a></li>
-						<li><a href="/Website/pagesProducts/z2t_services_online_lookup.asp">Online Lookup</a></li>
-						<li><a href="/Website/pagesProducts/z2t_services_db_connection.asp">Database Interface</a></li>
-						<li><a href="/Website/pagesProducts/z2t_services_tables.asp">.CSV Tax Tables</a></li>
+						<li><a href="/sales-tax-lookup">Online Lookup</a></li>
+						<li><a href="/sales-tax-api">Database Interface</a></li>
+						<li><a href="/sales-tax-tables">.CSV Tax Tables</a></li>
 					  </ul>
 					</li>
 					<li class="dropdown mainLink">
@@ -95,7 +95,7 @@ end if
 						  	</label>
 						  	<div class="col-md-5" style="padding: 0 10px;">
 								<input type="text" class="form-control" name="menuInputZip" id="menuInputZip" placeholder="Zip Code" maxlength="5">
-						  </div>
+						    </div>
 						</div>
 					</div>
 				  	<ul class="nav navbar-nav navbar-right hidden-xs">
@@ -106,5 +106,5 @@ end if
 			</nav>
 		</div>
 	  </div>
-	  </div>
+	</div>
 <!-- End of HeadingMenuBar -->

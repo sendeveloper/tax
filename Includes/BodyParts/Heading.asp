@@ -17,7 +17,7 @@ Function DisplayCompanyName()
 End Function
 %>
 <!-- Start of Heading -->
-    <div class="container-fluid">
+<div class="container-fluid">
 	<div class="row" id="topArea">
 		<div style="width: 100%;" class="topAreaBack">
 			<div class="container">
@@ -71,4 +71,5 @@ end if
 			</div>
 		</div>
 	</div>
+</div>
 <!-- End of Heading -->	
