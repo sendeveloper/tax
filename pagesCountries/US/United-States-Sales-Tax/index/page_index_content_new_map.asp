@@ -51,29 +51,6 @@ smallStates = "TN, KY, VA, NC, PA"
 	Next
 	stateList = left(stateList, Len(stateList) - 2)
 %>
-<style type="text/css">
-      ul#myList li {margin-left: 2em;}	   
-      h1 {text-align: left; margin-top: 1em; margin-bottom: 1em;}
-      h2 {margin-bottom: .5em;}
-      ul.disc {list-style: disc outside none !important;}
-
-      .box h1 {margin-bottom: 0em; margin-top: 0em;}
-      .box h2 {margin-bottom: 0em;}
-      .post > h1.title {
-        margin: 45px 0 20px 0;
-        padding-left: 33px;
-        background: url(/Website/Images/star.gif) no-repeat left top !important;}
-
-      .post h2.title {
-        margin: 45px 0 20px 0;
-        padding-left: 33px;
-        margin-left: -33px;
-        background: url(/Website/Images/star.gif) no-repeat left top !important;}
-
-      /* h2.title {margin-left: -5em;} */
-	  /*#map2 svg { width: 100%; height: auto; }*/
-	  /*#map2 { width: 100%; height: auto; }*/
-    </style>
 
 	<div class="col-md-9 content">
 	<%=HeadingH1("Sales and Use Tax Rates By State And The Details You Need To Know")%>
@@ -121,7 +98,6 @@ smallStates = "TN, KY, VA, NC, PA"
 	  <span id="mapMouseover" style="display: inline-block; font-weight: bold; font-size: 12pt; width: 100%; text-align: center;">
 	    Click any state for additional information
 	  </span>
-	  </p>	
 	
 	<p><span class="firstword">To see a full breakout</span> of sales tax rates for the entire country by state, county, city 
 	  and special district, use our easy United States <a href="/sales-tax-calculator">sales tax calculator</a>. 
@@ -186,15 +162,15 @@ smallStates = "TN, KY, VA, NC, PA"
 	  cause frequent updates to the ZIP codes as well as local municipality names, which complicates the job of keeping track of 
 	  sales tax jurisdictions.</p>
    
-   		<a href="http://taxfoundation.org/tax-topics/state-taxes" target="_new">The Tax Foundation</a><br>
-   		<a href="http://en.wikipedia.org/wiki/United_States" target="_new">The United States</a><br>
-   		<a href="http://blog.zip2tax.com/state-sales-tax-holidays/" target="_new">State Sales Tax Holidays</a><br>
+   		<a href="http://taxfoundation.org/tax-topics/state-taxes" target="_blank">The Tax Foundation</a><br>
+   		<a href="http://en.wikipedia.org/wiki/United_States" target="_blank">The United States</a><br>
+   		<a href="http://blog.zip2tax.com/state-sales-tax-holidays/" target="_blank">State Sales Tax Holidays</a><br>
 		
 		
 </div>
-	<script src="\Website\pagesCountries\US\United-States-Sales-Tax\index\raphael.js"></script>
-	<script src="\Website\pagesCountries\US\United-States-Sales-Tax\index\color.jquery.js"></script>
-	<script src="\Website\pagesCountries\US\United-States-Sales-Tax\index\jquery.usmap.js"></script>
+	<script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/raphael.js"></script>
+	<script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/color.jquery.js"></script>
+	<script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/jquery.usmap.js"></script>
 <script>
 	$(document).ready(function() {
 	  
