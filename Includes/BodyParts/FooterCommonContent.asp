@@ -79,11 +79,14 @@ $(document).ready(function(){
 			}
 		}
 	}
-    $("#lookupOpener,#lookupOpener2").on( "click", function() {
+    $("#lookupOpener,#lookupOpener2").on( "click", function(e) {
+    	e.preventDefault();
     	$('.modal-backdrop').remove();
-    	$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #555;"></div>').appendTo(document.body);
-      $( "#dialog-form" ).dialog( "open" );
-      $('#dialog-form').parent().css('z-index', 1100);
+		$('<div class="modal-backdrop" style="opacity: 0.6; background-color: #555;"></div>').appendTo(document.body);
+		$( "#dialog-form2" ).dialog( "close" );
+		$( "#dialog-form" ).dialog( "open" );
+		$('#dialog-form').parent().css('z-index', 1100);
+		$('#dialog-form').parent().css('border', '4px solid #555');
     });
     $( "#showSignUp" ).on( "click", function() {
     	$('.modal-backdrop').remove();
@@ -154,38 +157,36 @@ $(document).ready(function(){
                    
                    
                    
+					<!-- Free Trial Popup Div Starts Here -->
                     <div id="ThankyouPopup" class="NoPrint">
-						<!-- Popup Div Starts Here -->
-
-					 <div id="popupFreeTrialSecondlevel2" style="max-width: 365px !important;">
-						<!-- Contact Us Form -->
-						<img id="close2" src="/Website/Images/popupcancel.png" alt="Free trial close" onclick ="div_hide(3)">
-						<span style="color:red;" > Thank You! </span>
-            			<br/>  <br/>
-                        <span style="color:red">
-                        Please check your email for your Username and Password.
-                        </span>
-            			<br/>  <br/>                        
-		            	<div>
-                     	   If you do not receive your email shortly, check your SPAM folder for mail from "info@Zip2Tax.com"
-                           or call us at 1-866-492-8494, Monday - Friday 8am - 5pm EST.
-	                    </div>
-						
-					</div>
-						<!-- Popup Div Ends Here -->
-                   </div>
-                   <%
-					   If Session("FreeTrialInterimLogin") = "Interim" and Session("FreeTrialInterimSignupAllowTemp") <> "1"   Then
-					  %>
-                   <div id="InterimSignupPopup" style="z-index: 1000; background-color: rgba(255,255,255,0.6);">
-						<!-- Popup Div Starts Here -->
-							<div id="popupFreeTrialSecondlevelinterm">
+						<div id="popupFreeTrialSecondlevel2" style="max-width: 365px !important;">
+							<!-- Contact Us Form -->
+							<img id="close2" src="/Website/Images/popupcancel.png" alt="Free trial close" onclick ="div_hide(3)">
+							<span style="color:red;" > Thank You! </span>
+							<br/>  <br/>
+							<span style="color:red">
+							Please check your email for your Username and Password.
+							</span>
+							<br/>  <br/>                        
+							<div>
+							   If you do not receive your email shortly, check your SPAM folder for mail from "info@Zip2Tax.com"
+							   or call us at 1-866-492-8494, Monday - Friday 8am - 5pm EST.
+							</div>
+							
+						</div>
+                    </div>
+					<!-- Free Trail Popup Div Ends Here -->
+					
+					
+<%
+    If Session("FreeTrialInterimLogin") = "Interim" and Session("FreeTrialInterimSignupAllowTemp") <> "1"   Then
+%>
+					<!-- Interim Popup Div Starts Here -->
+                    <div id="InterimSignupPopup" style="z-index: 1000; background-color: rgba(255,255,255,0.6);">
+						<div id="popupFreeTrialSecondlevelinterm">
                             
-                             <h2  class="titleloginbox titleposition">Free Trial Signup</h2>
+                            <h2  class="titleloginbox titleposition">Free Trial Signup</h2>
                             
-                            	
-								
-                         		
 							<!-- Left Side Form -->
                             <table>
                             	<tr>
@@ -193,46 +194,47 @@ $(document).ready(function(){
                             
                             	<div style="display:inline; width:60%"> 
 								
-			            		<div class="ftintlbldivfirst"     >
-									<label class="ftinterimlb"> First Name: </label> &nbsp;
-                                    <span style="color:black !important; display:inline">
-											<%=Session("FirstName")%>
-                                    </span>           
-			            		</div>
-			            		<!--div  >
-									<input id="ftintFirstName" name="ftintFirstName" class type="text">
-			            		</div-->
-            					
-			            		<div class="ftintlbldiv"    >
-            						<label class="ftinterimlb"> Last Name:</label>
-			            		</div>
-            					<div  >
-									<input id="ftintlname" name="ftintlname" style="margin-top: 4px;" type="text">
-			            		</div>
-                                
-                                <div  class="ftintlbldiv"    >
-            						<label class="ftinterimlb"> Title:</label>
-			            		</div>
-            					<div  >
-									<input id="ftinttitle" name="ftinttitle" style="margin-top: 4px;" type="text">
-			            		</div>
-                               <div  class="ftintlbldiv"    >
-            						<label class="ftinterimlb"> Company Name:</label>
-			            		</div>
-            					<div  >
-									<input id="ftintcompanyname" name="ftintcompanyname" style="margin-top: 4px;" type="text">
-			            		</div>
-                               <div  class="ftintlbldiv"     >
-            						<label class="ftinterimlb"> Phone:</label>
-			            		</div>
-            					<div  >
-									<input id="ftintphone" 
+									<div class="ftintlbldivfirst">
+										<label class="ftinterimlb"> First Name: </label> &nbsp;
+										<span style="color:black !important; display:inline">
+												<%=Session("FirstName")%>
+										</span>           
+									</div>
+									
+									<div class="ftintlbldiv">
+										<label class="ftinterimlb"> Last Name:</label>
+									</div>
+									<div>
+										<input id="ftintlname" name="ftintlname" style="margin-top: 4px;" type="text">
+									</div>
+									
+									<div class="ftintlbldiv">
+										<label class="ftinterimlb"> Title:</label>
+									</div>
+									
+									<div>
+										<input id="ftinttitle" name="ftinttitle" style="margin-top: 4px;" type="text">
+									</div>
+									
+								    <div  class="ftintlbldiv">
+										<label class="ftinterimlb"> Company Name:</label>
+									</div>
+									
+									<div>
+										<input id="ftintcompanyname" name="ftintcompanyname" style="margin-top: 4px;" type="text">
+									</div>
+									
+								    <div  class="ftintlbldiv">
+										<label class="ftinterimlb"> Phone:</label>
+									</div>
+									<div>
+										<input id="ftintphone" 
                                     		name="ftintphone" 
                                     		maxlength="14" 
                                             
                                             style="margin-top: 4px;" 
                                             type="text">
-			            		</div>
+									</div>
                                 
                                 </div> <!-- Left Side Form End -->
                                 </td>
@@ -252,13 +254,15 @@ $(document).ready(function(){
                                 
                                 </td>
                                </tr>
-                               </table>
-							</div>
-						<!-- Popup Div Ends Here -->
+                            </table>
+						</div>
                    	</div>
-                   	<% End If%>
+					<!-- Interim Popup Div Ends Here -->
+<% End If%>
+					
+					
+					<!-- Recovery Popup Div Starts Here -->
                    	<div id="passwordRecoveryPopup">
-					<!-- Popup Div Starts Here -->
 						<div id="popupFreeTrialSecondlevel">
 						<!-- Contact Us Form -->
 							<img id="close" src="/Website/Images/popupcancel.png" alt="Zip2Tax Password recovery close" onclick ="div_hide(5)">
@@ -284,8 +288,8 @@ $(document).ready(function(){
 							
 						   
 						</div>
-					<!-- Popup Div Ends Here -->
-				</div>	
+					</div>	
+					<!-- Recover Popup Div Ends Here -->
 				
 	<script>
 
@@ -316,7 +320,7 @@ End Function
 Function HeadingH2(text)
 
 	HeadingH2 = "<h2 style='font-size: 160%;'>" & vbCrLf & _
-		"        <span class='glyph glyphicon glyphicon-star redFont' aria-hidden='true'></span>" & vbCrLf & _
+		"        <span class='glyphicon glyphicon-star redFont' aria-hidden='true'></span>" & vbCrLf & _
 		"        " & text & vbCrLf & _
 		"    </h2>"
 End Function

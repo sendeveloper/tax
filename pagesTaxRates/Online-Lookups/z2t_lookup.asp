@@ -8,14 +8,18 @@
     Session("currentPage") = "z2t_lookup.asp"
 %>
 
-<html>
+<html lang="en">
   <head>
   	<!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-  	<script language="javascript" src="/Website/Includes/Javascript/Javascript_test.js" type="text/javascript"></script>
-    <script type="text/javascript" language="javascript" src="/Website/pagesTaxRates/LookupZipCode/map.js"></script>
-    <script type="text/javascript" language="javascript" src="/Website/pagesTaxRates/online-lookups/maps.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAptBhnQg4zQMZPim2KLfbJguUyFBIjj9I&sensor=false"></script>
+    <script src="/Website/pagesTaxRates/LookupZipCode/map.js"></script>
+    <script src="/Website/pagesTaxRates/online-lookups/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAptBhnQg4zQMZPim2KLfbJguUyFBIjj9I&sensor=false"></script>
     <link type="text/css" rel="stylesheet" href="/Website/pagesTaxRates/Online-Lookups/z2t_Lookup.css">
+    <style>
+      .padded { margin-bottom:5px !important; padding: 5px 5px !important;}
+      .col-md-3, .col-md-4 {padding-right:8px !important; }
+      #inputZip {left:0 !important}
+    </style>
   </head>
   <body>  
     <div class="container-fluid" style="padding: 0px;">

@@ -1,0 +1,106 @@
+body, html {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.table {
+    display: inline-block;
+}
+.tablerow {
+    display: inline-block;
+}
+.tablecell {
+    float: left;
+    zoom: 1;
+}
+#lookupBody .granularity {
+    float: left;
+    clear: right;
+}
+#frmLookupSalesTax {
+    float: right;
+    clear: left;
+    zoom: 1;
+}
+#lookupTab, #zipTab, #zipFourTab, #pinPointTab {
+    width: 130px;
+}
+#lookupTab img, #zipTab img, #zipFourTab img, #pinPointTab img {
+     float: left;
+     zoom: 1;
+}
+#lookupTab div, #zipTab div, #zipFourTab div, #pinPointTab div {
+    float: left;
+    zoom: 1;
+}
+#frmLookupSalesTax #cityStateZipRow {
+    display: block !important;
+    zoom: 1;
+}
+#frmLookupSalesTax #inputCity {
+    display: inline-block !important;
+    width: 100px !important;
+}
+#frmLookupSalesTax #inputState {
+    display: inline-block !important;
+}
+#frmLookupSalesTax #inputZip {
+    display: inline-block !important;
+    width: 50px !important;
+}
+#frmLookupSalesTax #inputZip4 {
+     display: inline-block !important;
+     width: 70px !important;
+ }
+#frmLookupSalesTax #inputAmt {
+    display: inline-block !important;
+    width: 120px !important;
+}
+#rate-buttons div #getRateButton {
+    position:absolute;
+    left: 0;
+    width: 120px;
+    height: 100px !important;
+}
+#rate-buttons div #loading_animation {
+    position:absolute;
+    top: 110px;
+    left: 370px;
+    vertical-align: top;
+    text-align: center;
+    height: 20px !important;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rate-buttons div #big_result {
+    position:absolute;
+    top: 135px;
+    left: 370px;
+    vertical-align: top;
+    text-align: center;
+    height: 130px !important;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+#rate-buttons div #detail_link {
+    position: absolute;
+    top: 205px;
+    left: 370px;
+    vertical-align: top;
+    text-align: center;
+    height: 20px !important;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rate-buttons div #clear-button {
+    position:absolute;
+    right: 20px;
+    top:115px;
+    width: 120px;
+    height: 1.8em !important;
+}

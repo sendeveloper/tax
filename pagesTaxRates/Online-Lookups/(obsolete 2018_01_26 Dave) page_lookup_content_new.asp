@@ -1,13 +1,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
 
 <div class="col-md-9 content">
-	<%=HeadingH1("Spot-On&trade; Sales And Use Tax Rates With Sales Tax Calculator")%>
+	<h1>
+	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
+	Spot-On&trade; Sales And Use Tax Rates With 
+Sales Tax Calculator
+	</h1>
 	<p>
 		Quickly find the general sales tax and use tax rates for every door step, ZIP+4, or ZIP code in every state, county, city and special district in the United States.
 	</p>
 	
-	<script>
+	<script type="text/javascript">
 		function timeStringToFloat(time) {
 				  var hoursMinutes = time.split(/[.:]/);
 				  var minutes = parseInt(hoursMinutes[0], 10);
@@ -20,7 +24,7 @@
 				  return  res;//seconds.toFixed(2);
 		}
 	
-		$(function(){
+	$(function(){
 			<% if Session("z2t_username")="" then%>
 			$("#getRate").prop('disabled', true);
 			<%end if%>
@@ -58,9 +62,7 @@
 					};
 				//console.log($userEntries);
 
-				//var theUrl = "/website/pagestaxrates/online-lookups/z2t_Ajax.asp";
-				var theUrl = "/website/pagestaxrates/online-lookups/z2t_Ajax.asp?pathLookupAPI=<%=pathLookupAPI%>";
-
+				var theUrl = "/website/pagestaxrates/online-lookups/z2t_Ajax.asp";
 
 				$.get(theUrl, $userEntries)
 				.always(function() {
@@ -222,6 +224,12 @@ var formatter = new Intl.NumberFormat("en-US", {
 			});
 
 			</script>
+			<style>
+			.padded { margin-bottom:5px !important; padding: 5px 5px !important;}
+			.col-md-3, .col-md-4 {padding-right:8px !important; }
+			#inputZip {left:0 !important}
+			
+			</style>
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h3 class="panel-title">
@@ -233,7 +241,7 @@ var formatter = new Intl.NumberFormat("en-US", {
 				<div class="col-lg-12 text-center">
 					<div class="alert alert-dismissible alert-danger alert-sm">
 						<button type="button" class="close" data-dismiss="alert">&times;</button>
-						In order to use this feature, you need to be logged in. Click <a href="#" id="lookupOpener">here</a> to Log In
+						In order to use this feature, you need to be logged in. Click <a href="javascript:();" id="lookupOpener">here</a> to Log In
 					</div>				
 				</div>
 			</div>
@@ -399,7 +407,7 @@ var formatter = new Intl.NumberFormat("en-US", {
 				</div>
 				<div class="row">
 					<div class="col-lg-12 text-right">
-						<div id="serverInfo" style="font-size: 90%; color: #9ccffc;"></div>
+						<div class="blueFont" id="serverInfo"></div>
 					</div>
 				</div>
 				<hr>
