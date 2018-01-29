@@ -54,7 +54,7 @@ end if
 					</div>
 					<p style="margin: 0 0 10px;"> </p>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 fontWhite18Bold phoneDiv" style="display: none;">
+				<div class="col-lg-3 col-md-3 col-sm-3 fontWhite18Bold ahoneDiv" style="display: none;">
 					<p style="margin: 0 0 10px;"> </p>
 					<div style="border-radius: 25px;
 								border: 2px solid #9CE53C;
