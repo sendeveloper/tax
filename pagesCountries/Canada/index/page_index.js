@@ -1,0 +1,1 @@
+function xy(a){var b=0,c=0;if(!a)var a=window.event;return a.pageX||a.pageY?(b=a.pageX,c=a.pageY):(a.clientX||a.clientY)&&(b=a.clientX+document.body.scrollLeft+document.documentElement.scrollLeft,c=a.clientY+document.body.scrollTop+document.documentElement.scrollTop),{x:b,y:c}}

@@ -1,0 +1,49 @@
+
+	div.Jurisdictions
+		{
+		text-align: 	left;
+		}
+	
+	div.Jurisdictions a
+		{
+		padding-left:	10px;
+		}	
+		
+	.divLeft 
+		{
+		width:135px;
+		display:block;
+		float: left;
+		//border: 1px solid black;
+		}
+	.divRight 
+		{
+		width:135px;
+		display:block;
+		float: right;
+		//border: 1px solid black;
+		}		
+		
+	.ToolTip
+		{
+		/*margin:			100px;*/
+		}	
+		
+	.ToolTip:hover .ToolTipBox 
+		{
+		display: 		block;
+		}
+
+	.ToolTipBox
+		{
+		color:			black;
+		display: 		none;
+		background: 	#E8EAF4;
+		margin-top:		0px;
+		margin-left: 	-200px;
+		padding: 		5px;
+		position: 		absolute;
+		z-index: 		1000;
+		border:			1px solid black;
+		text-align:		left;
+		}		
