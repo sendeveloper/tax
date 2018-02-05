@@ -1,22 +1,4 @@
 <%
-	function getColor(rank)
-		select case true 
-			case cint(rank) = 0 
-				strColor = "#a0a0a0"
-			case cint(rank) > 0 AND cint(rank) <= 10
-				strColor = "#4a0e39"
-			Case cint(rank) >= 11 AND cint(rank) <= 20
-				strColor = "#5d214a"
-			Case cint(rank) >= 21 and cint(rank) <= 30
-				strColor = "#672c54"			
-			Case cint(rank) >= 31 and cint(rank) <= 40
-				strColor = "#8c5074"			
-			case else
-				strColor ="#e08eb0"
-		end select
-		getColor = strColor
-	end function
-	
 	set con = server.createobject("adodb.connection")
 	con.open connStrPublic
 	Set cmd = Server.CreateObject("ADODB.Command")   
@@ -26,20 +8,12 @@
 	sqlstr="z2t_EntityPages_US_State_list"
 	cmd.CommandText = sqlstr
 	cmd.CommandType  = 4
-	set rs=cmd.execute()				
-	
-dim state(51)
-dim percentage(51)
-dim position(51)
-dim color(51)
-smallStates = "TN, KY, VA, NC, PA"
+	set rs=cmd.execute()		
 	Dim stateName(51), stateNameSEO(51), stateCoords(51), stateCoords2(51), stateCode(51)
 	i=0
 	do while not rs.eof
 	i=i+1 
-	
-		stateName(i)=rs("statefullName"):		stateNameSEO(i)=rs("stateNameSEO"):		stateCoords(i)=rs("usMap_Coordinates1"):  stateCoords2(i)=rs("usMap_Coordinates2") : stateCode(i)=rs("state")
-		state(i) = rs("state") : percentage(i)  =  rs("maxCombinedRate") & "%" : position(i) = rs("maxCombinedRank") : color(i) = getColor(rs("maxCombinedRank"))
+		stateName(i)=rs(1):		stateNameSEO(i)=rs(2):		stateCoords(i)=rs(3):  stateCoords2(i)=rs(4) : stateCode(i)=rs(0)
 	rs.movenext
 	loop
 	%>
@@ -51,9 +25,51 @@ smallStates = "TN, KY, VA, NC, PA"
 	Next
 	stateList = left(stateList, Len(stateList) - 2)
 %>
+<script language="javascript" type = "text/javascript">
 
-	<div class="col-md-9 content">
-	<%=HeadingH1("Sales and Use Tax Rates By State And The Details You Need To Know")%>
+    var stateName = new Array('', <%=stateList%>)
+		  
+    function stateMouseover(i)
+        {
+        document.getElementById('mapMouseover').innerHTML = 'Click for additional sales tax information about ' + stateName[i];
+        }
+
+    function stateMouseout()
+        {
+        document.getElementById('mapMouseover').innerHTML = 'Click any state for additional information';
+        }
+
+		$(function(){
+		});
+		
+</script>
+<style type="text/css">
+      ul#myList li {margin-left: 2em;}	   
+      h1 {text-align: left; margin-top: 1em; margin-bottom: 1em;}
+      h2 {margin-bottom: .5em;}
+      ul.disc {list-style: disc outside none !important;}
+
+      .box h1 {margin-bottom: 0em; margin-top: 0em;}
+      .box h2 {margin-bottom: 0em;}
+      .post > h1.title {
+        margin: 45px 0 20px 0;
+        padding-left: 33px;
+        background: url(/Website/Images/star.gif) no-repeat left top !important;}
+
+      .post h2.title {
+        margin: 45px 0 20px 0;
+        padding-left: 33px;
+        margin-left: -33px;
+        background: url(/Website/Images/star.gif) no-repeat left top !important;}
+
+      /* h2.title {margin-left: -5em;} */
+    </style>
+
+	<div class="col-lg-6 col-md-9 content">
+	<h2>
+	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
+	Sales and Use Tax Rates By State <span style="white-space: nowrap;">And The Details You Need To Know</span>
+	</h2>
 	<h3>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 		What are sales taxes?
@@ -70,7 +86,7 @@ smallStates = "TN, KY, VA, NC, PA"
 	  general sales tax rates and laws for any given state, click on the map below or use this pull down menu.
 	
 	<!-- State Dropdown Menu -->
-	<select name="URL" id="URL" onchange="location = this.options[this.selectedIndex].value;">
+	<select name="URL" onchange="location = this.options[this.selectedIndex].value;">
 		<option value="Select a State">Select a State</option>
 		<%
 			For i = 1 to 51
@@ -82,22 +98,42 @@ smallStates = "TN, KY, VA, NC, PA"
 	</select>
 	  <!-- Map -->
 	</p>
-	<div class="row">
-	<div class="row">
-		<div class="col-md-12 text-center center">
-		<h3>United States Maximum Sales Tax Rates for Each State</h3>
-		<h4>Ranked from highest to lowest</h4>
-		<small>(Rates can vary depending on actual location within a state)</small>
-		</div>
-	</div>
-	<div class="col-md-12 text-center center">
-			<div id="map2" style="width:560px; height:400px; margin-left: auto; margin-right: auto;"></div>
-		</div>
-	</div>
-  
+	
+<img src="/Website/Images/States/US-sales-tax-map.png" 
+		alt="clickable US Map" name="US-sales-tax-map" width="600" height="400" border="0" 
+		usemap="#m_US-sales-tax-map" onMouseout='stateMouseout();'>
+		
+      <p><map name="m_US-sales-tax-map">
+		  
+		<%
+			For i = 1 to 51
+				Response.Write vbTab & _		                    
+					"<area shape='poly' " & _
+					"coords='" & stateCoords(i) & "' " & vbCrLf & _
+					vbTab & vbTab & _
+					"href='/"&stateCode(i)&"/" & stateNameSEO(i) &"' " & vbCrLf & _
+					vbTab & vbTab & _
+					"alt='" & stateName(i) & " Sales Tax Information' title='Sales Tax Information for " & stateName(i) & "' " & vbCrLf & _
+					vbTab & vbTab & _
+					"onMouseover='stateMouseover(" & i & ");'>" & vbCrLf
+				If stateCoords2(i) <> "" Then
+					Response.Write vbTab & _
+						"<area shape='poly' " & _
+						"coords='" & stateCoords2(i) & "' " & vbCrLf & _
+						vbTab & vbTab & _
+						"href='/"&stateCode(i)&"/" & stateNameSEO(i) &"' " & vbCrLf & _
+						vbTab & vbTab & _
+						"alt='" & stateName(i) & " Sales Tax Information' title='Sales Tax Information for " & stateName(i) & "' " & vbCrLf & _
+						vbTab & vbTab & _
+						"onMouseover='stateMouseover(" & i & ");'>" & vbCrLf		
+				End If
+			Next
+		%>
+      </map>
 	  <span id="mapMouseover" style="display: inline-block; font-weight: bold; font-size: 12pt; width: 100%; text-align: center;">
 	    Click any state for additional information
 	  </span>
+	  </p>	
 	
 	<p><span class="firstword">To see a full breakout</span> of sales tax rates for the entire country by state, county, city 
 	  and special district, use our easy United States <a href="/sales-tax-calculator">sales tax calculator</a>. 
@@ -162,60 +198,9 @@ smallStates = "TN, KY, VA, NC, PA"
 	  cause frequent updates to the ZIP codes as well as local municipality names, which complicates the job of keeping track of 
 	  sales tax jurisdictions.</p>
    
-   		<a href="http://taxfoundation.org/tax-topics/state-taxes" target="_blank">The Tax Foundation</a><br>
-   		<a href="http://en.wikipedia.org/wiki/United_States" target="_blank">The United States</a><br>
-   		<a href="http://blog.zip2tax.com/state-sales-tax-holidays/" target="_blank">State Sales Tax Holidays</a><br>
+   		<a href="http://taxfoundation.org/tax-topics/state-taxes" target="_new">The Tax Foundation</a><br>
+   		<a href="http://en.wikipedia.org/wiki/United_States" target="_new">The United States</a><br>
+   		<a href="http://blog.zip2tax.com/state-sales-tax-holidays/" target="_new">State Sales Tax Holidays</a><br>
 		
 		
 </div>
-	<script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/raphael.js"></script>
-	<script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/color.jquery.js"></script>
-	<script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/jquery.usmap.js"></script>
-<script>
-	$(document).ready(function() {
-	  
-	  $('#map2').usmap({
-	
-		 'stateSpecificStyles': {
-		<%for i=1 to 51%>
-	      '<%=state(i)%>' : {fill: '<%=color(i)%>'},
-		<%next%>
-	    },
-	    'stateStyles': {
-	      "stroke-width": 0.5,
-	      'stroke' : '#fff'
-	    },
-	    'stateHoverStyles': {
-	      fill: 'teal'
-	    },
-	     
-	    'click' : function(event, data) {
-		var selectedState = $("#URL").find("option[value^='/"+data.name+"/']").val();
-		window.location.href=selectedState;
-	    },
-	    'mouseover' : function(event, data) {
-		var selectedStateName = $("#URL").find("option[value^='/"+data.name+"/']").text();
-	      $('#mapMouseover')
-	        .text('Click for additional sales tax information about '+selectedStateName);
-	    },
-		'mouseout' : function(event, data) {
-	      $('#mapMouseover')
-	        .text('Click any state for additional information');
-	    },
-		'useAllLabels': true,
-		'showDataValues': true,
-		'useFullStateNames' : false,
-		'dataValues' : {
-		<%for i=1 to 51%>
-			<%if percentage(i)="0%" then %>
-			'<%=state(i)%>': 'none',
-			<%else%>
-			'<%=state(i)%>': '<%=percentage(i)%> <%if instr(smallStates, state(i))=0 then%>\n <%end if%> #<%=position(i)%>',
-			<%end if%>
-		<%next%>
-		
-		}
-	  });
-	  //$('#map2').css('width' , '100%').css('height' , 'auto')
-	});
-	</script>

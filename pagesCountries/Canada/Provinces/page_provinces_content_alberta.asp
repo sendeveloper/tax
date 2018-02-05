@@ -3,7 +3,7 @@
 <div class="post">
 	<h1>
         <span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-        Canada NY Sales and Use Tax
+        Alberta Sales and Use Tax
     </h1>
 	<div class="clearfix"></div>	
 	

@@ -56,12 +56,12 @@
 
 <html lang="en">
   <head>
-    
-    <!--#include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->
-    <!--#include virtual="/Website/Includes/BodyParts/newHeading.asp"-->
-	<script type="text/javascript" src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
+	
+	<script src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<link rel="stylesheet" type="text/css" href="/js/jquery.fancybox.css?v=2.1.5" media="screen" />
-            <script type="text/javascript">
+	<link rel="stylesheet" type="text/css" href="/Website/pagesCountries/Includes/Menu/z2t_JurisdictionMenu.css" />
+    <script>
 			$(document).ready(function() {
 				$("#single_1").fancybox({
 					  helpers: {
@@ -70,15 +70,26 @@
 						  }
 					  }
 				  });
-			});
-			
-			</script>
-
-		<!-- #include virtual="/Website/pagesCountries/US/States/page_states_content_new.asp" -->
-        <!-- #include virtual="/Website/pagesCountries/US/States/page_states_right_sidebar_new.asp" -->
-    </div>
-	<!-- #include virtual="/Website/Includes/footer_new.asp"-->
+			});			
+	</script>
+  </head>
   
-	</div>
+  <body>	
+    <div class="container-fluid" style="padding: 0px;">
+      <!--#include virtual="/Website/Includes/BodyParts/Heading.asp"-->
+      <!--#include virtual="/Website/Includes/BodyParts/HeadingMenuBar.asp"-->
+	    
+        <div class="clearfix"></div>
+        <div class="container">		
+		  <!-- #include virtual="/Website/pagesCountries/US/States/page_states_content.asp" -->
+		  <div class="col-lg-3 col-md-3 NoPrint">
+			<%Session("MenuOrder")="USA|Canada"%>
+			<!-- #include virtual="/Website/pagesCountries/Includes/Menu/z2t_JurisdictionMenu.asp" -->
+		  </div>
+		</div>
+    </div>
+	
+	<!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"-->	
   </body>
 </html>

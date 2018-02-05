@@ -11,7 +11,9 @@
 <html lang="en">
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	   <script src="/Website/pagesCountries/US/United-States-Sales-Tax/index/page_index.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="/Website/pagesCountries/Includes/Menu/z2t_JurisdictionMenu.css" />
+	
      <style>
       ul#myList li {margin-left: 2em;}     
       h1 {text-align: left; margin-top: 1em; margin-bottom: 1em;}
@@ -45,8 +47,11 @@
       <div class="mainBody">
         <div class="clearfix"></div>
         <div class="container">     
-		<!-- #include virtual="/Website/pagesCountries/US/United-States-Sales-Tax/index/page_index_content_new_map.asp" -->
-        <!-- #include virtual="/Website/pagesCountries/US/United-States-Sales-Tax/index/page_index_right_sidebar.asp" -->
+		  <!-- #include virtual="/Website/pagesCountries/US/United-States-Sales-Tax/index/page_index_content.asp" -->
+		  <div class="col-lg-3 col-md-3 NoPrint">
+			<%Session("MenuOrder")="USA|Canada"%>
+			<!-- #include virtual="/Website/pagesCountries/Includes/Menu/z2t_JurisdictionMenu.asp" -->
+		  </div>
         </div>
         </div>
     </div>

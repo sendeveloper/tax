@@ -65,7 +65,7 @@
 	<p>
 		<span class="firstword">
 			If you are not sure
-		</span> if you have to collect taxes for Canada, you can usually get free help by contacting the Canada Revenue Agency. <a href="/frequently-asked-question" target="_blank">Click here</a> for an updated listing of direct phone numbers. You could also contact a qualified certified public accountant or lawyer who specializes in tax law in Canada. <a href="/resources" target="_blank">Click here</a> for listing of recommended resources.
+		</span> if you have to collect taxes for Canada, you can usually get free help by contacting the <a href="https://www.canada.ca/en/services/taxes/gsthst.html" target="">Canada Revenue Agency</a>. You could also contact a qualified <a href="/resources" target="_blank">certified public accountant or lawyer who specializes in tax law</a> in Canada.
 	</p>
 	<p><span class="firstword">Special rules applying to sales and use taxes in Canada</span></p>
 	<p>
