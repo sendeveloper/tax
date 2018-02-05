@@ -11,7 +11,7 @@
 	
 	</p>
 	<p>
-		While the buyer is responsible for paying the tax, it is the seller who is normally tasked with collecting the tax from the buyer and remitting it to the <a href="https://www.canada.ca/en/services/taxes/gsthst.html" target="_blank">Canada Revenue Agency</a> in a timely fashion.
+		While the buyer is responsible for paying the tax, it is the seller who is normally tasked with collecting the tax from the buyer and remitting it to the Canada Revenue Agency in a timely fashion.
 	</p>
 	<p>
 		Rates vary depending on individual province.  To see detailed information about the general sales tax rates and laws for any given province, click on the map below or use this pull down menu.
@@ -65,7 +65,7 @@
 	<p>
 		<span class="firstword">
 			If you are not sure
-		</span> if you have to collect taxes for Canada, you can usually get free help by contacting the <a href="https://www.canada.ca/en/services/taxes/gsthst.html" target="_blank">Canada Revenue Agency</a>. You could also contact a qualified <a href="/resources" target="_blank">certified public accountant or lawyer who specializes in tax law</a> in Canada.
+		</span> if you have to collect taxes for Canada, you can usually get free help by contacting the Canada Revenue Agency. <a href="/frequently-asked-question" target="_blank">Click here</a> for an updated listing of direct phone numbers. You could also contact a qualified certified public accountant or lawyer who specializes in tax law in Canada. <a href="/resources" target="_blank">Click here</a> for listing of recommended resources.
 	</p>
 	<p><span class="firstword">Special rules applying to sales and use taxes in Canada</span></p>
 	<p>
