@@ -59,6 +59,28 @@
 						Click for the Province of British Columbia<br>Sales and Use Tax Information
 					</span></a><br>
 			</div>
+
+			<div class="divLeft">
+				<a class="ToolTip" href="/new-brunswick-sales-tax">New Brunswick
+					<span class="ToolTipBox">
+						Click for the Province of New Brunswick<br>Sales and Use Tax Information
+					</span></a><br>
+			</div>
+
+			<div class="divLeft">
+				<a class="ToolTip" href="/newfoundland-labrador-sales-tax">Newfoundland
+					<span class="ToolTipBox">
+						Click for the Province of Newfoundland Labrador<br>Sales and Use Tax Information
+					</span></a><br>
+			</div>
+
+			<div class="divLeft">
+				<a class="ToolTip" href="/ontario-sales-tax">Ontario
+					<span class="ToolTipBox">
+						Click for the Province of Ontario<br>Sales and Use Tax Information
+					</span></a><br>
+			</div>
+
 		</div>
 		
 <%

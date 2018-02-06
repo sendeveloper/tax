@@ -12,8 +12,18 @@
         What is the Provincial Sales Tax (PST) Rate for British Columbia?
 	</h2>
 	<p>
+		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
+			<a id="single_1" href="Website/Images/Maps/WorldofMaps_Gumroad/2USA StatesCanadaProv/CanadaProvincesJPG/BritishColumbiaC.jpg" title="[British Columbia sales tax rates for each jurisdiction]">
+				<img src="Website/Images/Maps/WorldofMaps_Gumroad/2USA StatesCanadaProv/CanadaProvincesJPG/BritishColumbiaC.jpg" alt="[British Columbia tax rates for each jurisdiction]" style="width: 150px;">
+			</a><br>
+			<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
+	  	</span>
 		<span class="firstword">In British Columbia, the PST</span> is generally 7% on the purchase or lease price of goods and services aside from certain exceptions.  This 7% is in addition to the federal GST rate of 5% and brings the total rate for British Columbia to 12%.
-		<span class="firstword">Taxes in Canada</span> are destination-based, meaning the British Columbia sales tax rate is based, or determined from, the destination location an item is shipped to. This complicates business for retailers who need to have the exact and up-to-date sales tax rate for every shipment they make.
+	</p>
+	<p>
+		<span class="firstword">Taxes in Canada</span> are destination-based, meaning the sales tax rate is based, or determined from, the destination location an item is shipped to. This complicates business for retailers who need to have the exact and up-to-date sales tax rate for every shipment they make.
+	</p>
+	<p>
 		<span class="firstword">To see a full breakout</span> of Canada sales tax rates by province, city and postal code, use our .csv tax tables.
 	</p>
 

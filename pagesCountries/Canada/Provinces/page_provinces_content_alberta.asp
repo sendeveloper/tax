@@ -14,12 +14,12 @@
     </h2> 
 
 	<p>
-	<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
-		<a id="single_1" href="/Website/Images/States/AL-lg.png" title="[Alabama sales tax rates for each jurisdiction]">
-			<img src="/Website/Images/States/AL.png" alt="[Alabama sales tax rates for each jurisdiction]">
-		</a><br>
-		<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
-	  </span>
+		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
+			<a id="single_1" href="Website/Images/Maps/WorldofMaps_Gumroad/2USA StatesCanadaProv/CanadaProvincesJPG/AlbertaC.jpg" title="[British Columbia sales tax rates for each jurisdiction]">
+				<img src="Website/Images/Maps/WorldofMaps_Gumroad/2USA StatesCanadaProv/CanadaProvincesJPG/AlbertaC.jpg" alt="[British Columbia tax rates for each jurisdiction]" style="width: 150px;">
+			</a><br>
+			<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
+	  	</span>
 	  <span class="firstword">The Alabama sales tax rate</span> is currently 4%. In Alabama, each county, city and special district  
 	  can add sales taxes on top of the state rate.</p>
     
