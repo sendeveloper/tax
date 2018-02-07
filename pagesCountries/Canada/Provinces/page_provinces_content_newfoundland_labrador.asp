@@ -13,8 +13,8 @@
 	</h2>
 	<p>
 		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
-			<a id="single_1" href="Website/Images/Maps/WorldofMaps_Gumroad/2USA StatesCanadaProv/CanadaProvincesJPG/NewfoundLabradorC.jpg" title="[British Columbia sales tax rates for each jurisdiction]">
-				<img src="Website/Images/Maps/WorldofMaps_Gumroad/2USA StatesCanadaProv/CanadaProvincesJPG/NewfoundLabradorC.jpg" alt="[British Columbia tax rates for each jurisdiction]" style="width: 150px;">
+			<a id="single_1" href="Website/pagesCountries/Includes/Maps/WorldofMaps_Gumroad/2USAStatesCanadaProv/CanadaProvincesJPG/NewfoundLabradorC.jpg" title="[British Columbia sales tax rates for each jurisdiction]">
+				<img src="Website/pagesCountries/Includes/Maps/WorldofMaps_Gumroad/2USAStatesCanadaProv/CanadaProvincesJPG/NewfoundLabradorC.jpg" alt="[British Columbia tax rates for each jurisdiction]" style="width: 150px;">
 			</a><br>
 			<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
 	  	</span>
