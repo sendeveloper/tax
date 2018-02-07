@@ -56,8 +56,8 @@
 
 <html lang="en">
   <head>
+  	<title><%=statePageTitle%></title>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	
 	<script src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<link rel="stylesheet" type="text/css" href="/js/jquery.fancybox.css?v=2.1.5" media="screen" />
 	<link rel="stylesheet" type="text/css" href="/Website/pagesCountries/Canada/States/page_states.css" />

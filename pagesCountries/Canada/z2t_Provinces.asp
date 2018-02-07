@@ -14,6 +14,7 @@
 
 <html lang="en">
   <head>
+  	<title><%=Province%></title>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
 	
 	<script src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
@@ -49,6 +50,11 @@
 %>
 		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_british_columbia.asp" -->
 <%
+	Case "Manitoba"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_manitoba.asp" -->	
+<%
+
 	Case "NewBrunswick"
 %>
 		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_new_brunswick.asp" -->	
@@ -56,11 +62,39 @@
 <%
 	Case "NewfoundlandLabrador"
 %>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_newfoundland_labrador.asp" -->	
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_newfoundland_labrador.asp" -->
+<%
+	Case "NorthwestTerritories"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_northwest_territories.asp" -->
+<%
+	Case "NovaScotia"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_nova_scotia.asp" -->
+<%
+	Case "Nunavut"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_nunavut.asp" -->
 <%
 	Case "Ontario"
 %>
 		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_ontario.asp" -->	
+<%
+	Case "PrinceEdwardIsland"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_prince_edward_island.asp" -->
+<%
+	Case "Quebec"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_quebec.asp" -->
+<%
+	Case "Saskatchewan"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_saskatchewan.asp" -->
+<%
+	Case "Yukon"
+%>
+		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_yukon.asp" -->
 <%
 	End Select
 %>		 
