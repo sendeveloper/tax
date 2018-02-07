@@ -2,7 +2,7 @@
 	<%=HeadingH1("Sales and Use Tax Rates By Province And The Details You Need To Know")%>
 	<h3>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-		What are sales taxes?
+		What is the Canada sales tax?
 	</h3>	
 	
 	<p><span class="firstword">In Canada, there is a federal Goods and Services Tax (GST)</span> collected on most retail purchases. 

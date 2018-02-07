@@ -51,91 +51,58 @@
 					<span class="ToolTipBox">
 						Click for the Province of Alberta<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-			
-			<div class="divLeft">
 				<a class="ToolTip" href="/british-columbia-sales-tax">British Columbia
 					<span class="ToolTipBox">
 						Click for the Province of British Columbia<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/manitoba-sales-tax">Manitoba
 					<span class="ToolTipBox">
 						Click for the Province of Manitoba<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/new-brunswick-sales-tax">New Brunswick
 					<span class="ToolTipBox">
 						Click for the Province of New Brunswick<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/newfoundland-labrador-sales-tax">Newfoundland
 					<span class="ToolTipBox">
 						Click for the Province of Newfoundland Labrador<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/northwest-territories-sales-tax">Northwest
 					<span class="ToolTipBox">
 						Click for the Province of Northwest Territories<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/nova-scotia-sales-tax">Nova Scotia
 					<span class="ToolTipBox">
 						Click for the Province of Nova Scotia<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>		
+			</div>
 
-			<div class="divLeft">
+			<div class="divRight">
 				<a class="ToolTip" href="/nunavut-sales-tax">Nunavut
 					<span class="ToolTipBox">
 						Click for the Province of Nunavut<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>		
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/ontario-sales-tax">Ontario
 					<span class="ToolTipBox">
 						Click for the Province of Ontario<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/prince-edward-island-sales-tax">Prince Edward
 					<span class="ToolTipBox">
 						Click for the Province of Prince Edward Island<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>	
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/quebec-sales-tax">Quebec
 					<span class="ToolTipBox">
 						Click for the Province of Quebec<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>	
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/saskatchewan-sales-tax">Saskatchewan
 					<span class="ToolTipBox">
 						Click for the Province of Saskatchewan<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>	
-
-			<div class="divLeft">
 				<a class="ToolTip" href="/yukon-sales-tax">Yukon
 					<span class="ToolTipBox">
 						Click for the Province of Yukon<br>Sales and Use Tax Information
 					</span></a><br>
-			</div>	
+			</div>			
 
 		</div>
 		
