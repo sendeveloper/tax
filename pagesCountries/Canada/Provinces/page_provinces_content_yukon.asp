@@ -15,8 +15,9 @@
 		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
 			<a id="single_1" href="Website/pagesCountries/Includes/Maps/Canada/YT.png" title="[Yukon sales tax rates for each jurisdiction]">
 				<img src="Website/pagesCountries/Includes/Maps/Canada/YT.png" alt="[Yukon tax rates for each jurisdiction]" style="width: 150px;">
+				<br/>
+				<img src="Website/pagesCountries/Includes/images/click_for_larger.png" style="width: 95px !important;" />
 			</a><br>
-			<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
 	  	</span>
 		<span class="firstword">In Yukon,</span> there is no regional sales tax on the purchase or lease price of goods and services.  Only the 5% federal GST is applicable on the purchase or lease price of goods and services in Yukon.
 	</p>

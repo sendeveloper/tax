@@ -15,8 +15,9 @@
 		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
 			<a id="single_1" href="Website/pagesCountries/Includes/Maps/Canada/PE.png" title="[Prince Edward Island sales tax rates for each jurisdiction]">
 				<img src="Website/pagesCountries/Includes/Maps/Canada/PE.png" alt="[Prince Edward Island tax rates for each jurisdiction]" style="width: 150px;">
+				<br/>
+				<img src="Website/pagesCountries/Includes/images/click_for_larger.png" style="width: 95px !important;" />
 			</a><br>
-			<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
 	  	</span>
 		<span class="firstword">In Prince Edward Island, the HST</span> is generally 15% on the purchase or lease price of goods and services aside from certain exceptions.  This 15% is a combination of the federal GST rate of 5% and the regional PST of 10%.
 	</p>
