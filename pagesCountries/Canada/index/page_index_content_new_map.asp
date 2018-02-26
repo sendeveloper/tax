@@ -20,7 +20,7 @@
 		While the buyer is responsible for paying the tax, it is the seller who is normally tasked with collecting the tax from the buyer and remitting it to the Canada Revenue Agency in a timely fashion.
 	</p>
 	<p>
-		Rates vary depending on individual province.  To see detailed information about the general sales tax rates and laws for any given province, click on the map below or use this pull down menu.
+		Rates vary depending on individual province.  To see detailed information about the general sales tax rates and laws for any given province, click on the map below.
 
 	</p>
 	<div class="row">

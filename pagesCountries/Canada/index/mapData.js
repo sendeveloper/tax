@@ -75,91 +75,91 @@ var simplemaps_canadamap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/alberta-sales-tax"
     },
     BC: {
       name: "British Columbia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/british-columbia-sales-tax"
     },
     SK: {
       name: "Saskatchewan",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/saskatchewan-sales-tax"
     },
     MB: {
       name: "Manitoba",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/manitoba-sales-tax"
     },
     ON: {
       name: "Ontario",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/ontario-sales-tax"
     },
     QC: {
       name: "Quebec",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/quebec-sales-tax"
     },
     NB: {
       name: "New Brunswick",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/new-brunswick-sales-tax"
     },
     PE: {
       name: "Prince Edwards Island",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/prince-edward-island-sales-tax"
     },
     NS: {
       name: "Nova Scotia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/nova-scotia-sales-tax"
     },
     NL: {
       name: "Newfoundland and Labrador",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/newfoundland-labrador-sales-tax"
     },
     NU: {
       name: "Nunavut",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/nunavut-sales-tax"
     },
     NT: {
       name: "Northwest Territories",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/northwest-territories-sales-tax"
     },
     YT: {
       name: "Yukon",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "/yukon-sales-tax"
     }
   },
   locations: {

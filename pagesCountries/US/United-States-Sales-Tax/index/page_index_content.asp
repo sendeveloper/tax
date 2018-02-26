@@ -67,10 +67,10 @@ smallStates = "TN, KY, VA, NC, PA"
 	<p><span class="firstword">Tax rates and tax codes</span> vary considerably from state to state across the United States, 
 	  the District of Columbia and the various possessions. Most states don't levy a state-wide flat tax rate, but rather, allow 
 	  each county, city, and special district to add on an additional tax of their own. To see detailed information about the 
-	  general sales tax rates and laws for any given state, click on the map below or use this pull down menu.
+	  general sales tax rates and laws for any given state, click on the map below.
 	
 	<!-- State Dropdown Menu -->
-	<select name="URL" id="URL" onchange="location = this.options[this.selectedIndex].value;">
+	<select name="URL" id="URL" onchange="location = this.options[this.selectedIndex].value;" style="display: none;">
 		<option value="Select a State">Select a State</option>
 		<%
 			For i = 1 to 51
