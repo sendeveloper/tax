@@ -13,8 +13,8 @@
 	</h2>
 	<p>
 		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
-			<a id="single_1" href="Website/pagesCountries/Includes/Maps/WorldofMaps_Gumroad/2USAStatesCanadaProv/CanadaProvincesJPG/PrinceEdwardIslandC.jpg" title="[Prince Edward Island sales tax rates for each jurisdiction]">
-				<img src="Website/pagesCountries/Includes/Maps/WorldofMaps_Gumroad/2USAStatesCanadaProv/CanadaProvincesJPG/PrinceEdwardIslandC.jpg" alt="[Prince Edward Island tax rates for each jurisdiction]" style="width: 150px;">
+			<a id="single_1" href="Website/pagesCountries/Includes/Maps/Canada/PE.png" title="[Prince Edward Island sales tax rates for each jurisdiction]">
+				<img src="Website/pagesCountries/Includes/Maps/Canada/PE.png" alt="[Prince Edward Island tax rates for each jurisdiction]" style="width: 150px;">
 			</a><br>
 			<span style="cursor: pointer; font-size: .75em;">Click for larger image</span>
 	  	</span>

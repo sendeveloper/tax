@@ -31,6 +31,13 @@
 				  });
 			});			
 	</script>
+	<style>
+		@media (min-width: 768px){
+	        #img-small img{
+	          	width: 300px !important;
+	        }
+		}
+	</style>
   </head>
   
   <body>	
