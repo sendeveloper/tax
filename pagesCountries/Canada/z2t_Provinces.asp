@@ -49,60 +49,32 @@
         <div class="container">		
 <%
 	Select Case Province
-	Case "Alberta"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_alberta.asp" -->
-<%
-	Case "BritishColumbia"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_british_columbia.asp" -->
-<%
-	Case "Manitoba"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_manitoba.asp" -->	
-<%
-
-	Case "NewBrunswick"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_new_brunswick.asp" -->	
-
-<%
-	Case "NewfoundlandLabrador"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_newfoundland_labrador.asp" -->
-<%
-	Case "NorthwestTerritories"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_northwest_territories.asp" -->
-<%
-	Case "NovaScotia"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_nova_scotia.asp" -->
-<%
-	Case "Nunavut"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_nunavut.asp" -->
-<%
-	Case "Ontario"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_ontario.asp" -->	
-<%
-	Case "PrinceEdwardIsland"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_prince_edward_island.asp" -->
-<%
-	Case "Quebec"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_quebec.asp" -->
-<%
-	Case "Saskatchewan"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_saskatchewan.asp" -->
-<%
-	Case "Yukon"
-%>
-		  <!-- #include virtual="/Website/pagesCountries/Canada/Provinces/page_provinces_content_yukon.asp" -->
-<%
+		Case "Alberta"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_alberta.asp")
+		Case "BritishColumbia"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_british_columbia.asp")
+		Case "Manitoba"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_manitoba.asp")
+		Case "NewBrunswick"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_new_brunswick.asp")
+		Case "NewfoundlandLabrador"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_newfoundland_labrador.asp")
+		Case "NorthwestTerritories"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_northwest_territories.asp")
+		Case "NovaScotia"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_nova_scotia.asp")
+		Case "Nunavut"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_nunavut.asp")
+		Case "Ontario"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_ontario.asp")
+		Case "PrinceEdwardIsland"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_prince_edward_island.asp")
+		Case "Quebec"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_quebec.asp")
+		Case "Saskatchewan"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_saskatchewan.asp")
+		Case "Yukon"
+			Call Server.Execute("/Website/pagesCountries/Canada/Provinces/page_provinces_content_yukon.asp")
 	End Select
 %>		 
 		  <div class="col-lg-3 col-md-3 NoPrint">
