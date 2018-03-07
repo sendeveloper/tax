@@ -83,13 +83,7 @@ smallStates = "TN, KY, VA, NC, PA"
 	  <!-- Map -->
 	</p>
 	<div class="row">
-	<div class="row">
-		<div class="col-md-12 text-center center">
-		<h3>United States Maximum Sales Tax Rates for Each State</h3>
-		<h4>Ranked from highest to lowest</h4>
-		<small>(Rates can vary depending on actual location within a state)</small>
-		</div>
-	</div>
+
 	<div class="col-md-12 text-center center">
 			<div id="map2" style="width:560px; height:400px; margin-left: auto; margin-right: auto;"></div>
 		</div>
@@ -207,11 +201,7 @@ smallStates = "TN, KY, VA, NC, PA"
 		'useFullStateNames' : false,
 		'dataValues' : {
 		<%for i=1 to 51%>
-			<%if percentage(i)="0%" then %>
-			'<%=state(i)%>': 'none',
-			<%else%>
-			'<%=state(i)%>': '<%=percentage(i)%> <%if instr(smallStates, state(i))=0 then%>\n <%end if%> #<%=position(i)%>',
-			<%end if%>
+			'<%=state(i)%>': '',
 		<%next%>
 		
 		}
