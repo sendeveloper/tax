@@ -1,24 +1,14 @@
 <!-- Start of Content -->
+<!--#include file="ProvincesCommonContent.asp"-->
 <div class="col-md-9 content">
 <div class="post">
-	<h1>
-      <span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-      Nunavut PST
-  </h1>
+	<%=HeadingH1("Nunavut PST")%>
 	<div class="clearfix"></div>	
 	
-	<h2 style="font-size: 160%;">
-        <span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-        What is the Provincial Sales Tax (PST) Rate for Nunavut?
-	</h2>
+	<%=HeadingH2("What is the Provincial Sales Tax (PST) Rate for Nunavut?")%>
+
 	<p>
-		<span id="img-small" class="imgRight" style="text-align: center; cursor: pointer; display: block;">
-			<a id="single_1" href="Website/pagesCountries/Includes/Maps/Canada/NU.png" title="[Nunavut sales tax rates for each jurisdiction]">
-				<img src="Website/pagesCountries/Includes/Maps/Canada/NU.png" alt="[Nunavut tax rates for each jurisdiction]" style="width: 150px;">
-				<br/>
-				<img src="Website/pagesCountries/Includes/images/click_for_larger.png" style="width: 95px !important;" />
-			</a><br>
-	  	</span>
+		<%=MapCode("NU","Nunavut")%>
 		<span class="firstword">In Nunavut,</span> there is no regional sales tax on the purchase or lease price of goods and services.  Only the 5% federal GST is applicable on the purchase or lease price of goods and services in Nunavut.
 	</p>
 	<p>
@@ -28,10 +18,8 @@
 		<span class="firstword">To see a full breakout</span> of Canada sales tax rates by province, city and postal code, use our .csv tax tables.
 	</p>
 
-	<h2 style="font-size: 160%;">
-        <span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-        What is the Nunavut use tax?
-	</h2>
+	<%=HeadingH2("What is the Nunavut use tax?")%>
+
 	<p>
 		<span class="firstword">The Nunavut</span> use tax rate, known as self-assessed, is the same as the sales rate.
 		For additional information about Nunavut taxes, you can check <a href="https://www.gov.nu.ca/finance" target="_blank">Government of Nunavut</a>. You could also contact a qualified <a href="/resources" target="_blank">certified public accountant or lawyer who specializes in tax law</a> in Nunavut.
