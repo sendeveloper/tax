@@ -29,6 +29,12 @@
     <meta name="verify-v1" content="q0BWCUmQlxYKPjY3G4LpF0lihwZNVwzrEDOWMV4BjpQ=">
 
 <%
+	If Canonical = "" Then
+		Response.write "     <link rel='canonical' href='" & Request.ServerVariables("URL") & "' />"
+	Else
+		Response.write "     <link rel='canonical' href='" & Canonical & "' />"
+	End If
+	
 	If Request("currentPagePath") > "" Then
 		Session("currentPagePath") = Request("currentPagePath")
 	End If

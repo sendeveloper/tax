@@ -172,7 +172,7 @@ smallStates = "TN, KY, VA, NC, PA"
 	
 		 'stateSpecificStyles': {
 		<%for i=1 to 51%>
-	      '<%=state(i)%>' : {fill: '<%=color(i)%>'},
+	      '<%=state(i)%>' : {fill: '#88A4BC'},
 		<%next%>
 	    },
 	    'stateStyles': {
@@ -197,14 +197,7 @@ smallStates = "TN, KY, VA, NC, PA"
 	        .text('Click any state for additional information');
 	    },
 		'useAllLabels': true,
-		'showDataValues': true,
-		'useFullStateNames' : false,
-		'dataValues' : {
-		<%for i=1 to 51%>
-			'<%=state(i)%>': '',
-		<%next%>
-		
-		}
+		'useFullStateNames' : false
 	  });
 	  //$('#map2').css('width' , '100%').css('height' , 'auto')
 	});

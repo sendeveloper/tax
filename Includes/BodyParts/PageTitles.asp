@@ -3,6 +3,7 @@ PageTitle =  "Zip2Tax | "
 PageTitle1 =  "Zip2Tax LLC"
 PageDescription = ""
 PageKeyWord= "" 
+Canonical= ""
 
 Select Case Session("activePage")
 
@@ -11,12 +12,21 @@ Select Case Session("activePage")
 		PageTitle =  "Sales Tax Calculator by State | " &  "Online Tax Software | " & PageTitle1
 		PageDescription="Sales Tax Solutions for business. The Zip2Tax Sales Tax Calculator Instantly Provides Sales And Use Tax Rates For Every Jurisdiction in the U.S. and Canada."
 		PageKeyWord= "Sales Tax For Zip Code, Sales and Use Tax Rates, Sales Tax Database, Sales Tax, tax calculator, tax software, Zip Code"    
-
+		Canonical= "https://www.zip2tax.com"
+		
+		If instr(Request.ServerVariables("URL"),"z2t_account.asp") Then
+			'Add text when calling My-Account (when not logged in) to avoid duplicate title
+			PageTitle = PageTitle & " | My-Account"
+			Canonical= "https://www.zip2tax.com/my-account"
+		End If
+		
 	Case "About Us" 
 
 		PageTitle = PageTitle &  "About Us"
 		PageDescription="Zip2Tax provides businesses with accurate and timely sales and use tax data. We are dedicated professionals committed to providing superior services."
-		PageKeyWord= "Zip2Tax, Sales and use tax rates for commerce"    
+		PageKeyWord= "Zip2Tax, Sales and use tax rates for commerce"
+		Canonical= "https://www.zip2tax.com/sales-tax-service-providers"
+		
 				
 	Case "customer_commitment" 
 	
@@ -58,9 +68,9 @@ Select Case Session("activePage")
 		
 	Case "widget" 
 	
-		PageTitle = "Desktop Online Tax Software | Sales Tax by State | " & PageTitle1		
+		PageTitle = "Desktop Application | Sales Tax by Zipcode"	
 		PageDescription="Zip Code To Sales Tax Calculator Desktop Application.  Use our handy tool to calculate your sales tax instantly without keeping a web browser open."
-		PageKeyWord = "Zip2Tax, tax widget, sales tax calculator, sales tax calculator software, sales tax, tax calculator, tax estimator, tax software, car tax calculator" 
+		PageKeyWord = "Zip2Tax, tax widget, sales tax calculator, sales tax calculator software, sales tax, tax calculator, tax estimator, tax software, car tax calculator, desktop app" 
 		
 	Case "Tax rate level availability"	
 	
@@ -91,21 +101,21 @@ Select Case Session("activePage")
 		
 	Case "Database Connections Information"
 	
-		PageTitle = "Sales Tax Rates | Database Connections"
-		PageDescription = "Zip2Tax API will easily integrate with your system allowing you to not worry about Sales Tax. Learn more."
-		PageKeyWord = "Zip2Tax, Services and Prices, tax database interface, sales tax calculator, tax calculator, sales tax, taxes 2017, tax estimator, Spot-On, Zip Code, tax software"
+		PageTitle = "Sales Tax API | Database Connections"
+		PageDescription = "Zip2Tax&rsquo;s sales tax API will easily integrate with your system allowing you to not worry about Sales Tax. Learn more."
+		PageKeyWord = "Zip2Tax, Services and Prices, tax database interface, sales tax calculator, tax calculator, sales tax, taxes 2017, tax estimator, Spot-On, Zip Code, tax software, sales tax api"
 		
 	Case "Online Lookup Information"
 	
-		PageTitle = "Sales Tax Rates | Online Lookup"
+		PageTitle = "Sales Tax Lookup | Online Sales Tax"
 		PageDescription = "Zip2Tax provides a simple solution to sales tax lookup available right in your browser. Learn more."
-		PageKeyWord = "Zip2Tax, Services and Prices, online tax lookups, sales tax calculator, tax calculator, sales tax, taxes 2017, tax estimator, Spot-On, Zip Code"
+		PageKeyWord = "Zip2Tax, Services and Prices, online tax lookups, sales tax calculator, tax calculator, sales tax, taxes 2017, sales tax lookup, Spot-On, Zip Code"
 		
 	Case ".CSV Table Information"
 	
-		PageTitle = "Sales Tax Rates | .CSV Tables"
-		PageDescription = "Zip2Tax has a variety of tables suited for your many needs. Learn more."
-		PageKeyWord = "Zip2Tax, Services and Prices, tax .CSV tables"
+		PageTitle = "Sales Tax Tables &amp; Use Tax Tables | .CSV Tables"
+		PageDescription = "Zip2Tax has a variety of Sales Tax Tables &amp; Use Tax Tables suited for your many needs. Learn more."
+		PageKeyWord = "Zip2Tax, Services and Prices, tax .CSV tables, sales tax tables, use tax tables"
 	
 	Case "faq" 
 	
@@ -117,7 +127,13 @@ Select Case Session("activePage")
 	
 		PageTitle = PageTitle &  "Contact Information"
 		PageDescription="Sales and use tax can be hard. Contact Zip2Tax and get help with your Sales and Use Tax problems."
-		PageKeyWord = "sales tax, zip code, tax rates, sales tax database" 		
+		PageKeyWord = "sales tax, zip code, tax rates, sales tax database"
+
+	Case "Badge"
+	
+		PageTitle = PageTitle &  "Badges"
+		PageDescription="Some simple badges available to show you can be confident in your sales tax rates."
+		PageKeyWord = "badge, zip2tax, social media"
 		
 	Case "Compatible" 
 	
@@ -155,77 +171,77 @@ Select Case Session("activePage")
 		PageKeyWord = "Zip2Tax, Redistribution Agreement"
 		
 	Case "Specialty Tables - Evolution"
-		PageTitle = PageTitle & "Evolution"
+		PageTitle = "Evolution | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Evolution"
 		PageKeyWord = "Zip2Tax, Evolution"
 		
 	Case "Specialty Tables - Fleapay"
-		PageTitle = PageTitle & "Fleapay"
+		PageTitle = "Fleapay | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Fleapay"
 		PageKeyWord = "Zip2Tax, Fleapay"
 		
 	Case "Specialty Tables - Kamp-Data"
-		PageTitle = PageTitle & "Kamp-Data"
+		PageTitle = "Kamp-Data | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Kamp-Data"
 		PageKeyWord = "Zip2Tax, Kamp-Data"
 		
 	Case "Specialty Tables - Cirkuit"
-		PageTitle = PageTitle & "Cirkuit Commerce"
+		PageTitle = "Cirkuit Commerce | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Cirkuit Commerce"
 		PageKeyWord = "Zip2Tax, Cirkuit Commerce"
 		
 	Case "Specialty Tables - Chargeover"
-		PageTitle = PageTitle & "Chargeover"
+		PageTitle = "Chargeover | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Chargeover"
 		PageKeyWord = "Zip2Tax, Chargeover"
 		
 	Case "Specialty Tables - Ultracart"
-		PageTitle = PageTitle & "Ultracart"
+		PageTitle = "Ultracart | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Ultracart"
 		PageKeyWord = "Zip2Tax, Ultracart"
 		
 	Case "Specialty Tables - Volusion"
-		PageTitle = PageTitle & "Volusion"
+		PageTitle = "Volusion | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Volusion"
 		PageKeyWord = "Zip2Tax, Volusion"
 		
 	Case "Specialty Tables - Magento Newer Version"
-		PageTitle = PageTitle & "Magento v1.7.2"
+		PageTitle = "Magento v1.7.2 | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Magento v1.7.2 and above"
 		PageKeyWord = "Zip2Tax, Magento"
 		
 	Case "Specialty Tables - Magento Older Version"
-		PageTitle = PageTitle & "Magento v1.7.1"
+		PageTitle = "Magento v1.7.1 | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Magento v1.7.1 and older"
 		PageKeyWord = "Zip2Tax, Magento"
 		
 	Case "Specialty Tables - Oracle"
-		PageTitle = PageTitle & "Oracle"
+		PageTitle = "Oracle | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Oracle"
 		PageKeyWord = "Zip2Tax, Oracle"
 		
 	Case "Specialty Tables - NY Clothing"
-		PageTitle = PageTitle & "NY Clothing"
+		PageTitle = "NY Clothing | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are unique to specific tax rulings including NY clothing"
 		PageKeyWord = "Zip2Tax, NY Clothing"
 		
 	Case "Specialty Tables - Sedona"
-		PageTitle = PageTitle & "Sedona"
+		PageTitle = "Sedona | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Sedona"
 		PageKeyWord = "Zip2Tax, Sedona"
 		
 	Case "Compatibility - Tradepoint"
-		PageTitle = PageTitle & "Tradepoint"
+		PageTitle = "Tradepoint | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Tradepoint"
 		PageKeyWord = "Zip2Tax, Tradepoint"
 		
 	Case "Compatibility - Smith Cart"
-		PageTitle = PageTitle & "Smith Cart"
+		PageTitle = "Smith Cart | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Smith Cart"
 		PageKeyWord = "Zip2Tax, Smith Cart"
 		
 	Case "Compatibility - Upshot"
-		PageTitle = PageTitle & "Upshot"
+		PageTitle = "Upshot | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Upshot"
 		PageKeyWord = "Zip2Tax, Upshot"
 		
