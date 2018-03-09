@@ -77,8 +77,7 @@ Select Case Session("activePage")
 		PageTitle = "How to Calculate Sales Tax | "  & PageTitle1
 		PageDescription="Explaination of subscription levels to help you match the right service to your needs."
 		PageKeyWord = "Zip2Tax, Tax rate level, Tax rate availability, Tax rate subscriptions" 
-		Canonical= "https://www.zip2tax.com/how-to-calculate-sales-tax";
-		
+		Canonical= "https://www.zip2tax.com/how-to-calculate-sales-tax"
 		
 	Case "Tax Rates" 
 	
