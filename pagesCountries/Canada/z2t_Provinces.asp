@@ -15,7 +15,7 @@
 	For i = 1 To Len(strInput)
 	    strChar = Mid(strInput, i, 1)
 	 
-	    If Asc(strChar) > 64 And Asc(strChar) < 91 Then
+	    If Asc(strChar) > 64 And Asc(strChar) < 91 And i>1 Then
 	        strOutput = strOutput & " " & strChar
 	    ELSE
 	    	strOutput = strOutput & strChar
