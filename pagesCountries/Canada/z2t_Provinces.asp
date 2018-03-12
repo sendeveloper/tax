@@ -10,11 +10,27 @@
 	If Province="" Then
 		Province = "Alberta"
 	End If
+
+	strInput = Province
+	For i = 1 To Len(strInput)
+	    strChar = Mid(strInput, i, 1)
+	 
+	    If Asc(strChar) > 64 And Asc(strChar) < 91 Then
+	        strOutput = strOutput & " " & strChar
+	    ELSE
+	    	strOutput = strOutput & strChar
+	    End If
+	Next
+
+	Statefullname = strOutput
+
+	statePageTitle =  Statefullname & " Sales Tax Rates | Zip2Tax LLC"
+	statePageDescription="Zip2Tax specializes in sales tax and use tax for "&Statefullname&". Try it today and find "&Statefullname&" sales tax and use tax information instantly!"
+	statePageKeyWord= "Sales and use tax rates for commerce"
 %>
 
 <html lang="en">
   <head>
-  	<title><%=Province%></title>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
 	
 	<script src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>

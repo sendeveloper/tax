@@ -255,7 +255,7 @@ Select Case Session("activePage")
 		
 END SELECT
 
-if instr(lcase(request.servervariables("script_name")),"/us/states/")>0 or instr(lcase(request.servervariables("script_name")),"states.asp")>0 then
+if instr(lcase(request.servervariables("script_name")),"/us/states/")>0 or instr(lcase(request.servervariables("script_name")),"states.asp")>0 or instr(lcase(request.servervariables("script_name")),"/canada/provinces/")>0 or instr(lcase(request.servervariables("script_name")),"provinces.asp")>0 then
 	PageTitle = statePageTitle 
 	PageDescription = statePageDescription
 	PageKeyWord = statePageKeyWord & ", sales tax calculator, tax calculator, sales tax, taxes 2017, tax estimator, Zip Code"
