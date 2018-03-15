@@ -21,7 +21,7 @@ Function MapCode(pr_abr, pr_name)
 		"    <a id='single_1' href='Website/pagesCountries/Includes/Maps/Canada/" & pr_abr & ".png' title='[Alberta sales tax rates for each jurisdiction]'>" & vbCrLf & _
 		"        <img src='Website/pagesCountries/Includes/Maps/Canada/" & pr_abr & ".png' alt='[" & pr_name & "Alberta tax rates for each jurisdiction]' style='width: 150px;'>" & vbCrLf & _
 		"        <br/>" & vbCrLf & _
-		"        <img src='Website/pagesCountries/Includes/images/click_for_larger.png' style='width: 95px !important;' /></a>" & vbCrLf & _
+		"        <img src='Website/pagesCountries/Includes/images/click_for_larger.png' alt='For Larger' style='width: 95px !important;' /></a>" & vbCrLf & _
 		"    <br>" & vbCrLf & _
 	  	"</span>"
 End Function
