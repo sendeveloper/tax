@@ -21,7 +21,7 @@
         <h2><span class="firstword">Lorman sales tax seminar special offer</span></h2><br>
             
 		 <h3><ul>
-		  <li style="color: red" type="disc"><font color="black"><a href onclick="javascript:void window.open('http://staging.zip2tax.com/Website/pagesProducts/Offers/Lorman/Cart/z2t_services_online_cart.asp','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Sign up</a> for an unlimited* 30 day Spot-On Online Lookup trial</font></li>
+		  <li style="color: red" type="disc"><font color="black"><a href onclick="javascript:void window.open('http://staging.zip2tax.com/Website/pagesProducts/Offers/Lorman/Cart/z2t_services_online_cart.asp','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Sign up</a> for an unlimited* 30 day Spot-On&trade; Online Lookup trial</font></li>
 		  <li style="color: red" type="disc"><font color="black"><a href onclick="javascript:void window.open('/website/downloads/other/Sales_And_Use_Tax_For_Small_Business.pdf','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Free download:</a> "The Essential Guide To Sales And Use Tax For Small Business"</font></li>
 		  <li style="color: red" type="disc"><font color="black">Free one-on-one <a href onclick="javascript:void window.open('/website/downloads/other/Consultation-questionnaire-form.pdf','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">sales tax consultation</a></font></li>
 		 </ul></h3>

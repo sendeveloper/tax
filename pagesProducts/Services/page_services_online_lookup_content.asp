@@ -11,12 +11,12 @@ $(function(){
 <div class="col-md-9 content">
 
 <a name="PageSection1"></a>
-		<h1><img src="/Website/Images/sales-tax-rates-businesses-online-lookup-zip2tax-panel1.png" alt="#1 Online Lookup" class="left paddedImage"><a name="Online_Lookup"></a>Online Lookup </h1>
+		<h1><img src="/Website/Images/sales-tax-rates-businesses-online-lookup-zip2tax-panel1.png" alt="#1 Sales Tax Lookup" class="left paddedImage"><a name="Online_Lookup"></a>Online Lookup </h1>
 	<p class="noPadding>
-		<span class="firstword">This</span> simple, user-friendly interface returns tax rates instantly, 
-		including a breakdown of jurisdictions. The result generates a map, shows shared communities 
+		<span class="firstword">This</span> simple, user-friendly sales tax lookup returns tax rates instantly, 
+		including a breakdown of jurisdictions. The sales tax lookup generates a map, shows shared communities 
 		with the same ZIP code, and offers any special rules that may apply. Enter a dollar ammount and 
-		it calculates the total tax amount as well.
+		the sales tax lookup calculates the total tax amount as well.
 	
 	</p><br>
 	
@@ -86,21 +86,21 @@ $(function(){
 	<!--End of green button section--------------------------------------------------------------------->
 	
 	<!--Note: id="See_options" is placed here because of how thick the header is. It focuses the page on the pricing section. -Jessie Shrauger-->
-	<h2><span class="glyph glyphicon glyphicon-star redFont" id="See_options" ariahidden="true"></span><strong>Which Resolution Meets Your Business Needs?</strong></h2>
+	<h2><span class="glyph glyphicon glyphicon-star redFont" id="See_options" ariahidden="true"></span><strong>Which Sales Tax Lookup Resolution Meets Your Business Needs?</strong></h2>
 	<p>
 		Not every business and not every state has the same sales tax reporting 
 		requirements. Zip2Tax understands this and has created three subscription 
-		levels to give business what they need while staying within budget.<br><br>
+		levels to our sales tax lookup which gives your business what you need while staying within budget.<br><br>
 		
-		From the ZIP code level that can return multiple jurisdictions, to the Spot-On&trade; 
-		doorstep-level, you can get the sales tax jurisdictional granularity you need and 
-		not pay for more than you'll use.<br><br>
+		From the ZIP code level sales tax lookup that can return multiple jurisdictions, to the Spot-On&trade; 
+		doorstep-level sales tax lookup, you can get the sales tax jurisdictional granularity you need without
+		paying for more than you'll use.<br><br>
 	</p>
 	
 	<table class="table">
 	<thead>
 		<tr>
-		<th>Online Lookup</th>
+		<th>Online Sales Tax Lookup</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -108,7 +108,7 @@ $(function(){
           <td>
             <strong>ZIP Code resolution</strong>
             <div>
-				<strong><img src="/Website/Images/Services/ZIP-code-sm.png" class="left" alt="Zip Code resolution">
+				<strong><img src="/Website/Images/Services/ZIP-code-sm.png" class="left" alt="Zip Code Sales Tax Lookup">
 				The most economical service for companies wanting to improve efficiency 
 				 while maintaining affordability. City and town names with sales tax 
 				 detail are provided for every locality within a ZIP code, giving the 
@@ -124,7 +124,7 @@ $(function(){
           <td>
             <strong>ZIP+4 resolution</strong>
             <div>
-            <strong><img src="/Website/Images/Services/ZIP-plus-4-sm.png" class="left" alt="Zip+4 resolution">
+            <strong><img src="/Website/Images/Services/ZIP-plus-4-sm.png" class="left" alt="Zip+4 Sales Tax Lookup">
             A very high level of jurisdictional certainty at an affordable price. 
 			Sometimes referred to as the 9-digit ZIP code, the first 5 digits 
 			determine a delivery area, such as a town and state, and the additional 
@@ -139,11 +139,11 @@ $(function(){
         
         <tr>
           <td>
-            <strong>Spot-On resolution</strong>
+            <strong>Spot-On&trade; resolution</strong>
             <div>
-            <strong><img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Spot-On resolution">
+            <strong><img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Spot-On&trade; Sales Tax Lookup">
             The most accurate sales tax jurisdiction granularity for companies 
-			needing precision data. Spot-On validates U.S. postal address and 
+			needing precision data. Spot-On&trade; validates U.S. postal address and 
 			converts street address into latitude and longitude coordinates 
 			(also known as geocoding) to provide the highest level of resolution 
 			available.</strong></div>
@@ -169,12 +169,12 @@ $(function(){
 		</tbody>
       </table>
 	  
-	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Access Rates With A Free Mobile App!</strong></h2>
+	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Sales Tax Lookup With A Free Mobile App!</strong></h2>
 		<div>
 			<p>
-				Find sales tax rates on the fly. Download our free mobile app 
-				for access to our rate calculator by ZIP code while you're on 
-				the go! Type in a ZIP code, or Let the app use your current 
+				Need to run a sales tax lookup on the go? Download our free mobile app 
+				for access to our sales tax calculator by ZIP code while you're on 
+				the go! Type in a ZIP code, or let the app use your current 
 				location. <br>
 			</p>
 			<ul style="list-style: none;">
@@ -185,15 +185,16 @@ $(function(){
 
 	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Use the Free Desktop Widget</strong></h2>
 		<div>
+			 
 			<p>This lightweight program quickly installs on your desktop or 
-			laptop computer so that you can perform ZIP code-level sales and 
+			laptop computer so that you can perform ZIP code-level sales tax lookups and 
 			use tax lookups without having to keep our web browser open.</p>
 			<div class="text-center">
 				<ul style="list-style: none;">
 					<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
 						<img src="/Website/Images/widget/NewImages/WidgetEnterZIPCode.jpg" alt="Screenshot: Zip2Tax Desktop Widget"></li>
 					<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
-						<a  class="red-btn" href="/calculate-sales-tax-rates"
+						<a  class="red-btn" href="/desktop-application"
 						style="background-color: red;
 						color: #fff;
 						padding: 16px 16px;

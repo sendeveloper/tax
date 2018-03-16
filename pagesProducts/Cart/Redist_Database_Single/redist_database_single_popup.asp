@@ -13,7 +13,7 @@
   <head>
     <title>Redistributable Database Interface - Single State</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Redistributable sales tax rates at ZIP code, ZIP+4 or Spot-On levels via Database Interface for every state in the U.S.">
+    <meta name="description" content="Redistributable sales tax rates at ZIP code, ZIP+4 or Spot-On&trade; levels via Database Interface for every state in the U.S.">
     <!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
     
 

@@ -13,11 +13,11 @@ $(function(){
 <a name="PageSection2"></a>
 		<h1>
 		<img src="/Website/Images/sales-tax-rates-businesses-database-interface-zip2tax-panel2.png" alt="Database Interface" class="left paddedImage">
-		<a name="Database"></a>Database Interface
+		<a name="Database"></a>Database Interface - Sales Tax API
 		</h1>
 	<p class="noPadding">
 		<span class="firstword">Automate</span>
-		your online shopping cart with sales tax data at the point of sale. A secure API connects your 
+		your online shopping cart with sales tax data at the point of sale. A secure sales tax API connects your 
 		database to our constantly updated servers to power your ecommerce site with a real-time data 
 		when you need it.
 	</p><br>
@@ -87,26 +87,26 @@ $(function(){
 	</p>
 	<!--End of green button section--------------------------------------------------------------------->
 
-	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Database Interface API</strong></h2>
+	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Sales Tax API</strong></h2>
 	<p>
 		<span class="firstword">Not every business</span> and not every state has the same sales tax reporting requirements. 
-		Zip2Tax understands this and has created three subscription levels to give business 
+		Zip2Tax understands this and has created three subscription levels within our sales tax API to give business 
 		what they need while staying within budget.<br><br>
 		
-		<span class="firstword">From</span> the ZIP code level that can return multiple jurisdictions, to the Spot-On&trade; 
+		<span class="firstword">Our</span> sales tax API has anywhere from the ZIP code level that can return multiple jurisdictions, to the Spot-On&trade; 
 		doorstep-level, you can get the sales tax jurisdictional granularity you need and not 
 		pay for more than you'll use.
 	</p>
 	
 	<div>
-		<p>The API provides for <span class="firstword">XML</span> or <span class="firstword">JSON</span> responses for all three resolution levels we offer.</p>
+		<p>The sales tax API provides for <span class="firstword">XML</span> or <span class="firstword">JSON</span> responses for all three resolution levels we offer.</p>
 		
 			<div class="row">
 			  <p>
 				
 				<div>
 					<strong><img src="/Website/Images/Services/ZIP-code-sm.png" class="left" alt="Zip Code resolution">
-					<h3><strong style="color: red; text-algin:left;">ZIP Code resolution</strong><span style="float:right"><a href="/developers-api-zipcode">Sample ZIP API</a></span></h3><br>
+					<h3><strong style="color: red; text-algin:left;">ZIP Code resolution</strong><span style="float:right"><a href="/developers-api-zipcode">Sample ZIP Sales Tax API</a></span></h3><br>
 					<p>The most economical service for companies wanting to improve efficiency while 
 					while maintaining affordability. City and town names with sales tax detail are 
 					provided for every locality with a 5-digit ZIP code.</p>
@@ -118,7 +118,7 @@ $(function(){
 				
 				<div>
 					<strong><img src="/Website/Images/Services/ZIP-plus-4-sm.png" class="left" alt="Zip+4 resolution">
-					<h3><strong style="color: red">ZIP+4 resolution</strong><span style="float:right"><a href="/developers-api-zip-plus-4">Sample ZIP+4 API</a></span></h3><br>
+					<h3><strong style="color: red">ZIP+4 resolution</strong><span style="float:right"><a href="/developers-api-zip-plus-4">Sample ZIP+4 Sales Tax API</a></span></h3><br>
 					A very high level of jurisdictional certainty at an affordable price. 
 					Sometimes referred to as the 9-digit ZIP code, the first 5 digits 
 					determine a delivery area, such as a town and state, and the additional 
@@ -130,8 +130,8 @@ $(function(){
 			  <p>
 				
 				<div>
-					<strong><img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Spot-On resolution">
-					<h3><strong style="color: red">Spot-On&trade; resolution</strong><span style="float:right"><a href="/developers-api-spot-on">Sample Spot-On&trade; API</a></span></h3><br>
+					<strong><img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Spot-On&trade; resolution">
+					<h3><strong style="color: red">Spot-On&trade; resolution</strong><span style="float:right"><a href="/developers-api-spot-on">Sample Spot-On&trade; Sales Tax API</a></span></h3><br>
 					The most accurate granularity for companies that need precision data. This 
 					method validates the US postal address and converts it into latitude and 
 					longitude coordinates to provide the highest level of resolution available.
@@ -143,7 +143,7 @@ $(function(){
 	</div>
 	
 	<div>
-		<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>API Connect Samples</strong></h2>
+		<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Sales Tax API Connect Samples</strong></h2>
 			<p>
 				The ASP, ASP.NET, C#.NET and PHP pages have code samples for XML responses, 
 				allowing unlimited testing with addresses found within the ZIP code range from 90001 
@@ -152,19 +152,19 @@ $(function(){
 				
 				<table class="table">
 					<tr>
-						<td style="color: red">API using ASP</td>
+						<td style="color: red">Sales Tax API using ASP</td>
 						<td><a href="/developers-api-sample-asp">See Sample Code</a></td>
 					</tr>
 					<tr>
-						<td style="color: red">API using ASP.NET</td>
+						<td style="color: red">Sales Tax API using ASP.NET</td>
 						<td><a href="/developers-api-sample-asp-net">See Sample Code</a></td>
 					</tr>
 					<tr>
-						<td style="color: red">API using C#.NET</td>
+						<td style="color: red">Sales Tax API using C#.NET</td>
 						<td><a href="/developers-api-sample-c-sharp">See Sample Code</a></td>
 					</tr>
 					<tr>
-						<td style="color: red">API using PHP</td>
+						<td style="color: red">Sales Tax API using PHP</td>
 						<td><a href="/developers-api-sample-php">See Sample Code</a></td>
 					</tr>
 				</table>
@@ -192,7 +192,7 @@ $(function(){
 	<table class="table" id="See_options">
 	<thead>
 		<tr>
-		<th>Database Interface</th>
+		<th>Database Interface - Sales Tax API</th>
         <!--<th colspan="2" class="text-center">Starting at:</th>-->
 		</tr>
 	</thead>

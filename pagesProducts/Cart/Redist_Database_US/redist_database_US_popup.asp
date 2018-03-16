@@ -13,7 +13,7 @@
   <head>
     <title>Redistributable Database Interface- United States</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Redistributable sales tax rates at ZIP code, ZIP+4 or Spot-On levels via Database Interface for a the whole U.S.">
+    <meta name="description" content="Redistributable sales tax rates at ZIP code, ZIP+4 or Spot-On&trade; levels via Database Interface for a the whole U.S.">
 	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
 
 	<script type="text/javascript" src="/Website/pagesProducts/Cart/Redist_Database_US/redist_database_US.js" language="javascript"></script>

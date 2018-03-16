@@ -16,7 +16,7 @@
 		same sales tax reporting requirements. Zip2Tax understands this and has created 
 		several subscription levels to give you what you need while helping you stay within 
 		your budget. From the ZIP code level that can return multiple jurisdictions, to the 
-		Spot-On doorstep-level, you can get the sales tax jurisdictional granularity you 
+		Spot-On&trade; doorstep-level, you can get the sales tax jurisdictional granularity you 
 		need and not pay for more than you'll use.
 	</p>
 	
@@ -79,23 +79,23 @@
 			<tr>
 				<td>
 					<strong><a onclick ="javascript:ShowHide('HiddenSummary3')" href="javascript:;">
-					Spot-On</a>
+					Spot-On&trade;</a>
 					</strong>
 					<p id="HiddenSummary3" style="DISPLAY: none" >
-					<strong><img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On resolution" align="left">
+					<strong><img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On&trade; resolution" align="left">
 					The most accurate sales tax jurisdiction granularity for companies needing precision data. 
-					Spot-On validates U.S. postal address and converts street address into latitude and longitude 
+					Spot-On&trade; validates U.S. postal address and converts street address into latitude and longitude 
 					coordinates (also known as geocoding) to provide the highest level of resolution available.
 					</strong></p>
 						
 				</td>
 				<td>
-					<input type="radio" name="option1|Resolution Level" value="Spot-On Sales Tax|1500">
+					<input type="radio" name="option1|Resolution Level" value="Spot-On&trade; Sales Tax|1500">
 					$1,500.00 per year				
 				</td>
 				<td>&nbsp;</td>
 				<td>	
-					<input type="radio" name="option1|Resolution Level" value="Spot-On Sales &amp; Use Tax|1806">
+					<input type="radio" name="option1|Resolution Level" value="Spot-On&trade; Sales &amp; Use Tax|1806">
 					$1,806.00 per year		
 				</td>
 			</tr>

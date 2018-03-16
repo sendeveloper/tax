@@ -16,7 +16,7 @@ $(function(){
 		<h2><img src="/Website/Images/sales-tax-rates-businesses-online-lookup-zip2tax-panel1.png" alt="#1 Online Lookup" class="left paddedImage"><a name="Online_Lookup"></a>Online Lookup </h2>
 	<p>
 		<span class="firstword">Log in</span> to this web site or download our
-		<a href="/calculate-sales-tax-rates">desktop widget</a> for up
+		<a href="/desktop-application">desktop widget</a> for up
         to five users to access our Sales and Use Tax Calculator. Just input an 
 		address or ZIP code and find out the rate in just one click. Input the 
 		retail price and we&#39;ll calculate the tax for you. This simple 
@@ -67,11 +67,11 @@ $(function(){
         
         <tr>
           <td>
-            <strong><a class="HiddenSummary3" href="javascript:;">Spot-On resolution</a></strong>
+            <strong><a class="HiddenSummary3" href="javascript:;">Spot-On&trade; resolution</a></strong>
             <div id="HiddenSummary3" class="hiddenContent">
-            <strong><img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Spot-On resolution">
+            <strong><img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Spot-On&trade; resolution">
             The most accurate sales tax jurisdiction granularity for companies 
-			needing precision data. Spot-On validates U.S. postal address and 
+			needing precision data. Spot-On&trade; validates U.S. postal address and 
 			converts street address into latitude and longitude coordinates 
 			(also known as geocoding) to provide the highest level of resolution 
 			available.</strong></div>
@@ -189,7 +189,7 @@ $(function(){
 	</p>
 
 <div class="NoPrint">
-          <h3><strong><a onclick ="javascript:ShowHide('HiddenSummary4')" href="javascript:;">
+          <h3><strong><a onclick ="javascript:ShowHide('HiddenSummary4')" href="/sales-tax-tables">
           Learn more about the .CSV table formats</a></strong></h3>
           <p id="HiddenSummary4" style="DISPLAY: none" >Download a sample 
         <a href='/Website/Downloads/Sample_Tables/zip2tax_Sample.csv' title="U.S. sample table" target='_blank'>
@@ -222,7 +222,7 @@ $(function(){
           and <a href="/Website/pagesProducts/z2t_specialty_tables.asp#oracle">Oracle E-Business Tax</a>.</p>
 </div>	
 <p class="noPadding">
-Due to the nature of data products, we are unable to issue refunds for tax tables. Please review the <a href="/sample-tables">table formats</a> to be sure it's the product you want before purchasing.
+Due to the nature of data products, we are unable to issue refunds for tax tables. Please review the <a href="/sales-tax-tables">table formats</a> to be sure it's the product you want before purchasing.
 </p>
 
 	<table class="table">

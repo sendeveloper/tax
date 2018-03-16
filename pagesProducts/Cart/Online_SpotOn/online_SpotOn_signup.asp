@@ -8,13 +8,13 @@
 <div class="col-lg-12 content">
 	<h1>
 	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-	Online Lookup - Spot-On  Resolution
+	Online Lookup - Spot-On&trade;  Resolution
 	</h1>
 	<hr>
 
 	<img src="/Website/Images/Services/SpotOn-sm.png" class="left" alt="Zip Code resolution">
     <p>The most accurate sales tax jurisdiction granularity for companies needing precision data. 
-	Spot-On validates U.S. postal address and converts street address into latitude and longitude 
+	Spot-On&trade; validates U.S. postal address and converts street address into latitude and longitude 
 	coordinates (also known as geocoding) to provide the highest level of resolution available.
 	</p>
 	

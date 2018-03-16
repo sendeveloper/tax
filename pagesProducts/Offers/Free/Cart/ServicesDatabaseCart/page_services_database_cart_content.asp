@@ -26,7 +26,7 @@
     have the same sales tax reporting requirements. Zip2Tax understands
     this and has created several subscription levels to give you what you
     need while helping you stay within your budget. From the ZIP code level
-    that can return multiple jurisdictions, to the Spot-On doorstep-level, you can get the sales
+    that can return multiple jurisdictions, to the Spot-On&trade; doorstep-level, you can get the sales
     tax jurisdictional granularity you need and not pay for more than you'll use.</p>
     
 	<table width="100%" border="0" cellspacing="5" cellpadding="2">
@@ -88,14 +88,14 @@
                   
 		<tr>
 		  <td style="text-align: left">
-		    <input type="radio" name="option4|Level" value="Spot-On Sales Tax">
+		    <input type="radio" name="option4|Level" value="Spot-On&trade; Sales Tax">
 		    <a onclick ="javascript:ShowHide('HiddenSummary3')" href="javascript:;">
-		    Spot-On 
+		    Spot-On&trade; 
 		    </a>
 		    <p id="HiddenSummary3" style="DISPLAY: none" >
-		    <img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On resolution">
+		    <img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On&trade; resolution">
 		    The most accurate sales tax jurisdiction granularity for companies needing precision data. 
-		    Spot-On validates U.S. postal address and converts street address into latitude and longitude 
+		    Spot-On&trade; validates U.S. postal address and converts street address into latitude and longitude 
 		    coordinates (also known as geocoding) to provide the highest level of resolution available.
 		    </p><br>
 		  </td>

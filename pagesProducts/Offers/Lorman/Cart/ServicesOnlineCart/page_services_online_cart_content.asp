@@ -80,18 +80,18 @@
         <tr>
           <td>
             <strong><a onclick ="javascript:ShowHide('HiddenSummary3')" href="javascript:;">
-            Spot-On resolution</a>
+            Spot-On&trade; resolution</a>
             </strong>
             <p id="HiddenSummary3" style="DISPLAY: none" >
-              <strong><img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On resolution">
+              <strong><img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On&trade; resolution">
               The most accurate sales tax jurisdiction granularity for companies needing precision data. 
-              Spot-On validates U.S. postal address and converts street address into latitude and longitude 
+              Spot-On&trade; validates U.S. postal address and converts street address into latitude and longitude 
               coordinates (also known as geocoding) to provide the highest level of resolution available.
             </strong></p>
             <strong><br>
             </strong>
 		  </td>
-          <td align="right" valign="top"><input type="radio" name="option1|Level" value="Spot-On Sales Tax - $64.00 value" checked>            
+          <td align="right" valign="top"><input type="radio" name="option1|Level" value="Spot-On&trade; Sales Tax - $64.00 value" checked>            
             $64.00 Value
 		  </td>
           <td align="right" valign="top">

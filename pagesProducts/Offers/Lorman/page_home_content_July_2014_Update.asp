@@ -21,7 +21,7 @@
         <h2><span class="firstword">Lorman sales tax seminar special offer</span></h2>
         <p></p>
 		<ul class="redbullets">
-		  <li><span><a href ="#"onclick="javascript:void window.open('/Website/pagesProducts/Offers/Lorman/Cart/z2t_services_online_cart.asp','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Sign up</a> for an unlimited* 30 day Spot-On Online Lookup trial</span></li>
+		  <li><span><a href ="#"onclick="javascript:void window.open('/Website/pagesProducts/Offers/Lorman/Cart/z2t_services_online_cart.asp','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Sign up</a> for an unlimited* 30 day Spot-On&trade; Online Lookup trial</span></li>
 		  <li><span><a href="/Website/downloads/Other/Sales_And_Use_Tax_For_Small_Business.pdf" target="_blank">Free download:</a> "The Essential Guide To Sales And Use Tax For Small Business"</span></li>
 		  <li><span>Free one-on-one <a href="/Website/Downloads/Other/Consultation-questionnaire-form.pdf" target="_blank">sales tax consultation</a></span></li>
 		</ul>

@@ -8,11 +8,11 @@
 	<div class="logoandinfo">
 	<div class="logo">
       <p class="NoPrint">
-      <img src="/Website/Images/Services/SpotOn.png" alt="Spot-On Database" width="150px";></p>
+      <img src="/Website/Images/Services/SpotOn.png" alt="Spot-On&trade; Database" width="150px";></p>
     </div>
 	
 	<div class="info">
-    <p style="margin=0px; padding=0px;"><span class="firstword">The most accurate sales tax jurisdiction</span> granularity for companies needing precision data. Spot-On validates U.S. postal address and converts street address into latitude and longitude coordinates (also known as geocoding) to provide the highest level of resolution available.</p>
+    <p style="margin=0px; padding=0px;"><span class="firstword">The most accurate sales tax jurisdiction</span> granularity for companies needing precision data. Spot-On&trade; validates U.S. postal address and converts street address into latitude and longitude coordinates (also known as geocoding) to provide the highest level of resolution available.</p>
 	<div align="right"><a input type="button" class="redButton s20" href="/Website/pagesProducts/Offers/Free/z2t_Database_Info.asp" target="_parent" onClick="closeWin2()">&nbsp;&nbsp;Learn More >&nbsp;&nbsp;</a></div>
     </div>
 	</div>
@@ -28,8 +28,8 @@
 	  <form method="post" action="http://www.ewebcart.com/17202/cart" accept-charset="utf-8">	  
 	    <tr>
 		  <td style="text-align: left">
-		    <input type="radio" name="option4|Level" value="Spot-On Sales Tax" checked>
-		    Spot-On 
+		    <input type="radio" name="option4|Level" value="Spot-On&trade; Sales Tax" checked>
+		    Spot-On&trade; 
 		  </td>
 		  <td style="text-align: left">&nbsp;</td>		 
 		  <td valign="top" style="text-align: right"><span style="text-align: right;">A $125.00 Value* - FREE</span></td>

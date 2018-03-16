@@ -14,7 +14,7 @@
   <head>
     <title>Database Interface Info - Zip2Tax</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Explaination of subscription levels to help you match the right service to your needs - ZIP, ZIP+4, or Spot-On.">
+    <meta name="description" content="Explaination of subscription levels to help you match the right service to your needs - ZIP, ZIP+4, or Spot-On&trade;.">
 	<!--#include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
      <meta name="robots" content="noindex,follow">
 	

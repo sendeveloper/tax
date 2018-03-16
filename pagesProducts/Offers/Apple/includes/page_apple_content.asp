@@ -38,7 +38,7 @@
         </div>
         <p><span class="firstword">The Zip2Tax Sales Tax Calculator</span> will instantly give you the general sales tax rate for any jurisdiction in the United States and calculate the tax owed on any dollar amount whether you are at the job site or standing in a checkout isle.</p>
         <img src="/Website/Images/app/App-at-checkout.jpg" alt="Zip2Tax's mobile app" class="imgLeft">
-        <p>With this mobile app you can look up sales or use tax rates at your current location using your phone's GPS. You get a fairly accurate rate even if you don't know exactly where you're standing.  You can also enter in a ZIP code to see a listing of the possible matching tax jurisdictions. The Zip2Tax app features Spot-On lookups for users who require a full street address for door-step accuracy.</p>
+        <p>With this mobile app you can look up sales or use tax rates at your current location using your phone's GPS. You get a fairly accurate rate even if you don't know exactly where you're standing.  You can also enter in a ZIP code to see a listing of the possible matching tax jurisdictions. The Zip2Tax app features Spot-On&trade; lookups for users who require a full street address for door-step accuracy.</p>
 		
 		<p>This app was designed so that users in the field can get real-time sales tax rates when they aren't at their desks. It is great for insurance adjusters, contractors, installers, repairmen, on-the-road sales, party sales, and hundreds of other workers on the go.</p>
 		
