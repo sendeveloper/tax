@@ -11,7 +11,7 @@
 			Sales Tax Calculator</a> is available at 3 levels of subscription.</p>
 			
 			<p><a href="/Website/pagesProducts/Cart/Online_SpotOn/online_SpotOn_popup.asp" 
-			target="_blank">Spot-On</a> gives you the ability to input and validate a full street 
+			target="_blank">Spot-On&trade;</a> gives you the ability to input and validate a full street 
 			address, therefore it will only return more than one possible location if the address 
 			cannot be found. In those cases it will provide results to the next closest location, 
 			usually ZIP+4.</p>

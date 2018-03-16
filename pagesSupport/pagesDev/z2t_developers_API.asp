@@ -13,7 +13,7 @@
     <title>Developer Information | API - Zip2Tax.com</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="keywords" content="Sales Tax, Zip Code, Tax Rates, Sales Tax Database">
-    <meta name="description" content="Use our API to retrieve tax rate information for your applications with door-step granularity. This includes ZIP Code API, ZIP+4 API, and Spot-On API.">
+    <meta name="description" content="Use our API to retrieve tax rate information for your applications with door-step granularity. This includes ZIP Code API, ZIP+4 API, and Spot-On&trade; API.">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <meta name="robots" content="index,follow">

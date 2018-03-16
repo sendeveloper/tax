@@ -14,7 +14,7 @@
 			and jurisdictions on the first of every month.</p>
 			
 			<p>This subscription can be purchased in 1, 3, 6, or 12 month increments. This is 
-			available by the ZIP code, ZIP+4 or Spot-On level. Rates for additional users are 
+			available by the ZIP code, ZIP+4 or Spot-On&trade; level. Rates for additional users are 
 			available. This subscription is accessed manually only and cannot be automated.</p>
 				
 			<p><a href="/free-sales-tax-calculator#PageSection2" target="_blank">
@@ -26,7 +26,7 @@
 			<a href="/developers-interface">Developers</a> section.</p>
 			
 			<p>You can purchase a single state or the whole U.S. annually. This is available 
-			by the ZIP code, ZIP+4 or Spot-On level. The starter subscription is good for 
+			by the ZIP code, ZIP+4 or Spot-On&trade; level. The starter subscription is good for 
 			1,000 queries per month. Representatives monitor monthly usage and will offer 
 			options if higher levels of usage are required. 
 			<a href="/Website/pagesProducts/z2t_redistribution.asp" target="_blank">Value 

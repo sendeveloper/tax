@@ -7,7 +7,7 @@
         <div class="AccordionPanelContent">
           <p>You are allowed <a href="http://www.zip2tax.com/Website/pagesTaxRates/z2t_lookup.asp">50
               free lookups</a> at the ZIP code level only, not
-            to exceed 10 per day. Spot-On and ZIP+4 services are available by
+            to exceed 10 per day. Spot-On&trade; and ZIP+4 services are available by
               subscription only, but <a href="mailto:info@zip2tax.com" target="_blank">contact
               us</a> and we'll be happy to set you
               up with a  trail account.</p>

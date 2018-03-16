@@ -8,7 +8,7 @@
           <div class="divContent6">
             <p>Our <a href="/developers-api" 
 			target="_blank">XML and JSON response API</a> can provide data at the 
-			Spot-On, ZIP+4 and ZIP code levels.</p>
+			Spot-On&trade;, ZIP+4 and ZIP code levels.</p>
 			
             <p><a href="/developers-api-zip-plus-4" 
 			target="_blank">ZIP+4</a> subscriptions allow you to input a nine digit 
