@@ -13,7 +13,7 @@
   <head>
     <title>Database Interface - Single State</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Sales tax rates at ZIP code, ZIP+4 or Spot-On levels via Database Interface for every state in the U.S.">
+    <meta name="description" content="Sales tax rates at ZIP code, ZIP+4 or Spot-On&trade; levels via Database Interface for every state in the U.S.">
     	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
 	<script type="text/javascript" src="/Website/Includes/Javascript/z2t.js" language="javascript"></script>
     <script type="text/javascript" src="/Website/pagesProducts/Cart/Database_Single/page_database_single.js" language="javascript"></script>
