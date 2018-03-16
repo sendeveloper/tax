@@ -1,5 +1,5 @@
 <div class="col-lg-6 col-md-9 content">
-	<%=HeadingH1("Database Interface API")%>
+	<%=HeadingH1("Spot-On&trade; API - Database Interface")%>
 		<div class="clearfix"></div>
       <p><span class="firstword">This API</span>
        provides for  XML or JSON responses to an exact streeet address or to
@@ -18,8 +18,8 @@
 	  <a href="/free-sales-tax-calculator#PageSection2">Database 
 	  Interface pricing</a>.</p>
 
-	<h2><span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>XML Response API</h2>
-        <p>Click on the sample code below to see what a Spot-On level result 
+	<%=HeadingH2("XML Response API - Spot-On&trade;")%>
+        <p>Click on the sample code below to see what a Spot-On&trade; level result 
 	  would look like in browser for a street address in Beverly Hills, 
 	  California. In a practical application you would typically read the 
 	  results into a XMLHttpRequest object. 
@@ -42,8 +42,7 @@
       <a href="https://api.zip2tax.com/TaxRate-USA.xml?AddressLine1=8555%20Beverly%20Blvd.&amp;City=Los%20Angeles&amp;State=CA&amp;zip=90210&amp;username=sample&amp;password=password" target="_blank">https://api.zip2tax.com/TaxRate-USA.xml?AddressLine1=8555%20Beverly%20Blvd.&amp;City=Los%20Angeles&amp;State=CA&amp;
       <br>zip=90210&amp;username=sample&amp;password=password</a>  
 	  
-	  
-      <h2><span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>JSON Response API</h2>
+	<%=HeadingH2("JSON Response API - Spot-On&trade;")%>	  
           <p>For a JSON response, simply replace .XML with .JSON, as seen below:
 <br><br>
 		
