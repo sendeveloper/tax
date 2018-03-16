@@ -16,7 +16,7 @@
 			about a block long. This could still potentially cross city and county 
 			boundaries.</p>
 			
-            <p>Zip2Tax's Spot-On lookups ascertain a jurisdiction by exact, validated 
+            <p>Zip2Tax's Spot-On&trade; lookups ascertain a jurisdiction by exact, validated 
 			street address. This method will only provide one result for that door step.</p>
           </div><!-- divContent6 --> 
         </div><!-- AccordionPanelContent -->

@@ -12,8 +12,8 @@
       <a href="/developers-api-zipcode"> ZIP code,</a>&nbsp;
       <a href="/developers-api-zip-plus-4">ZIP+4,</a>&nbsp; and
         <a href="/developers-api-spot-on">
-        Spot-On.</a>
-		<p>These samples show a ZIP code level request, however you can easily perform a ZIP+4 or Spot-On request by increasing the number of input variables.</p>
+        Spot-On&trade;.</a>
+		<p>These samples show a ZIP code level request, however you can easily perform a ZIP+4 or Spot-On&trade; request by increasing the number of input variables.</p>
       <p>The <a href="/developers-api-sample-asp">ASP</a>, 
       <a href="/developers-api-sample-asp-net">ASP.NET</a>, 
       <a href="/developers-api-sample-c-sharp">C#.NET</a> and

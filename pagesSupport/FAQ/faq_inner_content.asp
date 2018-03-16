@@ -47,7 +47,7 @@
 		A ZIP+4 lookup will narrow the results down to about one side of a road about a block long. This could still potentially cross city and county boundaries.
 		</p>
 		<p>
-		Zip2Tax's Spot-On lookups ascertain a jurisdiction by exact, validated street address. This method will only provide one result for that door step.
+		Zip2Tax's Spot-On&trade; lookups ascertain a jurisdiction by exact, validated street address. This method will only provide one result for that door step.
 		</p>
 	</div>
 	
@@ -76,7 +76,7 @@
 		Many times tax districts are based on factors other than ZIP code. There are locations within certain states that have more than one tax jurisdiction for a single ZIP code. This can make it tricky to determine which rate to use based solely upon the 5 digit ZIP code.
 		</p>
 		<p>
-		We offer ZIP+4 and Spot-On subscriptions to <a href="/free-sales-tax-calculator#PageSection2" target="_blank">Database Interface</a> and <a href="/free-sales-tax-calculator#PageSection1" target="_blank">Online Lookup</a> subscribers to make it easier for you to find the jurisdiction you require. To learn more about the different <a href="/how-to-calculate-sales-tax" target="_blank">levels of granularity</a>.
+		We offer ZIP+4 and Spot-On&trade; subscriptions to <a href="/free-sales-tax-calculator#PageSection2" target="_blank">Database Interface</a> and <a href="/free-sales-tax-calculator#PageSection1" target="_blank">Online Lookup</a> subscribers to make it easier for you to find the jurisdiction you require. To learn more about the different <a href="/how-to-calculate-sales-tax" target="_blank">levels of granularity</a>.
 		</p>
 		<p>
 		The <a href="/free-sales-tax-calculator#PageSection3" target="_blank">.CSV Tax Tables</a> are available at the ZIP code level only. We've made it possible for you determine which rate to use by providing multiple results for ZIP codes with more than one community. The default result is the municipality that is home to the U.S. Post Office - in the Tax Tables, this location is denoted with a "1" in the Primary Record column. The other rows for that ZIP code show all of the other communities sharing the same ZIP code.
@@ -130,7 +130,7 @@
 	<h3>How many free Online Lookups do I get?</h3>
 	<div>
 		<p>
-		You are allowed <a href="/sales-tax-calculator">50 free lookups</a> at the ZIP code level only, not to exceed 10 per day. Spot-On and ZIP+4 services are available by subscription only, but <a href="mailto:info@zip2tax.com" target="_blank">contact us</a> and we'll be happy to set you up with a  trail account.
+		You are allowed <a href="/sales-tax-calculator">50 free lookups</a> at the ZIP code level only, not to exceed 10 per day. Spot-On&trade; and ZIP+4 services are available by subscription only, but <a href="mailto:info@zip2tax.com" target="_blank">contact us</a> and we'll be happy to set you up with a  trail account.
 		</p>
 		<p>
 		We sincerely hope that the free lookups will provided you with a good estimation of how accurate our data is and how useful it can be to you personally. If you find value in our product, we invite you to subscribe to one of our <a href="/free-sales-tax-calculator">sales tax data services</a>.
@@ -179,13 +179,13 @@
 		<p>The <a href="/sales-tax-by-zipcode" target="_blank">
 		Sales Tax Calculator</a> is available at 3 levels of subscription.</p>
 
-		<p><a href="/Website/pagesProducts/z2t_services_online_lookup.asp" 
-		target="_blank">Spot-On</a> gives you the ability to input and validate a full street 
+		<p><a href="/sales-tax-lookup" 
+		target="_blank">Spot-On&trade;</a> gives you the ability to input and validate a full street 
 		address, therefore it will only return more than one possible location if the address 
 		cannot be found. In those cases it will provide results to the next closest location, 
 		usually ZIP+4.</p>
 
-		<p><a href="/Website/pagesProducts/z2t_services_online_lookup.asp" 
+		<p><a href="/sales-tax-lookup" 
 		target="_blank">ZIP+4</a> subscriptions allow you to input a nine digit postal code and 
 		will provide granularity down to one side of a street for a range of addresses. This 
 		will sometimes result in more than one tax jurisdiction. In those cases you will see 
@@ -193,7 +193,7 @@
 		can then manually choose the one you want. If no exact match is found, the results for 
 		a five digit ZIP code lookup will be displayed.</p>
 
-		<p><a href="/Website/pagesProducts/z2t_services_online_lookup.asp" target="_blank">
+		<p><a href="/sales-tax-lookup" target="_blank">
 		ZIP code</a> lookups often return more than one possible matching result. The default 
 		result will provide the rate for the Primary Record - the town within the ZIP code where 
 		the U.S. Post Office is located. A menu will appear below the main window showing the 
@@ -202,12 +202,12 @@
 
 	</div>
 	
-	<h3>Special District names and breakouts available with the  Spot-On Lookup</h3>
+	<h3>Special District names and breakouts available with the  Spot-On&trade; Lookup</h3>
 	<div>
 		<p>While the<a href="/sales-tax-calculator" target="_blank">
-		ZIP Code Sales Tax Calculator</a> provides sales tax rates and a breakdown of those rates by state, county, city, and the total of special district rates, the <a href="/sales-tax-by-zipcode" target="_blank">Spot-On Lookup </a> (available only to subscribers) provides the common names of the special districts and a breakdown of the taxes as they apply to each special district.</p>
+		ZIP Code Sales Tax Calculator</a> provides sales tax rates and a breakdown of those rates by state, county, city, and the total of special district rates, the <a href="/sales-tax-by-zipcode" target="_blank">Spot-On&trade; Lookup </a> (available only to subscribers) provides the common names of the special districts and a breakdown of the taxes as they apply to each special district.</p>
 		<p>This sample shows the lookup result for 23631 Genesee Village Rd., Golden, Colorado, 80401. </p>
-		<img src="/Website/Images/23631-Genesee-Golden-CO.jpg" alt='Spot-On Special Districts' class="img-responsive"> 
+		<img src="/Website/Images/23631-Genesee-Golden-CO.jpg" alt='Spot-On&trade; Special Districts' class="img-responsive"> 
 	</div>
 </div>
 <a href="#top">Back to top</a>
@@ -453,7 +453,7 @@
 	<div>
 		<p>Our <a href="/developers-api" 
 		target="_blank">XML and JSON response API</a> can provide data at the 
-		Spot-On, ZIP+4 and ZIP code levels.</p>
+		Spot-On&trade;, ZIP+4 and ZIP code levels.</p>
 
 		<p><a href="/developers-api-zip-plus-4" 
 		target="_blank">ZIP+4</a> subscriptions allow you to input a nine digit 
@@ -484,11 +484,11 @@
 		data for each.</p>	-->		
 	</div>
 
-	<h3>What does a Spot-On XML Response look like for an address with special districts?</h3>
+	<h3>What does a Spot-On&trade; XML Response look like for an address with special districts?</h3>
 	<div>
 		<p>650 Lindsey Rd., Golden, CO 80401<br><br>
 		https://api.zip2tax.com/TaxRate-USA.xml?AddressLine1=650%20Lindsey%20Rd.&amp;City=Golden&amp;State=CO&amp;zip=80401&amp;username=XXXXXX&amp;password=XXXXXX</p>
-		<img src="/website/images/services/SpotOn-XML-Special-District-Address.jpg" alt='The API for the Spot-On level XML response'>
+		<img src="/website/images/services/SpotOn-XML-Special-District-Address.jpg" alt='The API for the Spot-On&trade; level XML response'>
 	</div>
 </div>
 <a href="#top">Back to top</a>
@@ -800,7 +800,7 @@
 		and jurisdictions on the first of every month.</p>
 
 		<p>This subscription can be purchased in 1, 3, 6, or 12 month increments. This is 
-		available by the ZIP code, ZIP+4 or Spot-On level. Rates for additional users are 
+		available by the ZIP code, ZIP+4 or Spot-On&trade; level. Rates for additional users are 
 		available. This subscription is accessed manually only and cannot be automated.</p>
 
 		<p><a href="/free-sales-tax-calculator#PageSection2" target="_blank">
@@ -812,7 +812,7 @@
 		<a href="/developers-interface">Developers</a> section.</p>
 
 		<p>You can purchase a single state or the whole U.S. annually. This is available 
-		by the ZIP code, ZIP+4 or Spot-On level. The starter subscription is good for 
+		by the ZIP code, ZIP+4 or Spot-On&trade; level. The starter subscription is good for 
 		1,000 queries per month. Representatives monitor monthly usage and will offer 
 		options if higher levels of usage are required. 
 		<a href="/Website/pagesProducts/z2t_redistribution.asp" target="_blank">Value 

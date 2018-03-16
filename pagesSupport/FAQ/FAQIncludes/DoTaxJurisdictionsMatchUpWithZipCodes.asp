@@ -11,7 +11,7 @@
 			jurisdiction for a single ZIP code. This can make it tricky to determine 
 			which rate to use based solely upon the 5 digit ZIP code.</p>
 			
-            <p>We offer ZIP+4 and Spot-On subscriptions to 
+            <p>We offer ZIP+4 and Spot-On&trade; subscriptions to 
 			<a href="/free-sales-tax-calculator#PageSection2" target="_blank">
 			Database Interface</a> and <a href="/free-sales-tax-calculator#PageSection1" 
 			target="_blank">Online Lookup</a> subscribers to make it easier for you to find the 

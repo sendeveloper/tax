@@ -22,7 +22,7 @@
 	  Interface pricing</a>.</p>
 
 	<h2><span class="glyphicon glyphicon-star redFont" aria-hidden="true"></span>XML Response API</h2>
-        <p>Click on the sample code below to see what a Spot-On level result 
+        <p>Click on the sample code below to see what a Spot-On&trade; level result 
 	  would look like in browser for a street address in Beverly Hills, 
 	  California. In a practical application you would typically read the 
 	  results into a XMLHttpRequest object. 
