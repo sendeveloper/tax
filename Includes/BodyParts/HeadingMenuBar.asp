@@ -30,7 +30,7 @@
 					  <ul class="dropdown-menu" role="menu">
 						<li><a href="/sales-tax-calculator">Sales Tax Calculator</a></li>
 						<li><a href="/sales-tax-by-zipcode">ZIP+4 Lookup</a></li>
-						<li><a href="/sales-tax-by-zipcode">Spot-On Lookup</a></li>
+						<li><a href="/sales-tax-by-zipcode">Spot-On&trade; Lookup</a></li>
 						<li><a href="/desktop-application">Desktop Widget</a></li>
 						<li><a href="/sales-tax-by-state">Taxes by State</a></li>
 						<li><a href="http://blog.zip2tax.com/category/tax-rate-changes/">Tax Rate Changes</a></li>

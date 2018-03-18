@@ -14,7 +14,7 @@
 		  
           <hr>
 		  
-          Copyright &copy; 2006-2017 Zip2Tax, LLC. All rights reserved. Zip2Tax and Spot-On are trademarks of Zip2Tax, LLC, reg. pending U.S. Pat. & Tm. Off., 
+          Copyright &copy; 2006-2018 Zip2Tax, LLC. All rights reserved. Zip2Tax and Spot-On&trade; are trademarks of Zip2Tax, LLC, reg. pending U.S. Pat. & Tm. Off., 
           S/N 86/613550 and 86/613547.
 		
 		</div>
