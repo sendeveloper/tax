@@ -84,7 +84,7 @@
 					var resultLevel ='';
 					if (lookupLevel === "PinPoint") {
 						curImage = "SpotOn.png";
-						resultLevel = "Spot-On";
+						resultLevel = "Spot-On&trade;";
 						}
 					else if (lookupLevel === "ZIP+4") {
 						curImage = "ZIP+4.png";
@@ -240,7 +240,7 @@ var formatter = new Intl.NumberFormat("en-US", {
 			<%end if%>
 			<div class="row">
 				<div class="col-lg-3 text-center">
-				<img src="/Website/Images/Services/SpotOn-all.png" alt="Spot-On and ZIP+4 Sales tax calculator" class="img-responsive" id="mainImage">
+				<img src="/Website/Images/Services/SpotOn-all.png" alt="Spot-On&trade; and ZIP+4 Sales tax calculator" class="img-responsive" id="mainImage">
 				<br>
 				<div id="currentLevel" class="text-center"></div>
 				</div>
