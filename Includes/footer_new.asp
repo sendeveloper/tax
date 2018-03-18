@@ -30,7 +30,7 @@
 					<a href="/sales-tax-calculator">Zip Code Lookup</a>
 				</div>
 				<div class="list-group-item">
-					<a href="/sales-tax-by-zipcode">Spot-On Lookup</a>
+					<a href="/sales-tax-by-zipcode">Spot-On&trade; Lookup</a>
 				</div>
 				<div class="list-group-item">
 					<a href="/calculate-sales-tax-rates">Desktop Widget</a>
@@ -90,7 +90,7 @@
 		<strong>License</strong>: Please refer to our <a href="/Website/pagesExtra/z2t_eula.asp">end user license agreement</a>. 
 		<strong>Cancellation and Refund Policy</strong>: Please refer to our <a href="/Website/pagesExtra/z2t_refundpolicy.asp">refund policy</a> prior to purchase.
 		<hr>
-		Copyright &copy; 2006-2017 Zip2Tax, LLC. All rights reserved. Zip2Tax and Spot-On are trademarks of Zip2Tax, LLC, reg. pending U.S. Pat. & Tm. Off., 
+		Copyright &copy; 2006-2017 Zip2Tax, LLC. All rights reserved. Zip2Tax and Spot-On&trade; are trademarks of Zip2Tax, LLC, reg. pending U.S. Pat. & Tm. Off., 
 		S/N 86/613550 and 86/613547.
 		
 		</div>
