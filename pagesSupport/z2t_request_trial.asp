@@ -81,12 +81,12 @@
                     <div style="width: 13em; float: left; margin-left: .5em">Online Lookup<br>
                       <input id="rdoSubject" name="rdoSubject" value="Request Online Lookup ZIP Code Free Trial" type="radio">&nbsp;ZIP Code<br>
                       <input id="rdoSubject2" name="rdoSubject2" value="Request Online Lookup ZIP+4 Free Trial" type="radio">&nbsp;ZIP+4<br>
-                      <input id="rdoSubject3" name="rdoSubject3" value="Request Online Lookup Spot-On Free Trial" type="radio">&nbsp;Spot-On<br>
+                      <input id="rdoSubject3" name="rdoSubject3" value="Request Online Lookup Spot-On&trade; Free Trial" type="radio">&nbsp;Spot-On&trade;<br>
                     </div>
                     <div style="width: 13em; float: left; margin-left: .5em">Database Interface<br>
                       <input id="rdoSubject4" name="rdoSubject4" value="Request Database Interface ZIP Code Free Trial" type="radio">&nbsp;ZIP Code<br>
                       <input id="rdoSubject5" name="rdoSubject5" value="Request Database Interface ZIP+4 Free Trial" type="radio">&nbsp;ZIP+4<br>
-                      <input id="rdoSubject6" name="rdoSubject6" value="Request Database Interface Spot-On Free Trial" type="radio">&nbsp;Spot-On<br>
+                      <input id="rdoSubject6" name="rdoSubject6" value="Request Database Interface Spot-On&trade; Free Trial" type="radio">&nbsp;Spot-On&trade;<br>
                     </div><div style="clear: both">&nbsp;</div>
                     <div style="width: 11em; float: left; text-align: right"><label for="txtName">Notes:&nbsp;</label></div>
                     <textarea id="txtBody" name="Body" rows="1" cols="1"></textarea>
