@@ -39,7 +39,7 @@
          <li<%=selection.item("ZIP+4 API")%>>
           <a href="/developers-api-zip-plus-4">ZIP+4 API</a></li>
         <li<%=selection.item("SpotOn API")%>>
-          <a href="/developers-api-spot-on">Spot-On API</a></li></ul></li>
+          <a href="/developers-api-spot-on">Spot-On&trade; API</a></li></ul></li>
       
 	  <li<%=selection.item("API Connect")%>>
         <a class="firstword" href="/developers-api-samples">API Connect Samples</a>

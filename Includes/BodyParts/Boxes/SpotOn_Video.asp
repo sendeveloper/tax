@@ -3,11 +3,11 @@
   <h2 class="title">Spot-On&trade; Video Tutorial</h2>
   <div class="content" align="center">
 
-	  <a href="javascript:openPopUp('/Website/pagesTaxRates/Online-Lookups/spoton_video_popup.asp');void(0);"><img src="/website/images/Services/SpotOn-Play-small.png" alt="SpotOn Video" border="0" title="Watch the Spot-On tutorial video here!"></a>
+	  <a href="javascript:openPopUp('/Website/pagesTaxRates/Online-Lookups/spoton_video_popup.asp');void(0);"><img src="/website/images/Services/SpotOn-Play-small.png" alt="SpotOn Video" border="0" title="Watch the Spot-On&trade; tutorial video here!"></a>
 	  
 	  <br><br>
 	  
-	  <a href="/Website/Downloads/Other/How to use Spot-On manual.pdf" target="_new">Download the manual</a>
+	  <a href="/Website/Downloads/Other/How to use Spot-On&trade; manual.pdf" target="_new">Download the manual</a>
 
   </div><!-- content -->
 </div><!-- social box -->
