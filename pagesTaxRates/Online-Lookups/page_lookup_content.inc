@@ -1,7 +1,7 @@
 <div id="content">
   <div id="about" class="post">
   <a id="maincontent" name="maincontent"></a>
-    <h2 class="title" style="font-weight: bold;">Spot-On™ Sales And Use Tax Rates With <br>Sales Tax Calculator</h2>
+    <h2 class="title" style="font-weight: bold;">Spot-On&trade; Sales And Use Tax Rates With <br>Sales Tax Calculator</h2>
 <%
   'Dim userAgent: userAgent = Request.ServerVariables("HTTP_USER_AGENT")
   userAgent = Request.ServerVariables("HTTP_USER_AGENT")
@@ -41,7 +41,7 @@
           <div id="spotOnTab" class="tablecell SpotOn unselected">
               <img src="/Website/Images/Services/SpotOn-icon.png" alt="Details on Spot-On&trade; Tax Lookups">
               <div>
-                  Spot-On™
+                  Spot-On&trade;
               </div>
           </div>
         </div><!-- tab-headings -->
@@ -277,7 +277,7 @@
               <div class="tablecell instructions">
                 <p>The most accurate sales tax jurisdiction
                   granularity for companies needing precision
-                  data. Spot-On™ validates U.S. postal address and
+                  data. Spot-On&trade; validates U.S. postal address and
                   converts street address into latitude and longitude
                   coordinates (also known as geocoding) to provide the
                   highest level of resolution available.</p>
