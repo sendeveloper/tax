@@ -82,7 +82,7 @@
 					Spot-On&trade;</a>
 					</strong>
 					<p id="HiddenSummary3" style="DISPLAY: none" >
-					<strong><img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On resolution" align="left">
+					<strong><img src="/Website/Images/Services/SpotOn-sm.png" class="imgLeft" alt="Spot-On&trade; resolution" align="left">
 					The most accurate sales tax jurisdiction granularity for companies needing precision data. 
 					Spot-On&trade; validates U.S. postal address and converts street address into latitude and longitude 
 					coordinates (also known as geocoding) to provide the highest level of resolution available.

@@ -13,7 +13,7 @@
       <title>Developer Information | Spot-On&trade; API - Zip2Tax</title>
       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-    <meta name="description" content="Use our Spot-On API to retrieve tax rate information for your applications with door-step accuracy.">
+    <meta name="description" content="Use our Spot-On&trade; API to retrieve tax rate information for your applications with door-step accuracy.">
     <script language="javascript" src="/Website/Includes/Javascript/page_developers_SpotOn.js" type="text/javascript"></script>
     </head>
   
