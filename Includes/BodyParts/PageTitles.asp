@@ -71,7 +71,7 @@ Select Case Session("activePage")
 		PageDescription="ZIP Code To Sales Tax Calculator.  Use our handy tool to calculate your sales tax instantly."
 		PageKeyWord = "Zip2Tax, lookup, sales tax calculator, taxes 2017, tax estimator, tax calculator, sales tax, Zip Code" 
 		Canonical= "https://www.zip2tax.com/sales-tax-calculator"
-	Case "Spot-On Lookup" 
+	Case "Spot-On&trade; Lookup" 
 	
 		PageTitle = "Sales Tax Calculator | Sales Tax Rate by State | "	& PageTitle1	
 		PageDescription="Lookup Sales And Use Tax Rates For Every U.S. Jurisdiction, Plus A Sales Tax Calculator."

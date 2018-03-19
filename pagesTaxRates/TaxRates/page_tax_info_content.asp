@@ -44,7 +44,7 @@ line-height: 200%;
 			</div>
 		</div>
 		<div class="row row-margin">
-			<div class="col-md-2 col-md-offset-4 right"><img src="/website/images/services/spotOnText.png" alt="Spot-on sales tax lookups"></div>
+			<div class="col-md-2 col-md-offset-4 right"><img src="/website/images/services/spotOnText.png" alt="Spot-On&trade; sales tax lookups"></div>
 			<div class="col-md-5  col-md-offset-1">
 				<p class="small noPadding">To-the-doorstep jurisdictional granularity for companies requiring the highest-precision data.</p>
 			</div>
@@ -92,7 +92,7 @@ line-height: 200%;
 			</div>
 		</div>
 		<div class="row row-margin">
-			<div class="col-md-2 col-md-offset-4 right"><img src="/website/images/services/spotOnText.png" alt="Spot-on Sales tax information"></div>
+			<div class="col-md-2 col-md-offset-4 right"><img src="/website/images/services/spotOnText.png" alt="Spot-On&trade; Sales tax information"></div>
 			<div class="col-md-5  col-md-offset-1">
 				<p class="small ">To-the-doorstep jurisdictional granularity for companies requiring the highest-precision data.</p>
 			</div>

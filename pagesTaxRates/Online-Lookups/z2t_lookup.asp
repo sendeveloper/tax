@@ -4,7 +4,7 @@
 <!--#include virtual="/Website/Includes/Connection.asp"-->
 
 <%
-    Session("activePage") = "Spot-On Lookup"
+    Session("activePage") = "Spot-On&trade; Lookup"
     Session("currentPage") = "z2t_lookup.asp"
 %>
 

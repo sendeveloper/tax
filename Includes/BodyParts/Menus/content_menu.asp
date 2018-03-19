@@ -4,7 +4,7 @@
 	Select Case Session("activePage")
 	Case "Home", "About Us", "customer_commitment", "Customers", "Testimonials", "Sitemap"
 		ColorTab = 0
-	Case "Lookup", "Tax Rates","Spot-On Lookup","widget","Tax rate level availability"
+	Case "Lookup", "Tax Rates","Spot-On&trade; Lookup","widget","Tax rate level availability"
 		ColorTab = 1
 	Case "Services", "Widget", "Comparison Chart", "Specialty Tables"
 		ColorTab = 2
