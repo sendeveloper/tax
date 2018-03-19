@@ -75,7 +75,7 @@ Select Case Session("activePage")
 	
 		PageTitle = "Sales Tax Calculator | Sales Tax Rate by State | "	& PageTitle1	
 		PageDescription="Lookup Sales And Use Tax Rates For Every U.S. Jurisdiction, Plus A Sales Tax Calculator."
-		PageKeyWord = "Zip2Tax, spot-on lookup, sales tax for U.S., jurisdiction, taxes 2017, tax estimator, tax calculator, sales tax, Spot-on" 
+		PageKeyWord = "Zip2Tax, Spot-On&trade; lookup, sales tax for U.S., jurisdiction, taxes 2017, tax estimator, tax calculator, sales tax, Spot-on" 
 		Canonical= "https://www.zip2tax.com/sales-tax-by-zipcode"
 	Case "widget" 
 	
@@ -91,14 +91,17 @@ Select Case Session("activePage")
 		Canonical= "https://www.zip2tax.com/how-to-calculate-sales-tax"
 		
 	Case "Tax Rates" 
-	
 		PageTitle = "Sales Tax by State | Sales Tax Rate By Zipcode | " & PageTitle1		
 		PageDescription="Quickly find sales tax by state and use our free tax calculator."
 		PageKeyWord = "Zip2Tax, sales tax by county,sales tax for,sales tax calculator,state sales tax rate, state sales tax rates,sales tax rate,what is the sales tax for,what is the sales tax in,tax for zip code, county sales tax,sales tax table,sales tax rates by,sales tax amount,sales tax rates for,sales tax zip code, local tax rates,local sales tax rates,sales tax charts,sale tax rate by zip code,how much is the sales tax, sales tax lookup,sales tax by city,sales tax rates by,sales tax rates by zip code"
 		Canonical= "https://www.zip2tax.com/sales-tax-by-state"
-		If instr(lcase(request.servervariables("script_name")),"/canada/")>0 Then
-			Canonical= "https://www.zip2tax.com/canada-sales-tax"
-		End If
+		
+	Case "Canadian Tax Rates" 
+		PageTitle = "Sales Tax by Province | Sales Tax Rate By Provincal Code | " & PageTitle1		
+		PageDescription="Quickly find sales tax by province and use our free tax calculator."
+		PageKeyWord = "Zip2Tax, sales tax by province"
+		Canonical= "https://www.zip2tax.com/canada-sales-tax"
+		
 	Case "Comparison Chart" 
 	
 		PageTitle = PageTitle &  "Compare Zip2Tax Services Side By Side"		
@@ -227,7 +230,7 @@ Select Case Session("activePage")
 		PageTitle = "Magento v1.7.2 | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Magento v1.7.2 and above"
 		PageKeyWord = "Zip2Tax, Magento"
-		Canonical= "/magento-enterprisez2t_redistribution"
+		Canonical= "/magento-enterprise"
 	Case "Specialty Tables - Magento Older Version"
 		PageTitle = "Magento v1.7.1 | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Magento v1.7.1 and older"
