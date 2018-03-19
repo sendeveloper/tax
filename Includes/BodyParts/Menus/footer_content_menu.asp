@@ -21,8 +21,8 @@ End If
     <p class="footerlinks">
     <a href="/how-to-calculate-sales-tax" class="footerlinks"><b>Tax Rates</b></a><br><br>
     <a href="/sales-tax-calculator" title="Use our lookup service" class="footerlinks">ZIP Code Lookup</a><br>
-    <a href="/sales-tax-by-zipcode"  class="footerlinks">Spot-On Lookup</a><br>
-    <a href="/calculate-sales-tax-rates" class="footerlinks">Desktop Widget</a><br>
+    <a href="/sales-tax-by-zipcode"  class="footerlinks">Spot-On&trade; Lookup</a><br>
+    <a href="/desktop-application" class="footerlinks">Desktop Widget</a><br>
     <a href="/sales-tax-by-state" class="footerlinks">Taxes By State</a><br>
     <a href="http://blog.zip2tax.com/" class="footerlinks">News Blog</a> 
     </p>
