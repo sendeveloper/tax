@@ -61,8 +61,8 @@
                     <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="/sales-tax-calculator" style="border-top-width: 0px;">ZIP Code Lookup</a></li>
-                    <li><a href="/sales-tax-by-zipcode">Spot-On Lookup</a></li>
-                    <li><a href="/calculate-sales-tax-rates">Desktop Widget</a></li>
+                    <li><a href="/sales-tax-by-zipcode">Spot-On&trade; Lookup</a></li>
+                    <li><a href="/desktop-application">Desktop Widget</a></li>
                     <li><a href="/sales-tax-by-state">Taxes By State</a></li>
                     <li><a href="http://blog.zip2tax.com/">News Blog</a></li>
                   </ul>

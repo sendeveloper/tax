@@ -97,7 +97,7 @@
   <div id="dropmenuLookup" class="dropmenudiv_e" style="width:200px">
     <a href="/sales-tax-calculator">ZIP Code Lookup</a>
     <a href="/sales-tax-by-zipcode">Spot-On Lookup</a>
-    <a href="/calculate-sales-tax-rates">Desktop Widget</a>
+    <a href="/desktop-application">Desktop Widget</a>
     <a href="/sales-tax-by-state">Taxes By State</a>
     <a href="http://blog.zip2tax.com/">News Blog</a>
   </div>
