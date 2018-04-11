@@ -10,9 +10,10 @@
 
 <html lang="en">
   <head>
+    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <title>Database Interface- United States</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Sales tax rates at ZIP code, ZIP+4 or Spot-On&trade; levels via Database Interface for a the whole U.S.">
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="Sales tax rates at ZIP code, ZIP+4 or Spot-On&trade; levels via Database Interface for a the whole U.S."> -->
 	<!-- #include virtual="/Website/Includes/BodyParts/HeadContent.inc"-->	
     <script type="text/javascript" src="/Website/Includes/Javascript/z2t.js" language="javascript"></script>
 	<script type="text/javascript" src="/Website/pagesProducts/Cart/Database_US/page_database_US.js" language="javascript"></script>
