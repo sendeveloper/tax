@@ -3,11 +3,6 @@
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
 
-<%
-    Session("activePage") = "Services"
-    Session("currentPage") = "z2t_services.asp"
-%>
-
 <html lang="en">
   <head>
     <title>Database Interface- United States</title>
