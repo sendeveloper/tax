@@ -3,11 +3,6 @@
 <!--#include virtual="/Website/Includes/Config.asp"-->
 <!--#include virtual="/Website/Includes/Connection.asp"-->
 
-<%
-    Session("activePage") = "Home"
-    Session("currentPage") = "index.asp"
-%>
-
 <html lang="en">
   <head>
     <title>Database Interface - Single State</title>
