@@ -1,1 +1,4 @@
-function formLoad(){SetScreen(700,800),CenterScreen(700,800),mi1=document.getElementById("MovingImage1"),""!=errorMessage&&alert(errorMessage),"True"==NewUser&&(placeImages(),moveObjRight(mi1),document.getElementById("inputZip").focus())}function clickImage(){mi1.style.visibility="hidden",document.getElementById("inputZip").focus()}function moveObjRight(a){a.style.left=Hmove+"px",Hmove+=5,Hmove<Hlimit&&window.setTimeout(function(){moveObjRight(a)},0)}function placeImages(){mi1.style.top=document.getElementById("lookupbox").offsetTop-document.getElementById("lookupbox").offsetHeight/2+"px",Hlimit=document.getElementById("lookupbox").offsetLeft-document.getElementById("MovingImage1").offsetWidth,mi1.style.left="50px",mi1.style.visibility="visible"}function closeWin(){window.close(),window.opener.location.href="/Website/pagesProducts/z2t_services.asp"}window.onload=formLoad;
+function formLoad() {
+    CenterScreen(700, 800);
+}
+window.onload = formLoad;
