@@ -8,7 +8,6 @@
     <title>CSV Tax Table Updates - Whole Country</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="This update subscription will provide you with a year's worth of current sales or use tax data and jurisdictional information.">
-    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
 
     <script type="text/javascript" src="/Website/Includes/Javascript/z2t.js" language="javascript"></script>
     <script language="javascript" type="text/javascript"></script>
