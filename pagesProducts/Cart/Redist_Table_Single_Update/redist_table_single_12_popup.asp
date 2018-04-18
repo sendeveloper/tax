@@ -8,7 +8,6 @@
     <title>Redistributable Tax Table - Single State Update Subscription - 12 Months</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="This redistributable monthly update file for a single U.S. state will keep your tax files up-to-date for a full year.">
-    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
 
     <script type="text/javascript" src="/Website/Includes/Javascript/z2t.js" language="javascript"></script>
     <script language="javascript" type="text/javascript">
