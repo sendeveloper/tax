@@ -6,7 +6,6 @@
 <html lang="en">
   <head>
     <title>Database Interface- United States</title>
-    <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="Sales tax rates at ZIP code, ZIP+4 or Spot-On&trade; levels via Database Interface for a the whole U.S.">
     <script type="text/javascript" src="/Website/Includes/Javascript/z2t.js" language="javascript"></script>
