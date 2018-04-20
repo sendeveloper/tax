@@ -53,7 +53,7 @@
         the "My Account" section of the Zip2Tax website (available
         after you log in).<br>
 		<% If Session("z2t_loggedin") > "" Then %>
-				<a href="https://www.zip2tax.com/Website/pagesAccount/z2t_account_TableDownloads.asp">
+				<a href="https://www.zip2tax.com/account-table-download">
 		<% End If %>
 				  "My Accounts/TaxTable Downloads" feature.
 		<% If Session("z2t_loggedin") > "" Then %>

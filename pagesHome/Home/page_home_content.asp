@@ -35,7 +35,7 @@
 
 	<div class="row">
 		<div class="panels col-sm-4" style="text-align: center;">
-			<a href="/Website/pagesProducts/z2t_services_online_lookup.asp"><img src="/Website/Images/sales-tax-rates-businesses-online-lookup-zip2tax-panel1.png" alt="Online Lookup"></a>
+			<a href="/sales-tax-lookup"><img src="/Website/Images/sales-tax-rates-businesses-online-lookup-zip2tax-panel1.png" alt="Online Lookup"></a>
 			<h3><strong>Online Lookup</strong></h3>
 			<p class="panels-content" 
 				style="padding-top: 20px;
@@ -45,7 +45,7 @@
 				instantly, calculates the tax dollar amount, shows shared communities, and generates a map. Try the Online Lookup for yourself now.
 			</p>
 			
-			<p><a class="green-btn-sm" href="/Website/pagesProducts/z2t_services_online_lookup.asp" 
+			<p><a class="green-btn-sm" href="/sales-tax-lookup" 
 				onclick="ga('send', 'event', 'Online Lookup Leads', 'Button Interaction', 'onlinelookupbuttonclicked');"
 				style="background-color: #98e428;
 				color: #fff;
@@ -62,7 +62,7 @@
 		
 		<div class="panels col-sm-4" 
 			style="text-align: center;">
-			<a href="/Website/pagesProducts/z2t_services_db_connection.asp"><img src="/Website/Images/sales-tax-rates-businesses-database-interface-zip2tax-panel2.png" alt="Database Interface"></a><h3><strong>Database Interface</strong></h3>
+			<a href="/sales-tax-api"><img src="/Website/Images/sales-tax-rates-businesses-database-interface-zip2tax-panel2.png" alt="Database Interface"></a><h3><strong>Database Interface</strong></h3>
 			
 			<p class="panels-content" 
 				style="padding-top: 20px;
@@ -71,7 +71,7 @@
 				data. Our servers boast a 99.9% uptime with more than enough bandwidth to handle requests even during the heaviest traffic periods.
 			</p>
 			
-			<p><a class="green-btn-sm" href="/Website/pagesProducts/z2t_services_db_connection.asp"
+			<p><a class="green-btn-sm" href="/sales-tax-api"
 				onclick="ga('send', 'event', 'API Leads', 'Button Interaction', 'apibuttonclicked');"			
 				style="background-color: #98e428;
 				color: #fff;
@@ -88,7 +88,7 @@
  
 		<div class="panels col-sm-4" 
 			style="text-align: center;">
-			<a href="/Website/pagesProducts/z2t_services_tables.asp"><img src="/Website/Images/sales-tax-rates-businesses-tax-tables-zip2tax-panel3.png" alt="Sales and Use Tax Tables"></a><h3><strong>Sales and Use Tax Tables</strong></h3>
+			<a href="/sales-tax-tables"><img src="/Website/Images/sales-tax-rates-businesses-tax-tables-zip2tax-panel3.png" alt="Sales and Use Tax Tables"></a><h3><strong>Sales and Use Tax Tables</strong></h3>
  
 			<p class="panels-content" 
 				style="padding-top: 20px;
@@ -99,7 +99,7 @@
 				option to subscribe to receive monthly updates which will keep your business up to date with frequent tax rate and ZIP code changes.
 			</p>
 			
-			<p><a class="green-btn-sm" href="/Website/pagesProducts/z2t_services_tables.asp"
+			<p><a class="green-btn-sm" href="/sales-tax-tables"
 				onclick="ga('send', 'event', 'Download Leads', 'Button Interaction', 'downloadbuttonclicked');"
 				style="background-color: #98e428;
 				color: #fff;
@@ -133,24 +133,6 @@
 		</strong>
 	</p>
 
-	<hr>
-
-	<h3>
-		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
-		
-		Find Sales Tax Rates On The Fly With Zip2Tax For Mobile Devices
-	</h3>
-
-	<div class="row">
-		<div class="col-sm-5">
-			<img src="https://i.imgur.com/kl8cFs8.jpg" alt="Sales Tax for Apple">
-		</div>
-		<div class="col-sm-5">
-			<h3>Download our iPhone App for free from iTunes and look up sales tax rates by ZIP code while you're on the go.</h3>
-			<a href="https://appsto.re/us/ofMC1.i" onclick="ga('send', 'event', 'App Leads', 'Button Interaction', 'appbuttonclicked');"><img src="/Website/Images/app/apple_app_store_button.jpg" width="200" height="75" alt="Download Sales Tax on Apple"></a>
-		</div>
-	</div>
-	
 	<hr>
 
 	<!-- #include virtual="/Website/pagesHome/Home/content-What-States-Do-You-Do-Business-In.inc" -->
