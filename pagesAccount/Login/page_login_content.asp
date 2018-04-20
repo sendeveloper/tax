@@ -326,7 +326,7 @@
 			<p style="text-align: left; font-size: 125%; font-weight: 700; line-height: 1.2;">
 				Check out some of our products that will make Sales and Use tax a breeze!
 			</p>
-			<a class="green-btn-sm" href="/Website/pagesProducts/z2t_services_online_lookup.asp" onclick="ga('send', 'event', 'API Leads', 'Button Interaction', 'apibuttonclicked');" style="background-color: #98e428;
+			<a class="green-btn-sm" href="/sales-tax-lookup" onclick="ga('send', 'event', 'API Leads', 'Button Interaction', 'apibuttonclicked');" style="background-color: #98e428;
 					color: #fff;
 					padding: 16px 16px;
 					border-radius: 16px;
