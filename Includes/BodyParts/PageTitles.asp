@@ -265,7 +265,7 @@ Select Case Session("activePage")
 		PageTitle = "Upshot | " & PageTitle1
 		PageDescription = "Zip2Tax delivers specialty tables that are compatible with many systems including Upshot"
 		PageKeyWord = "Zip2Tax, Upshot"
-		Canonical= "www.zip2tax.com/Website/pagesProducts/z2t_compatible_upshot.asp"
+		Canonical= "www.zip2tax.com/upshot-commerce"
 	Case Else
 		PageTitle = ""
 		PageDescription = ""
