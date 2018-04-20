@@ -30,14 +30,14 @@
               The most economical service for companies wanting to improve efficiency
               while maintaining affordability. City and town names with sales
               tax detail are provided for every locality within a ZIP code, giving
-              the operator the ability to choose the jurisdiction they want. <a href="/Website/pagesSupport/pagesDev/z2t_developers_ZIPcode.asp">ZIP Code API</a> </p>
+              the operator the ability to choose the jurisdiction they want. <a href="/developers-api-zipcode">ZIP Code API</a> </p>
           
             <p id="HiddenSummary2" style="DISPLAY: none" > <img src="/Website/Images/PinPoint/ZIP+4-sm.png" class="imgLeft" alt="Zip+4 resolution" /> 
               A very high level of jurisdictional certainty at an affordable price.
               Sometimes referred to as the 9-digit ZIP code, the first 5 digits
               determine a delivery area, such as a town and state, and the additional
               4 digits target the location to within one side of a street within
-              a range of addresses, such as 100 to 120 East Main St. <a href="/Website/pagesSupport/pagesDev/z2t_developers_ZIP+4.asp">ZIP+4 API</a></p>
+              a range of addresses, such as 100 to 120 East Main St. <a href="/developers-api-zip-plus-4">ZIP+4 API</a></p>
           
       <p id="HiddenSummary3" style="DISPLAY: none" > <img src="/Website/Images/PinPoint/PinPoint-sm.png" class="imgLeft" alt="PinPoint resolution" /> 
               The most accurate sales tax jurisdiction granularity for companies
@@ -49,7 +49,9 @@
       <p>Database Interface subscriptions are available for a <a href="javascript:openPopUp('http://www.zip2tax.com/shopping/cart/database_single_popup.asp');void(0);">single
           state</a>, or for the whole <a href="javascript:openPopUp('http://www.zip2tax.com/shopping/cart/database_US_popup.asp');void(0);">United
           States</a>.</p>
-      <p>The <a href="/Website/pagesSupport/pagesDev/z2t_developers_ZIPcode.asp">ZIP Code API</a>, <a href="/Website/pagesSupport/pagesDev/z2t_developers_ZIP+4.asp">ZIP+4 API</a>, and <a href="/Website/pagesSupport/pagesDev/z2t_developers_PinPoint.asp">PinPoint API</a> 
+      <p>The <a href="/developers-api-zipcode">ZIP Code API</a>, 
+	    <a href="/developers-api-zip-plus-4">ZIP+4 API</a>, 
+		and <a href="/Website/pagesSupport/pagesDev/z2t_developers_PinPoint.asp">PinPoint API</a> 
         pages have code samples for .XML or .JSON responses, allowing 
          unlimited testing with addresses found within the ZIP code range from 90001 to 90999.
          If you would like to perform testing outside of that range, please call

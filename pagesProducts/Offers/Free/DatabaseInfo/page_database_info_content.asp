@@ -22,19 +22,19 @@
 		Test drive this handy service and see how it can save your staff hours of<br>frustration. It's fast, it's affordable and the first 50 lookups are on the house.
 	  </div>
 
-      <input type="button" onclick="javascript:window.location.assign('/Website/pagesSupport/pagesDev/z2t_developers_ZIPcode.asp')" class="redButton s11" style="position: absolute; right: 20px; top: 45px" value="&nbsp;&nbsp;See ZIP code API&nbsp;&nbsp;">
+      <input type="button" onclick="javascript:window.location.assign('/developers-api-zipcode')" class="redButton s11" style="position: absolute; right: 20px; top: 45px" value="&nbsp;&nbsp;See ZIP code API&nbsp;&nbsp;">
                 
       <div style="position: absolute; left: 315px; top: 110px; font-size: 12px">
 		Also known as a 9-digit postal code, this subscription<br> offers superior granularity for an excellent price.
       </div>
 
-      <input type="button" onclick="javascript:window.location.assign('/Website/pagesSupport/pagesDev/z2t_developers_ZIP+4.asp')" class="redButton s11" style="position: absolute; right: 20px; top: 155px" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See ZIP+4 API&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+      <input type="button" onclick="javascript:window.location.assign('/developers-api-zip-plus-4')" class="redButton s11" style="position: absolute; right: 20px; top: 155px" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See ZIP+4 API&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
 		
       <div style="position: absolute; left: 325px; top: 250px; font-size: 12px">
 		To-the-doorstep jurisdictional granularity for<br> companies requiring the highest-precision data.
       </div>
 		
-      <input type="button" onclick="javascript:window.location.assign('/Website/pagesSupport/pagesDev/z2t_developers_SpotOn.asp')" class="redButton s11" style="position: absolute; right: 20px; top: 291px" value="&nbsp;&nbsp;See SpotOn API&nbsp;&nbsp;">
+      <input type="button" onclick="javascript:window.location.assign('/developers-api-spot-on')" class="redButton s11" style="position: absolute; right: 20px; top: 291px" value="&nbsp;&nbsp;See SpotOn API&nbsp;&nbsp;">
 		
       <div style="position: absolute; left: 350px; top: 390px; font-size: 12px">
 		Don't know if current sales tax rates<br>are worth the cost? It can hurt to find out the<br>hard way.<br><br>

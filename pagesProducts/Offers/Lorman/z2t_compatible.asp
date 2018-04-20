@@ -55,7 +55,7 @@
 			</td>
 			</tr>
 	</Table>
-	<h2> <a href onclick="javascript:void window.open('http://www.zip2tax.com/Website/pagesHome/z2t_customers.asp','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">See who trusts Zip2Tax for their sales and tax needs</a></h2><br>
+	<h2> <a href onclick="javascript:void window.open('http://www.zip2tax.com/who-uses-our-services','1405345157096','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">See who trusts Zip2Tax for their sales and tax needs</a></h2><br>
 	
 	<div>
 	<h1 class="title">How would you like the data served?</h1>
