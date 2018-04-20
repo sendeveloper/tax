@@ -12,12 +12,12 @@ $(function(){
 
 <a name="PageSection3"></a>
 		<h1>
-		<img src="/Website/Images/sales-tax-rates-businesses-tax-tables-zip2tax-panel3.png" alt="Sales Tab Tables w/Monthly Update Option" class="left paddedImage">
-		<a name="Database"></a>Sales &amp; Use Tax Tables
+		<img src="/Website/Images/sales-tax-rates-businesses-tax-tables-zip2tax-panel3.png" alt="Sales Tax Tables" class="left paddedImage">
+		<a name="Database"></a>Sales Tax Tables &amp; Use Tax Tables
 		</h1>
 	<p class="noPadding">
-		Our .CSV Sales and Use Tax Tables offer a wide range of options to meet your needs, from online shopping cart integration,
-		to ERP system platforms, to call centers and invoicing programs. Many formats to choose from. Single state, entire US and/or
+		Our .CSV Sales Tax Tables and Use Tax Tables offer a wide range of options to meet your needs, including online shopping cart integration,
+		ERP system platforms, call centers and invoicing programs. Single state, entire US and/or
 		Candada, monthly subscriptions...whatever you need. All ZIP codes included---over 12,000 jurisdictions!
 	</p>
 	
@@ -88,18 +88,18 @@ $(function(){
 <div>
         <h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>.CSV Formats</strong></h2>
 			<p style="text-align:left;">
-				<h3><strong style="color: red;">Full Breakout .CSV Format</strong></h3>
+				<h3><strong style="color: red;">Full Breakout Sales Tax Tables &amp; Use Tax Tables</strong></h3>
 			</p>
 			
 			<p>
-				The Full Breakout table provides all tax rates broken down for every jurisdictional level 
+				The Full Breakout sales tax tables and use tax tables provide all tax rates broken down for every jurisdictional level 
 				including ZIP code, state, country, city, and special districts; and includes jurisdictional codes 
 				where applicable.<br><br>
 				
-				The table provides the Primary Rate, which is the location within a ZIP code containing the 
+				The sales tax tables and use tax tables provides the Primary Rate, which is the location within a ZIP code containing the 
 				USPS Office, and indicates whether shipping is taxable.<br><br>
 				
-				The table contains multiple rows for ZIP codes encompassing multiple jurisdictions.
+				The sales tax tables and use tax tables contains multiple rows for ZIP codes encompassing multiple jurisdictions.
 			</p>
 			
 			<p style="text-align: center;"><a href="/Website/Downloads/Sample_Tables/Zip2TaxTableLayoutInformation.pdf" style="background-color: #98e428;
@@ -119,11 +119,11 @@ $(function(){
 		  <br><br>
 		  
 			<p style="text-align:left;">
-				<h3><strong style="color: red;">Basic .CSV Format</strong></h3>
+				<h3><strong style="color: red;">Basic Sales Tax Tables &amp; Use Tax Tables</strong></h3>
 			</p>
 			
 			<p>
-				The Basic table provides the total sales tax rate for all jurisdictions combined.
+				The Basic sales tax tables and use tax tables provides the total sales tax rate for all jurisdictions combined.
 				It provides multiple rows for a single ZIP code if it contains more than one city per ZIP.
 			</p>
 			
@@ -144,12 +144,12 @@ $(function(){
 		  <br><br>
 		  
 			<p style="text-align:left;">
-				<h3><strong style="color: red;">Unique ZIPs .CSV Format</strong></h3>
+				<h3><strong style="color: red;">Unique ZIPs Sales Tax Tables &amp; Use Tax Tables</strong></h3>
 			</p>
 			
 			<p>
-				The Unique ZIPs table provides just one row per ZIP code. This row is the municipality
-				containing the USPS office (referred to in the table as the Primary Record) and may or may
+				The Unique ZIPs sales tax tables and use tax tables provides just one row per ZIP code. This row is the municipality
+				containing the USPS office (referred to in the sales tax tables and use tax tables as the Primary Record) and may or may
 				not be representative of the tax rates of other communities sharing that ZIP code.
 			</p>
 			
@@ -170,11 +170,11 @@ $(function(){
 		  <br><br>
 		  
 			<p style="text-align:left;">
-				<h3><strong style="color: red;">Canadian Tax .CSV Format</strong></h3>
+				<h3><strong style="color: red;">Canadian Tax Sales Tax Tables &amp; Use Tax Tables</strong></h3>
 			</p>
 			
 			<p>
-				One table breaks out the GST/HST/PST/QST/RST rates for all Canadian Postal Codes.
+				One sales tax table and use tax table breaks out the GST/HST/PST/QST/RST rates for all Canadian Postal Codes.
 			</p>
 			
 			<p style="text-align: center;"><a href="/Website/Downloads/Sample_Tables/Zip2TaxCanadaTableLayoutInformation.pdf" style="background-color: #98e428;
@@ -194,7 +194,7 @@ $(function(){
 		  <br><br>
 		  
 			<p style="text-align:left;">
-				<h3><strong style="color: red;">NY State Clothing .CSV Format</strong></h3>
+				<h3><strong style="color: red;">NY State Clothing Sales Tax Tables &amp; Use Tax Tables</strong></h3>
 			</p>
 			
 			<p>
@@ -204,16 +204,6 @@ $(function(){
 				There are several exemptions which may or may not apply to locally imposed sales and use taxes.
 			</p>
 			
-	<!--		<p style="text-align: center;"><a href="/Website/Downloads/Sample_Tables/Zip2TaxUniqueZipsTableLayoutInformation.pdf" style="background-color: #98e428;
-				color: #fff;
-				padding: 10px 10px;
-				border-radius: 16px;
-				font-weight: bold;
-				text-transform: uppercase;
-				font-size: 15px;
-				text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.52);
-				white-space: nowrap;">Layout Information - Switch to the right link later.</a></p>
-	-->
 			<br>
 			
 			<div class="horizontal-line" style="width: auto; height: 1px; background-color: black;" ></div>
@@ -226,32 +216,131 @@ $(function(){
 
 <!--Beginning of integration section-------------------------------------------------------------------------->
 
+<style>
+	.ToolTip
+		{
+		display:		inline-block;
+		height:			100px;
+		text-align:		center;
+		width:			220px;
+		}	
+		
+	.ToolTip:hover .ToolTipBox 
+		{
+		display: 		block;
+		}
+		
+	.ToolTipBox
+		{
+		color:			black;
+		display: 		none;
+		background: 	#E8EAF4;
+		margin-top:		0px;
+		margin-left: 	50px;
+		padding: 		5px;
+		position: 		absolute;
+		z-index: 		1000;
+		border:			1px solid black;
+		text-align:		left;
+		}		
+</style>
+
 	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>Integrations</strong></h2>
 	<p>Select a platform below...Don't see your platform? Let us know and we'll create one!</p>
 	
-	<ul style="list-style: none;">
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_chargeover.asp"><img src="/Website/Images/Logos/chargeover-logo.png" width="200" height="100" alt="ChargeOver" title="ChargeOver"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_cirkuit.asp"><img src="/Website/Images/Logos/CircuitCommerceLogo.png" width="200" height="100" alt="Cirkuit Commerce" title="Cirkuit Commerece"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_evolution.asp"><img src="/Website/Images/Logos/EvolutionLogo.png" width="200" height="100" alt="Evolution" title="Evolution"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_fleapay.asp"><img src="/Website/Images/Logos/FleaPayLogo.png" width="200" height="100" alt="Fleapay" title="Fleapay"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_kampdata.asp"><img src="/Website/Images/Logos/KampDataLogo.png" width="200" height="100" alt="Kamp-data" title="Kamp-data"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_magento_newer_versions.asp"><img src="/Website/Images/Logos/Magento Logo.PNG" width="200" height="100" alt="Magento" title="Magento"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_sedona.asp"><img src="/Website/Images/Logos/SedonaOffice Logo.PNG" width="200" height="100" alt="Sedona" title="Sedona"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_compatible_smith_cart.asp"><img src="/Website/Images/Logos/SmithCartLogo.png" width="200" height="100" alt="Smith" title="Smith"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_compatible_tradepoint.asp"><img src="/Website/Images/Logos/TradepointLogo.png" width="200" height="100" alt="Tradepoint" title="Tradepoint"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_ultracart.asp"><img src="/Website/Images/Logos/UltracartLogo.png" width="200" height="100" alt="Ultracart" title="Ultracart"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_compatible_upshot.asp"><img src="/Website/Images/Logos/UpshotCommerceLogo.png" width="200" height="100" alt="Upshot" title="Upshot"></a></li>
-		<li style="display:inline; padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><a href="/Website/pagesProducts/z2t_specialty_tables_volusion.asp"><img src="/Website/Images/Logos/VolusionLogo.png" width="200" height="100" alt="Volusion" title="Volusion"></a></li>
+	<div>
+				<a class="ToolTip" href="/chargeover">
+					<img src="/Website/Images/Logos/LogoChargeOver200.png" alt="ChargeOver" title="ChargeOver">
+					ChargeOver
+					<span class="ToolTipBox">
+						Click for ChargeOver<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/cirkuit-commerce">
+					<img src="/Website/Images/Logos/LogoCirkuitCommerce200.png" alt="Cirkuit Commerce" title="Cirkuit Commerce">
+					Cirkuit Commerce
+					<span class="ToolTipBox">
+						Click for Cirkuit Commerce<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/evolution">
+					<img src="/Website/Images/Logos/LogoEvolution200.png" alt="Evolution" title="Evolution">
+					Evolution
+					<span class="ToolTipBox">
+						Click for Evolution<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/fleapay">
+					<img src="/Website/Images/Logos/LogoFleapay200.png" alt="Fleapay" title="Fleapay">
+					Fleapay
+					<span class="ToolTipBox">
+						Click for Fleapay<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/kamp-data">
+					<img src="/Website/Images/Logos/LogoKampdata200.png" alt="Kamp-data" title="Kamp-data">
+					Kamp-data
+					<span class="ToolTipBox">
+						Click for Kamp-data<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/magento-enterprise">
+					<img src="/Website/Images/Logos/LogoMagento200.png" alt="Magento" title="Magento">
+					Magento
+					<span class="ToolTipBox">
+						Click for Magento<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/sedona-office">
+					<img src="/Website/Images/Logos/LogoSedonaOffice200.png" alt="Sedona Office" title="Sedona Office">
+					Sedona Office
+					<span class="ToolTipBox">
+						Click for Sedona Office<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/smith-cart">
+					<img src="/Website/Images/Logos/LogoSmithCart200.png" alt="Smith Cart" title="Smith Cart">
+					Smith Cart
+					<span class="ToolTipBox">
+						Click for Smith Cart<br>Sales Tax Table Information
+					</span></a>
+					
+				<a class="ToolTip" href="/tradepoint-enterprise">
+					<img src="/Website/Images/Logos/LogoTradepoint200.png" alt="Tradepoint" title="Tradepoint">
+					Tradepoint
+					<span class="ToolTipBox">
+						Click for Tradepoint<br>Sales Tax Table Information
+					</span></a>
 
-	</ul>
+				<a class="ToolTip" href="/ultracart">
+					<img src="/Website/Images/Logos/LogoUltracart200.png" alt="Ultracart" title="Ultracart">
+					Ultracart
+					<span class="ToolTipBox">
+						Click for Ultracart<br>Sales Tax Table Information
+					</span></a>
+
+				<a class="ToolTip" href="/upshot-commerce">
+					<img src="/Website/Images/Logos/LogoUpshotCommerce200.png" alt="Upshot Commerce" title="Upshot Commerce">
+					Upshot Commerce
+					<span class="ToolTipBox">
+						Click for Upshot Commerce<br>Sales Tax Table Information
+					</span></a>
+
+				<a class="ToolTip" href="/volusion">
+					<img src="/Website/Images/Logos/LogoVolusion200.png" alt="Volusion" title="Volusion">
+					Volusion
+					<span class="ToolTipBox">
+						Click for Volusion<br>Sales Tax Table Information
+					</span></a>
+		</div>
+		
 <div class="clearfix"></div><br><br>
 
-	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>.CSV Sales Tax Table Options</strong></h2>
+	<h2><span class="glyph glyphicon glyphicon-star redFont" ariahidden="true"></span><strong>.CSV Sales Tax Tables Options</strong></h2>
 	<table class="table" id="See_options">
 		<thead>
 			<tr>
-			<th>.CSV tax tables</th>
-			<!--<th colspan="2" class="text-center">Starting at:</th>-->
+			<th>.CSV sales tax tables and use tax tables</th>
 			</tr>
 		</thead>
 		<tbody>
