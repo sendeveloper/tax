@@ -17,7 +17,7 @@
       <img src="/Website/Images/Developers/XML.jpg" alt="XML or JSON response" width="200" height="288" border="0" class="imgRight" title="XML or JSON response">
       <span class="firstword">This API</span>
        provides for  XML or JSON responses for all three resolution levels
-         we offer to <a href="/Website/pagesProducts/z2t_services.asp#PageSection2">subscribers</a>.</p>
+         we offer to <a href="/free-sales-tax-calculator#PageSection2">subscribers</a>.</p>
 
       <p> We offer several levels of subscription, so your business can get the
         accuracy it needs without paying for more than you'll use:
