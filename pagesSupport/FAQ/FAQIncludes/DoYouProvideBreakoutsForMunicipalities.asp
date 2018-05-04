@@ -25,7 +25,7 @@
 		  breakout version. Sample test codes for both types are available in our Developers 
 		  section for Direct Connection or Passing Request Variables</p>
             
-          <p><a href="http://www.zip2tax.com/Website/pagesProducts/z2t_services.asp#PageSection3" 
+          <p><a href="/free-sales-tax-calculator#PageSection3" 
 		  target="_blank">Sales and Use Tax Tables:</a> Breakout data is the standard format 
 		  available to all Sales and Use Tax Table subscribers. The Breakout style table 
 		  contains all of the information that Zip2Tax collects.</p>
