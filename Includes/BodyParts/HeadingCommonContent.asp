@@ -25,14 +25,14 @@
 	
     <meta name="alexaVerifyID" content="ZrGRzT40DhWTOZrbyPZtTdBQQSI">
 	<meta name="msvalidate.01" content="D4BCC3EE4D64AA629BDA7B988DEC9BD7" />
-	<meta name="google-site-verification" content="HAu4zuX5WCR_KP-XjBoc7hPWToTXnljC1H9qfIOM6u8" />
+	<meta name="google-site-verification" content="9rjGN-n-Jph-p8Q8MzyenJfq2jX1s8HsGsVXuCEembQ" />   <!--2018_04_10-->
     <meta name="verify-v1" content="q0BWCUmQlxYKPjY3G4LpF0lihwZNVwzrEDOWMV4BjpQ=">
 
 <%
 	If Canonical = "" Then
-		Response.write "     <link rel='canonical' href='" & Request.ServerVariables("URL") & "' />"
+		'Response.write "    <link rel='canonical' href='https://" & Request.ServerVariables("URL") & "' />"
 	Else
-		Response.write "     <link rel='canonical' href='" & Canonical & "' />"
+		Response.write "    <link rel='canonical' href='" & Canonical & "' />"
 	End If
 	
 	If Request("currentPagePath") > "" Then
@@ -221,7 +221,7 @@
 						var a=document.getElementById("menuInputZip");
 						if(a.value.length>5&&(a.value=a.value.substr(0,5)),5==a.value.length)
 						{
-							var b="/Website/pagesTaxRates/z2t_lookup.asp?inputZip="+a.value;
+							var b="/sales-tax-calculator?inputZip="+a.value;
 							window.document.location=b;
 						}
 						else alert("Zip Code Must Contain 5 Characters");
