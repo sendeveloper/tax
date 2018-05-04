@@ -170,7 +170,7 @@
   'If DateDiff("m", prevDate, Now()) < 0 Then
   '  prevDate = ""
   'Else
-    prevString = "<a href=" & chr(34) & "/website/pagesAccount/z2t_account_TableDownloads.asp?date=" & cstr(prevYear) & "-" & cstr(DatePart("m", prevDate)) & chr(34) & ">" & "&lt;&lt;&nbsp;" & prevString & "</a>"
+    prevString = "<a href=" & chr(34) & "/account-table-download?date=" & cstr(prevYear) & "-" & cstr(DatePart("m", prevDate)) & chr(34) & ">" & "&lt;&lt;&nbsp;" & prevString & "</a>"
   'End If
 
   nextString = monthName(DatePart("m", nextDate)) 
@@ -181,7 +181,7 @@
   If DateDiff("m", viewDate, MostEffectiveDate) <= 0  Then
     nextString = ""
   Else
-    nextString = "<a href="  & chr(34) & "/website/pagesAccount/z2t_account_TableDownloads.asp?date=" & cstr(nextYear) & "-" & cstr(DatePart("m", nextDate)) & chr(34) & ">" & nextString & "&nbsp;&gt;&gt</a>"
+    nextString = "<a href="  & chr(34) & "/account-table-download?date=" & cstr(nextYear) & "-" & cstr(DatePart("m", nextDate)) & chr(34) & ">" & nextString & "&nbsp;&gt;&gt</a>"
   End If
 
 
