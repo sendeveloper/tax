@@ -5,13 +5,13 @@
 
 <%
     Session("activePage") = "Services"
-    Session("currentPage") = "z2t_services.asp"
+    Session("currentPage") = "z2t_services.asp"	
 %>
 
-<html>
+<html lang="en">
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-    <script language="javascript" src="/Website/Includes/Javascript/page_about.js" type="text/javascript"></script>
+    <script src="/Website/Includes/Javascript/page_about.js"></script>
   </head>
   <body>  
     <div class="container-fluid" style="padding: 0px;">
