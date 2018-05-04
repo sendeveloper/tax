@@ -34,7 +34,7 @@ function clickLogout() {
 function clickLookup() {
     var a = document.getElementById("inputZip");
     if (a.value.length > 5 && (a.value = a.value.substr(0, 5)), 5 == a.value.length) {
-        var b = "/Website/pagesTaxRates/z2t_lookup.asp?inputZip=" + a.value;
+        var b = "/sales-tax-calculator?inputZip=" + a.value;
         window.document.location = b
     } else alert("Zip Code Must Contain 5 Characters")
 }
@@ -126,7 +126,7 @@ function ftLogin() {
 
 function ResponseSaved(a) {
     var b = a.response;
-    "success" == b ? window.location.href = pathBase + "Website/pagesTaxRates/z2t_lookup.asp?inputZip=" + inputZip : "failed" == b ? alert("Invalid Username or Password") : "InitSignupDone" == b ? (div_hide(2), div_show(3)) : "Interim" == b ? (div_hide(1), div_show(4)) : "InterimSignupDone" == b ? window.location.href = pathBase + "website/pagesTaxRates/z2t_lookup.asp" : "Online" == b ? window.location.href = pathBase + "website/pagesTaxRates/z2t_lookup.asp" : "passrecovered" == b ? (div_hide(5), alert("An email has been sent containing password.")) : "IncorrectEmail" == b ? alert("Incorrect email address.") : "InitSignupDuplicateEmail" == b && (div_hide(2), alert("Email already exists, please use forgot password to recover your account."), div_show(5))
+    "success" == b ? window.location.href = pathBase + "sales-tax-calculator?inputZip=" + inputZip : "failed" == b ? alert("Invalid Username or Password") : "InitSignupDone" == b ? (div_hide(2), div_show(3)) : "Interim" == b ? (div_hide(1), div_show(4)) : "InterimSignupDone" == b ? window.location.href = pathBase + "sales-tax-calculator" : "Online" == b ? window.location.href = pathBase + "sales-tax-calculator" : "passrecovered" == b ? (div_hide(5), alert("An email has been sent containing password.")) : "IncorrectEmail" == b ? alert("Incorrect email address.") : "InitSignupDuplicateEmail" == b && (div_hide(2), alert("Email already exists, please use forgot password to recover your account."), div_show(5))
 }
 function ftLoginNew() {
     document.getElementById('dialog-waiting').style.display = "block";
@@ -142,7 +142,7 @@ function ftLoginNew() {
 }
 function ResponseSavedNew(a) {
 	var b = a;
-    "success" == b ? document.location.reload() : "failed" == b ? alert("Invalid Username or Password") : "InitSignupDone" == b ? (div_hideNew(2), div_showNew(3)) : "Interim" == b ? (document.location.reload()) : "InterimSignupDone" == b ? window.location.href = pathBase + "website/pagesTaxRates/z2t_lookup.asp" : "Online" == b ? window.location.href = pathBase + "website/pagesTaxRates/z2t_lookup.asp" : "passrecovered" == b ? (div_hideNew(5), alert("An email has been sent containing password.")) : "IncorrectEmail" == b ? alert("Incorrect email address.") : "InitSignupDuplicateEmail" == b && (div_hideNew(2), alert("Email already exists, please use forgot password to recover your account."), div_showNew(5))
+    "success" == b ? document.location.reload() : "failed" == b ? alert("Invalid Username or Password") : "InitSignupDone" == b ? (div_hideNew(2), div_showNew(3)) : "Interim" == b ? (document.location.reload()) : "InterimSignupDone" == b ? window.location.href = pathBase + "sales-tax-calculator" : "Online" == b ? window.location.href = pathBase + "sales-tax-calculator" : "passrecovered" == b ? (div_hideNew(5), alert("An email has been sent containing password.")) : "IncorrectEmail" == b ? alert("Incorrect email address.") : "InitSignupDuplicateEmail" == b && (div_hideNew(2), alert("Email already exists, please use forgot password to recover your account."), div_showNew(5))
 }
 function div_showNew(a) {
     1 == a ? document.getElementById("dialog-form").style.display = "block" : 2 == a ? document.getElementById("dialog-form2").style.display = "block" : 3 == a ? document.getElementById("ThankyouPopup").style.display = "block" : 4 == a ? document.getElementById("InterimSignupPopup").style.display = "block" : 5 == a && (document.getElementById("passwordRecoveryPopup").style.display = "block")
