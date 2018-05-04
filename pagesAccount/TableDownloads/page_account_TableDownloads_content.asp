@@ -138,7 +138,7 @@
 <%
    Else
        Response.Write("<p>No downloads available. (<a href="  + _
-                      chr(34) +  "/Website/pagesProducts/z2t_services.asp#PageSection3"  + chr(34) + _  
+                      chr(34) +  "/free-sales-tax-calculator#PageSection3"  + chr(34) + _  
                       ">Purchase a table</a>)</p>")
    End If 
    
