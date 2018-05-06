@@ -11,7 +11,7 @@
 	If PageKeyword <> "" Then
 		Response.write "	<meta name='keywords' content='" & PageKeyword & "'>" & vbCrLf
 	End If
-	
+	 
 	If PageDescription <> "" Then
 		Response.write "	<meta name='description' content='" & PageDescription & "'>" & vbCrLf
 	End If
