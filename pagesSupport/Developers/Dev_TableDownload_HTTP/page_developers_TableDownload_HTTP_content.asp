@@ -31,7 +31,7 @@
         save the tables from Excel. Instead, choose "Save As" rather
         than the "Open" when downloading the tables.</p>
 
-		<h3>Examples:</h3>
+		<h2>Examples:</h2>
         <ul style="margin-left: 45px; margin-top: 15px; ">
         <li>List my tables:<br>
           <a href="https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=0" style="margin-left: 10px;"><samp style="font-size: 90%;">https://tables.zip2tax.com?usr=sample&amp;pwd=password&amp;id=0</samp></a><br>
