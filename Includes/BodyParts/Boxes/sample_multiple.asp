@@ -1,8 +1,8 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">
+		<h2 class="panel-title">
 			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Sample ZIP Code Range
-		</h3>
+		</h2>
 	</div>
 	<div class="panel-body">
 		<p>In the sample ZIP code range (90001&nbsp;-&nbsp;90999), the following ZIP

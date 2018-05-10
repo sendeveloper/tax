@@ -13,6 +13,16 @@
 <head>
   <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
   <script language="javascript" src="/Website/Includes/Javascript/page_home.js" type="text/javascript"></script>
+  <style>
+    a h2{
+      color: #00e;
+      font-size: 15px !important;
+    }
+    a:hover h2{
+      text-decoration: none;
+      color: #23527c;
+    }
+  </style>
 </head>
 <body>
   <div class="container-fluid" style="padding: 0px;">
@@ -21,9 +31,7 @@
     <div class="mainBody">
       <div class="clearfix"></div>
       <div class="container"> 
-        <!-- #include virtual="/Website/pagesHome/Sitemap/page_sitemap_left_sidebar.asp"-->
         <!-- #include virtual="/Website/pagesHome/Sitemap/page_sitemap_content.asp"-->
-        <!-- #include virtual="/Website/pagesHome/Sitemap/page_sitemap_right_sidebar.asp"-->
       </div>
     </div>
   </div>

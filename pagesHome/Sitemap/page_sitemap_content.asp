@@ -6,7 +6,7 @@
 			<div class="container-fluid">
 				<hr>
 				<div class="col-sm-4">
-					<a href="/"><strong>Home</strong></a><br>
+					<a href="/"><h2>Home</h2></a><br>
 					<ul>
 					  <li><a href="/sales-tax-service-providers">About Us</a></li>
 					  <li><a href="/our-commitment">Quality Pledge</a></li> 
@@ -15,7 +15,7 @@
 					  <li><a href="/testimonials">Testimonials</a></li>                          
 					</ul>
 				
-					<a href="/sales-tax-by-state"><strong>Tax Rates</strong></a>
+					<a href="/sales-tax-by-state"><h2>Tax Rates</h2></a>
 					<ul>
 						<li><a href="/sales-tax-calculator">Zip Code Lookup</a></li>
 						<li><a href="/sales-tax-by-zipcode">ZIP+4 Lookup</a></li>
@@ -27,7 +27,7 @@
 				</div>
 				
 				<div class="col-sm-4">
-					<a href="/free-sales-tax-calculator"><strong>Services/Prices</strong></a>
+					<a href="/free-sales-tax-calculator"><h2>Services/Prices</h2></a>
 					<ul>
 						<li><a href="/comparison-chart">Compare Services</a></li>
 						<li><a href="/sales-tax-lookup">Online Lookup</a></li>
@@ -90,12 +90,12 @@
 				</div>
 				
 				<div class="col-sm-4">
-				  <a href="/Website/pagesProducts/z2t_redistribution.asp"><strong>Value Added Reselling</strong></a>
+				  <a href="/Website/pagesProducts/z2t_redistribution.asp"><h2>Value Added Reselling</h2></a>
 				  <br><br>
 				  
-				 <a href="/contact-us"><strong>Support</strong></a>
+				 <a href="/contact-us"><h2>Support</h2></a>
 				  <ul>
-					<li><a href="/frequently-asked-questions"><strong>FAQs</strong></a></li>
+					<li><a href="/frequently-asked-questions"><h2>FAQs</h2></a></li>
 					
 					  <li class="indent1"><a href="/frequently-asked-questions#about3">About the Data</a></li>
 					  <li class="indent1"><a href="/frequently-asked-questions#onlinelookup">Online Lookup</a></li>
@@ -107,7 +107,7 @@
 					
 				  <li class="blankspace"></li>	
 				  
-				  <li><a href="/developers-interface"><strong>DB Connection</strong></a></li>
+				  <li><a href="/developers-interface"><h2>DB Connection</h2></a></li>
 					
 					<li class="indent1"><a href="/developers-api">API</a></li>					
 					  <li class="wrapandindent2"><a href="/developers-api-zipcode">ZIP Code API</a></li>
@@ -134,7 +134,7 @@
 
 						<li class="blankspace"></li>	
 						
-						<li><a href="/resources"><strong>Resources</strong></a>					
+						<li><a href="/resources"><h2>Resources</h2></a>					
 						  <li class="wrapandindent1"><a href="/resources">Certified Public Accountants and Sales Tax Specialists</a></li>
 						  <!-- <li class="wrapandindent1"><a href="/Website/pagesSupport/pagesResources/z2t_resources_shipping.asp">Shipping and Order Fulfillment</a></li> -->
 						  <li class="wrapandindent1"><a href="/resources">Shopping Carts and eCommerce Integrations</a></li>
@@ -142,9 +142,9 @@
 					
 					</ul>
 			
-					<a href="/Website/pagesExtra/z2t_privacypolicy.asp"><strong>Privacy Policy</strong></a>
+					<a href="/Website/pagesExtra/z2t_privacypolicy.asp"><h2>Privacy Policy</h2></a>
 					<br><br><br>
-					<a href="/Website/pagesExtra/z2t_eula.asp"><strong>End User License Agreement</strong></a><br><br>
+					<a href="/Website/pagesExtra/z2t_eula.asp"><h2>End User License Agreement</h2></a><br><br>
 				</div>
 			</div>
 		</div>
