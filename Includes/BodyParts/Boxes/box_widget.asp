@@ -5,12 +5,12 @@
     </h3>
   </div>
   <div class="panel-body text-center">
-    <a href="/calculate-sales-tax-rates">
+    <a href="/desktop-application">
       <img src="/Website/images/widget/widget-promo.png" alt='Tax Rates are now accessable through a desktop application'>
     </a>
     <br>
   <strong>
-    Download the <a href="/calculate-sales-tax-rates"> 
+    Download the <a href="/desktop-application"> 
     Zip2Tax desktop application</a> and bypass your Internet browser.
   </strong>
     <div class="panel-body text-center">

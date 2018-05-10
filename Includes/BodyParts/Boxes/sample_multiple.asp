@@ -8,10 +8,11 @@
 		<p>In the sample ZIP code range (90001&nbsp;-&nbsp;90999), the following ZIP
 		codes contain multiple tax rates; which can be used to test the
 		return of multiple rows:</p>
-		<ul>
+		
+		<ul style="padding-left: 40px;">
 		  <li>90304</li>
 		  <li>90601</li>
 		  <li>90631</li>
-		</ul>					
+		</ul>				
 	</div>
 </div>

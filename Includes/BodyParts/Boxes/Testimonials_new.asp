@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 $(function() {
   $('#ticker').vTicker('init', {
   	pause: 8000,
