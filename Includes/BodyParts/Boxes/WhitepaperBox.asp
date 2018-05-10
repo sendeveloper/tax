@@ -1,8 +1,8 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">
+		<h2 class="panel-title">
 			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Need Answers?
-		</h3>
+		</h2>
 	</div>
 
 	<div class="panel-body text-center">

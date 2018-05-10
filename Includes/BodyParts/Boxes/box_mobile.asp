@@ -1,9 +1,9 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">
+		<h2 class="panel-title">
 			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Find Sales Tax Rates On The Fly With Zip2Tax 
 For Mobile Devices
-		</h3>
+		</h2>
 	</div>
 	<div class="panel-body text-center">
 		Download our iPhone App for free from iTunes and look up sales tax rates by ZIP code while you're on the go. <br>
