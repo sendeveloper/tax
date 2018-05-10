@@ -53,11 +53,11 @@ smallStates = "TN, KY, VA, NC, PA"
 %>
 
 	<div class="col-md-9 content">
-	<%=HeadingH1("Sales and Use Tax Rates By State And The Details You Need To Know")%>
-	<h3>
+	<%=HeadingH1("Sales and Use Tax Rates By State")%>
+	<h2>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 		What are sales taxes?
-	</h3>	
+	</h2>	
 	
 	<p><span class="firstword">Sales taxes are a state-imposed fee</span> that is collected on most retail purchases. 
       Individual states  determine what percentage of a retail sale is to be collected, and what types of sales can be exempted. 
@@ -103,10 +103,10 @@ smallStates = "TN, KY, VA, NC, PA"
 	  destination or origin based. This makes it complicated for retailers who need to have the exact and up-to-date sales tax 
 	  rate for a "moving target".</p>
 
-	<h3>
+	<h2>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 		What is use tax?
-	</h3>	
+	</h2>	
 	  
     
 	<p><span class="firstword">In most states,</span> use tax is due on every retail purchase that was not charged sales tax, 
@@ -116,10 +116,10 @@ smallStates = "TN, KY, VA, NC, PA"
     <p><span class="firstword">Many U.S. tax payers</span> do not realize that use tax is due to the state you reside in on 
 	  ALL transactions where sales tax has not been paid, even out-of-state internet sales.</p>
       
-	<h3>
+	<h2>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 		How do you know who has to pay whom?
-	</h3>	
+	</h2>	
 
       <p><span class="firstword">In general</span>, a business must collect and remit all applicable sales taxes if that business 
 	  has nexus, a physical presence such as a brick-and-mortar location, within a given state. The presence of an employee or 
@@ -136,10 +136,10 @@ smallStates = "TN, KY, VA, NC, PA"
 	  accountant or lawyer who specializes in sales tax.</a> 
 	</p>
 	
-	<h3>
+	<h2>
 		<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 		Special rules applying to sales and use taxes in the United States
-	</h3>	
+	</h2>	
 	
       <ul style="list-style-type: disc !important; list-style-position: outside !important;" id="myList">
         <li>Shipping is frequently not taxable if stated separately on the invoice.</li>

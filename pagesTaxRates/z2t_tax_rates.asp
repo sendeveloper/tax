@@ -12,7 +12,7 @@
   <head>
     
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	<script language="javascript" src="/Website/Includes/Javascript/page_tax_rates.js" type="text/javascript"></script>
+	<script src="/Website/Includes/Javascript/page_tax_rates.js"></script>
       </head>
   
   <body>    

@@ -8,7 +8,7 @@
     Session("currentPage") = "z2t_customer_commitment.asp"
 %>
 
-<html>
+<html lang="en">
     <head>
         <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
     </head>

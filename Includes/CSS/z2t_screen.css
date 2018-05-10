@@ -74,6 +74,9 @@ ul {
     margin-bottom: 2em;
     line-height: 200%
 }
+.content h2{
+    font-size: 24px;
+}
 #newsletter {
     margin: 30px
 }
@@ -1520,3 +1523,11 @@ div#popupFreeTrialSecondlevel2 {
         border-right: 0 none !important;
     }
 }
+div.textInset
+	{
+	color: red;
+	font-family: "New Century Schoolbook", Times, serif;
+	font-size: 150%;
+	font-style: italic;
+	text-align: center;
+	}

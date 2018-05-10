@@ -1,9 +1,9 @@
 <div class="col-lg-6 col-md-9 content">
 	<%=HeadingH1("Passing Request Variables")%>
-	<h3>
+	<h2>
 	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 	Quick Link
-	</h3>	
+	</h2>	
 	<p><span class="firstword">The</span> simpliest form of this method is to click on the link below (use the browser's back button to return to here).<br><br>
 
 	<a href="/Link/Lookup.asp?zip=90210&amp;usr=sample&amp;pwd=password"><span style="font-family: Courier;">http://www.zip2tax.com/Link/Lookup.asp?zip=90210&amp;usr=sample&amp;pwd=password</span></a>
@@ -26,10 +26,10 @@
 	</p>
 	
 	
-	<h3>
+	<h2>
 	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 	Return the Results to your custom page
-	</h3>	
+	</h2>	
 
 	<p><span class="firstword">Now</span> we want to have the
         results passed back to us in a page we custom designed. At the end of the URL we are going to add a 

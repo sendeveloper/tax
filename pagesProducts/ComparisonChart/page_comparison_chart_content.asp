@@ -33,19 +33,19 @@
 				<th></th>
 				<th class="text-center"><img src="/Website/Images/sales-tax-rates-businesses-online-lookup-zip2tax-panel1.png" alt="Sales Tax online lookup"><br>
 				
-					<h3>Online Lookup</h3>
+					<h2>Online Lookup</h2>
 					<small>This simple interface returns tax rates instantly, calculates the tax, generates a map and shows shared communities.</small>
 				</th>
 				
 				<th class="text-center"><img src="/Website/Images/sales-tax-rates-businesses-database-interface-zip2tax-panel2.png" alt="Zip2Tax Database interface API">
 				
-					<h3>Database Interface</h3>
+					<h2>Database Interface</h2>
 					<small>Secure API connects your database to our constantly updated servers to power your eCommerce site with real-time tax data.</small>
 				</th>
 				
 				<th class="text-center"><img src="/Website/Images/sales-tax-rates-businesses-tax-tables-zip2tax-panel3.png" alt="State Sales and Use Tax tables">
 
-					<h3>Tax Tables</h3>
+					<h2>Tax Tables</h2>
 					<small>Downloadable .CSV - format tables work with a variety of shopping carts, enterprise solutions and accounting software.</small>
 				</th>
 				</tr>

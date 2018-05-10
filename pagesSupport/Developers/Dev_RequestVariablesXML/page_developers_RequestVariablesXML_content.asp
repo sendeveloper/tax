@@ -5,10 +5,10 @@
 	</p>	
 
 
-	<h3>
+	<h2>
 	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 	Quick XML Link
-	</h3>	
+	</h2>	
 	<p>The simpliest way to view XML is to click on the link below (use the browser's 
         back button to return to here).<br><br>
         
@@ -31,10 +31,10 @@
 	</p>
 	
 	
-	<h3>
+	<h2>
 	<span class="glyph glyphicon glyphicon-star redFont" aria-hidden="true"></span>
 	Error Handling
-	</h3>	
+	</h2>	
 
 	<p>Two fields have been added for error handling, error_code and error_message.  Below is a list of possible results . . .</p>
       
