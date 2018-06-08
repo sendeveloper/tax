@@ -24,10 +24,10 @@
           <!--#include virtual="/Website/pagesHome/AboutUs/page_about_content.asp" -->
           <!--#include virtual="/Website/pagesHome/AboutUs/page_about_right_sidebar.asp" -->
 		    </div>
-	     </div>
+      </div>
     </div>
 	
-	<!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
+    <!--#include virtual="/Website/Includes/BodyParts/Footer.asp"-->
     <!--#include virtual="/Website/Includes/BodyParts/FooterCommonContent.asp"-->	
   </body>
 </html>
