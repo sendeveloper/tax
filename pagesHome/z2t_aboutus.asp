@@ -10,7 +10,7 @@
 <html lang="en">
   <head>
     <!--#include virtual="/Website/Includes/BodyParts/HeadingCommonContent.asp"-->
-	<script language="javascript" src="/Website/Includes/Javascript/page_about.js" type="text/javascript"></script>
+    <script language="javascript" src="/Website/Includes/Javascript/page_about.js" type="text/javascript"></script>
   </head>
   
   <body>	
