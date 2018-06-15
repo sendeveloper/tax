@@ -7,7 +7,7 @@
     <div class="entry">
       <img src="/Website/Images/marketing/ComparePricesChart_v2_600px.png" alt="Compare Prices Chart">
 	  <br><br>
-    </div><!-- entry -->
+    </div>
 	
 	<div class="entry">
 		
